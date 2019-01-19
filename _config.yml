@@ -13,17 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: videogames.ai
+title: Videogames AI Blog
 email: mathieu.poliquin@videogames.ai
 description: >- # this means to ignore newlines until "baseurl:"
   Machine Learning trained on video games
 #baseurl: "/" # the subpath of your site, e.g. /blog
-#url: "https://matpoliquin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.videogames.ai" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  MatPoliquin
 logo: assets/logo.png
 paginate: 5
 #instagram: https://www.instagram.com/videogames.ai/
 google_analytics: UA-132777834-1
+
+author:
+    twitter: MatPoliquin
 
 # Build settings
 markdown: kramdown
