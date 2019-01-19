@@ -6,19 +6,20 @@ date:   2019-01-19 00:00:00 +0800
 
 This is a performance test of the p106-100 mining card for machine learning.
 
-**Conclusion for those in a hurry:**
+### Conclusion for those in a hurry:
 Bang for the buck this one of the best cards available if your VRAM usage is under 6GB. It has similar performance to a GTX 1060 for standard benchmarks at one third of the price on the second hand market
 
 _Performance tests results_
-| Test        	 | P106-100         | GTX1060 (the 5GB variant) |
-|:---------------|:-----------------|:--------------------------|
-|Cifar10 peak    |~8000 examples/sec|7000 examples/sec          |
-|Alexnet forward |0.083s/batch	    |0.103s/batch               |
-|Alexnet backward|0.193s/batch      |0.243s/batch               |
-|PPO2 Atari Pong |~1110 frame/sec   |~1000 frames/sec           |
-|Host to Device  |3094.4 MB/s       |11205.9 MB/s               |  
-|Device to Host  |3207.3 MB/s       |12788.0 MB/s               |
-|Device to Device|152542.9 MB/s     |115346.1 MB/s              |           
+
+| Test        	   | P106-100           | GTX1060 (the 5GB variant) |
+|:-----------------|:-------------------|:--------------------------|
+| Cifar10 peak     | ~8000 examples/sec | 7000 examples/sec         |
+| Alexnet forward  | 0.083s/batch	    | 0.103s/batch              |
+| Alexnet backward | 0.193s/batch       | 0.243s/batch              |
+| PPO2 Atari Pong  | ~1110 frame/sec    | ~1000 frames/sec          |
+| Host to Device   | 3094.4 MB/s        | 11205.9 MB/s              |  
+| Device to Host   | 3207.3 MB/s        | 12788.0 MB/s              |
+| Device to Device | 152542.9 MB/s      | 115346.1 MB/s             |           
 
 
 _versions used for the tests_
