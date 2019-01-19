@@ -7,7 +7,7 @@ date:   2019-01-19 00:00:00 +0800
 This is a performance test of the p106-100 mining card for machine learning.
 
 ### Conclusion for those in a hurry:
-Bang for the buck this one of the best cards available if your VRAM usage is under 6GB. It has similar performance to a GTX 1060 for standard benchmarks at one third of the price on the second hand market
+Bang for the buck this one of the best cards available if your VRAM usage is under 6GB. It has similar performance to a GTX 1060 for standard benchmarks at **one third of the price** on the second hand market
 
 _Performance tests results_
 
@@ -61,13 +61,24 @@ Moreover if you use the card in a PCIE 8x slot for example you will have a effec
 ## Performance test details
 Here are screenshots of various tests I made
 
+```
+python3 ./cifar10_train.py
+```
+![cifar10](/assets/p106/cifar10.png)
 
-bandwithtest.py in CUDA samples
+```
+./1_Utilities/bandwidthTest/bandwidthTest
+```
 ![bandwidth](/assets/p106/bandwith_test.png)
+
+```
+python3 -m baselines.run --alg=ppo2 --env=PongNoFrameskip-v4 --num_timesteps=2e7
+```
+![baselines](/assets/p106/baselines.png)
 
 
 ## Temperatures
-I re-applied some thermal paste on the card and temperatures are stable
+I re-applied some thermal paste on the card and temperatures are stable even under load
 
 ![nvidia-smi](/assets/p106/nvidia_smi.png)
 
