@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "P106-100 6GB used for Machine Learning"
+title:  "P106-100 mining card used for Machine Learning"
 date:   2019-01-19 00:00:00 +0800
 ---
 
@@ -22,17 +22,17 @@ _Performance tests results_
 | Device to Device | 152542.9 MB/s      | 115346.1 MB/s             |           
 
 
-_versions used for the tests_
-Tensorflow 1.12
-CUDA 9.0
-CUDNN 7.31
-NVIDIA driver 390.77
+#### Software
+*	Tensorflow 1.12
+*	CUDA 9.0
+*	CUDNN 7.31
+*	NVIDIA driver 390.77
 
-_Hardware_
-Gigabyte P106-100
-2x E5 2676 v3 ES (30MB cache, 12C/24T)
-16 GB DDR4 2133Mhz
-DELL T7810 dual socket motherboard
+#### Hardware
+*	Gigabyte P106-100
+*	2x E5 2676 v3 ES (30MB cache, 12C/24T)
+*	16 GB DDR4 2133Mhz
+*	Dell T7810 dual socket motherboard
 
 # Read on for the details...
 
@@ -79,6 +79,11 @@ python3 -m baselines.run --alg=ppo2 --env=PongNoFrameskip-v4 --num_timesteps=2e7
 
 ## Temperatures
 I re-applied some thermal paste on the card and temperatures are stable even under load
+Articat mx-4 thermal paste does the job
+![nvidia-smi](/assets/p106/thermal_paste.jpg)
 
+```
+nvidia-smi
+```
 ![nvidia-smi](/assets/p106/nvidia_smi.png)
 
