@@ -22,7 +22,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username:  MatPoliquin
 logo: assets/logo.png
 paginate: 5
-instagram: https://www.instagram.com/videogames.ai/
+#instagram: https://www.instagram.com/videogames.ai/
+google_analytics: UA-132777834-1
 
 # Build settings
 markdown: kramdown
