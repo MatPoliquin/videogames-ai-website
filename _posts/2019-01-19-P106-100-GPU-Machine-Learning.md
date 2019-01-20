@@ -46,7 +46,7 @@ The p106-100 is originally intended for mining crypto-currencies here are the sp
 As you may have noticed it is base on the gp106 pascal architecture gpu, same as for the GTX 1060 in all it's variant (3GB, 5GB, 6GB)
 
 
-####The Differences
+#### The Differences
 Supports PCIE 1.1 16x as opposed to PCIE 3.0 16x for the 1060 6GB
 p106 driver does not support directX in order to prevent most games from using it easily
 Althought some [__hacks__](https://linustechtips.com/main/topic/1001580-p106-now-support-directx-not-official/) exists
