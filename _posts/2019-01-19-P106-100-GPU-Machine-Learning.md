@@ -17,10 +17,10 @@ _Performance tests results_
 | Cifar10 peak     | ~8000 examples/sec | ~7000 examples/sec        |
 | Alexnet forward  | 0.083s/batch	    | 0.103s/batch              |
 | Alexnet backward | 0.193s/batch       | 0.243s/batch              |
-| PPO2 Atari Pong  | ~1110 frame/sec    | ~1000 frames/sec          |
-| Host to Device   | 3094.4 MB/s        | 11205.9 MB/s              |  
-| Device to Host   | 3207.3 MB/s        | 12788.0 MB/s              |
-| Device to Device | 152542.9 MB/s      | 115346.1 MB/s             |           
+| PPO2 Atari Pong  | ~1100 frame/sec    | ~1000 frames/sec          |
+| Host to Device   | 3260.4 MB/s        | 11205.9 MB/s              |  
+| Device to Host   | 3276.9 MB/s        | 12788.0 MB/s              |
+| Device to Device | 152050.9 MB/s      | 115346.1 MB/s             |           
 
 
 #### Software
@@ -30,10 +30,10 @@ _Performance tests results_
 *	NVIDIA driver 390.77
 
 #### Hardware
-*	Gigabyte P106-100
-*	2x E5 2676 v3 ES (30MB cache, 12C/24T)
-*	16 GB DDR4 2133Mhz
-*	Dell T7810 dual socket motherboard
+*	Zotac P106-100
+*	E5 2667 v3 ES (20MB, 8C/16T)
+*	32 GB DDR4 2400Mhz
+*	Asus x99-e WS motherboard
 
 # Read on for the details...
 
@@ -51,7 +51,7 @@ Supports PCIE 1.1 16x as opposed to PCIE 3.0 16x for the 1060 6GB
 p106 driver does not support directX in order to prevent most games from using it easily
 Althought some [__hacks__](https://linustechtips.com/main/topic/1001580-p106-now-support-directx-not-official/) exists
 
-One critically overlooked component for performance is the PCIE bandwi
+One critically overlooked component for performance is the PCIE bandwidth
 The p106-100 is locked at pcie 1.1 so **max bandwith is at 4GB/s as opposed to 16GB/s**
 This can have a significant impact depending on you usage but typically you can expect around 15% hit on performance.
 However on alexnet test the impact is minimal since very little transfers are made during the tests
