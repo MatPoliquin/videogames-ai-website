@@ -6,14 +6,14 @@ date:   2019-01-19 00:00:00 +0800
 
 This is a performance test of the p106-100 mining card for machine learning.
 
-### Conclusion for those in a hurry:
+### Conclusion for those in a hurry
 Bang for the buck this one of the best cards available if your VRAM usage is under 6GB. It has similar performance to a GTX 1060 for standard benchmarks at **one third of the price** on the second hand market
 
 _Performance tests results_
 
 | Test        	   | P106-100           | GTX1060 (the 5GB variant) |
 |:-----------------|:-------------------|:--------------------------|
-| Cifar10 peak     | ~8000 examples/sec | 7000 examples/sec         |
+| Cifar10 peak     | ~8000 examples/sec | ~7000 examples/sec        |
 | Alexnet forward  | 0.083s/batch	    | 0.103s/batch              |
 | Alexnet backward | 0.193s/batch       | 0.243s/batch              |
 | PPO2 Atari Pong  | ~1110 frame/sec    | ~1000 frames/sec          |
@@ -45,10 +45,10 @@ The p106-100 is originally intended for mining crypto-currencies here are the sp
 As you may have noticed it is base on the gp106 pascal architecture gpu, same as for the GTX 1060 in all it's variant (3GB, 5GB, 6GB)
 
 
-**The Differences**
+####The Differences
 Supports PCIE 1.1 16x as opposed to PCIE 3.0 16x for the 1060
 p106 driver doesn't not support directX in order to prevent gamer
-Althought some hacks exists: link
+Althought some [hacks](https://linustechtips.com/main/topic/1001580-p106-now-support-directx-not-official/) exists
 
 
 One critically overlooked component is the PCIE bandwith
