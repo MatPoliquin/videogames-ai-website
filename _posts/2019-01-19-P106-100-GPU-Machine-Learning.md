@@ -46,17 +46,19 @@ As you may have noticed it is base on the gp106 pascal architecture gpu, same as
 
 
 ####The Differences
-Supports PCIE 1.1 16x as opposed to PCIE 3.0 16x for the 1060
-p106 driver doesn't not support directX in order to prevent gamer
-Althought some [hacks](https://linustechtips.com/main/topic/1001580-p106-now-support-directx-not-official/) exists
+Supports PCIE 1.1 16x as opposed to PCIE 3.0 16x for the 1060 6GB
+p106 driver does not support directX in order to prevent most games from using it easily
+Althought some [__hacks__](https://linustechtips.com/main/topic/1001580-p106-now-support-directx-not-official/) exists
 
-
-One critically overlooked component is the PCIE bandwith
-the p106-100 is locked at pcie 1.1 so bandwith is at 4GT/s as opposed to 16GT/s
+One critically overlooked component for performance is the PCIE bandwi
+The p106-100 is locked at pcie 1.1 so **max bandwith is at 4GB/s as opposed to 16GB/s**
 This can have a significant impact depending on you usage but typically you can expect around 15% hit on performance.
 However on alexnet test the impact is minimal since very little transfers are made during the tests
+Moreover if you use the card in a PCIE 8x slot for example you will have an effective 2 GB/s and you might experience another 15% hit depending on usage.
+Lots of motherboards support only one full speed pcie 16x slot at a time. When two slots are used speed is down to 8x so if you are using the p106 as a second card you want to check your motherboard specs.
+Moreoever if bandwith performance is critical for your use case, p106 might not be the best choice. That said even with a 15% hit on performance it's still offers a very good price/performance ratio.
 
-Moreover if you use the card in a PCIE 8x slot for example you will have a effective 2 GT/s and you might experience another 15% hit depending on usage.
+
 
 ## Performance test details
 Here are screenshots of various tests I made
@@ -78,12 +80,13 @@ python3 -m baselines.run --alg=ppo2 --env=PongNoFrameskip-v4 --num_timesteps=2e7
 
 
 ## Temperatures
-I re-applied some thermal paste on the card and temperatures are stable even under load
-Articat mx-4 thermal paste does the job
+I re-applied some thermal paste on the card and temperatures are stable even under load.
+Artic Cat MX-4 thermal paste does the job
 ![nvidia-smi](/assets/p106/thermal_paste.jpg)
 
 ```
 nvidia-smi
 ```
 ![nvidia-smi](/assets/p106/nvidia_smi.png)
+
 
