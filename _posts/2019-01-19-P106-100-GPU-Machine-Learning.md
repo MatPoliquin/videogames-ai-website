@@ -2,6 +2,7 @@
 layout: post
 title:  "P106-100 mining card used for Machine Learning"
 date:   2019-01-19 00:00:00 +0800
+tags: [hardware, gpu, machine learning]
 ---
 
 This is a performance test of the p106-100 mining card for machine learning.
