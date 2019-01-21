@@ -1,11 +1,15 @@
 ---
 layout: post
 title:  "Installing CUDA 9.0 on Ubuntu 18.04"
-date:   2019-01-19 00:00:00 +0800
+date:   2019-01-21 00:00:00 +0800
 tags: [hardware, gpu, machine learning]
 ---
 
-```
+
+
+
+
+```shell
 sudo apt-get install g++ freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev
 sudo apt install gcc-6
 sudo apt install g++-6
