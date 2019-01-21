@@ -25,8 +25,7 @@ paginate: 5
 #instagram: https://www.instagram.com/videogames.ai/
 google_analytics: UA-132777834-1
 
-author:
-    twitter: MatPoliquin
+author: Mathieu Poliquin
 
 # Build settings
 markdown: kramdown
