@@ -8,7 +8,7 @@ tags: [hardware, gpu, machine learning]
 This is a performance test of the p106-100 mining card for machine learning.
 
 ### Conclusion for those in a hurry
-Bang for the buck this one of the best cards available if your VRAM usage is under 6GB. It has similar performance to a GTX 1060 for standard benchmarks at **one third of the price** on the second hand market
+Bang for the buck this is one of the best cards available if your VRAM usage is under 6GB. It has similar performance to a GTX 1060 for standard benchmarks at **one third of the price** on the second hand market
 
 _Performance tests results_
 
@@ -37,7 +37,7 @@ _Performance tests results_
 
 # Read on for the details...
 
-Recently mining crypto-currentcies has become less profitable and as a result lots of miners are dumping their GPUs on the second hand market and this is driving the prices down. Moreover lots of those gpu have no head display and are firmware and/or driver locked so they cannot be used by most games out of the box driving the price down further.
+Recently mining crypto-currencies has become less profitable and as a result lots of miners are dumping their GPUs on the second hand market and this is driving the prices down. Moreover lots of those gpu have no head display and are firmware and/or driver locked so they cannot be used by most games out of the box driving the price down further.
 
 The p106-100 is originally intended for mining crypto-currencies here are the specs
 
@@ -51,11 +51,11 @@ Supports PCIE 1.1 16x as opposed to PCIE 3.0 16x for the 1060 6GB
 p106 driver does not support directX in order to prevent most games from using it easily
 Althought some [__hacks__](https://linustechtips.com/main/topic/1001580-p106-now-support-directx-not-official/) exists
 
-One critically overlooked component for performance is the PCIE bandwi
+One critically overlooked component for performance is the PCIE bandwidth
 The p106-100 is locked at pcie 1.1 so **max bandwith is at 4GB/s as opposed to 16GB/s**
 This can have a significant impact depending on you usage but typically you can expect around 15% hit on performance.
 However on alexnet test the impact is minimal since very little transfers are made during the tests
-Moreover if you use the card in a PCIE 8x slot for example you will have an effective 2 GB/s and you might experience another 15% hit depending on usage.
+Moreover if you use the card in a PCIE 8x slot for example you will have a maximum bandwidth of 2 GB/s and you might experience another 15% hit depending on usage.
 Lots of motherboards support only one full speed pcie 16x slot at a time. When two slots are used speed is down to 8x so if you are using the p106 as a second card you want to check your motherboard specs.
 Moreoever if bandwith performance is critical for your use case, p106 might not be the best choice. That said even with a 15% hit on performance it's still offers a very good price/performance ratio.
 
