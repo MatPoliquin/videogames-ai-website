@@ -5,10 +5,10 @@ date:   2019-01-19 00:00:00 +0800
 tags: [hardware, gpu, machine learning]
 ---
 
-This is a performance test of the p106-100 mining card for machine learning.
+Recently lots of cheap mining specific cards are overflooding the second hand market, such as the p106-100. Can it be effective for machine learning?
 
 ### Conclusion for those in a hurry
-Bang for the buck this is one of the best cards available if your VRAM usage is under 6GB. It has similar performance to a GTX 1060 for standard benchmarks at **one third of the price** on the second hand market
+Bang for the buck this is one of the best cards available if your VRAM usage is under 6GB and PCIE bandwidth usage is reasonable. It has similar performance to a GTX 1060 for standard benchmarks at **one third of the price** on the second hand market
 
 _Performance tests results_
 
@@ -24,6 +24,7 @@ _Performance tests results_
 
 
 #### Software
+*	Ubuntu 18.04
 *	Tensorflow 1.12
 *	CUDA 9.0
 *	CUDNN 7.31
@@ -34,6 +35,11 @@ _Performance tests results_
 *	2x E5 2676 v3 ES (30MB cache, 12C/24T)
 *	16 GB DDR4 2133Mhz
 *	Dell T7810 dual socket motherboard
+
+
+Note:
+I did not have a GTX 1060 6GB to compare against (only the 5 GB variant). Please keep in mind that the 5GB variant has a difference in memory bandwidth capacity: 168GB/s (5 GB card) as opposed to 192GB/s (6 GB card) and since these ML benchmarks are bandwidth bound it affects the performance.
+
 
 # Read on for the details...
 
