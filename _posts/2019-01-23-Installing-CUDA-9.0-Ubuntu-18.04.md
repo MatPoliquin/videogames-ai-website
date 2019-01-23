@@ -6,9 +6,9 @@ tags: [cuda, ubuntu, gpu, machine learning]
 ---
 
 
-The current version of [Tensorflow](https://www.tensorflow.org/install/source) (1.12) as of this writting supports CUDA 9.0. Tensorflow 2.0 will support CUDA 10.0
+The current version of [Tensorflow](https://www.tensorflow.org/install/source) (1.12 as of this writting) supports CUDA 9.0. Tensorflow 2.0 will support CUDA 10.0
 
-Problem is Ubuntu 18.04 supports CUDA 9.1 but there is no official support for CUDA 9.0.
+Problem is that Ubuntu 18.04 supports CUDA 9.1 but there is no official support for CUDA 9.0.
 
 So there two options:
 *	Build Tensorflow from source to support CUDA 9.1
@@ -17,16 +17,16 @@ So there two options:
 I would recommend the second option as it's the easiest and I tested it countless times on various setups
 I also recommend you follow the steps bellow on a **clean install** of Ubuntu 18.04
 
-
-Requirements:
+## Step 1 - Requirements
+Required files you can find on the nvidia developper site
 *	cuda_9.0.176_384.81_linux.run
 *	cudnn-9.0-linux-x64-v7.3.1.20.tgz
 
 I would recommend these exact file versions. If you need to use other versions check compatibility with tensorflow first [__here__](https://www.tensorflow.org/install/source)
 
 
-## bash commands to copy-paste
-_Note: This is a condensed version (easier to follow) of instructions I found [__here__](https://gist.github.com/Mahedi-61/2a2f1579d4271717d421065168ce6a73).
+## Step 2 bash commands to copy-paste
+_Note: This is a condensed version (easier to copy-paste-follow) of instructions I found [__here__](https://gist.github.com/Mahedi-61/2a2f1579d4271717d421065168ce6a73).
 The original author have kindly written explainations for each command if you need_
 
 ```shell
@@ -48,11 +48,9 @@ sudo chmod a+r /usr/local/cuda-9.0/lib64/libcudnn*
 
 At the "sudo ./cuda_9.0.176_384.81_linux.run --override" step use the following options:
 
-![cuda options](/assets/p106/cuda_install.png)
+![cuda options](/assets/cuda/cuda_install.png)
 
 That's it!!
-
-
 
 ## Optional:
 You can compile CUDA samples.
