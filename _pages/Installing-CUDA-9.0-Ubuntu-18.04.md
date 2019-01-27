@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Installing CUDA 9.0 on Ubuntu 18.04"
-date:   2019-01-23 00:00:00 +0800
+permalink: /Ubuntu
 tags: [cuda, ubuntu, gpu, machine learning]
 ---
 
