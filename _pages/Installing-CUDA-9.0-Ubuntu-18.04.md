@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Installing CUDA 9.0 on Ubuntu 18.04"
-permalink: /Install-CUDA-9.0-Ubuntu-18.04
+permalink: /Install
 tags: [cuda, ubuntu, gpu, machine learning]
 ---
 
