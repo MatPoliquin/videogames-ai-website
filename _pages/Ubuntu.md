@@ -5,7 +5,7 @@ permalink: /Ubuntu-howto
 ---
 
 ### Install CUDA 9.0 on Ubuntu 18.04
-[click here!](./Install-CUDA-9.0-Ubuntu-18.04.html)
+[click here!](./Install-CUDA-9-0-Ubuntu-18-04.html)
 
 ### Resolved time conflict when dual booting with windows
 Just type this command at the terminal
