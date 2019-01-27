@@ -5,8 +5,9 @@ date:   2019-01-19 00:00:00 +0800
 tags: [hardware, gpu, machine learning]
 ---
 
-Recently lots of cheap mining specific cards are overflooding the second hand market, such as the p106-100. Can it be effective for machine learning?
 ![disassembled gpu](/assets/p106/disassembled_gpu.jpg)
+Recently lots of cheap mining specific cards are overflooding the second hand market, such as the p106-100. Can it be effective for machine learning?
+
 
 ### Conclusion for those in a hurry
 Bang for the buck this is one of the best cards available if your VRAM usage is under 6GB and PCIE bandwidth usage is reasonable. It has similar performance to a GTX 1060 for standard benchmarks at **one third of the price** on the second hand market
