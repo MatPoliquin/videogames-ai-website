@@ -8,10 +8,7 @@ permalink: /Ubuntu-howto
 [click here!](./Install-CUDA-9-0-Ubuntu-18-04.html)
 
 ### Install ROCm on Ubuntu 18.04
-I tried the script provided by [aieater github page](https://github.com/aieater/rocm_tensorflow_info). It works quite well althought in my case I had to re-install tensorflow-rocm after running their script
-```shell
-pip3 tensorflow-rocm
-```
+I tried the script provided by [aieater github page](https://github.com/aieater/rocm_tensorflow_info). It works quite well althought in my case I had to re-install tensorflow-rocm (pip3 install tensorflow-rocm) after running their script. In any case it's much simpler than following AMD's official instructions.
 
 ### Resolved time conflict when dual booting with windows
 Just type this command at the terminal
