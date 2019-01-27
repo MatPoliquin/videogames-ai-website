@@ -5,7 +5,7 @@ date:   2019-01-19 00:00:00 +0800
 tags: [hardware, gpu, machine learning]
 ---
 
-![disassembled gpu](/assets/p106/disassembled_gpu.jpg)
+![disassembled gpu](/assets/p106/disassembled_gpu.jpg) <br>
 Recently lots of cheap mining specific cards are overflooding the second hand market, such as the p106-100. Can it be effective for machine learning?
 
 

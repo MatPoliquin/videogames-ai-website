@@ -5,7 +5,7 @@ date:   2019-01-27 00:00:00 +0800
 tags: [gpu, rocm, machine learning, rx550, hardware]
 ---
 
-![rx550](/assets/rx550/rx550.jpg)
+![rx550](/assets/rx550/rx550.jpg) <br>
 Testing the ultra budget AMD RX 550 gaming card for machine learning
 
 Recently I saw this test [RX470 + ROCM](https://qiita.com/syoyo/items/c6bc6dd4efbc10049640) (It's in Japanese but there is many screenshots)
