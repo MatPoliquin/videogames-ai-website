@@ -5,8 +5,8 @@ date:   2019-01-27 00:00:00 +0800
 tags: [gpu, rocm, machine learning, rx550, hardware]
 ---
 
-
-# Testing the ultra budget AMD RX550 gaming card for machine learning
+![rx550](/assets/rx550/rx550.jpg)
+Testing the ultra budget AMD RX 550 gaming card for machine learning
 
 Recently I saw this test [RX470 + ROCM](https://qiita.com/syoyo/items/c6bc6dd4efbc10049640) (It's in Japanese but there is many screenshots)
 The author reports **~7600 examples/sec** with cifar10 on a **RX470 8GB** mining card. This is on par with a GTX 1060 at less half then price on the second hand market AND with 8 GB. Lots of Neural Nets require 8GB or more for training, so it's a significant advantage. Moreover, contrary to NVIDIA cards, you can mod the bios of AMD RX cards to boost the clock and squeeze even more performance.
@@ -15,7 +15,7 @@ The author reports **~7600 examples/sec** with cifar10 on a **RX470 8GB** mining
 So all of this made me curious to see how much performance, the AMD RX550, one of the cheapest Polaris 11 gpu based cards can deliver.
 
 
-##Conclusion for people in a hurrry
+## Conclusion for people in a hurrry
 I bought one second-hand for under 168 yuan on taobao (25 US$/32 CAD$). Even with that very low price the p106-100 and the Sapphire RX470 8GB mining card delivers better bang for the buck.
 That said if you want a very cheap first card to play with cifar10 datasets it could be good a choice, but keep in mind you will need to upgrade soon after as 2GB of VRAM is far from enough for most Machine Learning tasks
 **Important note**: I unfortunatly got a faulty card, which crashed often in both Ubuntu with or without ROCM drivers and also unstable in Windows 10.
@@ -40,5 +40,15 @@ Hardware
 *	32GB DDR4 ram 2400Mhz
 
 
-##Hardware Info
+# Details
+### Hardware Info
 ![gpu-z](/assets/rx550/RX550_GPU-Z.gif)
+
+### rocm-smi
+```shell
+rocm-smi
+```
+![rocm-smi](/assets/rx550/rocm-smi.png)
+
+
+
