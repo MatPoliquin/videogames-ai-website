@@ -30,8 +30,7 @@ You can execute these commmands at the terminal
 sudo apt-get --assume-yes install python3 python3-pip git zlib1g-dev libopenmpi-dev ffmpeg
 sudo apt-get update
 
-#note: gym-retro installs tensorflow as dependency
-pip3 install --timeout 1000 opencv-python cmake anyrl gym-retro
+pip3 install --timeout 1000 opencv-python cmake anyrl gym-retro joblib atari-py tensorflow
 
 git clone https://github.com/openai/baselines.git
 cd baselines
