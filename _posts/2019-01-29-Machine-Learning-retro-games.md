@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "OpenAI baselines Intro"
-date:   2019-01-19 00:00:00 +0800
-tags: [openai, ppo2, machine learning]
+title:  "Intro to Machine Learning trained on retro games"
+date:   2019-01-19 00:06:00 +0800
+tags: [machine learning, ppo2, openai, baselines, retro games]
 ---
 
 This is a quick intro to get started running Machine Learning on retro games (Atari, NES, SNES, Gameboy, Master System, Genesis). I find it's a great way to start learning about Tensorflow and Machine Learning in general.
