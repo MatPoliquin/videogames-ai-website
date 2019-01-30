@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AMD RX550 + ROCM ultra budget Machine Learning"
-date:   2019-01-27 00:00:00 +0800
+date:   2019-01-27 00:00:00 +0000
 tags: [gpu, rocm, machine learning, rx550, hardware]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Intro to Machine Learning trained on retro games"
-date:   2019-01-29 06:00:00 +0800
+date:   2019-01-29 06:00:00 +0000
 tags: [machine learning, ppo2, openai, baselines, retro games]
 ---
 

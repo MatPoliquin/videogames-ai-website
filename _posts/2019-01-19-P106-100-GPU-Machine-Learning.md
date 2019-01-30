@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "P106-100 mining card used for Machine Learning"
-date:   2019-01-19 00:00:00 +0800
+date:   2019-01-19 00:00:00 +0000
 tags: [hardware, gpu, machine learning]
 ---
 
