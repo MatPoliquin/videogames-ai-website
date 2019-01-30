@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Ubuntu howto"
-permalink: Ubuntu-howto
+permalink: /Ubuntu-howto
 ---
 
 ### Install CUDA 9.0 on Ubuntu 18.04
