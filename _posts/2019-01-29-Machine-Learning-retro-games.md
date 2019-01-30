@@ -58,7 +58,7 @@ Make sure everything runs well by testing Atari Pong
 python3 -m baselines.run --alg=ppo2 --env=PongNoFrameskip-v4 --num_timesteps=2e7
 ```
 
-The input should look like this:
+The output should look like this:
 ![baselines](/assets/p106/baselines.png)
 
 
@@ -69,7 +69,7 @@ On a GTX 1060 you should get around 1000 fps of training. If you have much less 
 *	Make sure your CPU is powerful enough. Usually you need a cinebench score of at least around 1000 because you need run multiple instance of the emulator in paralelle
 
 
-## Example: Machine Learning on Super Mario Bros Nes
+## Example: PPO2 on Super Mario Bros Nes
 
 First you need to import the SuperMarioBros rom.
 Unzip the rom and run this command in the directory containing your rom.
@@ -85,11 +85,11 @@ python3 -m baselines.run --alg=ppo2 --env=SuperMarioBros-Nes --num_timesteps=2e7
 ```
 
 Parameters:
-*	--alg is for selecting the ML algorithm. PPO2 is the best in most cases, PPO2 is basis for the DOTA AI Player.
-*	--env is for which game you want to test
-*	--num_timesteps is the number of frames you want to train it on. 2e7 (20M frames) is enough for PPO2 to learn how to pass the first level. Some levels may require much more
-*	--num_env is by default the number of logical processors you have, normally no need touch it unless you are debugging in which case set num_env=1
-*	--network is for which type of neural net you want to use, by default it's a CNN but you can try cnn_small and mlp. cnn_small as the name implies is a smaller version of the default CNN and thus requires less processing power but at the expense of learning performance
+*	**--alg** is for selecting the ML algorithm. PPO2 is the best in most cases, PPO2 is basis for the DOTA AI Player.
+*	**--env** is for which game you want to test
+*	**--num_timesteps** is the number of frames you want to train it on. 2e7 (20M frames) is enough for PPO2 to learn how to pass the first level. Some levels may require much more
+*	**--num_env** is by default the number of logical processors you have, normally no need touch it unless you are debugging in which case set num_env=1
+*	**--network** is for which type of neural net you want to use, by default it's a CNN but you can try cnn_small and mlp. cnn_small as the name implies is a smaller version of the default CNN and thus requires less processing power but at the expense of learning performance
 
 It's same process for other console games altought you will likely need to add it to a list in the source code first.
 [run.py](https://github.com/openai/baselines/blob/master/baselines/run.py)
@@ -111,4 +111,43 @@ _game_envs['retro'] = {
 
 ## Interesting technical details
 
-The input to the neural net is stack of four 84x84 images, normalized from 0-255 int to 0.0 to 1.0 floats
+### Neural Net Input
+By default the input to the neural net is a **stack of four 84x84 greyscale images**, normalized from 0-255 int to 0.0 to 1.0 floats
+You can change the default image size in the code below. Keep in mind the bigger the image size, the bigger the neural net becomes and the more flops needed and the longer your neural net will take to converge. If the image size is too small, some important details are left out and PPO2 won't be able to converge to an optimal policy. One good trick is to play yourself at that resolution, if you have trouble than it might be too small for your NN as well.
+
+
+code to pre-process image size
+[atari_wrappers.py](https://github.com/openai/baselines/blob/master/baselines/common/atari_wrappers.py)
+```python
+class WarpFrame(gym.ObservationWrapper):
+    def __init__(self, env, width=84, height=84, grayscale=True):
+        """Warp frames to 84x84 as done in the Nature paper and later work."""
+        gym.ObservationWrapper.__init__(self, env)
+        self.width = width
+        self.height = height
+     
+     [...]
+```
+Note: retro env for other consoles also seldom uses functions from atari_wrappers.py in addition to retro_wrappers.py
+
+In general you can check these functions to see what type of pre-processing and post processing are done
+[retro_wrappers.py](https://github.com/openai/baselines/blob/master/baselines/common/retro_wrappers.py)
+```python
+def make_retro(*, game, state, max_episode_steps, **kwargs):
+    import retro
+    env = retro.make(game, state, **kwargs)
+    env = StochasticFrameSkip(env, n=4, stickprob=0.25)
+    if max_episode_steps is not None:
+        env = TimeLimit(env, max_episode_steps=max_episode_steps)
+    return env
+def wrap_deepmind_retro(env, scale=True, frame_stack=4):
+    """
+    Configure environment for retro games, using config similar to DeepMind-style Atari in wrap_deepmind
+    """
+    env = WarpFrame(env)
+    env = ClipRewardEnv(env)
+    env = FrameStack(env, frame_stack)
+    if scale:
+        env = ScaledFloatFrame(env)
+    return env
+```
