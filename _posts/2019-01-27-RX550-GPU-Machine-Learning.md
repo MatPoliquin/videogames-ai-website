@@ -50,5 +50,12 @@ rocm-smi
 ```
 ![rocm-smi](/assets/rx550/rocm-smi.png)
 
+### cifar10
+![cifar10](/assets/rx550/cifar10.png)
 
+### Atari Pong baselines
+I would have expected somewhere between 400-500 fps considering cifar10 performance is quite good compared to the specs of the card. Since rocm is still in early development is possible that OpenAI baselines uses some tensorflow features that are not yet full optimized by ROCm. I did not have the time to profile it yet.
+![Atari Pong](/assets/rx550/baselines.png)
 
+### clinfo details
+![clinfo](/assets/rx550/clinfo.png)

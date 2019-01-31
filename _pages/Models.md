@@ -1,12 +1,9 @@
 ---
 layout: page
-title:  "Neural Network Downloads"
+title:  "Tensorflow Models Downloads"
 permalink: /Models
 tags: [tensorflow, machine learning, models, games]
 ---
-
-
-##Tensorflow Models
 
 Run with:
 ```shell

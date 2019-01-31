@@ -25,7 +25,7 @@ Required files you can find on the nvidia developper site
 I would recommend these exact file versions. If you need to use other versions check compatibility with tensorflow first [__here__](https://www.tensorflow.org/install/source)
 
 
-## Step 2 bash commands to copy-paste
+## Step 2 - shell commands to copy-paste
 _Note: This is a condensed version (easier to copy-paste-follow) of instructions I found [__here__](https://gist.github.com/Mahedi-61/2a2f1579d4271717d421065168ce6a73).
 The original author have kindly written explainations for each command if you need_
 
