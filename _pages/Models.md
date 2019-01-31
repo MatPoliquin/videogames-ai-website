@@ -2,6 +2,7 @@
 layout: page
 title:  "Neural Network Downloads"
 permalink: /Models
+tags: [tensorflow, machine learning, models, games]
 ---
 
 
