@@ -108,8 +108,29 @@ _game_envs['retro'] = {
     'SpaceInvaders-Snes',
 }
 ```
+## Play/Load/Save Neural Networks
 
-## Interesting technical details
+
+#### Save
+``` shell
+--save_path=./PATH_TO_MODEL
+```
+#### Load
+``` shell
+--load_path=./PATH_TO_MODEL
+```
+#### Play
+Notice that num_timesteps is 0, if you put a number bigger than if will train first for that amount
+``` shell
+python3 -m baselines.run --alg=ppo2 --env=PongNoFrameskip-v4 --num_timesteps=0 --play --load_path=./PATH_TO_MODEL
+```
+
+## Record video
+``` shell
+--save_video_interval=1 --save_video_length=10000
+```
+
+## Technical details
 
 ### Neural Net Input
 By default the input to the neural net is a **stack of four 84x84 greyscale images**, normalized from 0-255 int to 0.0 to 1.0 floats
