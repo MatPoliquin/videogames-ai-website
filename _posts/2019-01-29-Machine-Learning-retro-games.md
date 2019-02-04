@@ -9,16 +9,13 @@ tags: [machine learning, ppo2, openai, baselines, retro games]
 
 This is a quick intro to get started running Machine Learning on retro games (Atari, NES, SNES, Gameboy, Master System, Genesis). I find it's a great way to start learning about Tensorflow and Machine Learning in general.
 
+
 Currently the easiest way is to use OpenAI's **baselines** and **gym-retro**
 *   [baselines)(collection of ML algos)](https://github.com/openai/baselines)
 *   [gym-retro(console env)](https://github.com/openai/baselines)
 
-As mentionned on their github page OpenAI baselines is meant to serve as reference for high quality implementations of various RL algorithms.
-For example you have their implementation of PPO2 (Proximal Policy Optimization) that you can apply to thousands of games ranging from Atari Pong, Sonic The Hedgehog on the Genesis to Super Mario Bros on the NES.
+As mentionned on their github page OpenAI baselines is meant to serve as reference for high quality implementations of various RL algorithms. For example you have their implementation of PPO2 (Proximal Policy Optimization) that you can apply to thousands of games ranging from Atari Pong, Sonic The Hedgehog on the Genesis to Super Mario Bros on the NES.
 
-I also think it's useful to learn about Machine Learning because it lets you easily experiment with different algorithms and environments. Altought the code is not so simple to follow at first.
-
-I would advise starting with SpinningUp, but if you already have a bit of background and/or feel adventurous, baselines is great.
 
 You can find an intro and installation guide to baselines at their [Github page](https://github.com/openai/baselines)
 It's decent but if you want extra details on how to get started you can read on :)
