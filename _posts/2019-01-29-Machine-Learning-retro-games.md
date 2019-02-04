@@ -10,10 +10,10 @@ tags: [machine learning, ppo2, openai, baselines, retro games]
 This is a quick intro to get started running Machine Learning on retro games (Atari, NES, SNES, Gameboy, Master System, Genesis). I find it's a great way to start learning about Tensorflow and Machine Learning in general.
 
 Currently the easiest way is to use OpenAI's **baselines** and **gym-retro**
-[baselines)(collection of ML algos)](https://github.com/openai/baselines)
-[gym-retro(console env)](https://github.com/openai/baselines)
+*   [baselines)(collection of ML algos)](https://github.com/openai/baselines)
+*   [gym-retro(console env)](https://github.com/openai/baselines)
 
-As they say OpenAI baselines is meant to serve as reference for high quality implementations of various RL algorithms.
+As mentionned on their github page OpenAI baselines is meant to serve as reference for high quality implementations of various RL algorithms.
 For example you have their implementation of PPO2 (Proximal Policy Optimization) that you can apply to thousands of games ranging from Atari Pong, Sonic The Hedgehog on the Genesis to Super Mario Bros on the NES.
 
 I also think it's useful to learn about Machine Learning because it lets you easily experiment with different algorithms and environments. Altought the code is not so simple to follow at first.
@@ -89,7 +89,7 @@ Parameters:
 *	**--env** is for which game you want to test
 *	**--num_timesteps** is the number of frames you want to train it on. 2e7 (20M frames) is enough for PPO2 to learn how to pass the first level. Some levels may require much more
 *	**--num_env** is by default the number of logical processors you have, normally no need touch it unless you are debugging in which case set num_env=1
-*	**--network** is for which type of neural net you want to use, by default it's a CNN but you can try cnn_small and mlp. cnn_small as the name implies is a smaller version of the default CNN and thus requires less processing power but at the expense of learning performance
+*	**--network** is for which type of neural net you want to use, by default it's a CNN but you can try cnn_small and mlp. cnn_small as the name implies is a smaller version of the default CNN and thus requires less processing power but at the expense of learning performance.
 
 It's same process for other console games altought you will likely need to add it to a list in the source code first.
 [run.py](https://github.com/openai/baselines/blob/master/baselines/run.py)
@@ -127,48 +127,16 @@ python3 -m baselines.run --alg=ppo2 --env=PongNoFrameskip-v4 --num_timesteps=0 -
 
 ## Record video
 ``` shell
---save_video_interval=1 --save_video_length=10000
+--save_video_interval=1 --save_video_length=NUM_TIMESTEPS
 ```
 
-## Technical details
+## Metrics with Tensorboard
+Before running the experiment you need to set the OPENAI_LOG_FORMAT variable
 
-### Neural Net Input
-By default the input to the neural net is a **stack of four 84x84 greyscale images**, normalized from 0-255 int to 0.0 to 1.0 floats
-You can change the default image size in the code below. Keep in mind the bigger the image size, the bigger the neural net becomes and the more flops needed and the longer your neural net will take to converge. If the image size is too small, some important details are left out and PPO2 won't be able to converge to an optimal policy. One good trick is to play yourself at that resolution, if you have trouble than it might be too small for your NN as well.
-
-
-code to pre-process image size
-[atari_wrappers.py](https://github.com/openai/baselines/blob/master/baselines/common/atari_wrappers.py)
-```python
-class WarpFrame(gym.ObservationWrapper):
-    def __init__(self, env, width=84, height=84, grayscale=True):
-        """Warp frames to 84x84 as done in the Nature paper and later work."""
-        gym.ObservationWrapper.__init__(self, env)
-        self.width = width
-        self.height = height
-     
-     [...]
+``` shell
+export OPENAI_LOG_FORMAT='stdout,log,csv,tensorboard'
 ```
-Note: retro env for other consoles also seldom uses functions from atari_wrappers.py in addition to retro_wrappers.py
 
-In general you can check these functions to see what type of pre-processing and post processing are done
-[retro_wrappers.py](https://github.com/openai/baselines/blob/master/baselines/common/retro_wrappers.py)
-```python
-def make_retro(*, game, state, max_episode_steps, **kwargs):
-    import retro
-    env = retro.make(game, state, **kwargs)
-    env = StochasticFrameSkip(env, n=4, stickprob=0.25)
-    if max_episode_steps is not None:
-        env = TimeLimit(env, max_episode_steps=max_episode_steps)
-    return env
-def wrap_deepmind_retro(env, scale=True, frame_stack=4):
-    """
-    Configure environment for retro games, using config similar to DeepMind-style Atari in wrap_deepmind
-    """
-    env = WarpFrame(env)
-    env = ClipRewardEnv(env)
-    env = FrameStack(env, frame_stack)
-    if scale:
-        env = ScaledFloatFrame(env)
-    return env
+``` shell
+tensorboard --logdir=PATH_TO_TB_DIR
 ```
