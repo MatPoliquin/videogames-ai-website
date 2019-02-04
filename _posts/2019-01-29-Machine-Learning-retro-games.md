@@ -11,8 +11,8 @@ This is a quick intro to get started running Machine Learning on retro games (At
 
 
 Currently the easiest way is to use OpenAI's **baselines** and **gym-retro**
-*   [baselines)(collection of ML algos)](https://github.com/openai/baselines)
-*   [gym-retro(console env)](https://github.com/openai/baselines)
+*   [baselines (collection of ML algos)](https://github.com/openai/baselines)
+*   [gym-retro (console env)](https://github.com/openai/baselines)
 
 As mentionned on their github page OpenAI baselines is meant to serve as reference for high quality implementations of various RL algorithms. For example you have their implementation of PPO2 (Proximal Policy Optimization) that you can apply to thousands of games ranging from Atari Pong, Sonic The Hedgehog on the Genesis to Super Mario Bros on the NES.
 
