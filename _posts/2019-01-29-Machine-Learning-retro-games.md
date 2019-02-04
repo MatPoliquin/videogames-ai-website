@@ -37,17 +37,16 @@ pip3 install -e .
 ```
 
 ## Step 2 - If you want to use a GPU
-If you want to use tensorflow on an NVIDIA gpu, here is guide for installing CUDA 9.0
-[click here!] (./Install-CUDA-9-0-Ubuntu-18-04.html)
+*   If you want to use tensorflow on an NVIDIA gpu, here is guide for installing CUDA 9.0:
+[click here!](./Install-CUDA-9-0-Ubuntu-18-04.html)
 
-If you have a AMD card, you can install ROCm with a convenient script used by gpueater
-[click here!] (./https://github.com/aieater/rocm_tensorflow_info)
+*   If you have a AMD card, you can install ROCm with a convenient script used by gpueater:
+[click here!](https://github.com/aieater/rocm_tensorflow_info)
 
-after that just type
+after that, in the terminal, just type
 ```shell
 pip3 install tensorflow-gpu
 ```
-
 
 ## Step 3 - Test your setup
 Make sure everything runs well by testing Atari Pong
