@@ -7,7 +7,7 @@ tags: [tensorflow, machine learning, models, games]
 
 Run with:
 ```shell
-python3 -m baselines.run --alg=ppo2 --env=SuperMarioBros-Nes --num_timesteps=2e7 --load_path=PATH_TO_MODEL
+python3 -m baselines.run --alg=ppo2 --env=SuperMarioBros-Nes --num_timesteps=0 --load_path=PATH_TO_MODEL --play
 ```
 [Click here for more info](./2019/01/29/Machine-Learning-retro-games.html)
 
