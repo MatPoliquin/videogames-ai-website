@@ -126,7 +126,7 @@ python3 -m baselines.run --alg=ppo2 --env=PongNoFrameskip-v4 --num_timesteps=0 -
 --save_video_interval=1 --save_video_length=NUM_TIMESTEPS
 ```
 
-## Metrics with Tensorboard
+## Debug Info + Metrics with Tensorboard
 Before running the experiment you need to set the OPENAI_LOG_FORMAT variable
 
 ``` shell
@@ -136,3 +136,5 @@ export OPENAI_LOG_FORMAT='stdout,log,csv,tensorboard'
 ``` shell
 tensorboard --logdir=PATH_TO_TB_DIR
 ```
+
+![tensorboard_reward_graph](/assets/games/smb-nes-level-1-1-tensorboard.png)
