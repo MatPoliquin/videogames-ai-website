@@ -75,17 +75,21 @@ To save time, I would recommend getting a rom pack of multiple games and import 
 python3 -m retro.import .
 ```
 
-Then test with:
+Then test Level 3-1 for 10M frames of training with PPO2:
 ```shell
-python3 -m baselines.run --alg=ppo2 --env=SuperMarioBros-Nes --num_timesteps=2e7
+python3 -m baselines.run --alg=ppo2 --env=SuperMarioBros-Nes --gamestate=Level3-1.state --num_timesteps=1e7
 ```
 
 Parameters:
 *	**--alg** is for selecting the ML algorithm. PPO2 is the best in most cases, PPO2 is basis for the DOTA AI Player.
 *	**--env** is for which game you want to test
-*	**--num_timesteps** is the number of frames you want to train it on. 2e7 (20M frames) is enough for PPO2 to learn how to pass the first level. Some levels may require much more
+*	**--num_timesteps** is the number of frames you want to train it on. 1e7 (10M frames) is enough for PPO2 to learn how to pass some of the easiest mario levels or at least show some obvious progress. Some levels may require much more
 *	**--num_env** is by default the number of logical processors you have, normally no need touch it unless you are debugging in which case set num_env=1
 *	**--network** is for which type of neural net you want to use, by default it's a CNN but you can try cnn_small and mlp. cnn_small as the name implies is a smaller version of the default CNN and thus requires less processing power but at the expense of learning performance.
+
+You can see the whole training from 0M to 10M here:
+<iframe width="816" height="761" src="https://www.youtube.com/embed/47Gko7Zykr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 It's same process for other console games altought you will likely need to add it to a list in the source code first.
 [run.py](https://github.com/openai/baselines/blob/master/baselines/run.py)
