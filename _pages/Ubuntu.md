@@ -18,3 +18,5 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 More details can be found [here](http://ubuntuhandbook.org/index.php/2016/05/time-differences-ubuntu-1604-windows-10/)
 
+### Remote Access Ubuntu from Windows via VNC
+[click here!](./Ubuntu-VNC-Windows.html)
