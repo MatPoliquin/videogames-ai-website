@@ -131,17 +131,23 @@ python3 -m baselines.run --alg=ppo2 --env=PongNoFrameskip-v4 --num_timesteps=0 -
 ```
 
 ## Debug Info + Metrics with Tensorboard
-Before running the experiment you need to set the OPENAI_LOG_FORMAT variable
-
-``` shell
+Before running the experiment you need to set the OPENAI_LOG_FORMAT variable:
+```shell
 export OPENAI_LOG_FORMAT='stdout,log,csv,tensorboard'
 ```
-
-``` shell
-tensorboard --logdir=PATH_TO_TB_DIR
+You can also set the log directory with
+```shell
+export OPENAI_LOGDIR=[PATH_TO_LOGDIR]
 ```
 
-![tensorboard_reward_graph](/assets/games/smb-nes-level-1-1-tensorboard.png)
+You can launch tensorboard with this:
+``` shell
+tensorboard --logdir=[PATH_TO_LOGDIR/TB
+```
+**Note:** Currently only some scalars are accessible in tensorboard, if you don't see graphs and other useful metrics don't panic it's just not integrated yet. There is an [__issue__](https://github.com/openai/baselines/issues/596) someone opened about it.
+
+Most likely the most important scalar for you is the reward. Here is the reward graph for level 3-1 after 10M frames of training on PPO2.
+![tensorboard_reward_graph](/assets/games/smb-nes-level-3-1-tensorboard.png)
 
 ## Integration tool
 
@@ -173,3 +179,7 @@ Select 'Game->Load state...' from the menu, then load mario level 3-1 state:
 ```
 You should see something like this:
 ![integration tool](/assets/games/integration_tool.png)
+
+More details:
+There is already a very good guide on how to use the tool:
+[Integration tool guide](https://github.com/openai/retro/blob/develop/IntegratorsGuide.md)
