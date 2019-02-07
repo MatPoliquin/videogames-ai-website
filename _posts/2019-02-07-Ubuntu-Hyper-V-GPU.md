@@ -6,6 +6,7 @@ tags: [ubuntu, hyper-v, gpu, howto]
 ---
 
 I often need to use both Windows and Linux for various projects. I was dual booting Ubuntu 18.04 and Windows 10 but constantly rebooting was getting quickly annoying so recently I decided to try Hyper-V since it comes with Windows 10 Pro.
+![ubuntu vm](/assets/hyper-v/ubuntu_vm.png)
 
 
 ### Step 1 - Enable Hyper-V features in windows
