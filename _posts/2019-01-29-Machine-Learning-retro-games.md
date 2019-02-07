@@ -142,3 +142,34 @@ tensorboard --logdir=PATH_TO_TB_DIR
 ```
 
 ![tensorboard_reward_graph](/assets/games/smb-nes-level-1-1-tensorboard.png)
+
+## Integration tool
+
+The integration tool is really handy to integrate new games that are not in the list, create new game states, mine additional information from the rom such as enemy positions, etc.
+
+Here is how to compile from source on Ubuntu/Linux
+```shell
+#First install some required libs
+sudo apt-get install capnproto libcapnp-dev libqt5opengl5-dev qtbase5-dev
+#Get the lastest retro source code
+git clone https://github.com/openai/retro.git
+cd retro
+cmake . -DBUILD_UI=ON -UPYLIB_DIRECTORY
+make -j$(grep -c ^processor /proc/cpuinfo)
+```
+
+Next launch the tool:
+```shell
+./gym-retro-integration
+```
+
+Select 'Game->Load game...' from menu, then load the mario rom usually located in your python site-packages, some similar to this:
+```
+/home/[YOUR USER NAME]/.local/lib/python3.6/site-packages/retro/data/stable/SuperMarioBros-Nes/rom.nes
+```
+Select 'Game->Load state...' from the menu, then load mario level 3-1 state:
+```
+/home/[YOUR USER NAME]/.local/lib/python3.6/site-packages/retro/data/stable/SuperMarioBros-Nes/Level3-1.state
+```
+You should see something like this:
+![integration tool](/assets/games/integration_tool.png)
