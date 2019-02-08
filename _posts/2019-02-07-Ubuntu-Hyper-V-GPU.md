@@ -108,7 +108,7 @@ Reference:
 ### Step 1 - Get the PCI location of your GPU and disable it
 Using the device manager, Open the properties of your graphics card.
 In the details pane acces Location Paths property and copy it's value
-[gpu location](/assets/hyper-v/gpu_location.png)
+![gpu location](/assets/hyper-v/gpu_location.png)
 
 **Disable** you GPU from your computer so you can assign it fully to your VM. Right-click on your graphics card in the Device Managet and select Disable
 
