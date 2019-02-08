@@ -183,3 +183,6 @@ You should see something like this:
 More details:
 There is already a very good guide on how to use the tool:
 [Integration tool guide](https://github.com/openai/retro/blob/develop/IntegratorsGuide.md)
+
+Also this [detailed blog post](https://medium.com/aureliantactics/integrating-new-games-into-retro-gym-12b237d3ed75)
+
