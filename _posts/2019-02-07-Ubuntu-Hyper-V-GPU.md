@@ -88,12 +88,6 @@ Besure to run the Auto-Updater to make sure you have the latest fixes and optimi
 
 [Best Pratices from Microsoft for Ubuntu on Hyper-V](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/best-practices-for-running-linux-on-hyper-v)
 
-# Performance
-Performance is of course not as snappy as on native hardware, the mouse lags a little and you can see the windows refresh. Until they improve the performance you will definetly find that it's annoying to do long hours of programming or other involved work on this, for which I recommend dual booting instead if that is your case. As for me, I have another computer with Ubuntu set up when I need to do heavier work. Otherwise for tweaking and testing scripts Hyper-V Ubuntu VM is fine.
-
-I would recommend having a processor with a decent single-core performance. My Xiaomi Notebook pro have a
-Intel Core i7-8550U with a single-core performance of over 170 on Cinebench! It peforms better than my Dual Xeon E5-2680v2 which has a 95 single-core Cinebench score, even thought the multi-core performance is 5 times higher!
-
 
 # GPU Support
 **Important Note** These steps did not work for me as my laptop hardware doesn't support this feature, that said I plan to try on other hardware, will update this post when I do
@@ -101,6 +95,13 @@ Intel Core i7-8550U with a single-core performance of over 170 on Cinebench! It 
 First make sure your hardware is compatible by running this script in a powershell as administrator:
 [survey-dda.ps1](https://github.com/BenjaminArmstrong/Hyper-V-PowerShell/blob/master/DDA/survey-dda.ps1)
 In case you want more about this script, you can read this detailed [Microsoft blog post](https://blogs.technet.microsoft.com/virtualization/2015/11/20/discrete-device-assignment-machines-and-devices/)
+
+Running this script you might get an error saying "Execution is disabled on this computer..."
+In which case you can bypass it by running the command as follows:
+```shell
+powershell -ExecutionPolicy ByPass -File survey-dda.ps1
+```shell
+
 
 Reference:
 [NVIDIA docs](https://docs.nvidia.com/grid/latest/grid-vgpu-user-guide/index.html#installing-vgpu-drivers-linux)
@@ -134,3 +135,9 @@ After go in Device Manager and Enable your Graphics card
 ### Step 2 - Install vGPU in Ubuntu
 NVIDIA provided a section for that:
 [VGPU on Ubuntu](https://docs.nvidia.com/grid/latest/grid-vgpu-user-guide/index.html#installing-vgpu-drivers-linux)
+
+# Performance
+Performance is of course not as snappy as on native hardware, the mouse lags a little and you can see the windows refresh. Until they improve the performance you will definetly find that it's annoying to do long hours of programming or other involved work on this, for which I recommend dual booting instead if that is your case. As for me, I have another computer with Ubuntu set up when I need to do heavier work. Otherwise for tweaking and testing scripts Hyper-V Ubuntu VM is fine.
+
+I would recommend having a processor with a decent single-core performance. My Xiaomi Notebook pro have a
+Intel Core i7-8550U with a single-core performance of over 170 on Cinebench! It peforms better than my Dual Xeon E5-2680v2 which has a 95 single-core Cinebench score, even thought the multi-core performance is 5 times higher!
