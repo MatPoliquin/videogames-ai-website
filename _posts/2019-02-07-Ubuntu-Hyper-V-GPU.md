@@ -90,6 +90,9 @@ Besure to run the Auto-Updater to make sure you have the latest fixes and optimi
 
 
 # GPU Support
+
+
+
 **Important Note** These steps did not work for me as my laptop hardware doesn't support this feature, that said I plan to try on other hardware, will update this post when I do
 
 First make sure your hardware is compatible by running this script in a powershell as administrator:
@@ -104,6 +107,12 @@ powershell -ExecutionPolicy ByPass -File survey-dda.ps1
 
 As you can see my GTX 1060 5GB cannot be assigned, probably because I am running it on a x79 motherboard:
 ![compatibility](/assets/hyper-v/compatibility.png)
+
+Microsoft recently disabled RemoteFX3D since they are developing a new solution to support GPUs.
+They only disabled it in the interface (for now), you can enable it via Powershell
+```shell
+Add-VMRemoteFx3dVideoAdapter -VMName YOUR_VM_NAME
+```
 
 
 Reference:
