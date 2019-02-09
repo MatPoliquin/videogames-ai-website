@@ -100,7 +100,10 @@ Running this script you might get an error saying "Execution is disabled on this
 In which case you can bypass it by running the command as follows:
 ```shell
 powershell -ExecutionPolicy ByPass -File survey-dda.ps1
-```shell
+```
+
+As you can see my GTX 1060 5GB cannot be assigned, probably because I am running it on a x79 motherboard:
+![compatibility](/assets/hyper-v/compatibility.png)
 
 
 Reference:
