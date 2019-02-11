@@ -5,21 +5,52 @@ date: 2019-02-07 06:00:00 +0000
 tags: [ubuntu, hyper-v, gpu, howto]
 ---
 
-I often need to use both Windows and Linux for various projects. I was dual booting Ubuntu 18.04 and Windows 10 but constantly rebooting was getting quickly annoying so recently I decided to try Hyper-V since it comes with Windows 10 Pro.
+I often need to use both Windows and Linux for various projects. I was dual booting Linux and Windows 10 on my laptop but constantly rebooting was getting quickly annoying so recently I decided to try Hyper-V since it comes for free with my Windows 10 Pro.
 ![ubuntu vm](/assets/hyper-v/ubuntu_vm.png)
+
+Important notes so you don't waste time:
+*	If you need to do long hours or heavy workloads on Ubuntu than dual-booting is better. As an example, On my desktop, at office, I dual boot since I often need to debug/program. I use the Ubuntu vm on my laptop at home or on the road, mostly to do some light and quick maintenance for that it's good.
+*	If you absolutely need gpu support, please run the compatiblity script first (in the GPU section bellow) before installing.
+*	If you require a VM and want the greatest hardware support you might want to check VMWare vSphere or virtual box instead.
+
 
 
 ### Step 1 - Enable Hyper-V features in windows
 In Control Panel find the Windows Features section and check out 'Hyper-V'
 ![windows feature](/assets/hyper-v/windows_feature.png)
 
-### Step 2 - Open Hyper-V and create a new VM
+### Step 2 - Open Hyper-V and Install Ubuntu Enhanced Mode
+
+There is two ways to install Ubuntu:
+*	Create a standard virtual machine and install Ubuntu like for any other PC
+*	Use Quick Create and install the special version of Ubuntu 18.04 (Enhanced Mode) provided by Microsoft
+
+I very strongly recommend the second option. It has the following features available throught [xrdp pre-installed](https://github.com/neutrinolabs/xrdp)
+*	You can use the clipboard from the host
+*	Much snappier experience, since it's using hardware acceleration for the screen refresh
+*	Auto mouse capture
+*	Shared drive with the host
+
+
+If you must have a different version of Ubuntu such as 18.10 Cosmic Cuttlefish, it's possible but you will need to install [xrdp](https://github.com/neutrinolabs/xrdp)
+
 Open the wizard with the menu:
 ```
-Action->New->Virtual Machines
+Action->Quick Create
 ```
-Select Generation 2:
-![generation](/assets/hyper-v/vm_generation.png)
+
+You should see this screen. Select Ubuntu 18.04 LTS and click create
+![quick create](/assets/hyper-v/quick_create.png)
+
+After the wizard finished downloading and creating your VM, you should see it in the list:
+![hyper-v](/assets/hyper-v/hyper-v.png)
+
+### Step 3 - VM Settings
+Before starting up you need to change two things in the settings
+Right-click on your VM in the list and select "settings"
+
+Disable secure boot, (otherwise it won't boot)
+![secure_boot](/assets/hyper-v/secure_boot.png)
 
 Specify RAM:
 Make sure to give it at least 4GB
@@ -28,28 +59,12 @@ Make sure to give it at least 4GB
 Assign default switch for networking:
 ![net](/assets/hyper-v/networking.png)
 
-After the wizard, you should see your VM in the list:
-![hyper-v](/assets/hyper-v/hyper-v.png)
-
-### Step 3 - Settings
-Before starting up you need to change two things in the settings
-Right-click on your VM in the list and select "settings"
-
-Disable secure boot, (otherwise it won't boot)
-![secure_boot](/assets/hyper-v/secure_boot.png)
-
 Assign at least 2 to 4 processors
 ![hyper-v](/assets/hyper-v/processors.png)
 
+To enable which local resources (drives, printers usb devices, etc) you want to expose to Ubuntu Microsoft made a neat doc for it:
+[local resources](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/use-local-resources-on-hyper-v-virtual-machine-with-vmconnect)
 
-### Step 4 - Install Ubuntu
-I recommend getting the Ubuntu 18.10 iso since it contains the latest features related to vms
-[Download here](http://releases.ubuntu.com/18.10/)
-
-Then in the settings assign the iso to the dvd drive
-![hyper-v](/assets/hyper-v/ubuntu_iso.png)
-
-Double click on your VM in the list and you should see Ubuntu install disk booting. Proceed with the installation with default settings as on a regular desktop
 
 ### Step 5 - Configure Ubuntu
 
@@ -61,27 +76,6 @@ sudo apt-get install linux-azure
 ```
 
 
-#### Change resolution
-By default you will notice that there is only one square resolution option, quite annoying
-If you want a custom resolution you need to edit the grub file:
-```shell
-sudo nano /etc/default/grub
-```
-
-You need to change this line:
-```
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
-```
-
-and an extra parameter:
-```
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1920x1080"
-```
-
-Don't forget to update your changes
-```shell
-sudo update-grub
-```
 
 #### Update and tweaks:
 Besure to run the Auto-Updater to make sure you have the latest fixes and optimisations, especially the ones related to Azure
@@ -90,8 +84,6 @@ Besure to run the Auto-Updater to make sure you have the latest fixes and optimi
 
 
 # GPU Support
-
-
 
 **Important Note** These steps did not work for me as my laptop hardware doesn't support this feature, that said I plan to try on other hardware, will update this post when I do
 
