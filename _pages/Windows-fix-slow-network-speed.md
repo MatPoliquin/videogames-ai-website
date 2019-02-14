@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Hot to fix slow network speed in Windows 10"
-permalink: /Ubuntu-VNC-Windows
+permalink: /Windows-fix-slow-network-speed.html
 tags: [windows, network, lan, wifi, speed]
 ---
 
