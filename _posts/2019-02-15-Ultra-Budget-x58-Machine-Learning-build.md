@@ -6,7 +6,7 @@ tags: [hardware, gpu, machine learning]
 ---
 
 WORK IN PROGRESS
-![cinebench](/assets/x58/cinebench.jpg)
+![cinebench](/assets/x58/result.jpg)
 
 Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfcg&t=639s) endless quest to build the cheapest x58 base gaming PC, I wanted to try the same but for Machine Learning applied to playing video games.
 
