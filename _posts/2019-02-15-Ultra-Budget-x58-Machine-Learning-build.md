@@ -18,18 +18,18 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 
 
 ### The specs:
-| Component        | Q | Brand           	   |
-|:-----------------|:--|:----------------------|
-| CPUs     		   | 2 | Intel Xeon x5660 	   |
-| GPUs  		   | 4 | P106-100	     	   |
-| Motherboard 	   | 1 | Intel S5520hc x58     |
-| RAM  			   | 6 | Samsung 4GB DDR3-1333 |
-| SSD 			   | 1 | Samsung 750 evo 128G  |
-| PSU   		   | 1 | 1st Player 600W       |
-| CPU Heatsink/fan | 2 | Any generic brand     |
-| case fans 	   | 2 | Any generic brand     |
-| 8xto16x riser    | 2 | Any generic brand     |
-| PCIE cables      | 4 | Any generic brand     |
+| Component        | Q |
+|:-----------------|:--|
+| CPUs     		   | 2 |
+| GPUs  		   | 4 |
+| Motherboard 	   | 1 |
+| RAM  			   | 6 |
+| SSD 			   | 1 |
+| PSU   		   | 1 |
+| CPU Heatsink/fan | 2 |
+| case fans 	   | 2 |
+| 8xto16x riser    | 2 |
+| PCIE cables      | 4 |
 
 ### The specs 2
 | Component        | Q | Brand           	   | US$/Unit | Total |
