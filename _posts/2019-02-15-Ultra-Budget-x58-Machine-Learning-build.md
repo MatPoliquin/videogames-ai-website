@@ -18,18 +18,18 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 
 
 ### The specs:
-| Component        | Quantiy |
-|:-----------------|:--------|
-| CPUs     		   | 2x      |
-| GPUs  		   | 4x      |
-| Motherboard 	   | 1x      |
-| RAM  			   | 6x      |
-| SSD 			   | 1x      |
-| PSU   		   | 1x      |
-| CPU Heatsink/fan | 2x      |
-| case fans 	   | 2x      |
-| 8xto16x riser    | 2x      |
-| PCIE cables      | 4x      |
+| Component        |
+|:-----------------|
+| CPUs     		   |
+| GPUs  		   |
+| Motherboard 	   |
+| RAM  			   |
+| SSD 			   |
+| PSU   		   |
+| CPU Heatsink/fan |
+| case fans 	   |
+| 8xto16x riser    |
+| PCIE cables      |
 
 ### The specs 2
 | Component        | Q | Brand           	   | US$/Unit | Total |
