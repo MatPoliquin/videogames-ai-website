@@ -17,23 +17,7 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 *	All free software
 
 
-### The specs:
-
-
-| Component        |
-|:-----------------|
-| CPUs     		   |
-| GPUs  		   |
-| Motherboard 	   |
-| RAM  			   |
-| SSD 			   |
-| PSU   		   |
-| CPU Heatsink/fan |
-| case fans 	   |
-| 8xto16x riser    |
-| PCIE cables      |
-
-### The specs 2
+### The specs
 
 
 | Component | Q | Brand | US$/Unit | Total |
