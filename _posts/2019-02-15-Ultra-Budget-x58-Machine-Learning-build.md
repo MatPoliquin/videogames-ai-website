@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ultra budget x58 Machine Learning build"
-date:   2019-01-19 06:00:00 +0000
+date:   2019-02-15 06:00:00 +0000
 tags: [hardware, gpu, machine learning]
 ---
 
