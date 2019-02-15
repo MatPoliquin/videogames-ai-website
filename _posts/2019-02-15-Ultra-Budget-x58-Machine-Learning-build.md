@@ -29,7 +29,8 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 | CPU Heatsink/fan | 2 | Any generic brand     | 5        | 10    |
 | case fans 	   | 2 | Any generic brand     | 2        | 4     |
 | 8xto16x riser    | 2 | Any generic brand     | 5        | 10    |
-| PCIE cables      | 4 | Any generic brand     | 5        | 10    |														 							  | 600   |
+| PCIE cables      | 4 | Any generic brand     | 5        | 10    |
+
 
 ### Software
  
