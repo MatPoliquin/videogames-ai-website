@@ -19,6 +19,7 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 
 ### The specs:
 
+
 | Component        |
 |:-----------------|
 | CPUs     		   |
@@ -34,21 +35,23 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 
 ### The specs 2
 
+
 | Component | Q | Brand | US$/Unit | Total |
 |:-----------------|:---|:----------------------|:---------|:------|
-| CPUs     		   | 2 | Intel Xeon x5660 	   | 20       | 40    |
-| GPUs  		   | 4 | P106-100	     	   | 60       | 240   |
-| Motherboard 	   | 1 | Intel S5520hc x58     | 80       | 80    |
-| RAM  			   | 6 | Samsung 4GB DDR3-1333 | 5        | 30    |
-| SSD 			   | 1 | Samsung 750 evo 128G  | 50       | 50    |
-| PSU   		   | 1 | 1st Player 600W       | 50       | 50    |  
-| CPU Heatsink/fan | 2 | Any generic brand     | 5        | 10    |
-| case fans 	   | 2 | Any generic brand     | 2        | 4     |
-| 8xto16x riser    | 2 | Any generic brand     | 5        | 10    |
-| PCIE cables      | 4 | Any generic brand     | 5        | 10    |
+| CPUs     		   | 2   | Intel Xeon x5660 	   | 20       | 40    |
+| GPUs  		   | 4   | P106-100	     	   | 60       | 240   |
+| Motherboard 	   | 1   | Intel S5520hc x58     | 80       | 80    |
+| RAM  			   | 6    | Samsung 4GB DDR3-1333 | 5        | 30    |
+| SSD 			   | 1   | Samsung 750 evo 128G  | 50       | 50    |
+| PSU   		   | 1    | 1st Player 600W       | 50       | 50    |  
+| CPU Heatsink/fan | 2    | Any generic brand     | 5        | 10    |
+| case fans 	   | 2   | Any generic brand     | 2        | 4     |
+| 8xto16x riser    | 2    | Any generic brand     | 5        | 10    |
+| PCIE cables      | 4    | Any generic brand     | 5        | 10    |
 
 
 ### Software
+
 | Software         | Version |
 |:-----------------|:--------|
 | Ubuntu 		   | 18.04   |
