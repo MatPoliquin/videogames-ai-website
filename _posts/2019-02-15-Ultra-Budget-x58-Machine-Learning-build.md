@@ -18,6 +18,7 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 
 
 ### The specs:
+
 | Component        |
 |:-----------------|
 | CPUs     		   |
@@ -32,8 +33,9 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 | PCIE cables      |
 
 ### The specs 2
-| Component        | Q | Brand           	   | US$/Unit | Total |
-|:-----------------|:--|:----------------------|:---------|:------|
+
+| Component | Q | Brand | US$/Unit | Total |
+|:-----------------|:---|:----------------------|:---------|:------|
 | CPUs     		   | 2 | Intel Xeon x5660 	   | 20       | 40    |
 | GPUs  		   | 4 | P106-100	     	   | 60       | 240   |
 | Motherboard 	   | 1 | Intel S5520hc x58     | 80       | 80    |
