@@ -47,7 +47,6 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 
 
 ### Software
- 
 | Software         | Version |
 |:-----------------|:--------|
 | Ubuntu 		   | 18.04   |
