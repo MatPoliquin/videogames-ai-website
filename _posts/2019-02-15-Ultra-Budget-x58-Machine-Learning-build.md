@@ -18,6 +18,20 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 
 
 ### The specs:
+| Component        | Q | Brand           	   |
+|:-----------------|:--|:----------------------|
+| CPUs     		   | 2 | Intel Xeon x5660 	   |
+| GPUs  		   | 4 | P106-100	     	   |
+| Motherboard 	   | 1 | Intel S5520hc x58     |
+| RAM  			   | 6 | Samsung 4GB DDR3-1333 |
+| SSD 			   | 1 | Samsung 750 evo 128G  |
+| PSU   		   | 1 | 1st Player 600W       |
+| CPU Heatsink/fan | 2 | Any generic brand     |
+| case fans 	   | 2 | Any generic brand     |
+| 8xto16x riser    | 2 | Any generic brand     |
+| PCIE cables      | 4 | Any generic brand     |
+
+### The specs 2
 | Component        | Q | Brand           	   | US$/Unit | Total |
 |:-----------------|:--|:----------------------|:---------|:------|
 | CPUs     		   | 2 | Intel Xeon x5660 	   | 20       | 40    |
@@ -48,10 +62,10 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 | Cifar10 peak     | ~8000 examples/sec | ~7000 examples/sec        |
 | Alexnet forward  | 0.083s/batch	    | 0.103s/batch              |
 | Alexnet backward | 0.193s/batch       | 0.243s/batch              |
-| PPO2 Atari Pong  | ~1110 frame/sec    | ~1000 frames/sec          |
-| Host to Device   | 3094.4 MB/s        | 11205.9 MB/s              |  
-| Device to Host   | 3207.3 MB/s        | 12788.0 MB/s              |
-| Device to Device | 152542.9 MB/s      | 115346.1 MB/s             | 
+| PPO2 Atari Pong  | ~1110 frame/sec    | ~80 frames/sec          	|
+| Host to Device   | 3094.4 MB/s        | 3094.4 MB/s              	|  
+| Device to Host   | 3207.3 MB/s        | 3207.3 MB/s              	|
+| Device to Device | 152542.9 MB/s      | 152542.9 MB/s             | 
 
 
 # Reasons behind hardware choices
