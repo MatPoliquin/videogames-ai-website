@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ultra budget x58 Machine Learning build"
+title:  "Under 500$ 4x GPU Machine Learning build"
 date:   2019-02-15 06:00:00 +0000
 tags: [hardware, gpu, machine learning]
 ---
@@ -22,17 +22,18 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 
 | Component | Q | Brand | US$/Unit | Total |
 |:-----------------|:---|:----------------------|:---------|:------|
-| CPUs     		   | 2   | Intel Xeon x5660 	   | 20       | 40    |
+| CPUs     		   | 2   | Intel Xeon x5660 	   | 14       | 28    |
 | GPUs  		   | 4   | P106-100	     	   | 60       | 240   |
-| Motherboard 	   | 1   | Intel S5520hc x58     | 80       | 80    |
-| RAM  			   | 6    | Samsung 4GB DDR3-1333 | 5        | 30    |
-| SSD 			   | 1   | Samsung 750 evo 128G  | 50       | 50    |
-| PSU   		   | 1    | 1st Player 600W       | 50       | 50    |  
+| Motherboard 	   | 1   | Intel S5520hc x58     | 73       | 73    |
+| RAM  			   | 6    | Samsung 4GB DDR3-1333 | 6        | 36    |
+| SSD 			   | 1   | Samsung 750 evo 120G  | 40       | 40    |
+| PSU   		   | 1    | 1stPlayer DK6.0 600W | 44       | 44    |  
 | CPU Heatsink/fan | 2    | Any generic brand     | 5        | 10    |
 | case fans 	   | 2   | Any generic brand     | 2        | 4     |
-| 8xto16x riser    | 2    | Any generic brand     | 5        | 10    |
-| PCIE cables      | 4    | Any generic brand     | 5        | 10    |
+| 8xto16x riser    | 4    | Any generic brand     | 2.50        | 10    |
+| PCIE cables      | 4    | Any generic brand     | 2.50        | 10    |
 
+TOTAL: 495 US$
 
 ### Software
 
@@ -50,7 +51,7 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 | Cifar10 peak     | ~8000 examples/sec | ~7000 examples/sec        |
 | Alexnet forward  | 0.083s/batch	    | 0.103s/batch              |
 | Alexnet backward | 0.193s/batch       | 0.243s/batch              |
-| PPO2 Atari Pong  | ~1110 frame/sec    | ~80 frames/sec          	|
+| PPO2 Atari Pong  | ~1110 frame/sec    | ~850 frames/sec          	|
 | Host to Device   | 3094.4 MB/s        | 3094.4 MB/s              	|  
 | Device to Host   | 3207.3 MB/s        | 3207.3 MB/s              	|
 | Device to Device | 152542.9 MB/s      | 152542.9 MB/s             | 
@@ -58,7 +59,7 @@ Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfc
 
 # Reasons behind hardware choices
 
-### Why x58 chipset, it's so out of date!?
+### Why the x58 chipset, it's so out of date!?
 Because currently x58 based computers provide the best bang for buck in terms of raw power
 2x X5660 can get you 1291 on Cinebench R15 for 40$ total!
 In comparaison a Ryzen 1600 will get you same cinebench score but for 200$ new, second hand is cheaper but not much and they are harder to find.
@@ -70,12 +71,12 @@ More over you can use DDR3 ram with it which is twice as cheap now compared to D
 ### The PSU seems cheap, that is a little dangerous!?
 That's a valid point, normally for a expensive build one should get a quality PSU from a known brand but this is a very cheap build and the goal is no minize cost to the max, so we need to take chances. So far it has been good
 
-### The S5520hc motherboard
-Because it's the cheapest dual cpu x58 motherboard that offers at least 4 pcie slots 8x slots.
+### The Intel S5520hc motherboard
+It's the cheapest dual cpu x58 motherboard that offers at least 4 pcie slots 8x slots.
 It also has onboard video output, which is useful since in our case the P106-100 has no display outputs.
 
-### Why case fans if there is no cases and it's open air
-
+### Why case fans if there is no cases and it's open air?
+TODO
 
 # Building and Installation procedure
 
@@ -88,11 +89,18 @@ As for assembling the hardware I won't go in full details since there is already
 *	Interleave your DDR3 modules in this way for maximum bandwidth
 
 
-### BIOS Setup
+### BIOS Setup + Hardware Info
+Here are the main BIOS parameters you need to set in the advanced section
+THe most important one is "Memory Mapped I/O above 4G". We need to enable it otherwise the bios won't sucessfully boot with 4 GPUs.
+
 ![cinebench](/assets/x58/bios.jpg)
 
+Note: I disabled onboard video because I use a PCI graphics card instead since it's better supported by Ubuntu and Windows than the onboard video
+
+You might notice that when you have three or more gpus your computer refuses to post. Actually it boots well but for some reason the video (onboard or on a discrete video) is disabled. I updated to the latest bios version and still have this bug. The S5520hc board and it's bios was clearly not designed to support that many GPUs, it was intended for I/O. Windows 10 does not display anything (maybe you can RDP thought) but Ubuntu 18.04 does display video once it loads the drivers. So if you see a black screen just wait a minute or two and eventually you will see the Ubuntu login.
+
 ### Software installation
-There is not special instructions needed for how to install Ubuntu and other software on this buld, it's pretty much the same:
+There is no special instructions needed for how to install Ubuntu and other software on this buld, it's pretty much the same:
 *	[CUDA 9.0 on Ubuntu 18.04](./Installing-CUDA-9.0-Ubuntu-18.04.md.html)
 *	[Install OpenAI baselines + Retro](./2019-01-29-Machine-Learning-retro-games.html)
 
@@ -108,4 +116,9 @@ pip3 install tensorflow-1.12.0-cp36-cp36m-linux_x86_64.whl
 ```
 
 # Conclusion and Electricity cost
-TODO
+While it works reliably and delivers good performance for a very low price, there is two things to consider:
+*	The time it took to setup everything and solve the problems related to old and used hardware and imcompatiblities (see bios section for example) might overweight the low price. But if you follow this guide with the exact hardware specs, it might be ok
+*	For now most os/software/drivers are still compatible and well supported but since it's over 10 years old hardware (except the GPUs) we might run into problems soon down the road. It might be less expensive in the long term to pay a little more for future proof hardware.
+* Electricity costs. This build uses around 100W. 100W 24/7 is around 10$ per month more in the area I live. So this another point to consider 
+
+Because of these to points above, I don't recommend this build unless you are already have some the parts or you found a great bargain. That said the main point of this blog post is to discuss ideas on how to reduce the cost of doing Machine Learning.
