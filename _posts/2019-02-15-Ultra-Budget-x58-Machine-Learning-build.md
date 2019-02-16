@@ -2,7 +2,7 @@
 layout: post
 title:  "Under 500$ 4x GPU Machine Learning build"
 date:   2019-02-15 06:00:00 +0000
-tags: [hardware, gpu, machine learning]
+tags: [machine learning, gpu, budget, p106-100, x58]
 ---
 
 WORK IN PROGRESS
