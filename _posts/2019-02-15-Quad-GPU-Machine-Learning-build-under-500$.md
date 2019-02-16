@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Under 500$ 4x GPU Machine Learning build"
+title:  "4x GPU Machine Learning build Under 500$"
 date:   2019-02-15 06:00:00 +0000
 tags: [machine learning, gpu, budget, p106-100, x58]
 ---
