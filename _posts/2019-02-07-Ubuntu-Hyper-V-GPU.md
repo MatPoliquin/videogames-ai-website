@@ -6,12 +6,13 @@ tags: [ubuntu, hyper-v, gpu, howto]
 ---
 
 I often need to use both Windows and Linux for various projects. I was dual booting Linux and Windows 10 on my laptop but constantly rebooting was getting quickly annoying so recently I decided to try Hyper-V since it comes for free with my Windows 10 Pro.
-![ubuntu vm](/assets/hyper-v/ubuntu_vm.png)
+![ubuntu vm](/assets/hyper-v/desktop_screenshot.png)
 
 Important notes so you don't waste time:
 *	If you need to do long hours or heavy workloads on Ubuntu than dual-booting is better. As an example, On my desktop, at office, I dual boot since I often need to debug/program. I use the Ubuntu vm on my laptop at home or on the road, mostly to do some light and quick maintenance for that it's good.
 *	If you absolutely need gpu support, please run the compatiblity script first (in the GPU section bellow) before installing.
 *	If you require a VM and want the greatest hardware support you might want to check VMWare vSphere or virtual box instead.
+*	**UPDATE: after one week using it I returned to dual booting and might consider Virtual Box eventually. With the recent Windows 10 update, network is very buggy and hard to get the VM connected on the internet, it's a huge time sink. I don't recommend Hyper-V for now, I will re-check it in a year when it's more stable**
 
 
 
@@ -145,3 +146,14 @@ Performance is of course not as snappy as on native hardware, the mouse lags a l
 
 I would recommend having a processor with a decent single-core performance. My Xiaomi Notebook pro have a
 Intel Core i7-8550U with a single-core performance of over 170 on Cinebench! It peforms better than my Dual Xeon E5-2680v2 which has a 95 single-core Cinebench score, even thought the multi-core performance is 5 times higher!
+
+Performance Test with the VM running on my Xiaomi notebook pro 2017:
+``` shell
+python3 -m baselines.run --alg=ppo2 --env=PongNoFrameskip-v4 --num_timesteps=2e7
+```
+![pong](/assets/hyper-v/pong.png)
+
+
+Hardware specs:
+*	[Intel® Core™ i7-8550U](https://ark.intel.com/products/122589/Intel-Core-i7-8550U-Processor-8M-Cache-up-to-4-00-GHz-)
+*	16GB of DDR4-2400
