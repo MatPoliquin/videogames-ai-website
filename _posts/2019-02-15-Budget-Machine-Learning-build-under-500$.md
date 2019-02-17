@@ -61,9 +61,9 @@ TOTAL: 495 US$
 
 ### Why the x58 chipset, it's so out of date!?
 Because currently x58 based computers provide the best bang for buck in terms of raw power
-2x X5660 can get you 1291 on Cinebench R15 for 40$ total!
+Dual X5660 can get you 1291 on Cinebench R15 for 40$ total!
 In comparaison a Ryzen 1600 will get you same cinebench score but for 200$ new, second hand is cheaper but not much and they are harder to find.
-One might argue that single core performance is way better on a Ryzen 1600 (95cb vs 120cb), while that is true it doesn't impact performance much for Machine Learning.
+One might argue that single core performance is way better on a Ryzen 1600 (95cb vs 147cb), while that is true it doesn't impact performance much for Machine Learning.
 More over you can use DDR3 ram with it which is twice as cheap now compared to DDR4 and still get decent performance.
 ![cinebench](/assets/x58/cinebench.jpg)
 
@@ -119,6 +119,6 @@ pip3 install tensorflow-1.12.0-cp36-cp36m-linux_x86_64.whl
 While it works reliably and delivers good performance for a very low price, there is two things to consider:
 *	The time it took to setup everything and solve the problems related to old and used hardware and imcompatiblities (see bios section for example) might overweight the low price. But if you follow this guide with the exact hardware specs, it might be ok
 *	For now most os/software/drivers are still compatible and well supported but since it's over 10 years old hardware (except the GPUs) we might run into problems soon down the road. It might be less expensive in the long term to pay a little more for future proof hardware.
-* Electricity costs. This build uses around 100W. 100W 24/7 is around 10$ per month more in the area I live. So this another point to consider 
+* Electricity costs. This build uses close to 500W when four atari pong trainings are active in parallel. That's close to 100W more then it should be because today components are more energy efficient 24/7 this is around 10$ more per month more in the area I live. So this is another point to consider 
 
 Because of these to points above, I don't recommend this build unless you are already have some the parts or you found a great bargain. That said the main point of this blog post is to discuss ideas on how to reduce the cost of doing Machine Learning.
