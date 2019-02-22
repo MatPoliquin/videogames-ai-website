@@ -1,1 +1,1 @@
-videogames.ai website
+https://www.videogames.ai website
