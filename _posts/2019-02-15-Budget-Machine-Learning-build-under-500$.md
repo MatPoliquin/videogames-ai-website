@@ -51,7 +51,7 @@ TOTAL: 495 US$
 | Cifar10 peak     | ~8000 examples/sec | ~7000 examples/sec        |
 | Alexnet forward  | 0.083s/batch	    | 0.103s/batch              |
 | Alexnet backward | 0.193s/batch       | 0.243s/batch              |
-| PPO2 Atari Pong  | ~1110 frame/sec    | ~850 frames/sec          	|
+| PPO2 Atari Pong  | ~1110 frame/sec    | ~700 frames/sec          	|
 | Host to Device   | 3094.4 MB/s        | 3094.4 MB/s              	|  
 | Device to Host   | 3207.3 MB/s        | 3207.3 MB/s              	|
 | Device to Device | 152542.9 MB/s      | 152542.9 MB/s             | 
@@ -75,8 +75,18 @@ That's a valid point, normally for a expensive build one should get a quality PS
 It's the cheapest dual cpu x58 motherboard that offers at least 4 pcie slots 8x slots.
 It also has onboard video output, which is useful since in our case the P106-100 has no display outputs.
 
-### Why case fans if there is no cases and it's open air?
-TODO
+### Temperature - Why case fans if there is no cases and it's open air?
+Without the fans the S5520hc motherboard easily overheats, even in open air. With the fans here are the CPU and motherboard temperatures I get:
+[sensors](./assets/x58/sensors.png)
+
+and here are the GPU temperatures:
+[gpu temps](./assets/x58/nvidia-smi.png)
+Note that I reapplied thermal paste on two of these cards
+
+Overall temperatures are nice and cool and well within recommended limits, it's specially important if you are running this 24/7.
+
+At first I did not use dedicated fans for the motherboard and eventually sparks spawned out. For some reason it's still working!
+[sparks](./assets/x58/sparks.jpg)
 
 # Building and Installation procedure
 
