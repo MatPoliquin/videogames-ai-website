@@ -77,16 +77,16 @@ It also has onboard video output, which is useful since in our case the P106-100
 
 ### Temperature - Why case fans if there is no cases and it's open air?
 Without the fans the S5520hc motherboard easily overheats, even in open air. With the fans here are the CPU and motherboard temperatures I get:
-![sensors](./assets/x58/sensors.png)
+![sensors](/assets/x58/sensors.png)
 
 and here are the GPU temperatures:
-![gpu temps](./assets/x58/nvidia-smi.png)
+![gpu temps](/assets/x58/nvidia-smi.png)
 Note that I reapplied thermal paste on two of these cards
 
 Overall temperatures are nice and cool and well within recommended limits, it's specially important if you are running this 24/7.
 
 At first I did not use dedicated fans for the motherboard and eventually sparks spawned out. For some reason it's still working!
-![sparks](./assets/x58/sparks.jpg)
+![sparks](/assets/x58/sparks.jpg)
 
 # Building and Installation procedure
 
