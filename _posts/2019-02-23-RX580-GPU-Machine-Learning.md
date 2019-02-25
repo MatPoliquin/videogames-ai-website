@@ -9,6 +9,7 @@ tags: [rx580, gpu, rocm, machine learning]
 ![rx580](/assets/rx580/rx580.jpg) <br>
 
 # Benchmarks
+
 | Test        	   | P106-100 (6 GB)    | RX580 (8 GB) 				|
 |:-----------------|:-------------------|:--------------------------|
 | Cifar10 peak     | ~8000 examples/sec | ~8500 examples/sec        |
