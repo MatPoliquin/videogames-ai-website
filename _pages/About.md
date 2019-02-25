@@ -4,6 +4,13 @@ title:  "About"
 permalink: /About
 ---
 
-[Twitter](https://twitter.com/MatPoliquin)
 
+### Social Media links
 [Instagram](https://www.instagram.com/videogames.ai)
+
+[Youtube Channel](https://www.youtube.com/channel/UCyfnks28XqY-0uTkQkIeTHw)
+
+
+
+
+[My Twitter](https://twitter.com/MatPoliquin)
