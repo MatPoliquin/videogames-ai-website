@@ -5,7 +5,7 @@ date:   2019-01-29 06:00:00 +0000
 tags: [machine learning, ppo2, openai, baselines, retro games]
 ---
 
-This is a highlight from SuperMarioBros-Nes Level 2-1, 120M timesteps PPO2 training </br>
+This is a highlight from SuperMarioBros-Nes Level 2-1, 120M timesteps PPO2 training <br>
 <img src="../assets/games/SuperMarioBros-Nes/Level2-1_120M.gif" alt="PPO2 120M" style="width:256px;height:240px;">
 
 This is a quick intro to get started running Machine Learning on retro games (Atari, NES, SNES, Gameboy, Master System, Genesis). I find it's a great way to start learning about Tensorflow and Machine Learning in general.
