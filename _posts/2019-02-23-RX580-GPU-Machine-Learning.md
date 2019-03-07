@@ -17,6 +17,16 @@ The RX580 is cheapest 8GB ML card on the market, is worth it?
 | Alexnet backward | 0.193s/batch       | 0.190s/batch              |
 | PPO2 Atari Pong  | ~1110 frame/sec    | ~480 frames/sec           |
 
+**Update:** <br>
+I also ran a benchmark scrypt provided by lamdalabs
+| Test        	   | GTX 1080ti    		| RX580 (8 GB) 				|
+|:-----------------|:-------------------|:--------------------------|
+| Resnet-50     |  209 images/sec    | 99.41 images/sec      |
+| resnet-152  |  81 images/sec	    | 36.76 images/sec             |
+| Inception3 |     136 images/sec  | 57.40 images/sec             |
+| Inception4 |     58 images/sec  | 21.58 images/sec             |
+| Alexnet |    2762 images/sec   | 726.45 images/sec             |
+| ssd300 |   108 images/sec    | 32.26 images/sec             |
 
 Software
 *	Ubuntu 18.10 Cosmic Cuttlefish
