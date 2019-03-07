@@ -18,7 +18,15 @@ The RX580 is cheapest 8GB ML card on the market, is worth it?
 | PPO2 Atari Pong  | ~1110 frame/sec    | ~480 frames/sec           |
 
 **Update:** <br>
-I also ran a benchmark scrypt provided by lamdalabs
+I also ran a benchmark script provided by lamdalabs:
+```shell
+git clone https://github.com/lambdal/lambda-tensorflow-benchmark.git --recursive
+cd lambda-tensorflow-benchmark
+./benchmark.sh
+```
+
+I took the GTX 1080ti numbers from their blog post so you can compare
+[blog post](https://lambdalabs.com/blog/2080-ti-deep-learning-benchmarks/)
 | Test        	   | GTX 1080ti    		| RX580 (8 GB) 				|
 |:-----------------|:-------------------|:--------------------------|
 | Resnet-50     |  209 images/sec    | 99.41 images/sec      |
