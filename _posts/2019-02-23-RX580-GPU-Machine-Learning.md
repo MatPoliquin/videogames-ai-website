@@ -27,6 +27,8 @@ cd lambda-tensorflow-benchmark
 
 I took the GTX 1080ti numbers from their blog post so you can compare
 [blog post](https://lambdalabs.com/blog/2080-ti-deep-learning-benchmarks/)
+
+
 | Test        	   | GTX 1080ti    		| RX580 (8 GB) 				|
 |:-----------------|:-------------------|:--------------------------|
 | Resnet-50     |  209 images/sec    | 99.41 images/sec      |
