@@ -29,16 +29,16 @@ At first you can see there is three variables exposed from the rom:
 *	lives
 *	score
 *	time
-![init](/assets/openai_romtool/smb3_init.gif)
+![init](/assets/openai_romtool/smb3_init.png)
 
 
 We are going to expose another variable based on horizontal position. You can named it **hpos** with the **|u1** type.
 After you filled it in (similar way to the screenshot bellow) you can click the + button
-![add](/assets/openai_romtool/add_variable.gif)
+![add](/assets/openai_romtool/add_variable.png)
 
 Next it to specify at which address in RAM this information can be found.
 In our case it's **090**
-![hpos](/assets/openai_romtool/hpos_variable.gif)
+![hpos](/assets/openai_romtool/hpos_variable.png)
 
 Tip:
 How to know where is a given variable in RAM?
@@ -74,7 +74,7 @@ So the result is that your **data.json** file should look like this:
 ```
 
 ### Step 3 - Edit Reward Function
-![edit scenario](/assets/openai_romtool/edit_scenario.gif)
+![edit scenario](/assets/openai_romtool/edit_scenario.png)
 
 
 The resulting **scenario.json** file should look like this:
