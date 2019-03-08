@@ -54,7 +54,7 @@ Hardware
 
 # Installation
 If you have an AMD RX card already install for ML, the RX580 should work right away without further installation.
-If not you can run a very convenient installation script provided by gpu-eater, that installs all you need including the tensorflow rocm version
+If not you can run a very [__convenient installation script provided by aieater__](https://github.com/aieater/rocm_tensorflow_info), that installs all you need including the tensorflow rocm version
 
 # Performance
 As you can see from the table the performance is quite good for standard benchmarks but when it comes to OpenAI's PPO2 it delivers half the performance. I did not have the time to use AMD's gpu profiler yet to figure out where is the bottleneck, will post it here when I do
