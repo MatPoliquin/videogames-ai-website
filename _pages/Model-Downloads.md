@@ -27,6 +27,3 @@ python3 -m baselines.run --alg=ppo2 --env=[GAME NAME] --gamestate=[STATE] --num_
 | 1942-Nes  | [Level 1-1](https://repo.videogames.ai/openai_retro/1942-Nes/Level1.model)       |
 | DoubleDragon-Nes  | [Level 1-1](https://repo.videogames.ai/openai_retro/DoubleDragon-Nes/Player_ModeA_Level1.model)       |
 | GoldenAxeIII-Genesis | [Level 1-1](https://repo.videogames.ai/openai_retro/GoldenAxeIII-Genesis/1Player.DefaultCharacter.Level1.model)       |
-
-
-
