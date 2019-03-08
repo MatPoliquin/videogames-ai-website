@@ -49,6 +49,9 @@ Hardware
 *	Asus x99-e WS motherboard
 *	32GB DDR4 ram 2400Mhz
 
+
+![gpu-z](/assets/rx580/RX580_GPU-Z.gif)
+
 # Installation
 If you have an AMD RX card already install for ML, the RX580 should work right away without further installation.
 If not you can run a very convenient installation script provided by gpu-eater, that installs all you need including the tensorflow rocm version
