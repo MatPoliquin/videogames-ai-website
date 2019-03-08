@@ -18,15 +18,16 @@ The RX580 is cheapest 8GB ML card on the market, is worth it?
 | PPO2 Atari Pong  | ~1110 frame/sec    | ~480 frames/sec           |
 
 **Update:** <br>
-I also ran a benchmark script provided by lamdalabs:
+I also ran a benchmark script provided by Lamda Labs: <br>
+**Note:** You will need to remove references to nvidia-smi in their script if you are testing it on an AMD Card
 ```shell
 git clone https://github.com/lambdal/lambda-tensorflow-benchmark.git --recursive
 cd lambda-tensorflow-benchmark
 ./benchmark.sh
 ```
 
-I took the GTX 1080ti numbers from their blog post so you can compare
-[blog post](https://lambdalabs.com/blog/2080-ti-deep-learning-benchmarks/)
+I took the GTX 1080ti numbers from their [blog post](https://lambdalabs.com/blog/2080-ti-deep-learning-benchmarks/) so you can compare
+
 
 
 | Test        	   | GTX 1080ti    		| RX580 (8 GB) 				|
@@ -73,7 +74,7 @@ That said on OpenAI baselines implementation of PPO2 it delivers less the half t
 If you absolutly need 8GB it's a good choice, if not the P106-100 offers better value for the money.
 
 Moreover make sure your ML algo and training scenario doesn't fall in edge case not well supported by the current state of ROCm.
-You should definatly try it on a cloud first, like gpueater.
+You should definetly try it on a cloud first, like gpueater.
 
-For now I would still suggest NVIDIA if you want peace of mind but I really do wish ROCm gets better so NVIDIA can finally have fierce competition, it will be win for all customers.
+For now I would still suggest NVIDIA if you want peace of mind but I really do wish ROCm gets better so NVIDIA can finally have fierce competition, it will be a win for all customers.
 
