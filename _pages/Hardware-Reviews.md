@@ -9,4 +9,4 @@ tags: [hardware, gpu, cpu, motherboard, machine learning, review]
 
 ### [RX 550](./2019-01-27-RX550-GPU-Machine-Learning.html)
 
-### [RX 580](./2019-02-23-RX580-GPU-Machine-Learning.html)
+### [RX 580](./2019/02/23/RX580-GPU-Machine-Learning.html)
