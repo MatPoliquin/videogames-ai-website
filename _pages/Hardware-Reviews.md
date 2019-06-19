@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Computer Hardware review"
-permalink: /Ubuntu-howto
+permalink: /Hardware-Reviews
 tags: [hardware, gpu, cpu, motherboard, machine learning, review]
 ---
 
