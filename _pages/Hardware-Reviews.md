@@ -5,7 +5,7 @@ permalink: /Hardware-Reviews
 tags: [hardware, gpu, cpu, motherboard, machine learning, review]
 ---
 
-### [NVIDIA P106-100](./2019-01-19-P106-100-GPU-Machine-Learnin.html)
+### [NVIDIA P106-100](./2019-01-19-P106-100-GPU-Machine-Learning.html)
 
 ### [RX 550](./2019-01-27-RX550-GPU-Machine-Learning.html)
 
