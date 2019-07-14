@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dev Log #000001 - Hardware for Unreal Engine"
+title:  "Hardware for Unreal Engine"
 date:   2019-07-10 00:00:00 +0800
 tags: [unreal engine, hardware, huananzhi, xeon, ddr3, x79]
 ---
