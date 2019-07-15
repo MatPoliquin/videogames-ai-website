@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Hardware for Unreal Engine"
+title:  "Budget Hardware for Unreal Engine and Machine Learning"
 date:   2019-07-10 00:00:00 +0800
-tags: [unreal engine, hardware, huananzhi, xeon, ddr3, x79]
+tags: [unreal engine, hardware, huananzhi, xeon, ddr3, x79, budget, machine learning]
 ---
 
 
 As an indie developper, getting the best bang for the buck on computer hardware is always a priority.
-I have XiaoMi notebook pro 2017 which is decent for most tasks but for heavier tasks I needed something more powerful and for a reasonable price.
+I have a XiaoMi Notebook pro 2017 which is decent for most tasks but for heavier tasks I needed something more powerful and for a reasonable price.
 
 For those in a hurry here are the hardware specs:
 
