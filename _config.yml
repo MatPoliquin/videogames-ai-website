@@ -16,7 +16,7 @@
 title: Videogames AI Blog
 email: mathieu.poliquin@videogames.ai
 description: >- # this means to ignore newlines until "baseurl:"
-  Machine Learning trained on video games
+  Machine Learning, Video Game Dev, Education and everything in between
 #baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.videogames.ai" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  MatPoliquin
