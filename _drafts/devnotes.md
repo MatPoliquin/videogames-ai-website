@@ -31,3 +31,17 @@ git push
 <tf.Variable 'ppo2_model/vf/b:0' shape=(1,) dtype=float32_ref>
 ==================================================
 ```
+```
+export GIT_TRACE_PACKET=1
+export GIT_TRACE=1
+export GIT_CURL_VERBOSE=1
+git clone --depth=1 --jobs 10 https://github.com/openai/retro.git
+
+
+git config --global http.maxRequestBuffer 100M
+git config --global core.compression 0
+git config --global http.postBuffer 1000M
+
+
+```
+
