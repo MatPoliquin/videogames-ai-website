@@ -11,7 +11,7 @@ tags: [how to, ubuntu, tensorflow, python]
 *	[Install ROCm on Ubuntu 18.04](https://github.com/aieater/rocm_tensorflow_info)
 *	[Remote Access Ubuntu from Windows via VNC](./Ubuntu-VNC-Windows.html)
 *	[Resolve time conflict when dual booting with windows](./Fix-timezone-dual-boot)
-*	[Fix slow and unreliable git clone](./Git-clone-fix)
+*	[Fix slow and unreliable git clone](./Git-clone-fix.html)
 
 ### Tensorflow
 *	[Select which GPU are visible to tensorflow](./Tensorflow-visible-gpu)
