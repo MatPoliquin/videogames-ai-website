@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "git clone fix"
-permalink: /Ubuntu-VNC-Windows
+permalink: /git-clone-fix
 tags: [git, clone, slow, disconnect, fix, speed up]
 ---
 
