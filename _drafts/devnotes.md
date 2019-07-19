@@ -69,3 +69,6 @@ Total Params:1703109
 512×36 = 18432
 
 2048+512+576+1605632+18432 = 1627200
+
+
+https://github.com/tensorflow/models.git
