@@ -68,6 +68,8 @@ Lots of motherboards support only one full speed pcie 16x slot at a time. When t
 Moreoever if bandwith performance is critical for your use case, p106 might not be the best choice. That said even with a 15% hit on performance it's still offers a very good price/performance ratio.
 
 
+This is the card I am using to do Machine Learning experiments such as this one:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GBlfDzsNSk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Performance test details
 Here are screenshots of various tests I made
@@ -97,5 +99,4 @@ Artic Cat MX-4 thermal paste does the job
 nvidia-smi
 ```
 ![nvidia-smi](/assets/p106/nvidia_smi.png)
-
 
