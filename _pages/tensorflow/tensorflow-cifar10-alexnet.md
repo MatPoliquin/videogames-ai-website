@@ -19,4 +19,7 @@ python3 ./cifar10_train.py
 python3 ./cifar10_eval.py
 ```
 
+```
 cd models/tutorials/image/alexnet
+python3 ./alexnet_benchmark.py
+```

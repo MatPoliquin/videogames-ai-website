@@ -15,6 +15,8 @@ tags: [how to, ubuntu, tensorflow, python]
 
 ### Tensorflow
 *	[Select which GPU are visible to tensorflow](./Tensorflow-visible-gpu)
+*	[Count total trainable parameters](./Tensorflow-trainable-parameters-count)
+*	[How to run cifar10 and alexnet benchmark](./Tensorflow-cifar10-alexnet)
 
 ### Python
 *	[Convert image from RGB to gray scale](./Convert-image-rgb-to-gray-scale)
