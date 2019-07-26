@@ -15,32 +15,7 @@ git commit -a
 git push
 ```
 
-```
-==============TRAINABLE PARAMETERS================
-<tf.Variable 'ppo2_model/pi/c1/w:0' shape=(8, 8, 4, 32) dtype=float32_ref>
-<tf.Variable 'ppo2_model/pi/c1/b:0' shape=(1, 32, 1, 1) dtype=float32_ref>
-<tf.Variable 'ppo2_model/pi/c2/w:0' shape=(4, 4, 32, 64) dtype=float32_ref>
-<tf.Variable 'ppo2_model/pi/c2/b:0' shape=(1, 64, 1, 1) dtype=float32_ref>
-<tf.Variable 'ppo2_model/pi/c3/w:0' shape=(3, 3, 64, 64) dtype=float32_ref>
-<tf.Variable 'ppo2_model/pi/c3/b:0' shape=(1, 64, 1, 1) dtype=float32_ref>
-<tf.Variable 'ppo2_model/pi/fc1/w:0' shape=(3136, 512) dtype=float32_ref>
-<tf.Variable 'ppo2_model/pi/fc1/b:0' shape=(512,) dtype=float32_ref>
-<tf.Variable 'ppo2_model/pi/w:0' shape=(512, 36) dtype=float32_ref>
-<tf.Variable 'ppo2_model/pi/b:0' shape=(36,) dtype=float32_ref>
-<tf.Variable 'ppo2_model/vf/w:0' shape=(512, 1) dtype=float32_ref>
-<tf.Variable 'ppo2_model/vf/b:0' shape=(1,) dtype=float32_ref>
-==================================================
-```
-```
-export GIT_TRACE_PACKET=1
-export GIT_TRACE=1
-export GIT_CURL_VERBOSE=1
-git clone --depth=1 --jobs 10 https://github.com/openai/retro.git
 
-
-git config --global http.maxRequestBuffer 100M
-git config --global core.compression 0
-git config --global http.postBuffer 1000M
 
 
 ```
@@ -72,3 +47,15 @@ Total Params:1703109
 
 
 https://github.com/tensorflow/models.git
+
+
+#error -- unsupported GNU version! gcc versions later than 7 are not supported!
+
+git clone https://github.com/NVIDIA/cuda-samples.git
+cd cuda-samples/
+
+
+sudo apt install gcc-7 g++-7
+sudo ln -s /usr/bin/gcc-7 /usr/local/cuda/bin/gcc
+sudo ln -s /usr/bin/g++-7 /usr/local/cuda/bin/g++
+make -j$(grep -c ^processor /proc/cpuinfo)
