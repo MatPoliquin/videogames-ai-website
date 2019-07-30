@@ -59,3 +59,11 @@ sudo apt install gcc-7 g++-7
 sudo ln -s /usr/bin/gcc-7 /usr/local/cuda/bin/gcc
 sudo ln -s /usr/bin/g++-7 /usr/local/cuda/bin/g++
 make -j$(grep -c ^processor /proc/cpuinfo)
+
+
+
+NES (224, 240, 3)
+SMS (192, 256, 3)
+GENESIS (224, 320, 3)
+
+ffmpeg -i vecenv.video.28793.video000000.mp4 -i vecenv.video.28793.video000000.mp4_audio.mp4 -c:v copy -c:a aac -strict experimental output.mp4
