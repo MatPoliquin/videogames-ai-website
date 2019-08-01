@@ -9,9 +9,13 @@ tags: [cuda, 10, ubuntu, 18.04, 18.10, machine learning]
 
 Assuming a fresh install of 18.04 18.10
 
-You can find instructions for 18.04 on the tensorflow page but it also works for 18.10:
+You can follow instructions for 18.04 on the tensorflow gpu install page but it also works for 18.10:
 [CUDA Install](https://www.tensorflow.org/install/gpu)
 
+I copied the instructions here along with some additional trouble shooting notes
+
+
+### 1. Add NVIDIA package repositories
 
 ```
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-repo-ubuntu1804_10.0.130-1_amd64.deb
@@ -23,26 +27,47 @@ sudo apt install ./nvidia-machine-learning-repo-ubuntu1804_1.0.0-1_amd64.deb
 sudo apt-get update
 ```
 
+
+### 2. Install driver
+In the software update you might not see 418 driver, if the case refresh the available drivers with the following commands
 ```
 sudo add-apt-repository ppa:graphics-drivers
 sudo apt-get update
 ```
 
-
+After that you can install it this way as stated in tensorflow installation guide
 ```
 sudo apt-get install --no-install-recommends nvidia-driver-418
 ```
 
-Sometimes it might not work, in the case you can try throught the software update GUI
-![gui](/assets/hardware/huananzhi.jpg)
+On some systems you might not be able to install 418 as it complains abut missing dependencies that also cannot be installed because they don't support your system. The workaround is to install 430 version which compatible. You might need to get the source first:
 
-REBOOT
+```
+sudo apt-get install nvidia-kernel-source-430
+sudo apt-get install nvidia-kernel-common-430
+sudo apt-get install nvidia-driver-430
+```
+
+As an alternative you can also use the Software and Update app if the command doesn't work some reasons
+![driver_list(/assets/ubuntu/driver_list.png)
 
 
-If it was for tensorflow
+Don't forget to REBOOT!!!!!
+
+
+# Install development and runtime libraries
+```
+sudo apt-get install --no-install-recommends cuda-10-0 libcudnn7=7.6.0.64-1+cuda10.0 libcudnn7-dev=7.6.0.64-1+cuda10.0
+```
+
+### 4. Tensorflow
+
+Tensorflow 1.14 support CUDA 10
+
 ```
 pip3 install tensorflow-gpu
 ```
+
 
 
 
