@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Installing CUDA Samples"
-date:   2019-07-23 00:00:00 +0800
+permalink: /Installing-CUDA-Samples
 tags: [cuda, 10, samples, machine learning]
 ---
 

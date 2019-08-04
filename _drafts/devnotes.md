@@ -57,8 +57,6 @@ NES (224, 240, 3)
 SMS (192, 256, 3)
 GENESIS (224, 320, 3)
 
-ffmpeg -i vecenv.video.28793.video000000.mp4 -i vecenv.video.28793.video000000.mp4_audio.mp4 -c:v copy -c:a aac -strict experimental output.mp4
-
 
 git checkout tags/v1.13.0
 git describe --tags

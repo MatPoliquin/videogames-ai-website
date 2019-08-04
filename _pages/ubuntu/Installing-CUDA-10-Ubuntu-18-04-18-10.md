@@ -1,7 +1,6 @@
 ---
 layout: page
 title:  "Installing CUDA 10 on Ubuntu 18.04/18.10"
-date:   2019-07-23 00:00:00 +0800
 tags: [cuda, 10, ubuntu, 18.04, 18.10, machine learning]
 ---
 
