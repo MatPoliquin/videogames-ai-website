@@ -49,16 +49,7 @@ Total Params:1703109
 https://github.com/tensorflow/models.git
 
 
-#error -- unsupported GNU version! gcc versions later than 7 are not supported!
 
-git clone https://github.com/NVIDIA/cuda-samples.git
-cd cuda-samples/
-
-
-sudo apt install gcc-7 g++-7
-sudo ln -s /usr/bin/gcc-7 /usr/local/cuda/bin/gcc
-sudo ln -s /usr/bin/g++-7 /usr/local/cuda/bin/g++
-make -j$(grep -c ^processor /proc/cpuinfo)
 
 
 
