@@ -15,7 +15,16 @@ git commit -a
 git push
 ```
 
+export ROCR_VISIBLE_DEVICES=0
 
+sudo apt-get install rocm-cmake
+
+pip3 install --timeout 1000 --upgrade --force-reinstall tensorflow-rocm==1.13.4
+
+git clone https://github.com/ROCmSoftwarePlatform/rccl.git
+ ./install.sh -p
+
+pip3 install --timeout 1000 --upgrade --force-reinstall tensorflow-rocm==1.13.4
 
 
 ```
