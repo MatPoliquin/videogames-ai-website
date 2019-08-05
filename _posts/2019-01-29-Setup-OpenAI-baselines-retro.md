@@ -40,13 +40,13 @@ pip3 install -e .
 ## Step 2 - If you want to use a GPU
 
 *   If you want to use tensorflow on an NVIDIA gpu, here is guide for installing CUDA 10.0:
-[click here!](./Installing-CUDA-10-Ubuntu-18-04-18-10.html)
+[click here!](/Install-CUDA-10-Ubuntu-18-04-18-10)
 
 *   otherwise here is guide for installing CUDA 9.0:
-[click here!](./Install-CUDA-9-0-Ubuntu-18-04.html)
+[click here!](/Install-CUDA-9-0-Ubuntu-18-04)
 
 *   If you have a AMD card, you can install ROCm with this guide:
-[click here!](./Install-ROCM-for-Machine-Learning-on-AMD-GPUs)
+[click here!](/Install-ROCM-for-Machine-Learning-on-AMD-GPUs)
 
 after that, in the terminal, just type
 
