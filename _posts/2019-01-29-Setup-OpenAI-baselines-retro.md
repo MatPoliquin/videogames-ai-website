@@ -46,7 +46,7 @@ pip3 install -e .
 [click here!](/Install-CUDA-9-0-Ubuntu-18-04)
 
 *   If you have a AMD card, you can install ROCm with this guide:
-[click here!](/Install-ROCM-for-Machine-Learning-on-AMD-GPUs)
+[click here!](/Install-ROCM-Machine-Learning-AMD-GPU)
 
 after that, in the terminal, just type
 

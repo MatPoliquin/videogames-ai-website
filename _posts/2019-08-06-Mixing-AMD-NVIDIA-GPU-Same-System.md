@@ -26,7 +26,7 @@ pip3 install tensorflow-gpu
 ### 2. Install ROCM + tensorflow-rocm
 
 
-[ROCM install guide](/Install-ROCM-for-Machine-Learning-on-AMD-GPUs)
+[ROCM install guide](/Install-ROCM-Machine-Learning-AMD-GPU)
 
 
 The only difference is that you will need to install tensorflow-rocm in it's own virtual env so it doesn't conflict with vanilla tensorflow
