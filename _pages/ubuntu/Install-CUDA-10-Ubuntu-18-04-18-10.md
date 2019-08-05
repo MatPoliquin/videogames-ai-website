@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  "Installing CUDA 10 on Ubuntu 18.04/18.10"
+permalink: /Install-CUDA-10-Ubuntu-18-04-18-10
 tags: [cuda, 10, ubuntu, 18.04, 18.10, machine learning]
 ---
 
