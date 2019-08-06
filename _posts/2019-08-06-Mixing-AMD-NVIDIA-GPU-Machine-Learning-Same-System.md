@@ -58,3 +58,22 @@ When you are finished using that virtual env you can quit with this command
 ```
 deactivate
 ```
+
+
+## Details
+
+Software
+*	Ubuntu 18.10 Cosmic Cuttlefish
+*	Tensorflow-gpu 1.14
+*	Tensorflow-rocm 1.13.4
+
+
+Hardware
+*	MaxSun RX580 8GB
+*	Gygabyte P106-100
+*	Intel Xeon E5-2667 v3 ES (20MB, 8C/16T)
+*	Asus x99-e WS motherboard
+*	16GB DDR4 ECC ram 2133Mhz
+
+
+![amd_nvdia_hardware](/assets/rocm/asus_amd_nvdida.jpg)
