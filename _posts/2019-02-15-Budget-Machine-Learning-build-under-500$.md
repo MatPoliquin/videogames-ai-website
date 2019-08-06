@@ -5,10 +5,9 @@ date:   2019-02-15 06:00:00 +0000
 tags: [machine learning, gpu, budget, p106-100, x58]
 ---
 
-WORK IN PROGRESS
 ![cinebench](/assets/x58/result.jpg)
 
-Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=Cb64Op-yfcg&t=639s) endless quest to build the cheapest x58 base gaming PC, I wanted to try the same but for Machine Learning applied to playing video games.
+Inspired by [Tech Yes City Channel's](https://www.youtube.com/watch?v=0c-IGnSYi7M) endless quest to build the cheapest x58 base gaming PC, I wanted to try the same but for Machine Learning applied to playing video games.
 
 
 ### First the criterias
@@ -126,7 +125,7 @@ pip3 install tensorflow-1.12.0-cp36-cp36m-linux_x86_64.whl
 ```
 
 # Conclusion and Electricity cost
-While it works reliably and delivers good performance for a very low price, there is two things to consider:
+While it works reliably and delivers good performance for a very low price, there is a couple of things to consider:
 *	The time it took to setup everything and solve the problems related to old and used hardware and imcompatiblities (see bios section for example) might overweight the low price. But if you follow this guide with the exact hardware specs, it might be ok
 *	For now most os/software/drivers are still compatible and well supported but since it's over 10 years old hardware (except the GPUs) we might run into problems soon down the road. It might be less expensive in the long term to pay a little more for future proof hardware.
 * Electricity costs. This build uses close to 500W when four atari pong trainings are active in parallel. That's close to 100W more then it should be because today components are more energy efficient 24/7 this is around 10$ more per month more in the area I live. So this is another point to consider 
