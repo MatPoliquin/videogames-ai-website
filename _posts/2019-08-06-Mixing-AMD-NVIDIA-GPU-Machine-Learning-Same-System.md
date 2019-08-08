@@ -43,7 +43,7 @@ virtualenv --system-site-packages -p python3 ~/venv
 
 Actitvate the environement before installing or using tensorflow-rocm
 ```
-source ./venv/bin/activate
+source ~/venv/bin/activate
 ```
 
 You should now see "(venv) $" at the beginning of your shell prompt 
