@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to use Intel Integrated graphica and NVIDIA GPU at same time on linux laptop"
+title:  "How to use Intel Integrated graphics and NVIDIA GPU at same time on linux laptop"
 date:   2019-08-09 00:00:00 +0800
 tags: [intel, integrated graphics, nvidia, gpu, machine learning, linux]
 ---
