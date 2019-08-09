@@ -13,6 +13,11 @@ git diff
 git add
 git commit -a
 git push
+
+git checkout HEAD baselines/common/retro_wrappers.py
+
+git checkout tags/v1.13.0
+git describe --tags
 ```
 
 export ROCR_VISIBLE_DEVICES=0
@@ -67,5 +72,27 @@ SMS (192, 256, 3)
 GENESIS (224, 320, 3)
 
 
-git checkout tags/v1.13.0
-git describe --tags
+
+
+sudo prime-select nvidia
+sudo apt-get install intel-gpu-tools
+lspci
+sudo nautilus
+
+sudo intel_gpu_top
+
+etc/X11/xorg.conf
+
+Section "Device"
+    Identifier      "intel"
+    Driver          "intel"
+    BusId           "PCI:0:2:0"
+EndSection
+
+Section "Screen"
+    Identifier      "intel"
+    Device          "intel"
+EndSection
+
+https://nvidia.custhelp.com/app/answers/detail/a_id/3029/~/using-cuda-and-x
+https://askubuntu.com/questions/1061551/how-to-configure-igpu-for-xserver-and-nvidia-gpu-for-cuda-work
