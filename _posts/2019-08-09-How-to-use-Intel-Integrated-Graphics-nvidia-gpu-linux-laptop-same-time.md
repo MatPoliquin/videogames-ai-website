@@ -61,7 +61,8 @@ nvidia-smi -l 1
 You should see something like this:
 ![nividia_smi](/assets/ubuntu/nvidia-smi.png)
 
-
+I made a video following these steps:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gLcPa4z6GU4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
