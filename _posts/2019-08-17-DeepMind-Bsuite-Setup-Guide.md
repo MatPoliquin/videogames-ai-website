@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "DeepMind Bsuite setup guide"
-date:   2019-08-09 00:00:00 +0800
+date:   2019-08-17 00:00:00 +0800
 tags: [DeepMind, Bsuite, setup guide, tutorial, ppo2]
 ---
 
