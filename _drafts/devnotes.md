@@ -96,3 +96,10 @@ EndSection
 
 https://nvidia.custhelp.com/app/answers/detail/a_id/3029/~/using-cuda-and-x
 https://askubuntu.com/questions/1061551/how-to-configure-igpu-for-xserver-and-nvidia-gpu-for-cuda-work
+
+
+game-data-packager -i quake3
+ 1058  game-data-packager -i quake3 /home/p108/Documents/Quake3
+ 1059  quake3
+
+ 
