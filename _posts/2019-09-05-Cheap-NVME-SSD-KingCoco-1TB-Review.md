@@ -12,7 +12,10 @@ REVIEW IN PROGRESS
 
 ### Benchmarks
 
-![test](/assets/hardware/cdm.png)
+
+![test1](/assets/hardware/as-ssd-bench.png)
+
+![test2](/assets/hardware/cdm.png)
 
 
 ```
