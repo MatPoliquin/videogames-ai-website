@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Huananzhi x79 Chinese motherboard review"
+title:  "Huananzhi motherboard review"
 date:   2019-09-08 00:00:00 +0800
 tags: [Huananzhi, motherboard, x79, Chinese, aa1 version, review]
 ---

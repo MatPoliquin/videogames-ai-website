@@ -6,12 +6,7 @@ tags: [how to, ubuntu, tensorflow, python]
 ---
 
 
-### Ubuntu
-*	[Install CUDA 9.0 on Ubuntu 18.04](./Install-CUDA-9-0-Ubuntu-18-04-18-10.html)
-*	[Install ROCm on Ubuntu 18.04](https://github.com/aieater/rocm_tensorflow_info)
-*	[Remote Access Ubuntu from Windows via VNC](./Ubuntu-VNC-Windows.html)
-*	[Resolve time conflict when dual booting with windows](./Fix-timezone-dual-boot)
-*	[Fix slow and unreliable git clone](./git-clone-fix)
+
 
 ### Tensorflow
 *	[Select which GPU are visible to tensorflow](./Tensorflow-visible-gpu)
@@ -25,3 +20,13 @@ tags: [how to, ubuntu, tensorflow, python]
 *	[Resize image using opencv](./Resize-image-opencv-python)
 *	[Normalize image using opencv](./Normalize-image-opencv-python)
 *	[Draw image inside image](./Python-Image-inside-Image)
+
+### Ubuntu
+*	[Install CUDA 9.0 on Ubuntu 18.04](./Install-CUDA-9-0-Ubuntu-18-04-18-10.html)
+*	[Install ROCm on Ubuntu 18.04](./Install-ROCM-for-Machine-Learning-on-AMD-GPUs)
+*	[Remote Access Ubuntu from Windows via VNC](./Ubuntu-VNC-Windows.html)
+*	[Resolve time conflict when dual booting with windows](./Fix-timezone-dual-boot)
+*	[Fix slow and unreliable git clone](./git-clone-fix)
+
+### Windows
+*	[Diablo 1 on Windows 10](./Diablo-Windows-10)
