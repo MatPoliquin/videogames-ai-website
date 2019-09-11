@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cheapest NVME SSD - KingCoco 1TB Review"
+title:  "Cheapest NVME SSD - King Coco 1TB Review"
 date:   2019-09-05 00:00:00 +0800
 tags: [cheap, nvme, ssd, kingcoco, 1TB]
 ---
