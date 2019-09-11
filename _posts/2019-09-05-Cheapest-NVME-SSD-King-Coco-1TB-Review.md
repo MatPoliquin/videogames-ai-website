@@ -5,9 +5,13 @@ date:   2019-09-05 00:00:00 +0800
 tags: [cheap, nvme, ssd, kingcoco, 1TB]
 ---
 
-REVIEW IN PROGRESS
+I needed to replace the SSD in my laptop since I was running out of space.
+I decided to give a try to the cheapest 1 Terabyte NVMe SSD I could find on taobao since I was curious to know if there was really a difference for everyday tasks as well as game dev related usage compared to more expensive ones such as the intel 760p ssd which I have for my desktop.
 
-![test](/assets/hardware/cdi.png)
+
+### Conclusion for those in a hurry
+So far it performs quite well and without any percitible or meaningful differences for everyday tasks, game dev/coding related tasks and even with having a Ubuntu VM running in the background on Hyper-V. Althought for 4K video editing tasks or heavy server usage (which I did not tested) I would guess it's better to consider a better performing one.
+
 
 
 ### Benchmarks
@@ -40,3 +44,6 @@ CrystalDiskMark 6.0.1 x64 (C) 2007-2018 hiyohiyo
     OS : Windows 10 Professional [10.0 Build 18362] (x64)
 ```
 
+
+### additional info
+![test](/assets/hardware/cdi.png)
