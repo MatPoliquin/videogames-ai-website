@@ -5,7 +5,7 @@ date:   2019-02-23 00:06:00 +0000
 tags: [rx580, maxsun, gpu, rocm, machine learning]
 ---
 
-The RX580 is cheapest 8GB ML card on the market, is worth it?
+The RX580 is one of the cheapest 8 GB ML card on the market, is worth it?
 ![rx580](/assets/rx580/rx580.jpg) <br>
 
 # Benchmarks
@@ -82,12 +82,15 @@ Temperatures are quite stable and cool at around 66C when GPU is at 100%
 As for stability I got three freezes so far out of maybe 60 hours of training. However, it might because of Ubuntu 18.10 Cosmic Cuttlefish, I will try with 18.04 and post the results here. 
 
 # Conclusion
-This is the cheapest 8GB card on the market and delivers good performance on standard benchmarks.
+This is the one of the cheapest 8GB card on the market and delivers good performance on standard benchmarks.
 That said on OpenAI baselines implementation of PPO2 it delivers less the half the performance of a P106-100.
-If you absolutly need 8GB it's a good choice, if not the P106-100 offers better value for the money.
+If you absolutely need 8GB it's a good choice, if not the P106-100 offers better value for the money.
 
 Moreover make sure your ML algo and training scenario doesn't fall in edge case not well supported by the current state of ROCm.
 You should definetly try it on a cloud first, like gpueater.
 
 For now I would still suggest NVIDIA if you want peace of mind but I really do wish ROCm gets better so NVIDIA can finally have fierce competition, it will be a win for all customers.
+
+Note:
+There is also the AMD RX 470, RX 570, RX 590 that have 8 GB versions with a cheap price, althought I haven't tested those, a guesstimate based on specs would be that they deliver 80%, 90% and 110% performance of the rx 580 respectively. As for the RX 580 I would srongly recommend borrowing one and testing your specific use case on it first before purchase.
 
