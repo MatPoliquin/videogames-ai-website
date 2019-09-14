@@ -45,7 +45,7 @@ Software
 *	Tensorflow-rocm 1.11
 
 Hardware
-*	MaxSun RX580 8GB
+*	MaxSun RX 580 8GB
 *	Intel Xeon E5-2667 v3 ES (20MB, 8C/16T)
 *	Asus x99-e WS motherboard
 *	32GB DDR4 ram 2400Mhz
@@ -92,5 +92,5 @@ You should definetly try it on a cloud first, like gpueater.
 For now I would still suggest NVIDIA if you want peace of mind but I really do wish ROCm gets better so NVIDIA can finally have fierce competition, it will be a win for all customers.
 
 Note:
-There is also the AMD RX 470, RX 570, RX 590 that have 8 GB versions with a cheap price, althought I haven't tested those, a guesstimate based on specs would be that they deliver 80%, 90% and 110% performance of the rx 580 respectively. As for the RX 580 I would srongly recommend borrowing one and testing your specific use case on it first before purchase.
+There is also the AMD RX 470, RX 480, RX 570, RX 590 that have 8 GB versions with a cheap price relative to NVDIA's 8 GB offerings, althought I haven't tested those, a guesstimate based on specs would be that they deliver 80%, 90%, 90% and 110% performance of the rx 580 respectively. As for the RX 580 I would srongly recommend borrowing one and testing your specific use case on it first before purchase.
 
