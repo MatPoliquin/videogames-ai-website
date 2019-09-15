@@ -1,8 +1,8 @@
 ---
 layout: page
 title:  "Diablo 1 on Linux"
-permalink: /Diablo-Windows-10
-tags: [Diablo, Windows 10, web]
+permalink: /Diablo-Linux-10
+tags: [Diablo, Linux, web]
 ---
 
 
