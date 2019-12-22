@@ -1,10 +1,19 @@
----
-layout: page
-title:  "Tensorflow.js performance test"
-permalink: /Tensorflow-js-performance-test
-tags: [tensorflow.js, performance, test, benchmark]
----
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Z</title>
 
+  <!-- Import TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+  <!-- Import tfjs-vis -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+
+  
+
+</head>
 
 <body>
   <!-- ===================================================  -->
@@ -78,6 +87,15 @@ tags: [tensorflow.js, performance, test, benchmark]
 
 <texarea type="text" id='test-output'>
 
+
+
 <script src="main.js"></script>
-<script src="tf-tests/matmul.js"></script>
-<script src="tf-tests/mnist.js"></script>
+<script src="tests/matmul.js"></script>
+<script src="tests/mnist.js"></script>
+
+
+
+
+  
+</body>
+</html>
