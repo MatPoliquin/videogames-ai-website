@@ -43,7 +43,7 @@ tags: [tensorflow.js, performance, test, benchmark]
 
   
     <canvas id="glcanvas" width="0" height="0">
-      <script src="host_info.js"></script>
+      <script src="tf-tests/host_info.js"></script>
     </canvas>
   </div>
 
@@ -78,6 +78,6 @@ tags: [tensorflow.js, performance, test, benchmark]
 
 <texarea type="text" id='test-output'>
 
-<script src="main.js"></script>
+<script src="tf-tests/main.js"></script>
 <script src="tf-tests/matmul.js"></script>
 <script src="tf-tests/mnist.js"></script>
