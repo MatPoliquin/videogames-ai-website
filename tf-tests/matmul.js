@@ -43,20 +43,23 @@ async function MatMulTest() {
     result = tf.matMul(mat1, mat2);
     result.dispose();
   
-    
+    var total = 0;
   
-    var t0 = performance.now();
+    
     for (var i=0; i < numIterations; i++) {
-      WriteOutput("1. <br>")
+      WriteOutput("1. <br>");
+      var t0 = performance.now();
       result = tf.matMul(mat1, mat2);
+      var t1 = performance.now();
+      total += t1 - t0;
       result.dispose();
     }
-    var t1 = performance.now();
+    
     
     mat1.dispose();
     mat2.dispose();
   
-    time = (t1 - t0) / numIterations;
+    time = total / numIterations;
   
     totalFlops = 2 * Math.pow(matSize,3);
     gflops = 1.0e-9 * totalFlops / time;
