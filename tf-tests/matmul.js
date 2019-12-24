@@ -39,7 +39,11 @@ async function MatMulTest() {
     WriteOutput(`Running  tf.matMul(mat1, mat2) ${numIterations} times <br>`);
   
   
-    //Run once for warmup
+    //Run twice for warmup
+    result = tf.matMul(mat1, mat2);
+    result.dispose();
+    result = tf.matMul(mat1, mat2);
+    result.dispose();
     result = tf.matMul(mat1, mat2);
     result.dispose();
   
@@ -47,12 +51,14 @@ async function MatMulTest() {
   
     
     for (var i=0; i < numIterations; i++) {
-      WriteOutput("1. <br>");
+      
       var t0 = performance.now();
       result = tf.matMul(mat1, mat2);
       var t1 = performance.now();
       total += t1 - t0;
+      WriteOutput(`${i}. ${t1 - t0} ms / ${tf.memory().numBytesInGPU / 1024} <br>`);
       result.dispose();
+      
     }
     
     
