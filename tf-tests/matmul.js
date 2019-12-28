@@ -28,8 +28,8 @@ function Test() {
 
 async function MatMulTest() {
 
-    const matSize = 4 * 1024;
-    const numIterations = 10;
+    const matSize = 2 * 1024;
+    const numIterations = 1;
   
   
     const mat1 = tf.ones([matSize, matSize], tf.float32);
@@ -37,28 +37,34 @@ async function MatMulTest() {
     WriteOutput(`Created two [${matSize},${matSize}] matrices filled with ones <br>`);
     WriteOutput(`Running  tf.matMul(mat1, mat2) ${numIterations} times <br>`);
   
+
+    const test = await tf.time(() => tf.matMul(mat1, mat2));
   
     //warmup run
-    result = tf.matMul(mat1, mat2);
-    result.dispose();
+    const matmulTime = await tf.time(() => tf.matMul(mat1, mat2));
+    WriteOutput(`matmulTime ${matmulTime.kernelMs} ms <br>`);
+    //result.dispose();
     
-    var results;
-    var t0 = performance.now();
-    for (var i=0; i < numIterations; i++) {  
-      result[i] = tf.matMul(mat1, mat2);      
-    }
+    //var results;
+    //var t0 = performance.now();
+    //for (var i=0; i < numIterations; i++) {  
+    //  result[i] = tf.matMul(mat1, mat2);      
+    //}
 
-    var t1 = performance.now();
+    
 
-    for (var i=0; i < numIterations; i++) {
-      await result[i].data();
-    }
+    //for (var i=0; i < numIterations; i++) {
+    //  result[i].dataSync();
+    //}
 
-    var total = t1 - t0;
+    //var t1 = performance.now();
 
-    for (var i=0; i < numIterations; i++) {
-      result[i].dispose();
-    }
+    //var total = t1 - t0;
+    var total = matmulTime.kernelMs;
+
+    //for (var i=0; i < numIterations; i++) {
+    //  result[i].dispose();
+    //}
     
     mat1.dispose();
     mat2.dispose();
