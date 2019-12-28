@@ -13,7 +13,7 @@ async function MatMulTest() {
     totalFlops = 2 * Math.pow(matSize,3);
     gflops = 1.0e-9 * totalFlops / time;
     WriteOutput(gflops + " GFlops <br>");
-    WriteValue('tr-matmul', `${time.toFixed(3)} ms  <br> ${gflops.toFixed(3)} GFlops/s`);
+    WriteValue('tr-matmul', `${time.toFixed(3)} s  <br> ${gflops.toFixed(3)} GFlops/s`);
 
     mat1.dispose();
     mat2.dispose();
