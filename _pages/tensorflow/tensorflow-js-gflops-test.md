@@ -100,10 +100,6 @@ async function MatMulTest() {
 <script src="tf-tests/matmul.js"></script>
 <script src="tf-tests/mnist.js"></script>
 
-```
-git clone https://github.com/tensorflow/models.git
-pip3 install tensorflow_datasets
-```
 
 
 
