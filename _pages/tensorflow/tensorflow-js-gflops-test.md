@@ -6,6 +6,11 @@ tags: [tensorflow.js, gflops, performance, test, benchmark]
 ---
 
 
+```
+git clone https://github.com/tensorflow/models.git
+pip3 install tensorflow_datasets
+```
+
 <!-- ===================================================  -->
 <!-- Host Info                                            -->
 <!-- ===================================================  -->
@@ -78,7 +83,13 @@ tags: [tensorflow.js, gflops, performance, test, benchmark]
 <script src="tf-tests/matmul.js"></script>
 <script src="tf-tests/mnist.js"></script>
 
-```javascript
+```
+git clone https://github.com/tensorflow/models.git
+pip3 install tensorflow_datasets
+```
+
+
+```
 async function MatMulTest() {
     const matSize = 2 * 1024;
 
