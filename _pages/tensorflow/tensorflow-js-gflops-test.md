@@ -7,7 +7,7 @@ tags: [tensorflow.js, gflops, performance, test, benchmark]
 
 ```
 async function MatMulTest() {
-    const matSize = 2 * 1024;
+    const matSize = 1 * 1024;
 
     const mat1 = tf.ones([matSize, matSize], tf.float32);
     const mat2 = tf.ones([matSize, matSize], tf.float32);

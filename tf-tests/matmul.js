@@ -8,7 +8,7 @@ async function MatMulTest() {
     const matmulTime = await tf.time(() => tf.matMul(mat1, mat2));
     WriteOutput(`matmulTime ${matmulTime.kernelMs} ms <br>`);
     
-    var time = matmulTime.kernelMs;
+    var time = matmulTime.kernelMs / 1000;
 
     totalFlops = 2 * Math.pow(matSize,3);
     gflops = 1.0e-9 * totalFlops / time;
