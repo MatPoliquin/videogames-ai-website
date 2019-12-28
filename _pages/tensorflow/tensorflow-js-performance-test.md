@@ -78,4 +78,3 @@ tags: [tensorflow.js, performance, test, benchmark]
 <script src="tf-tests/main.js"></script>
 <script src="tf-tests/matmul.js"></script>
 <script src="tf-tests/mnist.js"></script>
-</body>
