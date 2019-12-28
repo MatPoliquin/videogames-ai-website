@@ -35,32 +35,30 @@ async function MatMulTest() {
     const mat1 = tf.ones([matSize, matSize], tf.float32);
     const mat2 = tf.ones([matSize, matSize], tf.float32);
     WriteOutput(`Created two [${matSize},${matSize}] matrices filled with ones <br>`);
-    //console.log(`Created two ${matSize} matrices filled with ones <br>`);
     WriteOutput(`Running  tf.matMul(mat1, mat2) ${numIterations} times <br>`);
   
   
-    //Run twice for warmup
+    //warmup run
     result = tf.matMul(mat1, mat2);
     result.dispose();
-    result = tf.matMul(mat1, mat2);
-    result.dispose();
-    result = tf.matMul(mat1, mat2);
-    result.dispose();
-  
-    var total = 0;
-  
     
-    for (var i=0; i < numIterations; i++) {
-      
-      var t0 = performance.now();
-      result = tf.matMul(mat1, mat2);
-      var t1 = performance.now();
-      total += t1 - t0;
-      WriteOutput(`${i}. ${t1 - t0} ms / ${tf.memory().numBytesInGPU / 1024} <br>`);
-      result.dispose();
-      
+    var results;
+    var t0 = performance.now();
+    for (var i=0; i < numIterations; i++) {  
+      result[i] = tf.matMul(mat1, mat2);      
     }
-    
+
+    var t1 = performance.now();
+
+    for (var i=0; i < numIterations; i++) {
+      await result[i].data();
+    }
+
+    var total = t1 - t0;
+
+    for (var i=0; i < numIterations; i++) {
+      result[i].dispose();
+    }
     
     mat1.dispose();
     mat2.dispose();
@@ -73,7 +71,5 @@ async function MatMulTest() {
     
     
     WriteValue('tr-matmul', `${time.toFixed(3)} ms  <br> ${gflops.toFixed(3)} GFlops/s`);
-  
-    //return new Promise();
   }
   

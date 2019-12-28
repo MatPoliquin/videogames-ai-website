@@ -48,7 +48,6 @@ tags: [tensorflow.js, gflops, performance, test, benchmark]
   </div>
 
   <button onclick="StartTest()">Start Test</button>
-  <button onclick="StartTest2()">Start Test 2</button>
 
   <!-- ===================================================  -->
 <!-- Test Results                                          -->
@@ -63,10 +62,6 @@ tags: [tensorflow.js, gflops, performance, test, benchmark]
       <td>MatMul</td>
       <td id="tr-matmul"></td>
     </tr>
-    <tr>
-      <td>Mnist</td>
-      <td id="tr-mnist"></td>
-    </tr>
   </table>
 
 
@@ -77,6 +72,8 @@ tags: [tensorflow.js, gflops, performance, test, benchmark]
 
 
 <texarea type="text" id='test-output'>
+
+
 
 <script src="tf-tests/main.js"></script>
 <script src="tf-tests/matmul.js"></script>
