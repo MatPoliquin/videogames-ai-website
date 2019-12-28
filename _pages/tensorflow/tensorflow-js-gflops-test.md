@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  "Tensorflow.js performance test"
-permalink: /tensorflow-js-performance-test
-tags: [tensorflow.js, performance, test, benchmark]
+title:  "Tensorflow.js gflops test"
+permalink: /tensorflow-js-gflops-test
+tags: [tensorflow.js, gflops, performance, test, benchmark]
 ---
 
 
