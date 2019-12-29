@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: page
 title:  "Install Tensorflow on Windows 10"
-date:   2019-12-08 00:00:00 +0800
 tags: [Tensorflow, Windows, Machine Learning, Python, docker]
 ---
 
