@@ -28,6 +28,7 @@ var gl = canvas.getContext("experimental-webgl");
 //make sure the backend is created
 tf.backend();
 
+//tf.setBackend('cpu');
 
 WriteValue('host-gpu', getUnmaskedInfo(gl).renderer)
 WriteValue('host-tfversion', '1.3.1')
@@ -38,27 +39,6 @@ WriteValue('host-debug', tf.env().get('DEBUG'))
 
 
 var node = document.getElementById('div-hostinfo');
-
-
-//test = getUnmaskedInfo(gl).renderer;
-//test = tf.memory().numBytes;
-//test = tf.env().getFlags();
-//node.innerHTML += test;
-
-//for (var value in test) {
-//  node.innerHTML += value + "<br>";
-//}
-
-
-
-
-
-//node.innerHTML += "<br>";
-
-
-    //node.innerHTML += gl.getParameter(gl.RENDERER) + "<br>";
-    //node.innerHTML += gl.getParameter(gl.VENDOR) + "<br>";
-    //node.innerHTML += getUnmaskedInfo(gl).vendor + "<br>";
 
 
 

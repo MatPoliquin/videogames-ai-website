@@ -46,8 +46,9 @@ tags: [tensorflow.js, gflops, performance, test, benchmark]
   </div>
 
   <button onclick="StartTest()">Start Test</button>
+  Note: Works only on Chrome Desktop version for now
 
-  <!-- ===================================================  -->
+<!-- ===================================================  -->
 <!-- Test Results                                          -->
 <!-- ===================================================  -->
 <div id='div-testresults'>
