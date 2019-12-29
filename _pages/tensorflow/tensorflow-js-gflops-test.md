@@ -6,17 +6,13 @@ tags: [tensorflow.js, gflops, performance, test, benchmark]
 ---
 
 ```javascript
-async function MatMulTest() {
-    const matSize = 2 * 1024;
-    const mat1 = tf.ones([matSize, matSize], tf.float32);
-    const mat2 = tf.ones([matSize, matSize], tf.float32);
-    const matmulTime = await tf.time(() => tf.matMul(mat1, mat2));
-    var time = matmulTime.kernelMs / 1000;
-    totalFlops = 2 * Math.pow(matSize,3);
-    gflops = 1.0e-9 * totalFlops / time;
-    mat1.dispose();
-    mat2.dispose();
-}
+  const matSize = 2 * 1024;
+  const mat1 = tf.ones([matSize, matSize], tf.float32);
+  const mat2 = tf.ones([matSize, matSize], tf.float32);
+  const matmulTime = await tf.time(() => tf.matMul(mat1, mat2));
+  var time = matmulTime.kernelMs / 1000;
+  totalFlops = 2 * Math.pow(matSize,3);
+  gflops = 1.0e-9 * totalFlops / time;
 ```
 
 <!-- ===================================================  -->
