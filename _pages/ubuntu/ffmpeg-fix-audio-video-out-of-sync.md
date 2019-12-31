@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "git clone fix"
-permalink: /ffmepg-mix-audio-video-out-of-sync
+title:  "ffmpeg audio and video out of sync fix"
+permalink: /ffmepg-fix-audio-video-out-of-sync
 tags: [ffmpeg, audio, video, out of sync]
 ---
 
