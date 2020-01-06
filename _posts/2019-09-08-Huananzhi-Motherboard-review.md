@@ -47,7 +47,7 @@ As for compatibility I did not have any noticible issues with the hardware liste
 Except that I needed to intall the RX580 drivers manually as well as the intel chipset inf files.
 
 
-## some details about the spes
+## some details about the specs
 ![info](/assets/hardware/hwi558_huananzhi.png)
 
 ## Performance
