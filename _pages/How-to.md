@@ -10,8 +10,8 @@ tags: [how to, ubuntu, tensorflow, python]
 
 ### Tensorflow
 *	[Select which GPU are visible to tensorflow](./Tensorflow-visible-gpu)
-*	[Check if it's tf gpu version](./Tensorflow-gpu-version-check)
-*	[Check if it's tf eager mode](./Tensorflow-eager-mode-check)
+*	[Check if it's tf gpu version](./tensorflow-gpu-version-check)
+*	[Check if it's tf eager mode](./tensorflow-eager-mode-check)
 *	[Count total trainable parameters](./Tensorflow-trainable-parameters-count)
 *	[How to run cifar10 and alexnet benchmark](./Tensorflow-cifar10-alexnet)
 
