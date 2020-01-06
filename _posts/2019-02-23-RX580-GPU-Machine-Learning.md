@@ -56,7 +56,7 @@ Hardware
 # Installation
 If you have an AMD RX card already install for ML, the RX580 should work right away without further installation.
 If not you need to install ROCm.
-[Quick ROCm Install guide](./Install-ROCM-Machine-Learning-AMD-GPU)
+[Quick ROCm Install guide](/Install-ROCM-Machine-Learning-AMD-GPU)
 
 # Performance
 As you can see from the table the performance is quite good for standard benchmarks but when it comes to OpenAI's PPO2 it **delivers half the performance**. I did not have the time to use AMD's gpu profiler yet to figure out where is the bottleneck, will post it here when I do
