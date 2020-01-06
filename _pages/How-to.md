@@ -10,8 +10,11 @@ tags: [how to, ubuntu, tensorflow, python]
 
 ### Tensorflow
 *	[Select which GPU are visible to tensorflow](./Tensorflow-visible-gpu)
+*	[Check if it's tf gpu version](./Tensorflow-gpu-version-check)
+*	[Check if it's tf eager mode](./Tensorflow-eager-mode-check)
 *	[Count total trainable parameters](./Tensorflow-trainable-parameters-count)
 *	[How to run cifar10 and alexnet benchmark](./Tensorflow-cifar10-alexnet)
+
 
 ### Python
 *	[Convert image from RGB to gray scale](./Convert-image-rgb-to-gray-scale)
@@ -23,10 +26,12 @@ tags: [how to, ubuntu, tensorflow, python]
 
 ### Ubuntu
 *	[Install CUDA 9.0 on Ubuntu 18.04](./Install-CUDA-9-0-Ubuntu-18-04-18-10.html)
-*	[Install ROCm on Ubuntu 18.04](./Install-ROCM-for-Machine-Learning-on-AMD-GPUs)
+*	[Install CUDA 10.0 on Ubuntu 18.04](./Install-CUDA-10-Ubuntu-18-04-18-10)
+*	[Install ROCm on Ubuntu 18.04](./Install-ROCM-Machine-Learning-AMD-GPU)
 *	[Remote Access Ubuntu from Windows via VNC](./Ubuntu-VNC-Windows.html)
 *	[Resolve time conflict when dual booting with windows](./Fix-timezone-dual-boot)
 *	[Fix slow and unreliable git clone](./git-clone-fix)
 
 ### Windows
+*	[Install Tensorflow on Windows 10](./Install-Tensorflow-Windows-10)
 *	[Diablo 1 on Windows 10](./Diablo-Windows-10)

@@ -6,8 +6,6 @@ tags: [tensorflow, gpu, cifar10, alexnet]
 ---
 
 
-
-
 ```
 git clone https://github.com/tensorflow/models.git
 pip3 install tensorflow_datasets
