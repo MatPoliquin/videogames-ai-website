@@ -5,6 +5,8 @@ permalink: /tensorflow-js-gflops-test
 tags: [tensorflow.js, gflops, performance, test, benchmark]
 ---
 
+The test uses the following code. Please press the "Start Test" button after the Host Info section.
+
 ```javascript
   const matSize = 2 * 1024;
   const mat1 = tf.ones([matSize, matSize], tf.float32);
