@@ -15,15 +15,12 @@ Download the model and run this command
 python3 -m baselines.run --alg=ppo2 --env=[GAME NAME] --gamestate=[STATE] --num_timesteps=10000 --load_path=./PATH_TO_MODEL --save_video_interval=1 --save_video_length=[NUM_TIMESTEPS]
 ```
 
-| Game        	   | Model		        |
-|:-----------------|:-------------------|
-| SuperMarioBros-Nes | [Level 1-1](https://repo.videogames.ai/openai_retro/SuperMarioBros-Nes/Level1-1.model)       |
-| SuperMarioBros3-Nes  | [Level 1-1](https://repo.videogames.ai/openai_retro/SuperMarioBros3-Nes/1Player.World1.Level1_xcrollreward.model)       |
-| TeenageMutantNinjaTurtlesIITheArcadeGame-Nes  | [Level 1-1](https://repo.videogames.ai/openai_retro/TeenageMutantNinjaTurtlesIITheArcadeGame-Nes/Level1.model)       |
-| CluCluLand  | [Level 1-1](https://repo.videogames.ai/openai_retro/CluCluLand-Nes/Level1.model)       |
-| ContraForce-Nes  | [Level 1-1](https://repo.videogames.ai/openai_retro/ContraForce-Nes/Level1.model)       |
-| MsPacMan-Nes  | [Level 1-1](https://repo.videogames.ai/openai_retro/MsPacMan-Sms/Level1.model)       |
-| Terminator-Sms  | [Level 1-1](https://repo.videogames.ai/openai_retro/Terminator-Sms/Level1.model)       |
-| 1942-Nes  | [Level 1-1](https://repo.videogames.ai/openai_retro/1942-Nes/Level1.model)       |
-| DoubleDragon-Nes  | [Level 1-1](https://repo.videogames.ai/openai_retro/DoubleDragon-Nes/Player_ModeA_Level1.model)       |
-| GoldenAxeIII-Genesis | [Level 1-1](https://repo.videogames.ai/openai_retro/GoldenAxeIII-Genesis/1Player.DefaultCharacter.Level1.model)       |
+| Game        	   | Model		        | Videos    |
+|:-----------------|:-------------------|:----------|
+| Super Street Fighter 2 CE Genesis | [default state](https://repo.videogames.ai/openai_retro/SFIISCEGenesis_CNN_500M)| https://youtu.be/-V2JIm8WHZo |
+| MsPacMan-Nes | [default state](https://repo.videogames.ai/openai_retro/MsPacManNes_CNN_500M)| https://youtu.be/E0BKpKCCtqA |
+| CluCluLand-Nes | [default state](https://repo.videogames.ai/openai_retro/CluCluLandNes_CNN_500M)| https://youtu.be/E0BKpKCCtqA |
+| Columns-Genesis | [default state](https://repo.videogames.ai/openai_retro/ColumnsGenesis_CNN_500M) | https://youtu.be/hePuhOX7Ikg |
+| PopEye-Nes | [default state](https://repo.videogames.ai/openai_retro/PopEyeNes_CNN_8000M) | https://youtu.be/Csfh0TLc6ro |
+| Bubble Bobble | [default state](https://repo.videogames.ai/openai_retro/BobbleBubbleNes_CNN_500M) | https://youtu.be/C1syCkrkd7s |
+
