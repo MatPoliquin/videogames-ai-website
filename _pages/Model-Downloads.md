@@ -23,4 +23,4 @@ python3 -m baselines.run --alg=ppo2 --env=[GAME NAME] --gamestate=[STATE] --num_
 | Columns-Genesis | [default state](https://repo.videogames.ai/openai_retro/ColumnsGenesis_CNN_500M) | https://youtu.be/hePuhOX7Ikg |
 | PopEye-Nes | [default state](https://repo.videogames.ai/openai_retro/PopEyeNes_CNN_8000M) | https://youtu.be/Csfh0TLc6ro |
 | Bubble Bobble | [default state](https://repo.videogames.ai/openai_retro/BobbleBubbleNes_CNN_500M) | https://youtu.be/C1syCkrkd7s |
-
+| T2 Arcade Genesis | [default state](https://repo.videogames.ai/openai_retro/T2ArcadeGenesis_CNN_8000M) | https://youtu.be/YIKNhHfWf3s |
