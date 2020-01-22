@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "How to Replicate Machine Learning Experiments"
-permalink: /How-To-Replicate
+permalink: /HOW-TO-REPLICATE
 tags: [how to, replicate, machine learning, experiments]
 ---
 
