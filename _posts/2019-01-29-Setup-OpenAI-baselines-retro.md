@@ -103,8 +103,13 @@ Parameters:
 *	**--num_env** is by default the number of logical processors you have, normally no need touch it unless you are debugging in which case set num_env=1
 *	**--network** is for which type of neural net you want to use, by default it's a CNN but you can try cnn_small and mlp. cnn_small as the name implies is a smaller version of the default CNN and thus requires less processing power but at the expense of learning performance.
 
-You can see the whole training from 0M to 10M here:
+You can see the whole training from 0M to 10M here for Super Mario Bros Level 3-1:
 <iframe width="816" height="761" src="https://www.youtube.com/embed/47Gko7Zykr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Street Fighter example:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-V2JIm8WHZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**other examples:** [videogames.ai Youtube Channel](https://www.youtube.com/channel/UCyfnks28XqY-0uTkQkIeTHw/videos)
 
 
 It's same process for other console games altought you will likely need to add it to a list in the source code first.
