@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Machine Learning pre-trained Models Downloads fro Video Games"
+title:  "Pre-trained Models Downloads for Video Games"
 permalink: /Machine-Learning-Video-Game-Models-Downloads
 tags: [machine learning, pre-trained - models, video game, download]
 ---
@@ -10,7 +10,7 @@ List of pre-trained models.
 To be used with OpenAI Baselines + Retro. You can find a quick start guide [here](./2019/01/29/Setup-OpenAI-baselines-retro.html)
 
 ### How to Run and generate a video
-Download the model and run this command
+Download the model and run this https://youtu.be/YIKNhHfWf3scommand
 ```shell
 python3 -m baselines.run --alg=ppo2 --env=[GAME NAME] --gamestate=[STATE] --num_timesteps=10000 --load_path=./PATH_TO_MODEL --save_video_interval=1 --save_video_length=[NUM_TIMESTEPS]
 ```
