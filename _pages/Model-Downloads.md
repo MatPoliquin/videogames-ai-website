@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  "Machine Learning Video Game Models Downloads"
+title:  "Machine Learning pre-trained Models Downloads fro Video Games"
 permalink: /Machine-Learning-Video-Game-Models-Downloads
-tags: [machine learning, models, video game, download]
+tags: [machine learning, pre-trained - models, video game, download]
 ---
 
 
@@ -15,12 +15,21 @@ Download the model and run this command
 python3 -m baselines.run --alg=ppo2 --env=[GAME NAME] --gamestate=[STATE] --num_timesteps=10000 --load_path=./PATH_TO_MODEL --save_video_interval=1 --save_video_length=[NUM_TIMESTEPS]
 ```
 
-| Game        	   | Model		        | Videos    |
-|:-----------------|:-------------------|:----------|
-| Super Street Fighter 2 CE Genesis | [default state](https://repo.videogames.ai/openai_retro/SFIISCEGenesis_CNN_500M)| https://youtu.be/-V2JIm8WHZo |
-| MsPacMan-Nes | [default state](https://repo.videogames.ai/openai_retro/MsPacManNes_CNN_500M)| https://youtu.be/E0BKpKCCtqA |
-| CluCluLand-Nes | [default state](https://repo.videogames.ai/openai_retro/CluCluLandNes_CNN_500M)| https://youtu.be/E0BKpKCCtqA |
-| Columns-Genesis | [default state](https://repo.videogames.ai/openai_retro/ColumnsGenesis_CNN_500M) | https://youtu.be/hePuhOX7Ikg |
-| PopEye-Nes | [default state](https://repo.videogames.ai/openai_retro/PopEyeNes_CNN_8000M) | https://youtu.be/Csfh0TLc6ro |
-| Bubble Bobble | [default state](https://repo.videogames.ai/openai_retro/BobbleBubbleNes_CNN_500M) | https://youtu.be/C1syCkrkd7s |
-| T2 Arcade Genesis | [default state](https://repo.videogames.ai/openai_retro/T2ArcadeGenesis_CNN_8000M) | https://youtu.be/YIKNhHfWf3s |
+**Note: The link to the pre-trained models are in the video description**
+
+| Game        	   | Videos/Models    |
+|:-----------------|:----------|
+| Super Street Fighter 2 CE Genesis |  https://youtu.be/-V2JIm8WHZo |
+| Fatal Fury 2 Genesis |  https://youtu.be/lheUG_1Ur44 |
+| Ms PacMan Nes |  https://youtu.be/E0BKpKCCtqA |
+| Clu Clu Land Nes |  https://youtu.be/E0BKpKCCtqA |
+| Columns Genesis | https://youtu.be/hePuhOX7Ikg |
+| PopEye Nes | https://youtu.be/Csfh0TLc6ro |
+| Bubble Bobble Nes | https://youtu.be/C1syCkrkd7s |
+| T2 Arcade Genesis  | https://youtu.be/YIKNhHfWf3s |
+| After Burner II  | https://youtu.be/YaiXf7Hg8to |
+| Adventure Island 3 | https://youtu.be/dq_T9I9XMCU |
+
+
+
+
