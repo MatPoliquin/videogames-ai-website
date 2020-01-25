@@ -19,16 +19,16 @@ python3 -m baselines.run --alg=ppo2 --env=[GAME NAME] --gamestate=[STATE] --num_
 
 | Game        	   | Videos/Models    |
 |:-----------------|:----------|
-| Super Street Fighter 2 CE Genesis |  https://youtu.be/-V2JIm8WHZo |
-| Fatal Fury 2 Genesis |  https://youtu.be/lheUG_1Ur44 |
-| Ms PacMan Nes |  https://youtu.be/E0BKpKCCtqA |
-| Clu Clu Land Nes |  https://youtu.be/u_r8PrccR-g |
-| Columns Genesis | https://youtu.be/hePuhOX7Ikg |
-| PopEye Nes | https://youtu.be/Csfh0TLc6ro |
-| Bubble Bobble Nes | https://youtu.be/C1syCkrkd7s |
-| T2 Arcade Genesis  | https://youtu.be/YIKNhHfWf3s |
-| After Burner II  | https://youtu.be/YaiXf7Hg8to |
-| Adventure Island 3 | https://youtu.be/dq_T9I9XMCU |
+| Super Street Fighter 2 CE Genesis |  [youtube](https://youtu.be/-V2JIm8WHZo) |
+| Fatal Fury 2 Genesis |  [youtube](https://youtu.be/lheUG_1Ur44) |
+| Ms PacMan Nes |  [youtube](https://youtu.be/E0BKpKCCtqA) |
+| Clu Clu Land Nes |  [youtube](https://youtu.be/u_r8PrccR-g) |
+| Columns Genesis | [youtube](https://youtu.be/hePuhOX7Ikg) |
+| PopEye Nes | [youtube](https://youtu.be/Csfh0TLc6ro) |
+| Bubble Bobble Nes | [youtube](https://youtu.be/C1syCkrkd7s) |
+| T2 Arcade Genesis  | [youtube](https://youtu.be/YIKNhHfWf3s) |
+| After Burner II  | [youtube](https://youtu.be/YaiXf7Hg8to) |
+| Adventure Island 3 | [youtube](https://youtu.be/dq_T9I9XMCU) |
 
 
 
