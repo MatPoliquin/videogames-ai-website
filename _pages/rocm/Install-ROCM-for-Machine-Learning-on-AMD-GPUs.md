@@ -123,5 +123,5 @@ watch -n 1 rocm-smi
 Test PCIE bandwidth
 ```
 sudo apt-get install rocm-bandwidth-test
-./rocm_bandwidth_test
+rocm-bandwidth-test
 ```
