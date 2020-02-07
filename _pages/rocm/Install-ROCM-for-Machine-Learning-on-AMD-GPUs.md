@@ -63,7 +63,12 @@ You should be able to see your GPUs in the output of these commands
 /opt/rocm/opencl/bin/x86_64/clinfo 
 ```
 
-## install tensorflow
+## Install tensorflow
+
+First install these requirements
+```
+sudo apt install rocm-libs miopen-hip cxlactivitylogger
+```
 
 This will install TF-rocm 2.0 
 ```
