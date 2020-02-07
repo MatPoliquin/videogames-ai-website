@@ -30,7 +30,7 @@ You can execute these commmands at the terminal. It's mostly all what OpenAI bas
 sudo apt-get --assume-yes install python3 python3-pip git zlib1g-dev libopenmpi-dev ffmpeg
 sudo apt-get update
 
-pip3 install --timeout 1000 opencv-python cmake anyrl gym-retro joblib atari-py tensorflow
+pip3 install --timeout 1000 opencv-python anyrl gym-retro gym joblib atari-py tensorflow
 
 git clone https://github.com/openai/baselines.git
 cd baselines
@@ -163,7 +163,7 @@ export OPENAI_LOGDIR=[PATH_TO_LOGDIR]
 
 You can launch tensorboard with this:
 ``` shell
-tensorboard --logdir=[PATH_TO_LOGDIR/TB
+tensorboard --logdir=[PATH_TO_LOGDIR/TB]
 ```
 **Note:** Currently only some scalars are accessible in tensorboard, if you don't see graphs and other useful metrics don't panic it's just not integrated yet. There is an [__issue__](https://github.com/openai/baselines/issues/596) someone opened about it.
 
