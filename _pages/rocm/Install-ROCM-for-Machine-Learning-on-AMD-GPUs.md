@@ -5,9 +5,7 @@ permalink: /Install-ROCM-Machine-Learning-AMD-GPU
 tags: [rocm, amd, gpu, machine learning, ubuntu, 18.04, 18.10]
 ---
 
-#Install guide for ROCm 3.0
-
-This is a condensed version of AMD's install instruction + some extra details
+This is a condensed version of AMD's ROCm 3.0 install instruction + some extra details
 You can find their guide here: [ROCm official install guide](https://rocm.github.io/ROCmInstall.html)
 
 
@@ -66,29 +64,26 @@ You should be able to see your GPUs in the output of these commands
 ```
 
 ## install tensorflow
-``
-pip3 install tensorflow-rocm==1.13.4
-```
 
+This will install TF-rocm 2.0 
 ``
+pip3 install tensorflow-rocm
+
+```
+Note that for using OpenAI baselines the latest supported version is 1.14, so you would need to specify the version
+```
 pip3 install tensorflow-rocm==1.14.5
 ```
 
 
 ### Issues
 
-
-
 Install RCCL
-For some reason, in my case RCCL libs where missing so compiled a deb from the source
+For some reason, RCCL libs can be missing. You would get and error message when using TF
+In that case you can install it using this:
 ```
-sudo apt-get install rocm-cmake
-git clone https://github.com/ROCmSoftwarePlatform/rccl.git
- ./install.sh -p
+sudo apt install rccl
 ```
-
-
-
 
 ## Tricks
 
@@ -109,7 +104,7 @@ If you want to see it in a loop like for "nvidia-smi -l 1"
 watch -n 1 rocm-smi
 ```
 
-Test bandwidth
+Test PCIE bandwidth
 ```
 sudo apt-get install rocm-bandwidth-test
 ./rocm_bandwidth_test
