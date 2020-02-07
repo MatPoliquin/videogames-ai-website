@@ -90,6 +90,17 @@ In that case you can install it using this:
 sudo apt install rccl
 ```
 
+If you get this error
+```
+python3: Relink `/lib/x86_64-linux-gnu/libsystemd.so.0' with `/lib/x86_64-linux-gnu/librt.so.1' for IFUNC symbol `clock_gettime'
+python3: Relink `/lib/x86_64-linux-gnu/libudev.so.1' with `/lib/x86_64-linux-gnu/librt.so.1' for IFUNC symbol `clock_gettime'
+```
+
+Install this:
+```
+sudo apt install libtinfo5
+```
+
 ## Tricks
 
 Set which gpu device is visible to rocm
