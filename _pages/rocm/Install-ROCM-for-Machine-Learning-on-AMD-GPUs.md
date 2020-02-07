@@ -66,7 +66,7 @@ You should be able to see your GPUs in the output of these commands
 ## install tensorflow
 
 This will install TF-rocm 2.0 
-``
+```
 pip3 install tensorflow-rocm
 
 ```
