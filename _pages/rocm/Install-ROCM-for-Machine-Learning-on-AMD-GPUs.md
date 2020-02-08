@@ -8,7 +8,7 @@ tags: [rocm, amd, gpu, machine learning, ubuntu, 18.04, 18.10]
 This is a condensed version of AMD's ROCm 3.0 install instruction + some extra details
 You can find their guide here: [ROCm official install guide](https://rocm.github.io/ROCmInstall.html)
 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fkSRkAoMS4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ### Requirements
 * A fresh install of Ubuntu 18.04 with kernel 5.0 is recommended as ROCm was designed for these versions
 * Your GPU must be in this list: [Hardware requirements](https://rocm.github.io/hardware.html)
