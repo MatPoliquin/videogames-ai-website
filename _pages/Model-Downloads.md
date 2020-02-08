@@ -29,7 +29,7 @@ python3 -m baselines.run --alg=ppo2 --env=[GAME NAME] --gamestate=[STATE] --num_
 | T2 Arcade Genesis  | [youtube](https://youtu.be/YIKNhHfWf3s) |
 | After Burner II  | [youtube](https://youtu.be/YaiXf7Hg8to) |
 | Adventure Island 3 | [youtube](https://youtu.be/dq_T9I9XMCU) |
-
-
+| Mortal Kombat II Genesis | [youtube](https://youtu.be/d8tN3kRbGYQ) |
+| Punchout Nes | [youtube](https://youtu.be/rjfhYx6bcYE) |
 
 
