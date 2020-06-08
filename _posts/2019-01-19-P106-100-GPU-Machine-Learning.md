@@ -25,6 +25,11 @@ _Performance tests results_
 | Device to Device | 152542.9 MB/s      | 115346.1 MB/s             |           
 
 
+### UPDATE:
+I recently made a video about how to leverage mining hardware using NVIDIA Reasearch's CuLE framework:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AKrdBF39r7w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 #### Software
 *	Ubuntu 18.04
 *	Tensorflow 1.12
