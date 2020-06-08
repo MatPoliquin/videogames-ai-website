@@ -13,7 +13,7 @@ However recently some users have reported been able to enable the full 8GB via a
 
 I was going to buy one but I noticed the card only supports PCIE 1.1 4x, which is way to slow for most Machine Learning tasks (like training on video games).
 
-So I asked the vendor to test the bandwidth of the modified p104-100 with CUDA-Z, just to make sure it's not the driver reporting the wrong info... I am waiting for his reply, I will update this post as soon as I get info
 
-
-
+### UPDATE:
+I recently made a video about how to leverage mining hardware even with low PCIE bandwidth using NVIDIA Reasearch's CuLE framework:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AKrdBF39r7w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
