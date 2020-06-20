@@ -17,8 +17,8 @@ links:
 *   [DirecML Github](https://github.com/microsoft/DirectML)
 
 
-As Microsoft mentionned this is a preview and not all ops are supported which means low performance on certain benchmarks and use case as they mention in this github issue I reported:
-*   [DirecML Github](https://github.com/microsoft/DirectML/issues/21)
+As Microsoft mentionned this is a preview and not all ops are supported which means low performance on certain benchmarks and use case
+
 
 
 
@@ -51,9 +51,9 @@ pip install https://github.com/microsoft/DirectML/releases/download/tensorflow-d
 ```
 
 
-### Benchmarks and profiling
+## Benchmarks
 
-## RX 580 tests
+### RX 580 tests
 At a Windows shell (or you can use GitHub desktop app to sync the repo)
 ```bash
 git clone git@github.com:tensorflow/benchmarks.git
@@ -62,11 +62,29 @@ python tf_cnn_benchmarks.py --num_gpus=1 --batch_size=32 --model=resnet50 --vari
 ```
 
 As you can see the screenshots bellow the performance is quite low compared to ROCm 3.3 where you get around 88 frames/s.
-One of the reasons for this is like for support for some ops.
+One of the reasons for this is lack of support for some ops.
 
 ![rx 580 benchmark](/assets/directml/rx580-benchmark.png) <br>
 ![rx 580 usage](/assets/directml/rx580-benchmark-usage.png) <br>
 
 
+### Intel UHD Graphics 620 - Integrated GPU
+Same steps as for the RX 580 but with "--batch_size=16" so that it fits into memory
+
+As you can see performance is also quite low, in comparaison the CPU version (Intel i7-8550U, without the use of AVX2 instructions) runs at 2.2 images/s
+
+![intel 620 gpu benchmark](/assets/directml/intel620gpu.png) <br>
+
+
 ### Conclusion
-Although there is still lots of optimizations work that needs to be done, the DirectML backend for Tensorflow has great potential as it will enable a lot more users to leverage their GPUs
+As you may have noticed from the screenshots there is this error
+```
+Op type not registered '_CopyFromGpuToHost'
+```
+
+I reported the error and the RX 580 performance results on DirectML's issue page
+*   [DirecML Github Issue](https://github.com/microsoft/DirectML/issues/21)
+
+They state that there is still some ops that are not implemented yet which explains the low performance.
+
+Although there is still lots of optimizations work that needs to be done, the DirectML backend for Tensorflow is a very useful initative from Microsoft as it will enable a lot more users to leverage their GPUs for Machine Learning that would have otherwise very little alternatives. I recommend you test DirectML out and report the results for your GPU on their issue's page
