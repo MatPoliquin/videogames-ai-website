@@ -71,7 +71,7 @@ One of the reasons for this is lack of support for some ops.
 ### Intel UHD Graphics 620 - Integrated GPU
 Same steps as for the RX 580 but with "--batch_size=16" so that it fits into memory
 
-As you can see performance is also quite low, in comparaison the CPU version (Intel i7-8550U, without the use of AVX2 instructions) runs at 2.2 images/s
+As you can see performance is also quite low, in comparaison the CPU version (Intel i7-8550U, without the use of AVX2 instructions) runs at 2.21 images/s
 
 ![intel 620 gpu benchmark](/assets/directml/intel620gpu.png) <br>
 
