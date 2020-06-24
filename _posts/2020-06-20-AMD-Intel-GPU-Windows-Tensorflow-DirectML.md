@@ -47,8 +47,12 @@ First Install python 3.7: [download here ](https://www.python.org/downloads/)
 <br>
 Next install tensorflow directML:
 ```bash
-pip install https://github.com/microsoft/DirectML/releases/download/tensorflow-directml-1.15.3.dev200615/tensorflow_directml-1.15.3.dev200615-cp36-cp36m-win_amd64.whl
+pip install tensorflow-directml
 ```
+
+
+If you are using Windows Subsytem for Linux you need to install the AMD preview drivers first:
+[download here ](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-wsl-support)
 
 
 ## Benchmarks
@@ -74,6 +78,10 @@ Same steps as for the RX 580 but with "--batch_size=16" so that it fits into mem
 As you can see performance is also quite low, in comparaison the CPU version (Intel i7-8550U, without the use of AVX2 instructions) runs at 2.21 images/s
 
 ![intel 620 gpu benchmark](/assets/directml/intel620gpu.png) <br>
+
+
+If you want to see the YOLO sample provided by Microsoft in action:
+<iframe width="560" height="315" src="https://youtu.be/KUaj6VQqTgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Conclusion
