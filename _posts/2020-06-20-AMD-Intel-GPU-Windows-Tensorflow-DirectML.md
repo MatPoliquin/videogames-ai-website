@@ -43,7 +43,7 @@ Software:
 
 ### installation
 
-First Install python 3.7: [download here ](https://www.python.org/downloads/)
+First Install python 3.7: [download here](https://www.python.org/downloads/)
 <br>
 Next install tensorflow directML:
 ```bash
@@ -81,7 +81,7 @@ As you can see performance is also quite low, in comparaison the CPU version (In
 
 
 If you want to see the YOLO sample provided by Microsoft in action:
-<iframe width="560" height="315" src="https://youtu.be/KUaj6VQqTgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KUaj6VQqTgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Conclusion
