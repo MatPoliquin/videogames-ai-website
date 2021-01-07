@@ -29,7 +29,7 @@ author: Mathieu Poliquin
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-hacker
+theme: jekyll-theme-primer
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
