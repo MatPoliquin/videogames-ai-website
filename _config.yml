@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 #baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.videogames.ai" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  MatPoliquin
-logo: assets/logo.png
+logo: assets/logo.gif
 paginate: 10
 #instagram: https://www.instagram.com/videogames.ai/
 google_analytics: UA-132777834-1
