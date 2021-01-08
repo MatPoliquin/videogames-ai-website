@@ -29,20 +29,37 @@
       <header>
         <!--<h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>-->
         
-        {% if site.logo %}
-          <a href="{{site.url}}"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
-        {% endif %}
-
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        
 
         <div class="grid-container">
 
           <div class="grid-child purple">
-              Grid Column 1
+            {% if site.logo %}
+            <a href="{{site.url}}"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
+          {% endif %}
+  
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
           </div>
       
           <div class="grid-child green">
-              Grid Column 2
+            <a href="{{site.url}}/Machine-Learning-Video-Game-Models-Downloads"><strong>Neural Net Downloads</strong></a><br>
+            <a href="{{site.url}}/how-to.html"><strong>How to</strong></a><br>
+            <a href="{{site.url}}/useful-links-machine-learning.html"><strong>Useful links</strong></a><br>
+            <a href="{{site.url}}/Hardware-Reviews"><strong>Hardware Reviews</strong></a><br>
+            <a href="https://teespring.com/stores/videogamesai"><strong>Get Merch</strong></a><br>
+            <a href="{{site.url}}/About.html"><strong>About</strong></a>
+    
+            {% if site.instagram %}
+            <a href="{{ site.instagram }}"><strong>Instagram</strong></a>
+            {% endif %}
+    
+            {% if site.show_downloads %}
+            <ul class="downloads">
+              <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+              <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+              <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+            </ul>
+            {% endif %}
           </div>
         
       </div>
@@ -55,26 +72,8 @@
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %}-->
 
-        <a href="{{site.url}}/Machine-Learning-Video-Game-Models-Downloads"><strong>Neural Net Downloads</strong></a><br>
-        <a href="{{site.url}}/how-to.html"><strong>How to</strong></a><br>
-        <a href="{{site.url}}/useful-links-machine-learning.html"><strong>Useful links</strong></a><br>
-        <a href="{{site.url}}/Hardware-Reviews"><strong>Hardware Reviews</strong></a><br>
-        <a href="https://teespring.com/stores/videogamesai"><strong>Get Merch</strong></a><br>
-        <a href="{{site.url}}/About.html"><strong>About</strong></a>
-
-        {% if site.instagram %}
-        <a href="{{ site.instagram }}"><strong>Instagram</strong></a>
-        {% endif %}
-
-        {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %}
-		
-		  </br>
+        
+	
     
 
 		<!-- Begin Mailchimp Signup Form -->
