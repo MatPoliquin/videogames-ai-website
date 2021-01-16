@@ -2,7 +2,7 @@
 layout: post
 title:  "Machine Learning on mining hardware - hidden potential"
 date:   2020-06-11 00:00:00 +0000
-tags: [machine learning, mining, p106-100, p106-090, p104-100]
+tags: [machine learning, mining, pytorch, p106-100, p106-090, p104-100]
 ---
 
 ## How to leverage mining hardware for Machine Learning?
@@ -13,12 +13,15 @@ On second hand market there is lots of cheap GPUs and motherboards intended for 
 *   Reliability. Used Mining hardware as often beeing uses 24/7 at close to maximum capacity
 
 
+
+
+
 ### Mining Hardware setup
 
 Hardware specs:
 *   3x p106-100
 *   1x p106-090
-*   Maxsum MS-B85-BTC - 3x PCIE 16x, 3x PCIE 1x
+*   Maxsun MS-B85-BTC - 3x PCIE 16x, 3x PCIE 1x
 *   i3-4130 3.40Ghz, 4 cores
 *   16GB DDR3 1600Mhz
 
