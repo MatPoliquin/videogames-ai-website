@@ -5,10 +5,6 @@ date:   2020-06-11 00:00:00 +0000
 tags: [machine learning, mining, pytorch, p106-100, p106-090, p104-100]
 ---
 
-<! --end_excerpt-->
- 
-## How to leverage mining hardware for Machine Learning?
-
 On second hand market there is lots of cheap GPUs and motherboards intended for mining but they come with some challenges:
 *   PCIE bandwidth is crippled, for example the p106-100 is set to PCIE 1.1 16x and the p104-100 is set to PCIE 3.0 4x. For ML algos, usually PCIE bandwith usage is quite high.
 *   Most Mining Motherboards don't support server or workstation grade CPUs. some ML tasks such as training on Atari games requires a number of simulations. Can be up to 128 cores in order to feed top of the line GPUs such as the Tesla V100
@@ -18,7 +14,7 @@ On second hand market there is lots of cheap GPUs and motherboards intended for 
 
 
 
-### Mining Hardware setup
+## Mining Hardware setup
 
 Hardware specs:
 *   3x p106-100
