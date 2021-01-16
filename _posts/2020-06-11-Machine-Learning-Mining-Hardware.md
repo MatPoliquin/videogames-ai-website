@@ -5,6 +5,8 @@ date:   2020-06-11 00:00:00 +0000
 tags: [machine learning, mining, pytorch, p106-100, p106-090, p104-100]
 ---
 
+<! --end_excerpt-->
+ 
 ## How to leverage mining hardware for Machine Learning?
 
 On second hand market there is lots of cheap GPUs and motherboards intended for mining but they come with some challenges:
