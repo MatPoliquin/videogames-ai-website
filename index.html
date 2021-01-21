@@ -14,13 +14,13 @@ title: Indie Machine Learning and Video Game Dev
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <!--<p class="author">-->
     <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
+  <!--</p>-->
+  <!--<div class="content">
     {{ post.excerpt }}
-  </div>
+  </div>-->
 {% endfor %}
 
 <!-- Pagination links -->
