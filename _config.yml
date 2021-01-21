@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Videogames AI Blog
-email: mathieu.poliquin@videogames.ai
+email: mathieu.poliquin@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Indie Machine Learning and Video Game Dev
 #baseurl: "/" # the subpath of your site, e.g. /blog
@@ -29,7 +29,7 @@ author: Mathieu Poliquin
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-modernist
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
