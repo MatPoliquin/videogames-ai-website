@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Top 5 Kaldheim Pauper Cards"
-date:   2021-01-07 00:00:00 +0000
+date:   2021-02-07 00:00:00 +0000
 tags: [MTG, Kaldheim, Pauper, top 5, Icehide Troll, Ravenform, Shimmerdrift, Karfell Harbinger, Horizon Seeker]
 ---
 
