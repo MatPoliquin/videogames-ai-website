@@ -1,14 +1,24 @@
 ---
 layout: post
 title:  "RTX 2060 Super for Machine Learning"
-date:   2019-01-19 00:00:00 +0800
-tags: [p106-100, gpu, machine learning]
+date:   2019-02-10 00:00:00 +0800
+tags: [RTX 2060 Super, gpu, machine learning, resnet50]
 ---
 
 
 Coming Soon!
 
+_Performance tests results_
 
+| Test        	   | P106-100           | 
+|:-----------------|:-------------------|
+| PPO2 Atari Pong  | ~1670 frame/sec    |
+| Resnet50 batch=32 |    181.88 images/sec |
+| Resnet50 batch=32 (16 bit) |    292.80 images/sec |
+| Resnet50 batch=64 (16 bit) |    324.83 images/sec |              
+| Host to Device   | 1122 MB/s        | 
+| Device to Host   | 1218.3 MB/s        | 
+| Device to Device | 168540.0 MB/s      |  
 
       
 
