@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "RTX 2060 Super for Machine Learning"
-date:   2019-02-10 00:00:00 +0800
+date:   2021-02-10 00:00:00 +0800
 tags: [RTX 2060 Super, gpu, machine learning, resnet50]
 ---
 
 
-Coming Soon!
+Full review Coming Soon but in the meantime here are some performance test results
 
 _Performance tests results_
 
@@ -15,12 +15,15 @@ _Performance tests results_
 | PPO2 Atari Pong  | ~1670 frame/sec    |
 | Resnet50 batch=32 |    181.88 images/sec |
 | Resnet50 batch=32 (16 bit) |    292.80 images/sec |
-| Resnet50 batch=64 (16 bit) |    324.83 images/sec |              
+| Resnet50 batch=64 (16 bit) |    324.83 images/sec |
+| Isaac gym/OpenAI - Shadowhand |    30952 steps/s |                   
 | Host to Device   | 1122 MB/s        | 
 | Device to Host   | 1218.3 MB/s        | 
 | Device to Device | 168540.0 MB/s      |  
 
-      
+
+
+
 
 #### Software
 *	Ubuntu 18.04
