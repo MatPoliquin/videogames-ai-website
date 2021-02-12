@@ -53,12 +53,13 @@ Simulation and PPO algo on CPU, training on GPU:
 ```
 python3 train.py --task=ShadowHand --headless --device=CPU --ppo_device=CPU --physx --num_threads=24
 ```
-
+![xeon](/assets/isaacgym/xeon_shadowhand.png)
 
 Everything on GPU:
 ```
 python3 train.py --task=ShadowHand --headless
 ```
+![rtx2060super](/assets/isaacgym/rtx2060super_shadowhand.png)
 
 ### Hardware Test 2 - low cost mining rig
 *	Zotac p106-100 6g
@@ -70,15 +71,16 @@ Simulation and PPO algo on CPU, training on GPU:
 ```
 python3 train.py --task=ShadowHand --headless --device=CPU --ppo_device=CPU --physx --num_threads=2
 ```
-
+![celeron](/assets/isaacgym/celeron_shadowhand.png)
 
 Everything on GPU:
 ```
 python3 train.py --task=ShadowHand --headless
 ```
+![p106100](/assets/isaacgym/p106100_shadowhand.png)
 
 ## Conclusion
-TODO
+Isaac Gym not only shows huge performance potential but is a necessary to step to make RL for robotics accessible to indie developpers as the compution cost typical requires is several orders of magnitude out of reach for most. I do hope AMD's ROCm team comes up with a similar solution for AMD GPUs. ROCm is open source so in theory the community could contribute a system like this but it requires a substial amount of programmer resource and I doubt teams that invest to develop such a system for will want to share it freely to the ROCm framework which means AMD really needs to step up to the plate!
 
 If you want to see the demo in action you can check my video:
 <iframe width="560" height="315" src="https://youtu.be/embed/DKyCVyKQMN0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
