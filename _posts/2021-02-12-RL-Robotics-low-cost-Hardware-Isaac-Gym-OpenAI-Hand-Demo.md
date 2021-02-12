@@ -78,6 +78,8 @@ python3 train.py --task=ShadowHand --headless
 ![p106100](/assets/isaacgym/p106100_shadowhand.png)
 
 ## Conclusion
+As you can see the performance is huge by putting everything on the GPU. Even a cheap 150$ USD mining hardware with a very weak CPU can beat machines that is worth 5-10 times as much.
+
 Isaac Gym not only shows huge performance potential but is a necessary to step to make RL for robotics accessible to indie developpers as the compution cost typical requires is several orders of magnitude out of reach for most. I do hope AMD's ROCm team comes up with a similar solution for AMD GPUs. ROCm is open source so in theory the community could contribute a system like this but it requires a substial amount of programmer resource and I doubt teams that invest to develop such a system for will want to share it freely to the ROCm framework which means AMD really needs to step up to the plate!
 
 If you want to see the demo in action you can check my video:
