@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "RTX 2060 Super for Machine Learning"
+title:  "RL for robotics on low cost hardware using Isaac Gym - OpenAI hand demo"
 date:   2021-02-12 00:00:00 +0800
 tags: [RL, Robotics, Isaac Gym, RTX 2060 Super 8g, p106-100 6g, mining hardware, machine learning]
 ---
