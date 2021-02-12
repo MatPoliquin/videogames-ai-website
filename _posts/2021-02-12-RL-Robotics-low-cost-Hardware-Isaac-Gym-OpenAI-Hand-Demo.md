@@ -5,16 +5,14 @@ date:   2021-02-12 00:00:00 +0800
 tags: [RL, Robotics, Isaac Gym, RTX 2060 Super 8g, p106-100 6g, mining hardware, machine learning]
 ---
 
-# *Blog post in progress*
-
 Reinforcement Learning for Robotics research typical requires huge computing resources that are out of reach for most people.
 As detailed in NVIDIA's news release [link here] (https://news.developer.nvidia.com/introducing-isaac-gym-rl-for-robotics/)
 
 As they state OpenAI for it's [hand manipulation demo](https://arxiv.org/pdf/1808.00177.pdf) used "a cluster of 384 systems with 6144 CPU cores, plus 8 Volta V100 GPUs and required close to 30 hours of training to achieve its best results"
 
-This is insane computing resources with an more insane price tag! The main point is that this computing resource as not even maximized because of host to transfer and CPU bottlenecks
+This is insane computing resources with an even more insane price tag! The main point is that these computing resources are not even maximized because of host to transfer and CPU bottlenecks
 
-Enter NVIDIA solution, Isaac Gym, which enables physics simulation and reward calculations directly on GPU which addresses these bottlenecks. The end results is that they can reduce training time to 10 hours on a single A100 GPU.
+Enter NVIDIA solution, *Isaac Gym*, which enables physics simulation and reward calculations directly on GPU which effectively addresses these bottlenecks. The end results is that they can reduce training time to 10 hours on a single A100 GPU.
 
 So I was curious on how it would performance on even cheaper hardware. I tested with two machines including a typical mining hardware that cost around 150$ USD (details below)
 
