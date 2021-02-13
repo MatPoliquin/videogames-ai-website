@@ -2,7 +2,7 @@
 layout: post
 title:  "RL for robotics on low cost hardware using Isaac Gym - OpenAI hand demo"
 date:   2021-02-12 00:00:00 +0800
-tags: [RL, Robotics, Isaac Gym, RTX 2060 Super 8g, p106-100 6g, mining hardware, machine learning]
+tags: [Reinforcement Learning, Robotics, Isaac Gym, RTX 2060 Super 8g, p106-100 6g, mining hardware, machine learning]
 ---
 
 Reinforcement Learning for Robotics research typical requires huge computing resources that are out of reach for most people.
@@ -78,7 +78,7 @@ python3 train.py --task=ShadowHand --headless
 ![p106100](/assets/isaacgym/p106100_shadowhand.png)
 
 ## Conclusion
-As you can see the performance is huge by putting everything on the GPU. Even a cheap 150$ USD mining hardware with a very weak CPU can beat machines that is worth 5-10 times as much.
+As you can see the performance gain is huge by putting everything on the GPU. Even a cheap 150$ USD mining hardware with a very weak CPU can beat machines that is worth 5-10 times as much.
 
 Isaac Gym not only shows huge performance potential but is a necessary to step to make RL for robotics accessible to indie developpers as the compution cost typical requires is several orders of magnitude out of reach for most. I do hope AMD's ROCm team comes up with a similar solution for AMD GPUs. ROCm is open source so in theory the community could contribute a system like this but it requires a substial amount of programmer resource and I doubt teams that invest to develop such a system for will want to share it freely to the ROCm framework which means AMD really needs to step up to the plate!
 
