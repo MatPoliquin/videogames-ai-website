@@ -48,7 +48,7 @@ function showContainer(tag) {
     {% for tag in sorted_tags %}
       {% assign t = tag | first %}
       {% assign posts = tag | last %}
-      {% if t contains "pytorch" "AMD" %}
+      {% if t contains "pytorch" or t contains "AMD" %}
       <li class="blog-tag-item" id="{{ t }}-item">
         <a href onclick="filter('{{ t }}'); return false;">{{ t }}</a>
       </li>
