@@ -24,7 +24,7 @@ title: Indie Machine Learning and Video Game Dev
 {% endfor %}
 
 <!-- Pagination links -->
-<div class="pagination">
+<!--<div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">
       Previous
@@ -40,11 +40,21 @@ title: Indie Machine Learning and Video Game Dev
   {% else %}
     <span class="next ">Next</span>
   {% endif %}
-</div>
+</div>-->
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- bottom of page -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5702375066346037"
+     data-ad-slot="7532771825"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <h2>Some random howtos/notes</h2>
 {% for page in site.pages %}
-  <h3><span class="date">{{ page.date | date_to_long_string}}</span><a href="{{ page.url }}">{{ page.title }}</a></h3>
+  <h4><span class="date">{{ page.date | date_to_long_string}}</span><a href="{{ page.url }}">{{ page.title }}</a></h4>
   <!--<p class="author">-->
     
   <!--</p>-->
@@ -52,3 +62,5 @@ title: Indie Machine Learning and Video Game Dev
     {{ post.excerpt }}
   </div>-->
 {% endfor %}
+
+
