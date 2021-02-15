@@ -43,8 +43,8 @@ title: Indie Machine Learning and Video Game Dev
 </div>
 
 
-{% for page in paginator.pages %}
-  <h3><span class="date">{{ page.date | date_to_long_string}}</span><a href="{{ post.url }}">{{ page.title }}</a></h3>
+{% for page in site.pages %}
+  <h3><span class="date">{{ page.date | date_to_long_string}}</span><a href="{{ page.url }}">{{ page.title }}</a></h3>
   <!--<p class="author">-->
     
   <!--</p>-->
