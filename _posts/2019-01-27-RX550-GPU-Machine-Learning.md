@@ -16,6 +16,9 @@ So all of this made me curious to see how much performance, the AMD RX550, one o
 
 
 ## Conclusion for people in a hurrry
+
+**EDIT 2021: With ROCM 4.0 seems RX 550 (as well as the RX 580) is no longer supported which means it's best to invest in other low cost options such as the p106-090**
+
 I bought one second-hand for under 168 yuan on taobao (25 US$/32 CAD$). Even with that very low price the p106-100 and the Sapphire RX470 8GB mining card delivers better bang for the buck.
 That said if you want a very cheap first card to play with cifar10 datasets it could be good a choice, but keep in mind you will need to upgrade soon after as 2GB of VRAM is far from enough for most Machine Learning tasks
 **Important note**: I unfortunatly got a faulty card, which crashed often in both Ubuntu with or without ROCM drivers and also unstable in Windows 10.
