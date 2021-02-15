@@ -54,9 +54,6 @@ function showContainer(tag) {
       </li>
       {% endif %}
     {% endfor %}
-    <li class="blog-tag-item" id="{{ sorted_tags }}-item">
-    <a href onclick="filter('{{ sorted_tags }}'); return false;">All</a>
-  </li>
   </ul>
 
   {% for tag in site.tags %}
