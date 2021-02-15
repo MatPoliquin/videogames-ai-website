@@ -5,7 +5,6 @@ permalink: /About
 ---
 
 ### Social Media links
-[Instagram](https://www.instagram.com/videogames.ai)
-
-[Youtube Channel](https://www.youtube.com/c/mathieupoliquin)
+*   [Youtube Channel](https://www.youtube.com/c/mathieupoliquin)
+*   [Instagram](https://www.instagram.com/videogames.ai)
 
