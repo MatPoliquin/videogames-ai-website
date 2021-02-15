@@ -44,13 +44,15 @@ function showContainer(tag) {
 
 
   <ul class="blog-tags-list">
-    {% assign sorted_tags = site.tags | where: "pytorch", "AMD" | sort %}
+    {% assign sorted_tags = site.tags | sort %}
     {% for tag in sorted_tags %}
       {% assign t = tag | first %}
       {% assign posts = tag | last %}
+      {% if t contains "pytorch" %}
       <li class="blog-tag-item" id="{{ t }}-item">
         <a href onclick="filter('{{ t }}'); return false;">{{ t }}</a>
       </li>
+      {% endif %}
     {% endfor %}
   </ul>
 
