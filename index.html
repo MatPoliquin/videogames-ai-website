@@ -41,3 +41,14 @@ title: Indie Machine Learning and Video Game Dev
     <span class="next ">Next</span>
   {% endif %}
 </div>
+
+
+{% for page in paginator.pages %}
+  <h3><span class="date">{{ page.date | date_to_long_string}}</span><a href="{{ post.url }}">{{ page.title }}</a></h3>
+  <!--<p class="author">-->
+    
+  <!--</p>-->
+  <!--<div class="content">
+    {{ post.excerpt }}
+  </div>-->
+{% endfor %}
