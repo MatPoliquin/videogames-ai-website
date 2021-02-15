@@ -11,85 +11,81 @@
   <!-- Import tfjs-vis -->
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
 
-  
+  <script>
+function filter(tag) {
+  setActiveTag(tag);
+  showContainer(tag);
+}
+
+function setActiveTag(tag) {
+  // loop through all items and remove active class
+  var items = document.getElementsByClassName('blog-tag-item');
+  for(var i=0; i < items.length; i++) {
+    items[i].setAttribute('class', 'blog-tag-item');
+  }
+
+  // set the selected tag's item to active
+  var item = document.getElementById(tag + '-item');
+  if(item) {
+    item.setAttribute('class', 'blog-tag-item active');
+  }
+}
+
+function showContainer(tag) {
+  // loop through all lists and hide them
+  var lists = document.getElementsByClassName('blog-list-container');
+  for(var i=0; i < lists.length; i++) {
+    lists[i].setAttribute('class', 'blog-list-container hidden');
+  }
+
+  // remove the hidden class from the list corresponding to the selected tag
+  var list = document.getElementById(tag + '-container');
+  if(list) {
+    list.setAttribute('class', 'blog-list-container');
+  }
+}
+
+
+  </script>
 
 </head>
 
 <body>
-<!-- ===================================================  -->
-<!-- Host Info                                            -->
-<!-- ===================================================  -->
-<h3> Host Info</h3>
-<div id='div-hostinfo'>
-  <table id='table-hostinfo' border='1' border-width='5px'>
-    <tr>
-      <td>GPU</td>
-      <td id="host-gpu"></td>
 
-    </tr>
-    <tr>
-      <td>TF Version</td>
-      <td id='host-tfversion'></td>
-    </tr>
-    <tr>
-      <td>TF Backend</td>
-      <td id='host-tfbackend'></td>
-    </tr>
-    <tr>
-      <td>WebGL version</td>
-      <td id='host-webglversion'></td>
-    </tr>
-    <tr>
-      <td>Force f16 textures</td>
-      <td id='host-forcef16'></td>
-    </tr>
-    <tr>
-      <td>Debug Mode</td>
-      <td id='host-debug'></td>
-    </tr>
-  </table>
+  <ul class="blog-tags-list">
+    {% assign sorted_tags = site.tags | sort %}
+    {% for tag in sorted_tags %}
+      {% assign t = tag | first %}
+      {% assign posts = tag | last %}
+      <li class="blog-tag-item" id="{{ t }}-item">
+        <a href onclick="filter('{{ t }}'); return false;">{{ t }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
+  {% for tag in site.tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  <div class="blog-list-container hidden" id="{{ t }}-container">
+    <ul class="blog-list">
+      {% for post in posts %}
+        {% if post.tags contains t %}
+          <li>
+            <span class="blog-item-date">{{ post.date | date: "%d %b %Y" }}</span>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
 
-  
-    <canvas id="glcanvas" width="0" height="0">
-      <script src="tf-tests/host_info.js"></script>
-    </canvas>
+    {% assign numPosts = posts | size %}
+    {% if numPosts == 1 %}
+      <p>{{ posts | size }} post containing tag <b>{{ t }}</b></p>
+    {% else %}
+      <p>{{ posts | size }} posts containing tag <b>{{ t }}</b></p>
+    {% endif %}
   </div>
-
-  <button onclick="StartTest()">Start Test</button>
-
-  <!-- ===================================================  -->
-<!-- Test Results                                          -->
-<!-- ===================================================  -->
-<div id='div-testresults'>
-  <table id='table-hostinfo' border='1'>
-    <tr>
-      <th>Test</th>
-      <th>Result</th>
-    </tr>
-    <tr>
-      <td>MatMul</td>
-      <td id="tr-matmul"></td>
-    </tr>
-  </table>
-
-
-  <!-- ===================================================  -->
-<!-- Output                                         -->
-<!-- ===================================================  -->
-<h3> Output</h3>
-
-
-<texarea type="text" id='test-output'>
-
-
-
-<script src="tf-tests/main.js"></script>
-<script src="tf-tests/matmul.js"></script>
-<script src="tf-tests/mnist.js"></script>
-
-
-
+{% endfor %}
 
   
 </body>

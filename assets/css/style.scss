@@ -9,6 +9,12 @@
     grid-gap: 20px;
 }
 
+
+.hidden {
+	display: none!important;
+	visibility: hidden!important;
+  }
+
 #mailchimp {
 	background: rgba(0, 0, 0, 0);
 	color: #3D6392;
