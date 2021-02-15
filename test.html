@@ -54,6 +54,8 @@ function showContainer(tag) {
       </li>
       {% endif %}
     {% endfor %}
+
+    <a href onclick="filter('{{  }}'); return false;">All</a>
   </ul>
 
   {% for tag in site.tags %}
