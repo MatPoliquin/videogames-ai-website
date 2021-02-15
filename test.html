@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Indie Machine Learning and Video Game Dev
+title: Test
 ---
 
   <script>
@@ -44,7 +44,7 @@ function showContainer(tag) {
 
 
   <ul class="blog-tags-list">
-    {% assign sorted_tags = site.tags | sort %}
+    {% assign sorted_tags = site.tags | where: "pytorch", "AMD" | sort %}
     {% for tag in sorted_tags %}
       {% assign t = tag | first %}
       {% assign posts = tag | last %}
