@@ -2,6 +2,7 @@
 layout: page
 title:  "About"
 permalink: /About
+ads: True
 ---
 
 
