@@ -71,7 +71,7 @@ tags:
   {% assign test = "cuda|rocm|AMD" | split: "|" %}
   {{test}}
   {% for tag in test %}
-  {% tag %}
+  {{tag}}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
   <div class="blog-list-container hidden" id="{{ t }}-container">
