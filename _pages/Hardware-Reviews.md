@@ -2,7 +2,7 @@
 layout: page
 title:  "Computer Hardware review"
 permalink: /Hardware-Reviews
-tags: [hardware, gpu, cpu, motherboard, machine learning, review]
+tags: [test]
 ---
 
 ### [NVIDIA P106-100](./2019/01/18/P106-100-GPU-Machine-Learning.html)

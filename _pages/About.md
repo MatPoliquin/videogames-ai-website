@@ -3,6 +3,7 @@ layout: page
 title:  "About"
 permalink: /About
 ads: False
+tags: [Mathieu Poliquin]
 ---
 
 
