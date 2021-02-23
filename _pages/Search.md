@@ -78,7 +78,7 @@ tags:
         {% if page.tags contains t %}
       
             <span class="blog-item-date">{{ page.date | date: "%d %b %Y" }}</span>
-            <a href="            {{ page.url }}">{{ page.title }}</a><br>
+            <a href="{{ page.url }}">           {{ page.title }}</a><br>
       
         {% endif %}
       {% endfor %}
