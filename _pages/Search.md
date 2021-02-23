@@ -3,6 +3,11 @@ layout: page
 title:  "Search"
 permalink: /Search
 tags: [Search, machine learning]
+searchtags:
+    - cuda
+    - rocm
+    - pytorch
+    - AMD
 ---
 
 <script>
@@ -61,8 +66,7 @@ tags:
 <a href onclick="filter('cuda'); return false;">cuda</a>
 <br>
 <br>
-
-  {% for tag in "rocm", "AMD", "cuda" %}
+  {% for tag in page.searchtags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
   <div class="blog-list-container hidden" id="{{ t }}-container">
