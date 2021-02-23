@@ -59,6 +59,8 @@ tags:
 
         <a href onclick="filter('{{ t }}'); return false;">{{ t }}</a>
 
+        {{page.searchtags}}
+
       {% endif %}
     {% endfor %}
 
