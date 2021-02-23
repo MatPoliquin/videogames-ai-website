@@ -45,7 +45,7 @@ function showContainer(tag) {
 
 
 <html>
-
+tags:
     {% assign sorted_tags = site.tags | sort %}
     {% for tag in sorted_tags %}
       {% assign t = tag | first %}
@@ -57,7 +57,8 @@ function showContainer(tag) {
       {% endif %}
     {% endfor %}
 
-    <br>
+<br>
+<br>
 
   {% for tag in site.tags %}
   {% assign t = tag | first %}
