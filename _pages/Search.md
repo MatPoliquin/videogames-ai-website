@@ -68,7 +68,7 @@ tags:
 <a href onclick="filter('cuda'); return false;">cuda</a>
 <br>
 <br>
-  {% assign test = "cuda|rocm|AMD" | split: "|" %}
+  {% assign test = "'cuda'|'rocm'|'AMD'" | split: "|" %}
   {{test}}
   {% for tag in test %}
   {{tag}}
