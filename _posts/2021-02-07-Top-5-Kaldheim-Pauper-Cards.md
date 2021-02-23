@@ -6,13 +6,13 @@ tags: [MTG, Kaldheim, Pauper, top 5, Icehide Troll, Ravenform, Shimmerdrift, Kar
 ---
 
 Nothing to do with Machine Learning or Videogame dev (well yet) but if you are a fan of Magic: The Gathering like me you
-probably know Kaldheim got released a few days ago. I like this set particulary because of the snow theme probably because I started playing Magic in 1995 when Ice Age was the lastest set and introduced the snow type for the first time in Magic's history.
+probably know Kaldheim got released a few days ago. I like this set particularly because of the snow theme probably because I started playing Magic in 1995 when Ice Age was the latest set and introduced the snow type for the first time in Magic's history.
 
 
 ### Icehide Troll
 ![Icehide Troll](https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=503790&type=card)
 <br>
-In Pauper format the games are longer and you usually get more lands so paying only two snow mana for the troll's insane hability is a bargain, and can be used at will. Moreover it's easier to pay then regular colored mana if you are playing with more than one color. Notice that the tap effect is not a requirement, that means you can activate this hability even after attacking or tapping it for other reasons.
+In Pauper format the games are longer and you usually get more lands so paying only two snow mana for the troll's insane hability is a bargain, and can be used at will. Moreover it's easier to pay than regular colored mana if you are playing with more than one color. Notice that the tap effect is not a requirement, that means you can activate this hability even after attacking or tapping it for other reasons.
 
 ### Ravenform
 ![Ravenform](https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=503680&type=card)
