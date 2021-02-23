@@ -64,8 +64,6 @@ tags:
       {% endif %}
     {% endfor %}
 
-
-<a href onclick="filter('cuda'); return false;">cuda</a>
 <br>
 <br>
   {% assign test = "'cuda'|'rocm'|'AMD'" | split: "|" %}
