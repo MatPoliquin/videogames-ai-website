@@ -69,8 +69,7 @@ tags:
 <br>
 <br>
   {% assign test = "'cuda'|'rocm'|'AMD'" | split: "|" %}
-  {{test}}
-  {% for tag in test %}
+  {% for tag in site.tags %}
   {{tag}}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
