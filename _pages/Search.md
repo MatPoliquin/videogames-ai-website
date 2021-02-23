@@ -53,7 +53,6 @@ tags:
       {% if t contains "pytorch" or t contains "AMD" or t contains "review" or t contains "rocm" or t contains "cuda" or t contains "python" or t contains "tensorflow" %}
 
         <a href onclick="filter('{{ t }}'); return false;">{{ t }}</a>
-        {{ site.tags }}
 
       {% endif %}
     {% endfor %}
@@ -63,7 +62,7 @@ tags:
 <br>
 <br>
 
-  {% for tag in ['rocm', 'AMD', 'cuda'] %}
+  {% for tag in "rocm", "AMD", "cuda" %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
   <div class="blog-list-container hidden" id="{{ t }}-container">
