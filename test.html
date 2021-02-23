@@ -71,7 +71,7 @@ function showContainer(tag) {
         {% endif %}
       {% endfor %}
 
-      {% for page in pages %}
+      {% for page in site.pages %}
         {% if page.tags contains t %}
       
             <span class="blog-item-date">{{ page.date | date: "%d %b %Y" }}</span>
