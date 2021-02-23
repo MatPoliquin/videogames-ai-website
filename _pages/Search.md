@@ -44,7 +44,7 @@ function showContainer(tag) {
 
 
 
-
+<html>
 
     {% assign sorted_tags = site.tags | sort %}
     {% for tag in sorted_tags %}
@@ -91,3 +91,5 @@ function showContainer(tag) {
     {% endif %}
   </div>
 {% endfor %}
+
+</html>
