@@ -42,7 +42,7 @@ function showContainer(tag) {
 
   </script>
 
-
+*work in progress*
 
 <html>
 tags:
@@ -53,6 +53,7 @@ tags:
       {% if t contains "pytorch" or t contains "AMD" or t contains "review" or t contains "rocm" or t contains "cuda" or t contains "python" or t contains "tensorflow" %}
 
         <a href onclick="filter('{{ t }}'); return false;">{{ t }}</a>
+        {{ site.tags }}
 
       {% endif %}
     {% endfor %}
