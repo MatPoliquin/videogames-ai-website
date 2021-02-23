@@ -78,18 +78,10 @@ tags:
         {% if page.tags contains t %}
       
             <span class="blog-item-date">{{ page.date | date: "%d %b %Y" }}</span>
-            <a href="{{ page.url }}">{{ page.title }}</a><br>
+            <a href="            {{ page.url }}">{{ page.title }}</a><br>
       
         {% endif %}
       {% endfor %}
-
-
-    {% assign numPosts = posts | size %}
-    {% if numPosts == 1 %}
-      <p>{{ posts | size }} post containing tag <b>{{ t }}</b></p>
-    {% else %}
-      <p>{{ posts | size }} posts containing tag <b>{{ t }}</b></p>
-    {% endif %}
   </div>
 {% endfor %}
 
