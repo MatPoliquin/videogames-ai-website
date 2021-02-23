@@ -68,7 +68,6 @@ tags:
 <br>
   {% assign test = "'cuda'|'rocm'|'AMD'" | split: "|" %}
   {% for tag in site.tags %}
-  {{tag}}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
   <div class="blog-list-container hidden" id="{{ t }}-container">
