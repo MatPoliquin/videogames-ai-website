@@ -59,7 +59,7 @@ tags:
 
         <a href onclick="filter('{{ t }}'); return false;">{{ t }}</a>
 
-        {{page.searchtags}}
+        
 
       {% endif %}
     {% endfor %}
@@ -69,6 +69,7 @@ tags:
 <br>
 <br>
   {% assign test = "cuda|rocm|AMD" | split: "|" %}
+  {{test}}
   {% for tag in test %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
