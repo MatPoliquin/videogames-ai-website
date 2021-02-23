@@ -50,7 +50,7 @@ tags:
     {% for tag in sorted_tags %}
       {% assign t = tag | first %}
       {% assign posts = tag | last %}
-      {% if t contains "pytorch" or t contains "AMD" or t contains "review" %}
+      {% if t contains "pytorch" or t contains "AMD" or t contains "review" or t contains "rocm" or t contains "cuda" or t contains "python" or t contains "tensorflow" %}
 
         <a href onclick="filter('{{ t }}'); return false;">{{ t }}</a>
 

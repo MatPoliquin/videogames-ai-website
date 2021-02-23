@@ -2,7 +2,7 @@
 layout: page
 title:  "How to install Quake 3 on Linux"
 permalink: /How-to-Install-Quake3-on-Linux
-tags: [Quake 3, Linux, How to, play, install]
+tags: [Quake 3, linux, install]
 ---
 
 This is guide for how to install the legendary Quake 3 game on Linux
