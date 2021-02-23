@@ -62,7 +62,7 @@ tags:
 <br>
 <br>
 
-  {% for tag in ('rocm', 'AMD', 'cuda') %}
+  {% for tag in ['rocm', 'AMD', 'cuda'] %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
   <div class="blog-list-container hidden" id="{{ t }}-container">
