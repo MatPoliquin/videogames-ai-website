@@ -68,7 +68,8 @@ tags:
 <a href onclick="filter('cuda'); return false;">cuda</a>
 <br>
 <br>
-  {% for tag in page.searchtags %}
+  {% assign test = "cuda|rocm|AMD" | split: "|" %}
+  {% for tag in test %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
   <div class="blog-list-container hidden" id="{{ t }}-container">
