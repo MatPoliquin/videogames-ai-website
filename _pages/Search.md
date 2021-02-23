@@ -4,10 +4,10 @@ title:  "Search"
 permalink: /Search
 tags: [Search, machine learning]
 searchtags:
-    - cuda
-    - rocm
-    - pytorch
-    - AMD
+    - 'cuda'
+    - 'rocm'
+    - 'pytorch'
+    - 'AMD'
 ---
 
 <script>
