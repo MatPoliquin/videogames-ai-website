@@ -55,6 +55,7 @@ function showContainer(tag) {
       {% endif %}
     {% endfor %}
 
+    <br>
 
   {% for tag in site.tags %}
   {% assign t = tag | first %}
@@ -65,7 +66,7 @@ function showContainer(tag) {
         {% if post.tags contains t %}
       
             <span class="blog-item-date">{{ post.date | date: "%d %b %Y" }}</span>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ post.url }}">{{ post.title }}</a><br>
       
         {% endif %}
       {% endfor %}
