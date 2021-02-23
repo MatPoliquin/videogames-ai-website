@@ -2,7 +2,7 @@
 layout: post
 title:  "GTX 1060 5GB used for Machine Learning"
 date:   2019-07-22 00:00:00 +0800
-tags: [gtx 1060, 5GB, gpu, machine learning]
+tags: [gtx 1060, 5GB, gpu, machine learning, review]
 ---
 
 NVIDIA's GTX 1060 shipped in many variants, one maybe less known variant is the 5GB edition intended for Chinese internet cafes. Does it offer a good peformance/price ratio for Machine learning?

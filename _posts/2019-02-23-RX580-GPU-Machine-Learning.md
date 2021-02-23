@@ -2,7 +2,7 @@
 layout: post
 title:  "RX 580 for Machine Learning review"
 date:   2019-02-23 00:06:00 +0000
-tags: [rx580, maxsun, gpu, rocm, machine learning]
+tags: [rx580, maxsun, gpu, rocm, machine learning, review]
 ---
 
 The RX580 is one of the cheapest 8 GB ML card on the market, is worth it?

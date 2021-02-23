@@ -2,7 +2,7 @@
 layout: post
 title:  "P104-100 for Machine Learning"
 date:   2019-07-23 00:00:00 +0800
-tags: [p104-100, 8GB, gpu, machine learning]
+tags: [p104-100, 8GB, gpu, machine learning, review]
 ---
 
 In January I did a review of the p106-100 mining card applied to Machine Learning.
