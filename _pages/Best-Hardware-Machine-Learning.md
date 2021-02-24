@@ -9,11 +9,11 @@ tags: [hardware, gpu, cpu, motherboard, machine learning]
 
 This is a guide to help you choose the best cost effective hardware for your machine learning projects.
 Which one is best **depends on your specific project needs** and these can vary greatly.<br>
-If you just want to start learning ML, you current computer will mostly likely be ok and you can use google colab for heavier tasks.
+If you just want to start learning ML, your current computer will mostly likely be ok and you can use google colab for heavier tasks.
 <br>
  If you are currently unsure of what ML problems you want to solve but want to get a *catch most scenarios, cost-efective* rig now that can also game and do game dev, here is what I suggest and close to what I am actually using:
 
-A Quick answer:
+##A Quick answer:
 *   RTX 2060 Super 8g
 *   Intel Xeon E5 2678v3 12c/24t
 *   32G of DDR3 RAM 1866Mhz 
@@ -30,10 +30,10 @@ For the ram side, it really depends on which other task you are doing, I use Unr
 
 For the motherboard, idealy you would want one that supports multiple GPUs so you can expand your rig later. The Huananzhi x99-tf provides awesome value in that matter, it supports two full speed PCIE 3.0 16x slots and one PCIE 3.0 4x.
 
-And HDD will become quickly a bottleneck, especially for task where you need to pre-process lots of data so an SSD is a must. ML data sets and models can become quite huge so 1T is recommended
+An HDD will become quickly a bottleneck, especially for task where you need to pre-process lots of data so an SSD is a must. ML data sets and models can become quite huge so 1T is recommended
 
 
-Longer answer (TODO):
+##Longer answer (TODO):
 
 Steps:
 *   Determine which ML problem(s) you want to solve
@@ -44,8 +44,8 @@ Steps:
 Now some might say the above steps are obvious but I feel lots of people still buy hardware head first or are not sure of which specific ML problems interests them yet so I divided this guide into possible scenarios
 
 Scenarios:
-AI playing games (TODO)
-RL for Robotics (TODO)
-NLP (TODO)
-AlphaZero (TODO)
-Vision tasks (TODO)
+### AI playing games (TODO)
+### RL for Robotics (TODO)
+### NLP (TODO)
+### AlphaZero (TODO)
+### Vision tasks (TODO)
