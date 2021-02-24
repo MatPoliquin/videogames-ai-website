@@ -55,20 +55,12 @@ function showContainer(tag) {
 
 <p style="padding: 10px; border: 2px solid blue;">
 tags:
-    {% assign sorted_tags = site.tags | sort %}
-    {% for tag in sorted_tags %}
-      {% assign t = tag | first %}
-      {% assign posts = tag | last %}
-      {% if t contains "pytorch" or t contains "AMD" or t contains "rocm" or t contains "cuda" or t contains "python" or t contains "tensorflow" %}
-
-        <a href onclick="filter('{{ t }}'); return false;">{{ t }}</a>
-
-        
-
-      {% endif %}
-    {% endfor %}
-
     <a href onclick="filter('review'); return false;">Reviews</a>
+    <a href onclick="filter('pytorch'); return false;">Pytorch</a>
+    <a href onclick="filter('tensorflow'); return false;">Tensorflow</a>
+    <a href onclick="filter('cuda'); return false;">Cuda</a>
+    <a href onclick="filter('rocm'); return false;">ROCm</a>
+    <a href onclick="filter('AMD'); return false;">AMD</a>
 
 </p>
 <br>

@@ -2,7 +2,7 @@
 layout: post
 title:  "RL for robotics on low cost hardware using Isaac Gym - OpenAI hand demo"
 date:   2021-02-12 00:00:00 +0800
-tags: [Reinforcement Learning, Robotics, Isaac Gym, RTX 2060 Super 8g, p106-100 6g, mining hardware, pytorch]
+tags: [Reinforcement Learning, Robotics, Isaac Gym, RTX 2060 Super, p106-100, mining, pytorch, cuda]
 ---
 
 Reinforcement Learning for Robotics research typical requires huge computing resources that are out of reach for most people.
