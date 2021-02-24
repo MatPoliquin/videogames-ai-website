@@ -2,7 +2,7 @@
 layout: page
 title:  "Tensorflow.js gflops test"
 permalink: /tensorflow-js-gflops-test
-tags: [tensorflow.js, gflops, performance, test, benchmark]
+tags: [tensorflow.js, gflops, performance, test, benchmark, tensorflow]
 ---
 
 The test uses the following code. Please press the "Start Test" button after the Host Info section.
