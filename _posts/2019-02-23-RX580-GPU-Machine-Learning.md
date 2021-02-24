@@ -95,3 +95,6 @@ For now I would still suggest NVIDIA if you want peace of mind but I really do w
 Note:
 There is also the AMD RX 470, RX 480, RX 570, RX 590 that have 8 GB versions with a cheap price relative to NVDIA's 8 GB offerings, althought I haven't tested those, a guesstimate based on specs would be that they deliver 80%, 90%, 90% and 110% performance of the rx 580 respectively. As for the RX 580 I would srongly recommend borrowing one and testing your specific use case on it first before purchase.
 
+EDIT 2021: Seems starting with ROCm 4.0, AMD is not officially supporting the RX 580. While it still works, it means this card is not future proof and its better look elsewhere, more details here:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Cg2WWLNjrfQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
