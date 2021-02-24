@@ -2,6 +2,7 @@
 layout: page
 title:  "Search"
 permalink: /Search
+ads: False
 tags: [Search, machine learning]
 searchtags:
     - 'cuda'
