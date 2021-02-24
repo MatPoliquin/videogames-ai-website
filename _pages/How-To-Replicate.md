@@ -10,7 +10,6 @@ First step is to setup OpenAI baselines + retro: [Click here](./2019/01/29/Setup
 
 After that you can use the paramaters shown in the video and you should get similar results.
 
-If you are looking for pretrained models [Click Here](./2019/01/29/Setup-OpenAI-baselines-retro.html)
 
 
 
