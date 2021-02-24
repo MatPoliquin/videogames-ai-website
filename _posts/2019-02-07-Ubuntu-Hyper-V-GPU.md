@@ -2,7 +2,7 @@
 layout: post
 title:  "Ubuntu on Hyper-V"
 date: 2019-02-07 06:00:00 +0000
-tags: [ubuntu, hyper-v, linux, gpu]
+tags: [ubuntu, hyper-v, linux, gpu, windows]
 ---
 
 I often need to use both Windows and Linux for various projects. I was dual booting Linux and Windows 10 on my laptop but constantly rebooting was getting quickly annoying so recently I decided to try Hyper-V since it comes for free with my Windows 10 Pro.

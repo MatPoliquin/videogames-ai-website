@@ -5,7 +5,7 @@ permalink: /Fix-timezone-dual-boot
 tags: [ubuntu, windows, timezone, fix]
 ---
 
-Just type this command at the terminal
+Just type this command at the terminal on your linux distro
 ```shell
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
