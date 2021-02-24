@@ -52,6 +52,8 @@ function showContainer(tag) {
 *work in progress*
 
 <html>
+
+<p style="padding: 10px; border: 2px solid blue;">
 tags:
     {% assign sorted_tags = site.tags | sort %}
     {% for tag in sorted_tags %}
@@ -65,7 +67,7 @@ tags:
 
       {% endif %}
     {% endfor %}
-
+</p>
 <br>
 <br>
   {% assign test = "'cuda'|'rocm'|'AMD'" | split: "|" %}
@@ -77,8 +79,7 @@ tags:
       {% for post in posts %}
         {% if post.tags contains t %}
       
-            <span class="blog-item-date">{{ post.date | date: "%d %b %Y" }}</span>
-            <a href="{{ post.url }}">{{ post.title }}</a><br>
+        <a href="{{ post.url }}">{{ post.title }}</a><br>
       
         {% endif %}
       {% endfor %}
