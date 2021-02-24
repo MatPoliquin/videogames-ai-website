@@ -109,8 +109,21 @@ You can see the whole training from 0M to 10M here for Super Mario Bros Level 3-
 Street Fighter example:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-V2JIm8WHZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**other examples:** [videogames.ai Youtube Channel](https://www.youtube.com/channel/UCyfnks28XqY-0uTkQkIeTHw/videos)
-
+**other examples on my channel:** <br>
+| Game        	   | Videos/Models    |
+|:-----------------|:----------|
+| Super Street Fighter 2 CE Genesis |  [youtube](https://youtu.be/-V2JIm8WHZo) |
+| Fatal Fury 2 Genesis |  [youtube](https://youtu.be/lheUG_1Ur44) |
+| Ms PacMan Nes |  [youtube](https://youtu.be/E0BKpKCCtqA) |
+| Clu Clu Land Nes |  [youtube](https://youtu.be/u_r8PrccR-g) |
+| Columns Genesis | [youtube](https://youtu.be/hePuhOX7Ikg) |
+| PopEye Nes | [youtube](https://youtu.be/Csfh0TLc6ro) |
+| Bubble Bobble Nes | [youtube](https://youtu.be/C1syCkrkd7s) |
+| T2 Arcade Genesis  | [youtube](https://youtu.be/YIKNhHfWf3s) |
+| After Burner II  | [youtube](https://youtu.be/YaiXf7Hg8to) |
+| Adventure Island 3 | [youtube](https://youtu.be/dq_T9I9XMCU) |
+| Mortal Kombat II Genesis | [youtube](https://youtu.be/d8tN3kRbGYQ) |
+| Punchout Nes | [youtube](https://youtu.be/rjfhYx6bcYE) |
 
 It's same process for other console games altought you will likely need to add it to a list in the source code first.
 [run.py](https://github.com/openai/baselines/blob/master/baselines/run.py)

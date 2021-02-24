@@ -26,8 +26,9 @@ _Performance tests results_
 
 
 ### UPDATE:
-I recently made a video about how to leverage mining hardware using NVIDIA Reasearch's CuLE framework:
+I recently made two videos about how to leverage mining hardware using NVIDIA Reasearch's CuLE framework (for Atari games) and one on Isaac gym for RL in Robotics tested on a p106-100 amongst other cards:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AKrdBF39r7w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DKyCVyKQMN0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 #### Software
@@ -73,8 +74,21 @@ Lots of motherboards support only one full speed pcie 16x slot at a time. When t
 Moreoever if bandwith performance is critical for your use case, p106 might not be the best choice. That said even with a 15% hit on performance it's still offers a very good price/performance ratio.
 
 
-This is the card I am using to do Machine Learning experiments such as this one:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GBlfDzsNSk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+This is the card I am using ML to play video games such as these ones:
+| Game        	   | Videos/Models    |
+|:-----------------|:----------|
+| Super Street Fighter 2 CE Genesis |  [youtube](https://youtu.be/-V2JIm8WHZo) |
+| Fatal Fury 2 Genesis |  [youtube](https://youtu.be/lheUG_1Ur44) |
+| Ms PacMan Nes |  [youtube](https://youtu.be/E0BKpKCCtqA) |
+| Clu Clu Land Nes |  [youtube](https://youtu.be/u_r8PrccR-g) |
+| Columns Genesis | [youtube](https://youtu.be/hePuhOX7Ikg) |
+| PopEye Nes | [youtube](https://youtu.be/Csfh0TLc6ro) |
+| Bubble Bobble Nes | [youtube](https://youtu.be/C1syCkrkd7s) |
+| T2 Arcade Genesis  | [youtube](https://youtu.be/YIKNhHfWf3s) |
+| After Burner II  | [youtube](https://youtu.be/YaiXf7Hg8to) |
+| Adventure Island 3 | [youtube](https://youtu.be/dq_T9I9XMCU) |
+| Mortal Kombat II Genesis | [youtube](https://youtu.be/d8tN3kRbGYQ) |
+| Punchout Nes | [youtube](https://youtu.be/rjfhYx6bcYE) |
 
 ## Performance test details
 Here are screenshots of various tests I made

@@ -17,8 +17,8 @@ You can find me on my youtube channel and this blog where I mostly talk about ML
 *   [Twitter](https://twitter.com/MatPoliquin)
 *   [GitHub](https://github.com/MatPoliquin)
 *   [Linkedin](https://www.linkedin.com/public-profile/in/mathieupoliquin)  
-*   [MTGO](https://magic.wizards.com/en/mtgo) SnapcasterRecall
-*   [My MTG Decks I use](https://www.mtggoldfish.com/decks)
+*   [MTGO ID:](https://magic.wizards.com/en/mtgo) SnapcasterRecall, [My Decks](https://www.mtggoldfish.com/decks)
+*   
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
