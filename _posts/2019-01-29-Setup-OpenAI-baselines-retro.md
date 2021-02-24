@@ -110,6 +110,7 @@ Street Fighter example:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-V2JIm8WHZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **other examples on my channel:** <br>
+
 | Game        	   | Videos/Models    |
 |:-----------------|:----------|
 | Super Street Fighter 2 CE Genesis |  [youtube](https://youtu.be/-V2JIm8WHZo) |
