@@ -15,9 +15,7 @@ If you just want to start learning ML, your current computer will mostly likely 
 
 ## A Quick answer:
 
-<p style="padding: 10px; border: 2px solid blue;">
-</p>
-<ul style="list-style-position:inside; padding: 20px; border: 2px solid blue;">
+<ul style="list-style-position:inside; padding: 10px; border: 2px solid blue;">
 <li>RTX 2060 Super 8g</li>
 <li>Intel Xeon E5 2678v3 12c/24t</li>
 <li> 32G of DDR3 RAM 1866Mhz 
