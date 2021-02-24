@@ -16,13 +16,16 @@ If you just want to start learning ML, your current computer will mostly likely 
 ## A Quick answer:
 
 <p style="padding: 10px; border: 2px solid blue;">
-*   RTX 2060 Super 8g
-*   Intel Xeon E5 2678v3 12c/24t
-*   32G of DDR3 RAM 1866Mhz 
-    (the 2678v3 supports both ddr3 and ddr4)
-*   Huananzhi x99-tf motherboard
-*   1T SSD
-*   650w PSU
+
+<ul>
+<li>RTX 2060 Super 8g</li>
+<li>Intel Xeon E5 2678v3 12c/24t</li>
+<li> 32G of DDR3 RAM 1866Mhz 
+    (the 2678v3 supports both ddr3 and ddr4)</li>
+<li>Huananzhi x99-tf motherboard</li>
+<li> 1T SSD</li>
+<li>650w PSU</li>
+</ul>
 </p>
 On the GPU side, for a safer bet you should aim at minimum the Turing architecture (RTX 20XX cards) and 8g of vram as its the minimum for most models, more over RTX cards supports 16 bit which at the expense of precision gives you much more performance and space. The RTX 2060 Super 8g is the best bang for buck in that matter<br>
 
