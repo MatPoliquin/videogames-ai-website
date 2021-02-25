@@ -2,7 +2,7 @@
 layout: post
 title:  "Cheapest NVME SSD - King Coco 1TB Review"
 date:   2019-09-05 00:00:00 +0800
-tags: [cheap, nvme, ssd, kingcoco, 1TB]
+tags: [cheap, nvme, ssd, kingcoco, 1TB, review]
 ---
 
 I needed to replace the SSD in my laptop since I was running out of space.
