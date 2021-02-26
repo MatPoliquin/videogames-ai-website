@@ -19,7 +19,7 @@ In Pauper format the games are longer and you usually get more lands so paying o
 <br>
 A powerful removal... in blue! Moreover what I like is that it double as backup creature, a 1/1 flyer can be handy!
 
-### Shimmerdrift
+### Shimmerdrift Vale
 ![Shimmerdrift](https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=503887&type=card)
 <br>
 If you want to draw the true power of snow, you need to play in multicolor
