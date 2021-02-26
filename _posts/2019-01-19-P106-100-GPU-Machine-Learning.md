@@ -74,7 +74,8 @@ Lots of motherboards support only one full speed pcie 16x slot at a time. When t
 Moreoever if bandwith performance is critical for your use case, p106 might not be the best choice. That said even with a 15% hit on performance it's still offers a very good price/performance ratio.
 
 
-This is the card I am using ML to play video games such as these ones:
+This is the card I am using ML to play video games such as these ones: <br>
+
 | Game        	   | Videos/Models    |
 |:-----------------|:----------|
 | Super Street Fighter 2 CE Genesis |  [youtube](https://youtu.be/-V2JIm8WHZo) |
