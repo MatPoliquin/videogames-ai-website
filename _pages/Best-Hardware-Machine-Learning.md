@@ -42,9 +42,8 @@ Steps:
 *   Profile and identify the bottlenecks with tools such as the NVIDIA profiler
 *   Get the hardware the addresses those bottlenecks
 
-Now some might say the above steps are obvious but I feel lots of people still buy hardware head first or are not sure of which specific ML problems interests them yet so I divided this guide into possible scenarios
+Now some might say the above steps are obvious but I feel lots of people still buy hardware head first or are not sure of which specific ML problems interests them yet so I divided this guide into possible scenarios:
 
-Scenarios:
 ### AI playing videogames
 
 If you are interested in solving retro videogames using AI such Super Mario Bros 3 for NES or racing games such as Hang-On on the Sega Master System: 
