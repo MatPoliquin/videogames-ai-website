@@ -47,12 +47,11 @@ Now some might say the above steps are obvious but I feel lots of people still b
 Scenarios:
 ### AI playing videogames
 
-If you are interested in solving videogames using AI such Super Mario Bros 3 for NES or racing games such as Hang-On on the Sega Master System, 
+If you are interested in solving retro videogames using AI such Super Mario Bros 3 for NES or racing games such as Hang-On on the Sega Master System: 
 
-![reward farming](/assets/openai_romtool/smb3_reward_farming.gif)
 ![hang-on](/assets/logo.gif)
 
-A 2GB NVIDIA GPU (Pascal architecture and up) such as the MX150 found in many laptops is good enough to get resonable training times as these games can be solved with 1.7M CNN models, the default one provided in [OpenAI's baselines](https://www.videogames.ai/2019/01/29/Setup-OpenAI-baselines-retro.html) [details of the model here](/Tensorflow-trainable-parameters-count) which fits easily under 2GB for 8-16 environements at same time using the PPO2 environement. My laptop have this GPU and actually used it to work on solving the entire Hang-On game on the first difficulty level. <br>
+A 2GB NVIDIA GPU (Pascal architecture and up) such as the MX150 found in many laptops is good enough to get resonable training times as these games can be solved with [1.7M parameters CNN models](/Tensorflow-trainable-parameters-count), the default one provided in [OpenAI's baselines](https://www.videogames.ai/2019/01/29/Setup-OpenAI-baselines-retro.html)  which fits easily under 2GB for 8-16 environements at same time using the PPO2 environement. My laptop have this GPU and actually used it to work on solving the entire Hang-On game on the first difficulty level. <br>
 Note that your CPU needs to be 4 core and up to keep up with your GPU, but if your CPU is weak like for mining rigs but you have at least a 3GB NVIDIA Pascal GPU you can use [NVIDIA Cule solution](https://www.videogames.ai/2020/06/11/Machine-Learning-Mining-Hardware.html) that simulates the game on the GPU instead of CPU, in that case a 2 core Celeron is enough. However this is limited to Atari 2600 games.
 
 ### RL for Robotics (TODO)
