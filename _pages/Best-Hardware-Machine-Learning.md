@@ -25,7 +25,7 @@ If you just want to start learning ML, your current computer will mostly likely 
 
 On the GPU side, for a safer bet you should aim at minimum the Turing architecture (RTX 20XX cards) and 8g of vram as its the minimum for most models, more over RTX cards supports 16 bit which at the expense of precision gives you much more performance and space. The RTX 2060 Super 8g is the best bang for buck in that matter<br>
 
-On the CPU side, lots of ML tasks requires heavy pre-processing or simulation such ones involving video games or robotics. If you want to support two GPUs at once or do other work while training, a solid 12 core CPU with at least a cinebench score of 1500 is recommended. Older x99 xeons offer the best bang for buck in that matter
+On the CPU side, lots of ML tasks requires heavy pre-processing or simulation such as ones involving video games or robotics. If you want to support two GPUs at once or do other work while training, a solid 12 core CPU with at least a cinebench score of 1500 is recommended. Older x99 xeons offer the best bang for buck in that matter
 
 For the ram side, it really depends on which other task you are doing, I use Unreal Engine so 32GB is recommended, no difference in performance between ddr3 or ddr4 for the older xeons
 
@@ -50,7 +50,15 @@ If you are interested in solving retro videogames using AI such Super Mario Bros
 
 ![hang-on](/assets/logo.gif)
 
+
 A 2GB NVIDIA GPU (Pascal architecture and up) such as the MX150 found in many laptops is good enough to get resonable training times as these games can be solved with [1.7M parameters CNN models](/Tensorflow-trainable-parameters-count), the default one provided in [OpenAI's baselines](https://www.videogames.ai/2019/01/29/Setup-OpenAI-baselines-retro.html)  which fits easily under 2GB for 8-16 environements at same time using the PPO2 environement. My laptop have this GPU and actually used it to work on solving the entire Hang-On game on the first difficulty level. <br>
+
+<ul style="list-style-position:inside; padding: 10px; border: 2px solid blue;">
+<li>NVIDIA MX150 2G</li>
+<li>Intel i7-8550u 4c/8t</li>
+<li>8G/16G DDR4</li>
+</ul>
+
 Note that your CPU needs to be 4 core and up to keep up with your GPU, but if your CPU is weak like for mining rigs but you have at least a 3GB NVIDIA Pascal GPU you can use [NVIDIA Cule solution](https://www.videogames.ai/2020/06/11/Machine-Learning-Mining-Hardware.html) that simulates the game on the GPU instead of CPU, in that case a 2 core Celeron is enough. However this is limited to Atari 2600 games.
 
 ### RL for Robotics (TODO)
