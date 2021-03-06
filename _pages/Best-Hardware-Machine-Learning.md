@@ -5,8 +5,6 @@ permalink: /Best-Hardware-Machine-Learning
 tags: [hardware, gpu, cpu, motherboard, machine learning]
 ---
 
-# WARNING: Work In Progress
-
 This is a guide to help you choose the best cost effective hardware for your machine learning projects.
 Which one is best **depends on your specific project needs** and these can vary greatly.<br>
 If you just want to start learning ML, your current computer will mostly likely be ok and you can use google colab for heavier tasks.
@@ -36,7 +34,7 @@ For the motherboard, idealy you would want one that supports multiple GPUs so yo
 An HDD will become quickly a bottleneck, especially for task where you need to pre-process lots of data so an SSD is a must. ML data sets and models can become quite huge so 1T is recommended
 
 
-## Longer answer (TODO):
+## Longer answer (Work In Progress):
 
 Steps:
 *   Determine which ML problem(s) you want to solve
@@ -47,7 +45,16 @@ Steps:
 Now some might say the above steps are obvious but I feel lots of people still buy hardware head first or are not sure of which specific ML problems interests them yet so I divided this guide into possible scenarios
 
 Scenarios:
-### AI playing games (TODO)
+### AI playing videogames
+
+If you are interested in solving videogames using AI such Super Mario Bros 3 for NES or racing games such as Hang-On on the Sega Master System, 
+
+![reward farming](/assets/openai_romtool/smb3_reward_farming.gif)
+![hang-on](/assets/logo.gif)
+
+A 2GB NVIDIA GPU (Pascal architecture and up) such as the MX150 found in many laptops is good enough to get resonable training times as these games can be solved with 1.7M CNN models, the default one provided in [OpenAI's baselines](https://www.videogames.ai/2019/01/29/Setup-OpenAI-baselines-retro.html) [details of the model here](/Tensorflow-trainable-parameters-count) which fits easily under 2GB for 8-16 environements at same time using the PPO2 environement. My laptop have this GPU and actually used it to work on solving the entire Hang-On game on the first difficulty level. <br>
+Note that your CPU needs to be 4 core and up to keep up with your GPU, but if your CPU is weak like for mining rigs but you have at least a 3GB NVIDIA Pascal GPU you can use [NVIDIA Cule solution](https://www.videogames.ai/2020/06/11/Machine-Learning-Mining-Hardware.html) that simulates the game on the GPU instead of CPU, in that case a 2 core Celeron is enough. However this is limited to Atari 2600 games.
+
 ### RL for Robotics (TODO)
 ### NLP (TODO)
 ### AlphaZero (TODO)
