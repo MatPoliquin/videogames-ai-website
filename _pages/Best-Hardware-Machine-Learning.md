@@ -44,14 +44,14 @@ Steps:
 
 Now some might say the above steps are obvious but I feel lots of people still buy hardware head first or are not sure of which specific ML problems interests them yet so I divided this guide into possible scenarios:
 
-### AI playing videogames
+### AI playing retro videogames
 
 If you are interested in solving retro videogames using AI such Super Mario Bros 3 for NES or racing games such as Hang-On on the Sega Master System: 
 
 ![hang-on](/assets/logo.gif)
+![smb1](/assets/games/Level1-4.gif)
 
-
-A 2GB NVIDIA GPU (Pascal architecture and up) such as the MX150 found in many laptops is good enough to get resonable training times as these games can be solved with [1.7M parameters CNN models](/Tensorflow-trainable-parameters-count), the default one provided in [OpenAI's baselines](https://www.videogames.ai/2019/01/29/Setup-OpenAI-baselines-retro.html)  which fits easily under 2GB for 8-16 environements at same time using the PPO2 environement. My laptop have this GPU and actually used it to work on solving the entire Hang-On game on the first difficulty level. <br>
+A 2GB NVIDIA GPU (Pascal architecture and up) such as the MX150 found in many laptops is good enough to get resonable training times as these games can be solved with [1.7M parameters CNN models](/Tensorflow-trainable-parameters-count), the default one provided in [OpenAI's baselines](https://www.videogames.ai/2019/01/29/Setup-OpenAI-baselines-retro.html)  which fits easily under 2GB for 8-16 environements at same time using the PPO2 algo. My laptop have this GPU and actually used it to work on solving the entire Hang-On game on the first difficulty level. <br>
 
 <ul style="list-style-position:inside; padding: 10px; border: 2px solid blue;">
 <li>NVIDIA MX150 2G</li>
