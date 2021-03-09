@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Hardware for Machine Learning - Best CPU, GPU, Motherboard guide"
+title:  "Hardware for Machine Learning - 2021 - Best CPU, GPU, Motherboard guide"
 permalink: /Best-Hardware-Machine-Learning
 tags: [hardware, gpu, cpu, motherboard, machine learning]
 ---
@@ -49,7 +49,7 @@ Now some might say the above steps are obvious but I feel lots of people still b
 If you are interested in solving retro videogames using AI such Super Mario Bros 3 for NES or racing games such as Hang-On on the Sega Master System: 
 
 ![hang-on](/assets/logo.gif)
-![smb1](/assets/games/Level1-4.gif =266x221)
+<img src="./assets/games/Level1-4.gif" width="266">
 
 A 2GB NVIDIA GPU (Pascal architecture and up) such as the MX150 found in many laptops is good enough to get resonable training times as these games can be solved with [1.7M parameters CNN models](/Tensorflow-trainable-parameters-count), the default one provided in [OpenAI's baselines](https://www.videogames.ai/2019/01/29/Setup-OpenAI-baselines-retro.html)  which fits easily under 2GB for 8-16 environements at same time using the PPO2 algo. My laptop have this GPU and actually used it to work on solving the entire Hang-On game on the first difficulty level. <br>
 
