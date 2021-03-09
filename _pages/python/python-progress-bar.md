@@ -13,6 +13,7 @@ pip3 install tqdm
 quick example:
 ```python
 import tqdm
+import time
 for i in trange(5, desc ="loop test"):
             time.sleep(1)
 ```
