@@ -57,8 +57,6 @@ title: Indie Machine Learning and Video Game Dev
       <a href onclick="filter('AMD'); return false;">AMD</a>
   
   </p>
-  <br>
-  <br>
     {% assign test = "'cuda'|'rocm'|'AMD'" | split: "|" %}
     {% for tag in site.tags %}
     {% assign t = tag | first %}
@@ -87,7 +85,7 @@ title: Indie Machine Learning and Video Game Dev
   </html>
 
 
-
+<br>
 <ul>
    {% for item in site.data.samplelist.docs %}
       <li><a href="{{ item.url }}">{{ item.title }}</a></li>
