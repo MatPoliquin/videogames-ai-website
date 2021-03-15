@@ -62,6 +62,12 @@ A 2GB NVIDIA GPU (Pascal architecture and up) such as the MX150 found in many la
 Note that your CPU needs to be 4 core and up to keep up with your GPU, but if your CPU is weak like for mining rigs but you have at least a 3GB NVIDIA Pascal GPU you can use [NVIDIA Cule solution](https://www.videogames.ai/2020/06/11/Machine-Learning-Mining-Hardware.html) that simulates the game on the GPU instead of CPU, in that case a 2 core Celeron is enough. However this is limited to Atari 2600 games.
 
 ### RL for Robotics (TODO)
+<img src="./assets/isaacgym/shadowhand.pngf" width="266">
+
+### AlphaZero for board games(TODO)
+
+![chess](/assets/games/segachess-sms.png)
+
 ### NLP (TODO)
-### AlphaZero (TODO)
+
 ### Vision tasks (TODO)
