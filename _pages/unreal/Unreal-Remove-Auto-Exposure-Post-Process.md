@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "How to remove auto exposure post process"
+title:  "How to remove auto exposure post process in Unreal Paper2D"
 permalink: /Unreal-Remove-Auto-Exposure-Post-Process
 tags: [unreal, auto exposure, post process, paper2D]
 ---
