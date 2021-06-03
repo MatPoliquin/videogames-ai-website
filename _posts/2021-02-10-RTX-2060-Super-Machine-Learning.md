@@ -2,7 +2,7 @@
 layout: post
 title:  "RTX 2060 Super for Machine Learning"
 date:   2021-02-10 00:00:00 +0800
-tags: [RTX 2060 Super, gpu, machine learning, resnet50, review]
+tags: [RTX 2060 Super, gpu, machine learning, resnet50, unreal, review]
 ---
 
 

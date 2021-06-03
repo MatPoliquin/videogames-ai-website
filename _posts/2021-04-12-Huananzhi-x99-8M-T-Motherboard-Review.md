@@ -2,7 +2,7 @@
 layout: post
 title:  "Huananzhi x99-8M-T motherboard review"
 date:   2021-04-12 00:00:00 +0800
-tags: [Huananzhi, x99, 8M-T, motherboard, DDR3, review]
+tags: [Huananzhi, x99, 8M-T, motherboard, DDR3, unreal, review]
 ---
 
 WORK IN PROGRESS
