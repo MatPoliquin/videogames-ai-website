@@ -49,7 +49,7 @@ Note:
 I did not have a GTX 1060 6GB to compare against (only the 5 GB variant). Please keep in mind that the 5GB variant has a difference in memory bandwidth capacity: 168GB/s (5 GB card) as opposed to 192GB/s (6 GB card) and since these ML benchmarks are bandwidth bound it affects the performance.
 
 
-# Read on for the details...
+#### Read on for the details...
 
 Recently mining crypto-currencies has become less profitable and as a result lots of miners are dumping their GPUs on the second hand market and this is driving the prices down. Moreover lots of those gpu have no head display and are firmware and/or driver locked so they cannot be used by most games out of the box driving the price down further.
 
