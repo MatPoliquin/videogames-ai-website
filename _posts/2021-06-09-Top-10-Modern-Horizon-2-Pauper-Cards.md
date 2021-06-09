@@ -14,7 +14,7 @@ Another top pauper cards... this time for Modern Horizon 2, which is set to rele
 By the time you read this blog post, this card might already be banned like Empty the Warrens.
 
 ### Discerning Taste
-![Discerning Taste](https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=522158)
+![Discerning Taste](https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=522158&type=card)
 <br>
 
 ### Bone Shards
