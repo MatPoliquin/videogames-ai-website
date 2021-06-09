@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Top 10 Modern Horizon 2 Pauper Cards"
-date:   2021-02-07 00:00:00 +0000
-tags: [MTG, Modern Horizon 2, Pauper, top 10]
+date:   2021-06-09 00:00:00 +0000
+tags: [MTG, Modern Horizon 2, Pauper, top 10, Chatterstorm, Ornithopter of Paradise, Revolutionist]
 ---
 
 Another top pauper cards... this time for Modern Horizon 2, which is set to release this June 18th.
