@@ -8,7 +8,7 @@ tags: [rx580, maxsun, gpu, rocm, machine learning, review]
 The RX580 is one of the cheapest 8 GB ML card on the market, is worth it?
 ![rx580](/assets/rx580/rx580.jpg) <br>
 
-# Benchmarks
+### Benchmarks
 
 | Test        	   | P106-100 (6 GB)    | RX580 (8 GB) 				|
 |:-----------------|:-------------------|:--------------------------|
@@ -53,12 +53,12 @@ Hardware
 
 ![gpu-z](/assets/rx580/RX580_GPU-Z.gif)
 
-# Installation
+### Installation
 If you have an AMD RX card already install for ML, the RX580 should work right away without further installation.
 If not you need to install ROCm.
 [Quick ROCm Install guide](/Install-ROCM-Machine-Learning-AMD-GPU)
 
-# Performance
+### Performance
 As you can see from the table the performance is quite good for standard benchmarks but when it comes to OpenAI's PPO2 it **delivers half the performance**. I did not have the time to use AMD's gpu profiler yet to figure out where is the bottleneck, will post it here when I do
 
 One of the potential reasons is that ROCm is still in active development and not quite mature yet, also they get the latest Tensoflow optims and features later than for Nvidia's cuda
@@ -73,16 +73,16 @@ sudo apt-get install rocm_bandwidth_test
 Host to Device is around 9 GB/s. For a PCIE 3.0 16x card this is on the low side, In comparaison the GTX 1060 is 11 GB/s. It's hard to know if this a hardware or software issue. Considering ROCM is in early stage of development I would think it's the later
 
 
-# Available timings
+### Available timings
 ![speeds](/assets/rx580/rocm_speed.png)
 
-# Temperatures and stability
+### Temperatures and stability
 Temperatures are quite stable and cool at around 66C when GPU is at 100%
 ![rocm-smi](/assets/rx580/rocm-smi.png)
 
 As for stability I got three freezes so far out of maybe 60 hours of training. However, it might because of Ubuntu 18.10 Cosmic Cuttlefish, I will try with 18.04 and post the results here. 
 
-# Conclusion
+### Conclusion
 This is the one of the cheapest 8GB card on the market and delivers good performance on standard benchmarks.
 That said on OpenAI baselines implementation of PPO2 it delivers less the half the performance of a P106-100.
 If you absolutely need 8GB it's a good choice, if not the P106-100 offers better value for the money.

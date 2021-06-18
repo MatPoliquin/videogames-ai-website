@@ -55,7 +55,7 @@ As an alternative you can also use the Software and Update app if the command do
 Don't forget to REBOOT!!!!!
 
 
-# Install development and runtime libraries
+### Install development and runtime libraries
 ```
 sudo apt-get install --no-install-recommends cuda-10-0 libcudnn7=7.6.0.64-1+cuda10.0 libcudnn7-dev=7.6.0.64-1+cuda10.0
 ```

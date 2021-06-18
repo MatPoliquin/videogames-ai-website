@@ -84,7 +84,7 @@ Besure to run the Auto-Updater to make sure you have the latest fixes and optimi
 [Best Pratices from Microsoft for Ubuntu on Hyper-V](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/best-practices-for-running-linux-on-hyper-v)
 
 
-# GPU Support
+### GPU Support
 
 **Important Note** These steps did not work for me as my laptop hardware doesn't support this feature, that said I plan to try on other hardware, will update this post when I do
 
