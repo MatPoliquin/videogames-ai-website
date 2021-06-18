@@ -6,9 +6,6 @@ tags: [rocm, profiler, AMD, gpu, machine learning, ubuntu, 18.04, 18.10, 19.04]
 ---
 
 
-## Rocm profiler
-This is a very basic startup guide for rocm profiler, tested with rocm 3.0
-
 
 ### Instalation
 
@@ -17,7 +14,7 @@ Normally it comes with ROCm so you dont need to install it
 
 ### Example usage
 
-(more details in the video below)
+Details in the video I made below, but here is quick description
 
 *   Input.xml is your configuration file for what type of metrics you want in your profile
 *   'timestamp on' is for timestamps
