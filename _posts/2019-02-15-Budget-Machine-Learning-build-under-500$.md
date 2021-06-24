@@ -56,7 +56,7 @@ TOTAL: 495 US$
 | Device to Device | 152542.9 MB/s      | 152542.9 MB/s             | 
 
 
-# Reasons behind hardware choices
+## Reasons behind hardware choices
 
 ### Why the x58 chipset, it's so out of date!?
 Because currently x58 based computers provide the best bang for buck in terms of raw power
@@ -87,7 +87,7 @@ Overall temperatures are nice and cool and well within recommended limits, it's 
 At first I did not use dedicated fans for the motherboard and eventually sparks spawned out. For some reason it's still working!
 ![sparks](/assets/x58/sparks.jpg)
 
-# Building and Installation procedure
+## Building and Installation procedure
 
 ### Assembly
 As for assembling the hardware I won't go in full details since there is already enough guides all over the web on how to build computer but I still want to share the important points:
@@ -124,7 +124,7 @@ You have two choices:
 pip3 install tensorflow-1.12.0-cp36-cp36m-linux_x86_64.whl
 ```
 
-# Conclusion and Electricity cost
+## Conclusion and Electricity cost
 While it works reliably and delivers good performance for a very low price, there is a couple of things to consider:
 *	The time it took to setup everything and solve the problems related to old and used hardware and imcompatiblities (see bios section for example) might overweight the low price. But if you follow this guide with the exact hardware specs, it might be ok
 *	For now most os/software/drivers are still compatible and well supported but since it's over 10 years old hardware (except the GPUs) we might run into problems soon down the road. It might be less expensive in the long term to pay a little more for future proof hardware.

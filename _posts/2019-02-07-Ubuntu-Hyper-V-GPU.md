@@ -141,7 +141,7 @@ After go in Device Manager and Enable your Graphics card
 NVIDIA provided a section for that:
 [VGPU on Ubuntu](https://docs.nvidia.com/grid/latest/grid-vgpu-user-guide/index.html#installing-vgpu-drivers-linux)
 
-# Performance
+## Performance
 Performance is of course not as snappy as on native hardware, the mouse lags a little and you can see the windows refresh. Until they improve the performance you will definetly find that it's annoying to do long hours of programming or other involved work on this, for which I recommend dual booting instead if that is your case. As for me, I have another computer with Ubuntu set up when I need to do heavier work. Otherwise for tweaking and testing scripts Hyper-V Ubuntu VM is fine.
 
 I would recommend having a processor with a decent single-core performance. My Xiaomi Notebook pro have a

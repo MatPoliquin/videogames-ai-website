@@ -13,7 +13,7 @@ Conclusion: It works! and quite well actually!
 
 
 
-# How to install
+## How to install
 
 ### 1. Install CUDA 10 + tensorflow-gpu
 Just install it as usual

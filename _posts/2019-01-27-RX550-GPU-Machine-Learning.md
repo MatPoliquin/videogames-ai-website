@@ -43,7 +43,7 @@ Hardware
 *	32GB DDR4 ram 2400Mhz
 
 
-# Details
+## Details
 ### Hardware Info
 ![gpu-z](/assets/rx550/RX550_GPU-Z.gif)
 
