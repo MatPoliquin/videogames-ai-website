@@ -27,10 +27,10 @@ I would recommend a fresh install of Ubuntu 18.04. You can always install it on 
 You can execute these commmands at the terminal. It's mostly all what OpenAI baselines needs that is not included on a default install of Ubuntu, including Python 3 and Tensorflow.
 
 ```shell
-sudo apt-get --assume-yes install python3 python3-pip git zlib1g-dev libopenmpi-dev ffmpeg
+sudo apt-get --assume-yes install cmake python3 python3-pip git zlib1g-dev libopenmpi-dev ffmpeg
 sudo apt-get update
 
-pip3 install --timeout 1000 opencv-python anyrl gym-retro gym joblib atari-py tensorflow
+pip3 install --timeout 1000 scikit-build opencv-python anyrl gym-retro gym joblib atari-py tensorflow
 
 git clone https://github.com/openai/baselines.git
 cd baselines
