@@ -8,7 +8,10 @@ tags: [Mathieu Poliquin]
 ---
 
 
-Hello, my name is Mathieu Poliquin and I am a indie dev making a multiplayer video game that teaches AI, coding and languages.
+Hello, my name is Mathieu Poliquin and I am a indie dev making a multiplayer video game that teaches AI, coding and languages:
+<br><br>
+
+*   [AI ARCADE](https://www.aiarcade.com/)
 
 <br><br>
 You can find me on my youtube channel and this blog where I mostly talk about ML:
