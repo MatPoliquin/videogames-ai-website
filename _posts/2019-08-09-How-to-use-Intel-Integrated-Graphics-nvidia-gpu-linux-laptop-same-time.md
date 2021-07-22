@@ -21,7 +21,7 @@ Take note of the bus id of the Intel chip
 Next, we need to edit the xorg.conf file to tell X to use Intel chip by default
 
 ```
-sudo gedit etc/X11/xorg.conf
+sudo gedit /etc/X11/xorg.conf
 ```
 
 Copy this in the file but don't forget to change it with your Bus ID 
