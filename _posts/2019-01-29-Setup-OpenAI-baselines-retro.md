@@ -106,9 +106,6 @@ Parameters:
 You can see the whole training from 0M to 10M here for Super Mario Bros Level 3-1:
 <iframe width="816" height="761" src="https://www.youtube.com/embed/47Gko7Zykr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Street Fighter example:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-V2JIm8WHZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 **other examples on my channel:** <br>
 
 | Game        	   | Videos/Models    |
@@ -215,9 +212,7 @@ Select 'Game->Load state...' from the menu, then load mario level 3-1 state:
 You should see something like this:
 ![integration tool](/assets/games/integration_tool.png)
 
-More details:
-There is already a very good guide on how to use the tool:
-[Integration tool guide](https://github.com/openai/retro/blob/develop/IntegratorsGuide.md)
-
-Also this [detailed blog post](https://medium.com/aureliantactics/integrating-new-games-into-retro-gym-12b237d3ed75)
+EDIT 2021:
+I have a made a video where I go over the setup process and talk Reinforcement learning concepts
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pcj6HiXMCJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
