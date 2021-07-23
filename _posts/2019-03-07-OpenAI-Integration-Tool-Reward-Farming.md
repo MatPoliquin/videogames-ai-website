@@ -107,3 +107,8 @@ python3 -m baselines.run --alg=ppo2 --env=SuperMarioBros3-Nes --num_timesteps=12
 
 Now Mario should play like this:
 ![hpos reward](/assets/openai_romtool/smb3_hpos.gif)
+
+
+EDIT 2021:
+I have a made a video where I go over the setup process and talk Reinforcement learning concepts
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uffqixRHRvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
