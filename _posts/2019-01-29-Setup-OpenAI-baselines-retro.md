@@ -5,6 +5,11 @@ date:   2019-01-29 06:00:00 +0000
 tags: [machine learning, ppo2, openai, baselines, retro games]
 ---
 
+
+EDIT 2021:
+I have a made a video where I go over the setup process and talk Reinforcement learning concepts
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uffqixRHRvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 This is a highlight from SuperMarioBros-Nes Level 2-1, 120M timesteps PPO2 training <br>
 <img src="/assets/games/SuperMarioBros-Nes/Level2-1_120M.gif" alt="PPO2 120M" style="width:256px;height:240px;">
 
@@ -211,7 +216,3 @@ Select 'Game->Load state...' from the menu, then load mario level 3-1 state:
 ```
 You should see something like this:
 ![integration tool](/assets/games/integration_tool.png)
-
-EDIT 2021:
-I have a made a video where I go over the setup process and talk Reinforcement learning concepts
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uffqixRHRvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
