@@ -19,7 +19,7 @@ for v in tf.trainable_variables():
 print("Total Params:%d" % total_params)
 ```        
 
-Here is some example output. This the default CNN used in OpenAI's baselines
+Here is some example output you can also find in the video below. This the default CNN used in OpenAI's baselines
 
 ```shell
 ==============TRAINABLE PARAMETERS================
@@ -40,3 +40,4 @@ Total Params:1703109
 ==================================================
 ```
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G4bzJ41QsLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

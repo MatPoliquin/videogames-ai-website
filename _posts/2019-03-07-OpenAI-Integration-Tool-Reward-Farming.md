@@ -110,5 +110,5 @@ Now Mario should play like this:
 
 
 EDIT 2021:
-I have a made a video where I go over the setup process and talk Reinforcement learning concepts
+I have a made a video where I go over the setup process and talk about Reinforcement Learning concepts
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uffqixRHRvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
