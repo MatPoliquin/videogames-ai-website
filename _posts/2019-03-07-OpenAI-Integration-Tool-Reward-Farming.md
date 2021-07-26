@@ -109,6 +109,12 @@ Now Mario should play like this:
 ![hpos reward](/assets/openai_romtool/smb3_hpos.gif)
 
 
+### already modified reward function
+
+
+[Get it here on my github](https://github.com/MatPoliquin/stable-retro/tree/master/retro/data/stable/SuperMarioBros3-Nes)
+
+
 EDIT 2021:
 I have a made a video where I go over the setup process and talk about Reinforcement Learning concepts
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uffqixRHRvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

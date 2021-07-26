@@ -18,7 +18,8 @@ This is a quick intro to get started running Machine Learning on retro games (At
 
 Currently the easiest way is to use OpenAI's **baselines** and **gym-retro**
 *   [baselines (collection of ML algos)](https://github.com/openai/baselines)
-*   [gym-retro (console env)](https://github.com/openai/baselines)
+*   [gym-retro (console env)](https://github.com/openai/retro)
+*   [stable-retro: my fork of gym-retro which contains additional games](https://github.com/MatPoliquin/stable-retro/)
 
 As mentionned on their github page OpenAI baselines is meant to serve as reference for high quality implementations of various RL algorithms. For example you have their implementation of PPO2 (Proximal Policy Optimization) that you can apply to thousands of games ranging from Atari Pong, Sonic The Hedgehog on the Genesis to Super Mario Bros on the NES.
 
@@ -35,10 +36,14 @@ You can execute these commmands at the terminal. It's mostly all what OpenAI bas
 sudo apt-get --assume-yes install cmake python3 python3-pip git zlib1g-dev libopenmpi-dev ffmpeg
 sudo apt-get update
 
-pip3 install --timeout 1000 scikit-build opencv-python anyrl gym-retro gym joblib atari-py tensorflow
+pip3 install --timeout 1000 scikit-build opencv-python anyrl gym joblib atari-py tensorflow
 
 git clone https://github.com/openai/baselines.git
 cd baselines
+pip3 install -e .
+
+git clone https://github.com/openai/stable-retro.git
+cd stable-retro
 pip3 install -e .
 ```
 
