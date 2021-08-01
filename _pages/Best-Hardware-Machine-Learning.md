@@ -2,6 +2,7 @@
 layout: page
 title:  "Hardware for Machine Learning - 2021 - Best CPU, GPU, Motherboard guide"
 permalink: /Best-Hardware-Machine-Learning
+comments: True
 tags: [hardware, gpu, cpu, motherboard, machine learning]
 ---
 
