@@ -2,6 +2,7 @@
 layout: page
 title:  "Install ROCM and Tensorflow for Machine Learning on AMD GPUs"
 permalink: /Install-ROCM-Machine-Learning-AMD-GPU
+comments: True
 tags: [rocm, AMD, gpu, machine learning, ubuntu, 18.04, 18.10]
 ---
 

@@ -2,6 +2,7 @@
 layout: page
 title:  "Count trainable parameters total in Tensorflow"
 permalink: /Tensorflow-trainable-parameters-count
+comments: True
 tags: [tensorflow, trainable parameters, total, count, calculate]
 ---
 
