@@ -76,16 +76,10 @@ dmesg
 You will notice the log is spammed with these AER (Advance Error Reporting) PCIE messages
 ![aer](/assets/hardware/aer_x998mt.png)
 
-You can turn them off by modifying grub boot loader
-and disabling memory mapping support.
-Add this boot argument:
-```
-pci=nommcomp
-```
-The resulting grub file should be this:
-![grub](/assets/hardware/grub_x99mt.png)
+You can check here how to fix this error:
+[click here!](/dmesg-aer-error)
 
-Next reboot the error message should disapear
+
 
 After that you might notice other ones:
 ![dmesg](/assets/hardware/dmesg_x99mt.png)
