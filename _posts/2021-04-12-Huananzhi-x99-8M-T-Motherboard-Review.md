@@ -65,8 +65,7 @@ You can overclock the RAM easily here:
 ![grub](/assets/hardware/x99mt_bios_ram.jpg)
 
 
-If you want more details a youtuber called Myconst made a very detailed video about the DDR4 version of this board:
-[https://youtu.be/cwa1qVRepUM?t=470](https://youtu.be/cwa1qVRepUM?t=470)
+
 
 ## Linux Support
 Both Ubuntu 18.04 and 20.04 (kernel 5.11) report lots of errors but from what I experienced they don't cause any issues for my usage,
@@ -90,5 +89,6 @@ After that you might notice other ones:
 But I haven't found a solution yet to those, so far they haven't cause any problems other than spamming the message log
 
 
-## Temperature and power consumption
-TODO
+## Temperature, power consumption, overclocking
+I haven't got any issues with temperature and power consumption, mostly because I don't overclock. But if you want details about all of that an awesome youtuber called Miyconst made a VERY DETAILED video about the DDR4 version of this board:
+[https://youtu.be/cwa1qVRepUM?t=470](https://youtu.be/cwa1qVRepUM?t=470)
