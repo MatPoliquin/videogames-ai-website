@@ -38,4 +38,4 @@ The resulting grub file should be this:
 
 Note that I removed "quiet splash" this is to see debug messages at boot time instead of the logo
 
-Just need to reboot and error should disapear
+Just need to reboot and the error should disapear
