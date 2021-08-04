@@ -19,8 +19,7 @@ Combined with the 2678v3 and two ddr3 16GB ram modules, you get a very decent Un
 Windows 10 and Ubuntu are well supported and provide overal stable experience.
 On the down side, some temperature sensors do not work.
 The PCIE 1x slot is too close the 16x slot so if you are using a big RTX card you might not be able to use that 1x slot.
-Only supports one M.2 nvme slot, althought you can use the extra 4x slot with an adapter
-
+Only supports one M.2 nvme slot, althought you can use the extra 4x slot with an adapter (which I do)
 
 Specs:
 *   Huananzhi x99-8M-T
@@ -57,6 +56,7 @@ Specs:
 
 
 ## BIOS
+
 The BIOS doesn't have an update yet which might cause some error messages in linux due to some bugs (see next section),
 other then that it has the standard options.
 ![dmesg](/assets/hardware/x99mt_bios_main.jpg)
@@ -64,6 +64,9 @@ other then that it has the standard options.
 You can overclock the RAM easily here:
 ![grub](/assets/hardware/x99mt_bios_ram.jpg)
 
+
+If you want more details a youtuber called Myconst made a very detailed video about the DDR4 version of this board:
+[https://youtu.be/cwa1qVRepUM?t=470](https://youtu.be/cwa1qVRepUM?t=470)
 
 ## Linux Support
 Both Ubuntu 18.04 and 20.04 (kernel 5.11) report lots of errors but from what I experienced they don't cause any issues for my usage,
