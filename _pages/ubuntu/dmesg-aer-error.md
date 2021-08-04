@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "dmesg AER: Multiple Uncorrected (Non-Fatal) error received"
-permalink: /Fix-timezone-dual-boot
+permalink: /dmesg-aer-error
 tags: [ubuntu, dmesg, aer, pcie bus error, grub]
 ---
 
