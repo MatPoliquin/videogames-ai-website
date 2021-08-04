@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Fix timezone dual boot"
+title:  "Fix timezone dual boot with Linux and Windows"
 permalink: /Fix-timezone-dual-boot
 tags: [ubuntu, windows, timezone, fix]
 ---
