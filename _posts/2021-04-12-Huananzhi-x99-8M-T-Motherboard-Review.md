@@ -43,7 +43,7 @@ Specs:
 
 #### Software
 *   Windows 10
-*	Ubuntu 18.04
+*	Ubuntu 20.04
 *   Pytorch 1.7
 *	CUDA 10.0
 *	CUDNN 7.36
@@ -57,14 +57,40 @@ Specs:
 
 
 ## BIOS
+The BIOS doesn't have an update yet which might cause some error messages in linux due to some bugs (see next section),
+other then that it has the standard options.
 ![dmesg](/assets/hardware/x99mt_bios_main.jpg)
+
+You can overclock the RAM easily here:
 ![grub](/assets/hardware/x99mt_bios_ram.jpg)
 
 
 ## Linux Support
+Both Ubuntu 18.04 and 20.04 (kernel 5.11) report lots of errors but from what I experienced they don't cause any issues for my usage,
+so you can use this motherboard with linux without worries
+
+When you install Ubuntu and run the debug message command:
+```
+dmesg
+```
+You will notice the log is spammed with these AER (Advance Error Reporting) PCIE messages
 ![aer](/assets/hardware/aer_x998mt.png)
-![dmesg](/assets/hardware/dmesg_x998mt.png)
-![grub](/assets/hardware/grub_x998mt.png)
+
+You can turn them off by modifying grub boot loader
+and disabling memory mapping support.
+Add this boot argument:
+```
+pci=nommcomp
+```
+The resulting grub file should be this:
+![grub](/assets/hardware/grub_x99mt.png)
+
+Next reboot the error message should disapear
+
+After that you might notice other ones:
+![dmesg](/assets/hardware/dmesg_x99mt.png)
+
+But I haven't found a solution yet to those, so far they haven't cause any problems other than spamming the message log
 
 
 ## Temperature and power consumption
