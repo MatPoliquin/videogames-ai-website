@@ -57,10 +57,15 @@ Specs:
 
 
 ## BIOS
-TODO
+![dmesg](/assets/hardware/x99mt_bios_main.jpg)
+![grub](/assets/hardware/x99mt_bios_ram.jpg)
 
-## Temperature and power consumption
-TODO
 
 ## Linux Support
+![aer](/assets/hardware/aer_x998mt.png)
+![dmesg](/assets/hardware/dmesg_x998mt.png)
+![grub](/assets/hardware/grub_x998mt.png)
+
+
+## Temperature and power consumption
 TODO
