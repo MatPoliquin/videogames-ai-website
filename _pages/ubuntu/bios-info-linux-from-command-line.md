@@ -8,6 +8,6 @@ tags: [bios, linux, terminal, command line]
 
 Just need to type:
 ```shell
-dmidecode
+sudo dmidecode
 ```
 
