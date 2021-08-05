@@ -18,7 +18,7 @@ AER: Multiple Uncorrected (Non-Fatal) error received
 PCIe Bus Error: serverity=Uncorrected (Non-Fatal), type=Transaction Layer, (Requester ID)
 ```
 
-You can turn them off by modifying grub boot loader
+You can fix the problem by modifying grub boot loader
 and disabling memory mapping support.
 
 
@@ -29,13 +29,22 @@ sudo gedit /etc/default/grub
 
 Add this CMDLINE_LINUX_DEFAULT argument:
 ```
-pci=nommcomp
+pci=nommconf
 ```
 
 The resulting grub file should be this:
 ![grub](/assets/hardware/grub_x99mt.png)
 
-
 Note that I removed "quiet splash" this is to see debug messages at boot time instead of the logo
 
-Just need to reboot and the error should disapear
+Don't forget to update grub with your new changes:
+```
+sudo update-grub
+```
+Just need to reboot and the error should disapear.
+
+another way to make the messages disapear is to use:
+```
+pci=noaer
+```
+but this just masks the errors (No Advance Error Reporting), although you should not experience any issues as reported by many users
