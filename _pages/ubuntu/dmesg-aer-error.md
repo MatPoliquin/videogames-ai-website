@@ -43,8 +43,11 @@ sudo update-grub
 ```
 Just need to reboot and the error should disapear.
 
-another way to make the messages disapear is to use:
+### Alternatives
+Another way to make the messages disapear is to use:
 ```
 pci=noaer
 ```
 but this just masks the errors (No Advance Error Reporting), although you should not experience any issues as reported by many users
+
+Might want to also check if your BIOS can be updated. Some users reported a bios update fixes the issue. In my case I already had the lastes bios version
