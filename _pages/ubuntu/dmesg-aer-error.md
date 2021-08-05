@@ -2,6 +2,7 @@
 layout: page
 title:  "dmesg AER: Multiple Uncorrected (Non-Fatal) error received"
 permalink: /dmesg-aer-error
+comments: True
 tags: [ubuntu, dmesg, aer, pcie bus error, grub]
 ---
 
