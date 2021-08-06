@@ -51,7 +51,8 @@ details of the setup here:
 
 ### Isaac gym
 
-I get Isaac  30952 steps/s on the ShadowHand example. I actually did a video of Isaac gym on the RTX 2060, you can see it here:
+I get Isaac  30952 steps/s on the ShadowHand example. I actually did a video of Isaac gym on the RTX 2060, you can see it here as
+well as a comparaison with the p106-100:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DKyCVyKQMN0?start=280" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Quake 2 RTX
@@ -60,3 +61,15 @@ I get around 55 fps at the beginning of the first level (demo version). You can 
 
 Here are the options I used:
 ![quake_rtx_options](/assets/rtx2060super/quake_rtx_options.png)
+
+### Resnet 50 test
+
+For the resnet 50 test I use tensorflow's benchmarks repo on github:
+[https://github.com/tensorflow/benchmarks/tree/master/scripts/tf_cnn_benchmarks](https://github.com/tensorflow/benchmarks/tree/master/scripts/tf_cnn_benchmarks)
+
+I used tensorflow version 1.14
+
+![resnet50](/assets/rtx2060super/resnet50-b64-16bit.png)
+
+### CUDA-Z
+![cuda-z](/assets/rtx2060super/cuda-z.png)
