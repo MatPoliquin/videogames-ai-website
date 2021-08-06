@@ -23,10 +23,8 @@ _Performance tests results_
 | Quake 2 RTX      |     55 fps         |
 
 
-
-
-
 #### Software
+*   Windows 10
 *	Ubuntu 18.04
 *	Tensorflow 1.14
 *   Pytorch 1.8
@@ -41,9 +39,15 @@ _Performance tests results_
 *	Dell T7810 dual socket motherboard (but only one CPU is used)
 
 
+### OpenAI baselines + retro
+When training ML models on games the CPU is also heavily used for simulation so the GPU is not 100% utilized but used in spikes. That said you can still get a big performance boost using OpenAI's baselines and Retro frameworks of about 500 fps with same CPU with their default CNN model
+
+details of the setup here:
+[https://www.videogames.ai/2019/01/29/Setup-OpenAI-baselines-retro.html](https://www.videogames.ai/2019/01/29/Setup-OpenAI-baselines-retro.html)
+
 ### Quake 2 RTX
 I get around 55 fps at the beginning of the first level (demo version). You can see the gpu profiling details inside the screenshot
 ![quake_rtx](/assets/rtx2060super/quake_rtx.png)
 
-Here are the options I use
+Here are the options I used:
 ![quake_rtx_options](/assets/rtx2060super/quake_rtx_options.png)
