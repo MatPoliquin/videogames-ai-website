@@ -5,8 +5,12 @@ date:   2021-02-10 00:00:00 +0800
 tags: [RTX 2060 Super, gpu, machine learning, resnet50, unreal, review]
 ---
 
+The RTX 2060 Super is the card I use currently and I think it's the best bang for the buck for my use case and I think for most use cases provided your models
+fit inside 8GB and with the new 16bit precision mode offered in RTX cards you can almost double the memory available for you model with no precision related issues in most cases.
 
-Full review Coming Soon but in the meantime here are some performance test results
+My specific model is a MaxSun iCraft RTX 2060 Super, the only complaint I have is the high temperatures.
+It reaches 80C quite quick under 100% load (38C under rest) even thought the airflow in the computer case is very good, but I think it's related to the effectiveness of the gpu fans.
+When I set fan speed to 100% the temperatures are ok but quite noisy.
 
 _Performance tests results_
 
@@ -44,6 +48,11 @@ When training ML models on games the CPU is also heavily used for simulation so 
 
 details of the setup here:
 [https://www.videogames.ai/2019/01/29/Setup-OpenAI-baselines-retro.html](https://www.videogames.ai/2019/01/29/Setup-OpenAI-baselines-retro.html)
+
+### Isaac gym
+
+I get Isaac  30952 steps/s on the ShadowHand example. I actually did a video of Isaac gym on the RTX 2060, you can see it here:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DKyCVyKQMN0?start=280" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Quake 2 RTX
 I get around 55 fps at the beginning of the first level (demo version). You can see the gpu profiling details inside the screenshot
