@@ -5,8 +5,6 @@ date:   2021-04-12 00:00:00 +0800
 tags: [Huananzhi, x99, 8M-T, motherboard, DDR3, unreal, review]
 ---
 
-WORK IN PROGRESS
-
 This is a review of Huananzhi x99 8M-T motherboard.
 I had a couple extra 16GB DDR3 ECC RAM sticks lying around from my previous x79 build and wanted to be able to use them for my new x99 build for Unreal and Machine Learning dev.
 Huananzhi is one of the manifacturers that produces x99 based boards that supports DDR3.

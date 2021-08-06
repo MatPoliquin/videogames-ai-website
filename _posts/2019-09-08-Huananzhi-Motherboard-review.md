@@ -5,6 +5,10 @@ date:   2019-09-08 00:00:00 +0800
 tags: [Huananzhi, motherboard, x79, Chinese, aa1 version, review]
 ---
 
+EDIT 2021:
+I now use a more recent Huananzhi motherboard, the x99-8m-t you can find my review here:
+[https://www.videogames.ai/2021/04/11/Huananzhi-x99-8M-T-Motherboard-Review.html](https://www.videogames.ai/2021/04/11/Huananzhi-x99-8M-T-Motherboard-Review.html)
+
 ![oblique](/assets/hardware/huananzhi_oblique.jpg)
 
 Specs:
