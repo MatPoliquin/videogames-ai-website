@@ -19,7 +19,8 @@ _Performance tests results_
 | Isaac gym/OpenAI - Shadowhand |    30952 steps/s |                   
 | Host to Device   | 1122 MB/s        | 
 | Device to Host   | 1218.3 MB/s        | 
-| Device to Device | 168540.0 MB/s      |  
+| Device to Device | 168540.0 MB/s      |
+| Quake 2 RTX      |     55 fps         |
 
 
 
@@ -40,4 +41,9 @@ _Performance tests results_
 *	Dell T7810 dual socket motherboard (but only one CPU is used)
 
 
+### Quake 2 RTX
+I get around 55 fps at the beginning of the first level (demo version). You can see the gpu profiling details inside the screenshot
+![quake_rtx](/assets/rtx2060super/quake_rtx.png)
 
+Here are the options I use
+![quake_rtx_options](/assets/isaacgym/quake_rtx_options.png)
