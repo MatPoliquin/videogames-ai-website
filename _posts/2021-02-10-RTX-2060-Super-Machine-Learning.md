@@ -69,6 +69,10 @@ For the resnet 50 test I use tensorflow's benchmarks repo on github:
 
 I used tensorflow version 1.14
 
+```
+python3 tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=resnet50 --use_fp16
+```
+
 ![resnet50](/assets/rtx2060super/resnet50-b64-16bit.png)
 
 ### CUDA-Z
