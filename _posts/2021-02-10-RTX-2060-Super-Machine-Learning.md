@@ -6,7 +6,7 @@ tags: [RTX 2060 Super, gpu, machine learning, resnet50, unreal, review]
 ---
 
 The RTX 2060 Super is the card I use currently and I think it's the best bang for the buck for my use case and I think for most use cases provided your models
-fit inside 8GB and with the new 16bit precision mode offered in RTX cards you can almost double the memory available for you model with no precision related issues in most cases.
+fit inside 8GB and with the new 16bit precision mode offered in RTX cards you can almost double the memory available for you model with no precision related issues in most cases. Which makes it the best choice over the previous generation, for example the GTX 1080 8GB, which doesn't have proper 16bit support
 
 My specific model is a MaxSun iCraft RTX 2060 Super, the only complaint I have is the high temperatures.
 It reaches 80C quite quick under 100% load (38C under rest) even thought the airflow in the computer case is very good, but I think it's related to the effectiveness of the gpu fans.
