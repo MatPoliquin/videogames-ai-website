@@ -14,7 +14,7 @@ The only M-ATX choice they have is the x99-8M-T so I decided to give it a try
 ### Conclusion for those in hurry:
 The Huananzhi x99-8M-T motherboard is the best bang for buck x99 board for single GPU configurations.
 Combined with the 2678v3 and two ddr3 16GB ram modules, you get a very decent Unreal Engine dev rig for a fraction of price of newer hardware
-Windows 10 and Ubuntu are well supported and provide overal stable experience.
+Windows 10 and Ubuntu are well supported and provide overall stable experience.
 On the down side, some temperature sensors do not work.
 The PCIE 1x slot is too close the 16x slot so if you are using a big RTX card you might not be able to use that 1x slot.
 Only supports one M.2 nvme slot, althought you can use the extra 4x slot with an adapter (which I do)
