@@ -111,7 +111,7 @@ You might notice that when you have three or more gpus your computer refuses to 
 ### Software installation
 There is no special instructions needed for how to install Ubuntu and other software on this buld, it's pretty much the same:
 *	[CUDA 9.0 on Ubuntu 18.04](/Install-CUDA-9-0-Ubuntu-18-04)
-*	[Install OpenAI baselines + Retro](/2019-01-29-Setup-OpenAI-baselines-retro.md)
+*	[Install OpenAI baselines + Retro](/2019/01/29/Setup-OpenAI-baselines-retro.html)
 
 With one exception:
 You need a custom build of Tensorflow 1.12 as the default build uses the newer AVX instruction set which the X5660 processor (and all other 1366 socket based ones) does not support.

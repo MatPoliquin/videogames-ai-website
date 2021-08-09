@@ -9,8 +9,8 @@ tags: [unreal engine, hardware, huananzhi, xeon, ddr3, x79, budget, machine lear
 EDIT 2021:
 In 2021 I would recommend at minimum a x99 board such at the Haunanzhi x99-8m-t + a Xeon 2778v3.
 As well as a an RTX 2060 Super, you can check my hardware reviews here:
-*   [Haunanzhi x99-8m-t](/2021-04-12-Huananzhi-x99-8M-T-Motherboard-Review.html)
-*   [RTX 2060 Super](/2021-02-10-RTX-2060-Super-Machine-Learning.html)
+*   [Haunanzhi x99-8m-t](/2021/04/11/Huananzhi-x99-8M-T-Motherboard-Review.html)
+*   [RTX 2060 Super](/2021/02/10/RTX-2060-Super-Machine-Learning.html)
 
 As an indie developper, getting the best bang for the buck on computer hardware is always a priority.
 I have a XiaoMi Notebook pro 2017 which is decent for most tasks but for heavier tasks I needed something more powerful and for a reasonable price.
