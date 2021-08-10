@@ -86,6 +86,9 @@ After that you might notice other ones:
 
 But I haven't found a solution yet to those, so far they haven't cause any problems other than spamming the message log
 
+## More Hardware info
+
+![hwinfo64_x998mt](/assets/hardware/hwinfo64_x998mt.png)
 
 ## Temperature, power consumption, overclocking
 I haven't got any issues with temperature and power consumption, mostly because I don't overclock. But if you want details about all of that an awesome youtuber called Miyconst made a VERY DETAILED video about the DDR4 version of this board:
