@@ -18,8 +18,7 @@ Which caused some obvious accurary problems since the input data to the data was
 (going from 8 bit color buffers to floating point buffers)
 
 You can see in the Nvidia visual profiler pic below how the data transfers take a huge chunk of time:
-TODO
-
+![nvvp](/assets/cuda/baselines-fix-scale-nvvp.png)
 
 These where the places in the code where scaling is applied:
 from retro_wrappers.py
