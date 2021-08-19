@@ -32,14 +32,18 @@ It's decent but if you want extra details on how to get started you can read on 
 I would recommend a fresh install of Ubuntu 18.04. You can always install it on MacOS or Windows as stated on their readme.md but on Ubuntu is definetly the smoothest way.
 You can execute these commmands at the terminal. It's mostly all what OpenAI baselines needs that is not included on a default install of Ubuntu, including Python 3 and Tensorflow.
 
+EDIT 2021:
+*   baselines-fix is my fork of OpenAI's baselines but with a fix that can double the simulation FPS. Please see the readme of the repo for more details.
+*   stable-retro is my fork of retro that cointains additional games
+
 ```shell
 sudo apt-get --assume-yes install cmake python3 python3-pip git zlib1g-dev libopenmpi-dev ffmpeg
 sudo apt-get update
 
 pip3 install --timeout 1000 scikit-build opencv-python anyrl gym joblib atari-py tensorflow
 
-git clone https://github.com/openai/baselines.git
-cd baselines
+git clone  https://github.com/MatPoliquin/baselines-fix.git
+cd baselines-fix
 pip3 install -e .
 
 git clone https://github.com/MatPoliquin/stable-retro.git
