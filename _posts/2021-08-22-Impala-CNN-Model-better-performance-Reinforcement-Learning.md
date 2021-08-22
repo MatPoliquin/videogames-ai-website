@@ -43,21 +43,38 @@ Now lets look at OpenAI's test results, taken from their blog post
 ![impala_vs_nature_cnn.png](/assets/models/impala_vs_nature_cnn.png)
 
 ## Games
-TODO
+Impala CNN had the most success on Pong and MK2.
+Please note that Pong atari 2600 env doesn't not crop the scores at the top from the input image which makes it a harder env to solve then
+what you see in some papers were they crop the frame.
 
-Pong CNN:
+
+
+
+Pong CNN - PPO2 - 2M timesteps:
+```
+python3 -m baselines.run --alg=ppo2 --network=cnn --num_env=24 --env=Pong-Atari2600 --num_timesteps=2e6
+```
 
 ![pong_cnn.png](/assets/models/pong_cnn.png)
 
-Pong Impala CNN:
+Pong Impala CNN - PPO2 - 2M timesteps:
+```
+python3 -m baselines.run --alg=ppo2 --network=impala_cnn --num_env=20 --env=Pong-Atari2600 --num_timesteps=2e6
+```
 
 ![pong-icnn.png](/assets/models/pong-icnn.png)
 
-MK2 CNN:
+MK2 CNN - PPO2 - 2M timesteps:
+```
+python3 -m baselines.run --alg=ppo2 --network=cnn --num_env=24 --env=MortalKombatII-Genesis --num_timesteps=2e6
+```
 
 ![mk2-cnn.png](/assets/models/mk2-cnn.png)
 
-MK2 Impala CNN:
+MK2 Impala CNN - PPO2 - 2M timesteps:
+```
+python3 -m baselines.run --alg=ppo2 --network=impala_cnn --num_env=20 --env=MortalKombatII-Genesis --num_timesteps=2e6
+```
 
 ![mk2-icnn.png](/assets/models/mk2-icnn.png)
 
