@@ -59,6 +59,9 @@ MK2 Impala CNN:
 
 ![mk2-icnn.png](/assets/models/mk2-icnn.png)
 
+You can check more details about the tests here with timestamps in the description:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CKU--GT5IUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Memory usage and  performance
 TODO
 
@@ -68,5 +71,3 @@ use this model for my basics tests on retro games, it clearly performs better
 
 
 
-You can check more details about the tests here with timestamps in the description:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CKU--GT5IUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
