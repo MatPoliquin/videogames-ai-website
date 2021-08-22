@@ -82,7 +82,7 @@ You can check more details about the tests here with timestamps in the descripti
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CKU--GT5IUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Memory usage and  performance
-TODO
+NVIDIA 
 
 ## Conclusion
 Despite taking more compute resources and memory I think the Impala model is worth trying. In my case, from this point on I will
