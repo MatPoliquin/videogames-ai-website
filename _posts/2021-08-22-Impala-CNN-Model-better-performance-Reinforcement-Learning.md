@@ -5,9 +5,6 @@ date:   2021-08-22 00:00:00 +0800
 tags: [OpenAI, Impala, CNN, model, baselines, retro, performance]
 ---
 
-
-**WORK IN PROGRESS**
-
 In my recent video about training AI models on video games I said I would test the the impala CNN model in a later video.
 So I ran some tests comparing the Nature CNN model to the Impala CNN model on four games, in this case:
 *   Pong
@@ -16,7 +13,7 @@ So I ran some tests comparing the Nature CNN model to the Impala CNN model on fo
 *   Super Mario Bros 2 Japan version
 
 First some context, almost 3 years ago OpenAI created a environement called CoinRun in order to more effectively test
-the generalization capabilities of Reinforcement Learning. So basically you needed an environement that can generate a large amount of procedural levels that are similar enough to test generalization and that is what CoinRun does.
+the generalization capabilities of Reinforcement Learning. So basically you need an environement that can generate a large amount of procedural levels that are similar enough to test generalization and that is what CoinRun does.
 
 Before looking at their test results. Here is an overview of the two architectures that we are going to compare. Click on the links if want to see the code in OpenAI's baselines.
 *   [Nature CNN](https://github.com/openai/baselines/blob/master/baselines/common/models.py#L15)
@@ -46,8 +43,6 @@ Now lets look at OpenAI's test results, taken from their blog post
 Impala CNN had the most success on Pong and MK2.
 Please note that Pong atari 2600 env doesn't not crop the scores at the top from the input image which makes it a harder env to solve then
 what you see in some papers were they crop the frame.
-
-
 
 
 Pong CNN - PPO2 - 2M timesteps:
@@ -81,8 +76,9 @@ python3 -m baselines.run --alg=ppo2 --network=impala_cnn --num_env=20 --env=Mort
 You can check more details about the tests here with timestamps in the description:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CKU--GT5IUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Memory usage and  performance
-NVIDIA 
+## Memory usage and performance
+Memory usage is slighly under 5400 GB (~5GB if dont count memory used by Ubuntu) for Impala CNN model with 20 environements.
+For one environement the memory is at ~1.2GB (~0.9 GB if dont count memory used by Ubuntu), so it can fit on a laptop but the training FPS is much lower (arount ~120 for one env depending on your CPU) which means for more complex games the training time will be very long.
 
 ## Conclusion
 Despite taking more compute resources and memory I think the Impala model is worth trying. In my case, from this point on I will
