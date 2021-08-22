@@ -11,7 +11,7 @@ tags: [Mathieu Poliquin]
 Hello, my name is Mathieu Poliquin and I am a indie dev making a multiplayer video game that teaches AI, coding and languages:
 <br><br>
 
-*   [AI ARCADE](https://www.aiarcade.com/)
+<iframe src="https://store.steampowered.com/widget/1059010/" frameborder="0" width="646" height="190"></iframe>
 
 <br><br>
 You can find me on my youtube channel and this blog where I mostly talk about ML:
