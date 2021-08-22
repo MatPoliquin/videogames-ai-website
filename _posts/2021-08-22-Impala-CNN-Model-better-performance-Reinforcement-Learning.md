@@ -19,8 +19,8 @@ First some context, almost 3 years ago OpenAI created a environement called Coin
 the generalization capabilities of Reinforcement Learning. So basically you needed an environement that can generate a large amount of procedural levels that are similar enough to test generalization and that is what CoinRun does.
 
 Before looking at their test results. Here is an overview of the two architectures that we are going to compare. Click on the links if want to see the code in OpenAI's baselines.
-*   [Nature CNN] (https://github.com/openai/baselines/blob/master/baselines/common/models.py#L15)
-*   [Impala CNN] (https://github.com/openai/baselines/blob/master/baselines/common/models.py#L28)
+*   [Nature CNN](https://github.com/openai/baselines/blob/master/baselines/common/models.py#L15)
+*   [Impala CNN](https://github.com/openai/baselines/blob/master/baselines/common/models.py#L28)
 
 
 Nature CNN, the name is because of the DeepMind's Nature paper where they first used that model
@@ -43,6 +43,7 @@ Now lets look at OpenAI's test results, taken from their blog post
 ![impala_vs_nature_cnn.png](/assets/models/impala_vs_nature_cnn.png)
 
 ## Games
+TODO
 
 Pong CNN:
 
