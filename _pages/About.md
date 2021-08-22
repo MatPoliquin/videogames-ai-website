@@ -11,6 +11,7 @@ tags: [Mathieu Poliquin]
 Hello, my name is Mathieu Poliquin and I am a indie dev making a multiplayer video game that teaches AI, coding and languages:
 <br><br>
 
+Note that screenshots are aweful with placeholder art, they will be updated soon ;)
 <iframe src="https://store.steampowered.com/widget/1059010/" frameborder="0" width="646" height="190"></iframe>
 
 <br><br>
