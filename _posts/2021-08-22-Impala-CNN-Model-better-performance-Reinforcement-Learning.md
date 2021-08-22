@@ -36,19 +36,27 @@ and in case of retro games, as you will see, it seems to improve performance.
 For residual blocks they are used to avoid vanishing gradients, which is especially a problem in bigger neural nets.
 If you want to know more about that I will put a link down below
 
-Now lets look at OpenAI's test results.
+Now lets look at OpenAI's test results, taken from their blog post
+[https://openai.com/blog/quantifying-generalization-in-reinforcement-learning/](https://openai.com/blog/quantifying-generalization-in-reinforcement-learning/)
 
 ![impala_vs_nature_cnn.png](/assets/models/impala_vs_nature_cnn.png)
 
 ## Games
 
 Pong CNN:
+
 ![pong_cnn.png](/assets/models/pong_cnn.png)
+
 Pong Impala CNN:
+
 ![pong-icnn.png](/assets/models/pong-icnn.png)
+
 MK2 CNN:
+
 ![mk2-cnn.png](/assets/models/mk2-cnn.png)
+
 MK2 Impala CNN:
+
 ![mk2-icnn.png](/assets/models/mk2-icnn.png)
 
 ## Memory usage and  performance
