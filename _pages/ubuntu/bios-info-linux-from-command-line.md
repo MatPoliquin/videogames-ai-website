@@ -11,3 +11,5 @@ Just need to type:
 sudo dmidecode
 ```
 
+Example output:
+[bios](/assets/ubuntu/dmidecode.png)
