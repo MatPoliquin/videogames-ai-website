@@ -5,6 +5,8 @@ date:   2021-08-22 00:00:00 +0800
 tags: [OpenAI, Impala, CNN, model, baselines, retro, performance]
 ---
 
+<a href="https://imgflip.com/i/5kqnax"><img src="https://i.imgflip.com/5kqnax.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
+
 In my recent video about training AI models on video games I said I would test the the impala CNN model in a later video.
 So I ran some tests comparing the Nature CNN model to the Impala CNN model on four games, in this case:
 *   Pong
