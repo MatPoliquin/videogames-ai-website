@@ -12,4 +12,5 @@ sudo dmidecode
 ```
 
 Example output:
+
 ![bios](/assets/ubuntu/dmidecode.png)
