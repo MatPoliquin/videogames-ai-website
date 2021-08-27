@@ -14,6 +14,7 @@ So I ran some tests comparing the Nature CNN model to the Impala CNN model on fo
 *   Berzerk
 *   Mortal Kombat 2
 *   Super Mario Bros 2 Japan version
+*   [WWF Wrestlemania The Arcade Game](https://www.youtube.com/watch?v=vjWNZ1CiMBw)
 
 First some context, almost 3 years ago OpenAI created a environement called CoinRun in order to more effectively test
 the generalization capabilities of Reinforcement Learning. So basically you need an environement that can generate a large amount of procedural levels that are similar enough to test generalization and that is what CoinRun does.
