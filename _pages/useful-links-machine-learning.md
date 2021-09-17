@@ -19,3 +19,4 @@ tags: [useful links, machine learning]
 
 ### Blogs
 *   [OpenAI Blog](https://openai.com/blog/)
+*   [ML in the finance industry](https://understandingdata.com/machine-learning-in-the-finance-industry/)
