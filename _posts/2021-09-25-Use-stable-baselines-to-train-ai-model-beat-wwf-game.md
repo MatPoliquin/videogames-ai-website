@@ -34,6 +34,14 @@ cd stable-retro
 pip3 install -e .
 ```
 
+You need to provide your own roms
+
+In your rom directory exec this command, it will import the roms into stable-retro
+
+```shell
+python3 -m retro.import .
+```
+
 ### Lite refresher on Reinforcement Learning and Neural Nets
 This post assumes you have some basics on RL and NNs but here is a refresher.
 
