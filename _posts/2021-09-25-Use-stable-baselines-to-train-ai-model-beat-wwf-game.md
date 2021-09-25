@@ -17,7 +17,8 @@ In this blog post we are going to use stable-baselines to train an AI model to b
 ### Lite refresher on Reinforcement Learning and Neural Nets
 This post assumes you have some basics on RL and NNs but here is a refresher.
 
-
+Image from OpenAI's spinning it up:
+![RL](https://spinningup.openai.com/en/latest/_images/rl_diagram_transparent_bg.png)
 
 Bare bones example:
 ```python
