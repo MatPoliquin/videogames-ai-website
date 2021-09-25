@@ -12,6 +12,28 @@ tags: [stable-baselines, train ai model, openai, machine learning, CNN, WWF]
 
 In this blog post we are going to use stable-baselines to train an AI model to beat WWF Wrestlemania: The Arcade Game (Genesis port).
 
+### Setup
+Requires:
+
+*   Tensorflow 1.X, 1.14 recommended
+*   stable-baselines 2.10 (fork of baselines)
+*   stable-retro (fork of gym-retro)
+
+```shell
+sudo apt-get update
+sudo apt-get install cmake python3 python3-pip git zlib1g-dev libopenmpi-dev ffmpeg
+```
+
+```shell
+pip3 install opencv-python anyrl gym joblib atari-py tensorflow-gpu==1.14 baselines stable-baselines pygame
+```
+
+```shell
+git clone https://github.com/MatPoliquin/stable-retro.git
+cd stable-retro
+pip3 install -e .
+```
+
 ### Lite refresher on Reinforcement Learning and Neural Nets
 This post assumes you have some basics on RL and NNs but here is a refresher.
 
@@ -23,7 +45,7 @@ Image from OpenAI's spinning it up:
 As opposed to explicitly coding the behavior of the agent like when using state machines for example, Reinforcement Learning instead lets the agent figure out their own behavior by giving the agent positive and negative rewards for the outcome of their actions.
 
 
-
+### stable-baselines
 Bare bones example:
 ```python
 import retro
