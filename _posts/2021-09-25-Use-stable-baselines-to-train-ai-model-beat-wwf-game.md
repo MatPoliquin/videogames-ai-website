@@ -9,6 +9,16 @@ tags: [stable-baselines, train ai model, openai, machine learning, CNN, WWF]
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0AtVNUNdIIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+[Stable-Baselines](https://github.com/hill-a/stable-baselines) is a fork OpenAI's baselines but with cleaner and more modular code that is for the most part easier to work with.
+
+In this blog post we are going to use stable-baselines to train an AI model to beat WWF Wrestlemania: The Arcade Game (Genesis port).
+
+### Lite refresher on Reinforcement Learning and Neural Nets
+This post assumes you have some basics on RL and NNs but here is a refresher.
+
+
+
 Bare bones example:
 ```python
 import retro
