@@ -18,7 +18,13 @@ In this blog post we are going to use stable-baselines to train an AI model to b
 This post assumes you have some basics on RL and NNs but here is a refresher.
 
 Image from OpenAI's spinning it up:
+
 ![RL](https://spinningup.openai.com/en/latest/_images/rl_diagram_transparent_bg.png)
+
+
+As opposed to explicitly coding the behavior of the agent like when using state machines for example, Reinforcement Learning instead lets the agent figure out their own behavior by giving the agent positive and negative rewards for the outcome of their actions.
+
+
 
 Bare bones example:
 ```python
