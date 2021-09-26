@@ -7,6 +7,12 @@ tags: [stable-baselines, model vs model, openai, machine learning, CNN, MLP]
 
 **WORK IN PROGRESS, meanwhile you can check the video form of this blog post**
 
+This is a follow-up on a previous post about using [stable-baselines 2.10](https://github.com/hill-a/stable-baselines) to beat a retro game so be sure to check it out (which covers the basics) before reading this one:
+*   [Use stable-baselines to train an AI model to beat WWF Wrestlemania: The Arcade Game (Use-stable-baselines-to-train-ai-model-beat-wwf-game)
+
+![VS](https://github.com/MatPoliquin/retro-scripts/blob/main/vs_screenshot.png)
+
+
 ## stable-baselines
 Bare bones example:
 ```python
@@ -49,7 +55,7 @@ def main():
     env.close()
 
     # Create 2 player env
-    env_2p = retro.make(game=GAME_ENV, state=STATE_2P) # Creates the env that contains the genesis emulator
+    env_2p = retro.make(game=GAME_ENV, state=STATE_2P, players=2) # Creates the env that contains the genesis emulator
     apply_wrappers(env_2p)
 
     # Test the trained model
