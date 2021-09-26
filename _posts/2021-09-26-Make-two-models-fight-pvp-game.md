@@ -8,7 +8,7 @@ tags: [stable-baselines, model vs model, openai, machine learning, CNN, MLP]
 **WORK IN PROGRESS, meanwhile you can check the video form of this blog post**
 
 This is a follow-up on a previous post about using [stable-baselines 2.10](https://github.com/hill-a/stable-baselines) to beat a retro game so be sure to check it out (which covers the basics) before reading this one:
-*   [Use stable-baselines to train an AI model to beat WWF Wrestlemania: The Arcade Game (Use-stable-baselines-to-train-ai-model-beat-wwf-game)
+*   [Use stable-baselines to train an AI model to beat WWF Wrestlemania: The Arcade Game](Use-stable-baselines-to-train-ai-model-beat-wwf-game)
 
 ![VS](https://raw.githubusercontent.com/MatPoliquin/retro-scripts/main/vs_screenshot.png)
 
