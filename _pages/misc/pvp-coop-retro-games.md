@@ -2,6 +2,7 @@
 layout: page
 title:  "PvP and COOP retro games"
 permalink: /pvp-coop-retro-games
+comments: True
 tags: [pvp, coop, retro, sega genesis, sega master system, nes, snes, gameboy]
 ---
 
