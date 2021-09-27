@@ -8,13 +8,24 @@ tags: [stable-baselines, model vs model, openai, machine learning, CNN, MLP]
 **WORK IN PROGRESS, meanwhile you can check the video form of this blog post**
 
 This is a follow-up on a previous post about using [stable-baselines 2.10](https://github.com/hill-a/stable-baselines) to beat a retro game so be sure to check it out (which covers the basics) before reading this one:
-*   [Use stable-baselines to train an AI model to beat WWF Wrestlemania: The Arcade Game](Use-stable-baselines-to-train-ai-model-beat-wwf-game)
+*   [Use stable-baselines to train an AI model to beat WWF Wrestlemania: The Arcade Game](./Use-stable-baselines-to-train-ai-model-beat-wwf-game)
 
-![VS](https://raw.githubusercontent.com/MatPoliquin/retro-scripts/main/vs_screenshot.png)
+If you want to see a 1.7M parameters CNN vs 3.6M parameters MLP model in action: 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rq0VWBVRUWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## stable-baselines
-Bare bones example:
+## 2 player example with stable-baselines
+
+This a bare bones but complete example on how to support 2 players.
+If you have read the [previous blog post](./Use-stable-baselines-to-train-ai-model-beat-wwf-game)
+You can notice that the main differences:
+*   the 2 player game state called Start.2P (created with the integration tool)
+which starts a PvP game in atari pong
+*   the 'players=2' parameter in retro.make() function
+*   The concatenation of the two player's input into one before passing it to env.step(). first part of the array is player one and second part is player 2
+*   and of course training of the two models, one for each player
+
+That's it for the difference, you can copy-paste this and try it
 ```python
 import retro
 import numpy as np
@@ -87,4 +98,4 @@ if __name__ == '__main__':
     main()
 ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rq0VWBVRUWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
