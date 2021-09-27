@@ -5,9 +5,8 @@ date:   2021-09-26 00:00:00 +0800
 tags: [stable-baselines, model vs model, openai, machine learning, CNN, MLP]
 ---
 
-**WORK IN PROGRESS, meanwhile you can check the video form of this blog post**
 
-This is a follow-up on a previous post about using [stable-baselines 2.10](https://github.com/hill-a/stable-baselines) to beat a retro game so be sure to check it out (which covers the basics) before reading this one:
+There is something quite fun about seeing two AI models battle it out in PvP games... but first please note that this post is a follow-up on a previous post about using [stable-baselines 2.10](https://github.com/hill-a/stable-baselines) to beat a retro game so be sure to check it out (which covers the basics) before reading this one:
 *   [Use stable-baselines to train an AI model to beat WWF Wrestlemania: The Arcade Game](./Use-stable-baselines-to-train-ai-model-beat-wwf-game)
 
 If you want to see a 1.7M parameters CNN vs 3.6M parameters MLP model in action: 
@@ -97,5 +96,11 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+
+
+## retro-scripts
+
+If you want a more complete, ready to use example, you can find the **retro-scripts** project on my Github which I used to make the above video:
+*   [https://github.com/MatPoliquin/retro-scripts](https://github.com/MatPoliquin/retro-scripts)
 
 
