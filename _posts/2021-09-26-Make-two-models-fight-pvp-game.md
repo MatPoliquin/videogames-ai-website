@@ -7,7 +7,7 @@ tags: [stable-baselines, model vs model, openai, machine learning, CNN, MLP]
 
 
 There is something quite fun about seeing two AI models battle it out in PvP games... but first please note that this post is a follow-up on a previous post about using [stable-baselines 2.10](https://github.com/hill-a/stable-baselines) to beat a retro game so be sure to check it out (which covers the basics) before reading this one:
-*   [Use stable-baselines to train an AI model to beat WWF Wrestlemania: The Arcade Game](./Use-stable-baselines-to-train-ai-model-beat-wwf-game)
+*   [Use stable-baselines to train an AI model to beat WWF Wrestlemania: The Arcade Game](./2021/09/24/Use-stable-baselines-to-train-ai-model-beat-wwf-game.html)
 
 If you want to see a 1.7M parameters CNN vs 3.6M parameters MLP model in action: 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rq0VWBVRUWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
