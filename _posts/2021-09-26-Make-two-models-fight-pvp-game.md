@@ -104,3 +104,7 @@ If you want a more complete, ready to use example, you can find the **retro-scri
 *   [https://github.com/MatPoliquin/retro-scripts](https://github.com/MatPoliquin/retro-scripts)
 
 
+## Samurai Shodown PvP example
+If you are fan of Samurai Shodown on Genesis check out this video I have made. I walk thought the code above.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xxa1iW-P4is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
