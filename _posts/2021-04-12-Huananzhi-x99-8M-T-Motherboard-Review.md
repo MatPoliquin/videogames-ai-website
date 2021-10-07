@@ -94,6 +94,6 @@ But I haven't found a solution yet to those, so far they haven't cause any probl
 I haven't got any issues with temperature and power consumption, mostly because I don't overclock. But if you want details about all of that an awesome youtuber called Miyconst made a VERY DETAILED video about the DDR4 version of this board:
 [https://youtu.be/cwa1qVRepUM?t=470](https://youtu.be/cwa1qVRepUM?t=470)
 
-## Uboxing video
+## Unboxing video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jdaKaJZdH7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
