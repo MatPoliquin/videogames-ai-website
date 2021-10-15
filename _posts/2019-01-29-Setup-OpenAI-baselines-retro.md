@@ -200,8 +200,6 @@ Most likely the most important scalar for you is the reward. Here is the reward 
 EDIT 2021: I have made a tutorial video on how to setup and integrate a new game:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lPYWaUAq_dY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RZhf_ovCNWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 The integration tool is really handy to integrate new games that are not in the list, create new game states, mine additional information from the rom such as enemy positions, etc.
 
 Here is how to compile from source on Ubuntu/Linux
