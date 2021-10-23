@@ -11,6 +11,10 @@ Huananzhi is one of the manifacturers that produces x99 based boards that suppor
 They have at least 4 choices for DDR3 that I know of including one that supports both, the Huananzhi x99-tf, with 3 PCIE 16x slots! Unfortunatly it's for the ATX form factor.
 The only M-ATX choice they have is the x99-8M-T so I decided to give it a try
 
+EDIT:
+I made a video form of this review under 3 minutes:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bFyHLeAfQoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Conclusion for those in hurry:
 The Huananzhi x99-8M-T motherboard is the best bang for buck x99 board for single GPU configurations.
 Combined with the 2678v3 and two ddr3 16GB ram modules, you get a very decent Unreal Engine dev rig for a fraction of price of newer hardware
