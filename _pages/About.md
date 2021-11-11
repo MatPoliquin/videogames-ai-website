@@ -9,7 +9,7 @@ tags: [About videogames.ai]
 
 
 
-Questions, comments, request:
+Questions, comments, requests:
 *   mathieu.poliquin@gmail.com
 
 
