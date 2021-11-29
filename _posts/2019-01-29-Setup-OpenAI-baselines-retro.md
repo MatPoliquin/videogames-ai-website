@@ -42,13 +42,9 @@ sudo apt-get update
 
 pip3 install --timeout 1000 scikit-build opencv-python anyrl gym joblib atari-py tensorflow
 
-git clone  https://github.com/MatPoliquin/baselines-fix.git
-cd baselines-fix
-pip3 install -e .
+pip3 install git+https://github.com/MatPoliquin/baselines-fix.git
 
-git clone https://github.com/MatPoliquin/stable-retro.git
-cd stable-retro
-pip3 install -e .
+pip3 install git+https://github.com/MatPoliquin/stable-retro.git
 ```
 
 ## Step 2 - If you want to use a GPU
