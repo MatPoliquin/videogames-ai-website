@@ -8,7 +8,7 @@ tags: [About videogames.ai]
 ---
 
 Instagram of videogames.ai:
-*   https://www.instagram.com/videogames.ai/
+*   [https://www.instagram.com/videogames.ai/](https://www.instagram.com/videogames.ai/)
 
 Questions, comments, requests:
 *   mathieu.poliquin@gmail.com
