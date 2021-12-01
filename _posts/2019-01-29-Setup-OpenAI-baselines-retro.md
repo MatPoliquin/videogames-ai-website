@@ -226,7 +226,7 @@ You should see something like this:
 ![integration tool](/assets/games/integration_tool.png)
 
 ## Extra: List of python packages with version
-In case you have problems with the setup, you can check if the versions I use
+In case you have problems with the setup, you can try the versions I use
 
 ```
 absl-py (0.13.0)
