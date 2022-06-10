@@ -9,6 +9,8 @@ tags: [nhl 94, ram map]
 
 ## UNDER CONSTRUCTION
 
+Sega Genesis version
+
 | Variable       	   | Address          | Type |
 |:-----------------|:-------------------|:--------------------------|
 | p1_attackzone    | 16762582 | >u4       |
