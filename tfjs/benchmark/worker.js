@@ -11,8 +11,6 @@ async function FlopsTest(parameters) {
     const mat2 = tf.randomUniform([matSize, matSize], 1, 2, tf.float32);
 
     for(let i=0; i < numIterations; i++) {
-        
-
         //var t0 = performance.now();
         
         const profile_info = await tf.profile(() => {
@@ -22,7 +20,6 @@ async function FlopsTest(parameters) {
         });
     
         //var t1 = performance.now();
-
         debugOutput = "FLOPs kernel time(s):\n";
         let totalKernelMs = 0;
         for (let j = 0; j < profile_info.kernels.length; j++) {
@@ -94,6 +91,8 @@ async function InitTest()
 {
     importScripts("https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js");
     //importScripts("https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js");
+    importScripts("https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js");
+    tf.wasm.setWasmPaths("https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/wasm-out/");
 
     //Parse parameters
     var parameters = {}
