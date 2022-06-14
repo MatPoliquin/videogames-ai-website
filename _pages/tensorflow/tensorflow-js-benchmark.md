@@ -19,12 +19,12 @@ tags: [tensorflow.js, benchmark, machine learning, model, mobilenet, flops]
     <tr>
       <td><button onclick="StartTest('FLOPS')">FLOPs</button></td>
       <td id="FLOPS"></td>
-      <td><a href="https://github.com/ai-z/ai-z.github.io/blob/dafdb1fb1b007743510dceaa8a84762ad5bdc522/scripts/worker.js#L42">GitHub</a></td>
+      <td><a href="https://github.com/MatPoliquin/matpoliquin.github.io/blob/c3cdac0875b60da8d071db8ab25d9065340b6ea7/tfjs/benchmark/worker.js#L3">GitHub</a></td>
     </tr>
     <tr>
       <td><button onclick="StartTest('MOBILENET')">MOBILENET V2 INFERENCE</button></td>
       <td id="MOBILENET"></td>
-      <td><a href="https://github.com/ai-z/ai-z.github.io/blob/dafdb1fb1b007743510dceaa8a84762ad5bdc522/scripts/worker.js#L50">GitHub</a></td>
+      <td><a href="https://github.com/MatPoliquin/matpoliquin.github.io/blob/c3cdac0875b60da8d071db8ab25d9065340b6ea7/tfjs/benchmark/worker.js#L54">GitHub</a></td>
     </tr>
   </table>
 
