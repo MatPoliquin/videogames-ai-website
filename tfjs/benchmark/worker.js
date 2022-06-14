@@ -2,7 +2,7 @@ var debug_tab = "     ";
 
 async function FlopsTest(parameters) {
     const matSize = 1024;
-    const numIterations = 24;
+    const numIterations = 8;
     
     let bestTime = Infinity;
     let debugOutput = "";
@@ -53,7 +53,7 @@ async function FlopsTest(parameters) {
 
 async function MobileNetTest(parameters) {
 
-    const numIterations = 24;
+    const numIterations = 8;
     const modelUrl = "https://tfhub.dev/google/imagenet/mobilenet_v2_140_224/classification/2";
     const model = await tf.loadGraphModel(modelUrl, {fromTFHub: true});
     const zeros = tf.zeros([1, 224, 224, 3]);
