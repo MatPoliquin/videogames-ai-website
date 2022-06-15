@@ -110,18 +110,6 @@ async function Init()
 
   //backend info
   let backendOptions = ["cpu"];
-
-  //webgl specific
-  if (tf.env().get('HAS_WEBGL')) {
-    backendOptions.push("webgl");
-    await tf.setBackend("webgl");
-    let webgl_version = tf.env().get('WEBGL_VERSION');
-    let force_f16 = tf.env().get('WEBGL_FORCE_F16_TEXTURES');
-    //WriteValue('host-webglversion', CreateDropDown("opt-webglversion", [1, 2], webgl_version));
-    WriteValue('host-webglversion', webgl_version);
-    WriteValue('host-forcef16', CreateDropDown("opt-forcef16", [true, false], force_f16));
-    WriteValue('WEBGL_MAX_TEXTURE_SIZE', tf.env().get('WEBGL_MAX_TEXTURE_SIZE'));
-  }
     
   //wasm specific
   //remove wasm option for now since it doesn't work in a web worker
@@ -137,6 +125,18 @@ async function Init()
     //tf.wasm.setThreadsCount(2);
     WriteValue('WASM_THREADCOUNT', tf.wasm.getThreadsCount());
     //WriteValue('WASM_THREADCOUNT', 16);
+  }
+
+  //webgl specific
+  if (tf.env().get('HAS_WEBGL')) {
+    backendOptions.push("webgl");
+    await tf.setBackend("webgl");
+    let webgl_version = tf.env().get('WEBGL_VERSION');
+    let force_f16 = tf.env().get('WEBGL_FORCE_F16_TEXTURES');
+    //WriteValue('host-webglversion', CreateDropDown("opt-webglversion", [1, 2], webgl_version));
+    WriteValue('host-webglversion', webgl_version);
+    WriteValue('host-forcef16', CreateDropDown("opt-forcef16", [true, false], force_f16));
+    WriteValue('WEBGL_MAX_TEXTURE_SIZE', tf.env().get('WEBGL_MAX_TEXTURE_SIZE'));
   }
      
   let backend = tf.getBackend();
