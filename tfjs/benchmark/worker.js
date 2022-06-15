@@ -109,7 +109,7 @@ async function InitTest()
     }
     else if (backend == 'wasm') {
         tf.env().set('WASM_HAS_MULTITHREAD_SUPPORT', wasm_multi);
-        tf.wasm.setThreadsCount(2); //TMP HACK
+        //tf.wasm.setThreadsCount(2);
     }
     
     // Launch test
