@@ -40,7 +40,7 @@ async function TestWorker(test_id) {
     return;
 
   if (typeof(w) == "undefined") {
-    w = new Worker("./tfjs/benchmark/worker.js");
+    w = new Worker("./worker.js");
 
     w.onmessage = function(event) {
       console.log(event.data);
