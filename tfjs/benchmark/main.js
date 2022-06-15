@@ -21,7 +21,7 @@ async function StartTest(test_id) {
   if (typeof(w) == "undefined") {
     let backend = GetSelectedOption("opt-backend");    
     let force16 = GetSelectedOption("opt-forcef16");
-    let wasm_multi = GetSelectedOption("wasm-multi");
+    let wasm_multi = GetSelectedOption("opt-wasm-multi");
     WriteValue(test_id, "RUNNING");
     w = new Worker(`./tfjs/benchmark/worker.js?test_id=${test_id}&backend=${backend}&force16=${force16}&wasm_multi=${wasm_multi}`);
 
