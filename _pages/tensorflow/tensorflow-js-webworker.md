@@ -2,7 +2,7 @@
 layout: page
 title:  "Tensorflow.js with web workers"
 permalink: /Tensorflow-js-web-worker
-tags: [tensorflow, gpu]
+tags: [tensorflow.js, web workers, javascript]
 ---
 
 
