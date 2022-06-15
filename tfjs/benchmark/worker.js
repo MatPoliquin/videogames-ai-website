@@ -90,7 +90,6 @@ async function MobileNetTest(parameters) {
 async function InitTest()
 {
     importScripts("https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js");
-    //importScripts("https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js");
     importScripts("https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js");
     tf.wasm.setWasmPaths("https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/wasm-out/");
 
@@ -105,9 +104,13 @@ async function InitTest()
     
     //Apply ENV flags
     await tf.setBackend(backend);
-    tf.env().set('WEBGL_FORCE_F16_TEXTURES', force16);
-    tf.env().set('WASM_HAS_MULTITHREAD_SUPPORT', wasm_multi);
-
+    if (backend == 'webgl') {
+        tf.env().set('WEBGL_FORCE_F16_TEXTURES', force16);
+    }
+    else if (backend == 'wasm') {
+        tf.env().set('WASM_HAS_MULTITHREAD_SUPPORT', wasm_multi);
+    }
+    
     // Launch test
     if (test_id == "FLOPS")
         FlopsTest(parameters);

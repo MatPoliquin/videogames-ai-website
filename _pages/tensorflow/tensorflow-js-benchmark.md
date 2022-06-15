@@ -48,6 +48,7 @@ tags: [tensorflow.js, benchmark, machine learning, model, mobilenet, flops]
     <tr> <td>WEBGL_MAX_TEXTURE_SIZE</td> <td id='WEBGL_MAX_TEXTURE_SIZE'>WEBGL NOT SUPPORTED</td> </tr>
     <tr> <td>WASM_HAS_MULTITHREAD_SUPPORT</td> <td id='WASM_HAS_MULTITHREAD_SUPPORT'>WASM NOT SUPPORTED</td> </tr>
     <tr> <td>WASM_HAS_SIMD_SUPPORT</td> <td id='WASM_HAS_SIMD_SUPPORT'>WASM NOT SUPPORTED</td> </tr>
+    <tr> <td>WASM THREAD COUNT</td> <td id='WASM_THREADCOUNT'>WASM NOT SUPPORTED</td> </tr>
     <tr> <td>DEBUG</td> <td id='host-debug'></td> </tr>
   </table>
   </div>

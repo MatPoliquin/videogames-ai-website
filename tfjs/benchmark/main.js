@@ -133,6 +133,7 @@ async function Init()
     let wasm_simd = await tf.env().getAsync('WASM_HAS_SIMD_SUPPORT');
     WriteValue('WASM_HAS_MULTITHREAD_SUPPORT', CreateDropDown("opt-wasm-multi", [true, false], wasm_multi));
     WriteValue('WASM_HAS_SIMD_SUPPORT', wasm_simd);
+    WriteValue('WASM_THREADCOUNT', tf.wasm.getThreadCount());
   }
      
   let backend = tf.getBackend();
