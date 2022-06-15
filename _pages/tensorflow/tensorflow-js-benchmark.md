@@ -62,6 +62,6 @@ tags: [tensorflow.js, benchmark, machine learning, model, mobilenet, flops]
 <!-- Output                                                 -->
 <!-- ===================================================  -->
 
-<div id='test-output' style="height:400px;width:600px;overflow:auto;background-color:blue;color:white;scrollbar-base-color:gold;font-family:sans-serif;padding:10px; white-space: pre-wrap"></div>
+<div id='test-output' style="height:400px;width:600px;overflow-y:auto;background-color:blue;color:white;scrollbar-base-color:gold;font-family:sans-serif;padding:10px; white-space: pre-wrap"></div>
 
 <script src="tfjs/benchmark/main.js"></script>
