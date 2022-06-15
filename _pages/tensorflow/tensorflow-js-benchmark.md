@@ -2,6 +2,7 @@
 layout: default
 title:  "Tensorflow.js benchmark"
 permalink: /tensorflow-js-benchmark
+comments: True
 tags: [tensorflow.js, benchmark, machine learning, model, mobilenet, flops]
 ---
 
