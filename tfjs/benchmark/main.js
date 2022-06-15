@@ -19,11 +19,11 @@ async function StartTest(test_id) {
     return;
 
   if (typeof(w) == "undefined") {
-    let backend = GetSelectedOption("opt-backend");
-    //let webglVersion = GetSelectedOption("opt-webglversion");
+    let backend = GetSelectedOption("opt-backend");    
     let force16 = GetSelectedOption("opt-forcef16");
+    let wasm_multi = GetSelectedOption("wasm-multi");
     WriteValue(test_id, "RUNNING");
-    w = new Worker(`./tfjs/benchmark/worker.js?test_id=${test_id}&backend=${backend}&force16=${force16}`);
+    w = new Worker(`./tfjs/benchmark/worker.js?test_id=${test_id}&backend=${backend}&force16=${force16}&wasm_multi=${wasm_multi}`);
 
     w.onmessage = function(event) {
       let result = event.data;

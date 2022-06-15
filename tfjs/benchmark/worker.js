@@ -101,10 +101,12 @@ async function InitTest()
     let backend = parameters['backend'];
     let force16 = Boolean(parameters['force16']);
     let test_id = parameters['test_id'];
+    let wasm_multi = parameters['wasm_multi'];
     
     //Apply ENV flags
     await tf.setBackend(backend);
     tf.env().set('WEBGL_FORCE_F16_TEXTURES', force16);
+    tf.env().setAsync('WASM_HAS_MULTITHREAD_SUPPORT', wasm_multi);
 
     // Launch test
     if (test_id == "FLOPS")
