@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title:  "Tensorflow.js benchmark"
 permalink: /tensorflow-js-benchmark
 comments: True
