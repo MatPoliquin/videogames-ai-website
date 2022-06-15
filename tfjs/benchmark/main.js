@@ -129,6 +129,7 @@ async function Init()
   if(JSON.stringify(tf.engine().registryFactory).indexOf("wasm") != -1)
   {
     backendOptions.push("wasm");
+    await tf.setBackend("wasm");
     let wasm_multi = await tf.env().getAsync('WASM_HAS_MULTITHREAD_SUPPORT');
     let wasm_simd = await tf.env().getAsync('WASM_HAS_SIMD_SUPPORT');
     WriteValue('WASM_HAS_MULTITHREAD_SUPPORT', CreateDropDown("opt-wasm-multi", [true, false], wasm_multi));
