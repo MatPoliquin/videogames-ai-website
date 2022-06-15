@@ -7,7 +7,7 @@ tags: [useful links, machine learning]
 
 
 
-### API
+### APIs
 *   [Tensorflow.js API](https://js.tensorflow.org/api/latest/)
 *   [NVIDIA NVML API](https://docs.nvidia.com/deploy/nvml-api/group__nvmlDeviceQueries.html#group__nvmlDeviceQueries)
 
