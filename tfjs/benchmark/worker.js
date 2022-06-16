@@ -45,6 +45,8 @@ async function FlopsTest(parameters) {
 
     debugOutput += debug_tab + "Result: " + gflops + " gflop/s";
 
+    debugOutput += JSON.stringify(tf.ENV.flagRegistry, null, 2);
+
     postMessage([`${gflops.toFixed(3)} GFlops/s`, debugOutput]);
 }
 
