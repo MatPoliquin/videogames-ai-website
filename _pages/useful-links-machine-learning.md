@@ -20,7 +20,7 @@ tags: [useful links, machine learning]
 ### Social links
 *   [Machine Learning reddit](https://www.reddit.com/r/MachineLearning/)
 
-### Machine learning youtubers
+### Youtubers
 *   [Yannic Kilcher](https://www.youtube.com/c/YannicKilcher)
 
 ### Blogs
