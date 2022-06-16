@@ -6,6 +6,10 @@ tags: [gpu, javascript]
 ---
 
 
+```html
+<!-- Canvas is needed to get GPU info -->
+<canvas id="glcanvas" width="0" height="0"> </canvas>
+```
 
 ```javascript
 function getGPU() {
