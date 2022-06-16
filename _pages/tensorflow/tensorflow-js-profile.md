@@ -2,7 +2,7 @@
 layout: page
 title:  "Tensorflow.js profiling"
 permalink: /tensorflow-js-profile
-tags: [tensorflow.js, web workers, javascript]
+tags: [tensorflow.js, profiling, performance, tf.profile]
 ---
 
 using tf.profile
