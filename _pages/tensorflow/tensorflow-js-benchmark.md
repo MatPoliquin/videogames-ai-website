@@ -6,7 +6,7 @@ comments: True
 tags: [tensorflow.js, benchmark, machine learning, model, mobilenet, flops]
 ---
 
-
+WARNING: webgl backend crashes for Apple devices. fix coming soon
 <!-- ===================================================  -->
 <!-- Test Results                                          -->
 <!-- ===================================================  -->
