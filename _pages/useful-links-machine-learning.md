@@ -2,6 +2,7 @@
 layout: page
 title:  "Useful Links for Machine Learning"
 permalink: /useful-links-machine-learning
+comments: True
 tags: [useful links, machine learning]
 ---
 
@@ -19,6 +20,7 @@ tags: [useful links, machine learning]
 
 ### Social links
 *   [Machine Learning reddit](https://www.reddit.com/r/MachineLearning/)
+*   [Game AI reddit](https://www.reddit.com/r/gameai/)
 
 ### Youtubers
 *   [Yannic Kilcher](https://www.youtube.com/c/YannicKilcher)
