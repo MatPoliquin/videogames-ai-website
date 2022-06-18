@@ -71,6 +71,10 @@ If you are new to linux here are some useful commands:
 # Other Features
 There is many other features, like the ability to take screenshots and record videos which will end conveniently on the folders in the above screenshot (samba).
 
+There is also a feature to automatically download thumbnails:
+
+![wwfmania](/assets/games/lakka_menu.jpg)
+
 ### Games and Performance
 
 Most games run at native FPS including Crazy Taxi and Daytona USA for dreamcast which runs at 60 fps!
@@ -97,5 +101,5 @@ Games I tried:
 
 ![wwfmania](/assets/games/mpb_logo.jpg)
 ![wwfmania](/assets/games/mbp_open.jpg)
-![wwfmania](/assets/games/lakka_menu.jpg)
+
 
