@@ -10,5 +10,8 @@ tags: [lakka linux, retro gaming, arcade machine, emulator, mame, dreamcast, seg
 
 ![wwfmania](/assets/games/tmntu.png)
 ![wwfmania](/assets/games/wwfmania.png)
-<img src="./assets/openai_romtool/Level1-4.gif" width="266">
+![wwfmania](/assets/games/Daytona.png)
+![wwfmania](/assets/games/mk2.png)
+![wwfmania](/assets/games/hangon.png)
+![wwfmania](/assets/games/openice.png)
 
