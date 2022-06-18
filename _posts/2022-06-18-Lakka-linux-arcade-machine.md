@@ -17,7 +17,11 @@ tags: [lakka linux, retro gaming, arcade machine, emulator, mame, dreamcast, seg
 
 I tried Lakka on my old Macbook pro mid-2010 laptop and my Acer mini pc of around the same age, here is the hardware specs so you can compare with your own.
 
-
+![wwfmania](/assets/games/mpb_logo.png)
+![wwfmania](/assets/games/mbp_open.png)
+![wwfmania](/assets/games/mbp_specs.png)
+![wwfmania](/assets/games/lakka_menu.png)
+![wwfmania](/assets/games/acer.png)
 
 ### Lakka vs other methods
 Originally I was little concerned about using Lakka since it did have a way to install nvidia proprietary drivers and only offered nouveau drivers. Since it is old hardware
