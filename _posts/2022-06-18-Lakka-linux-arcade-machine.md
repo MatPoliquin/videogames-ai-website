@@ -23,11 +23,39 @@ I tried Lakka on my old Macbook pro mid-2010 laptop and my Acer mini pc of aroun
 Originally I was little concerned about using Lakka since it did have a way to install nvidia proprietary drivers and only offered nouveau drivers. Since it is old hardware
 
 
-### Features
+### Samba and SSH
 
+You can upload your roms to with a SAMBA network drive already setup by Lakka. Just type in the IP address in windows explorer, something like "\\192.168.1.XXX"
 
+You should see something like this:
 
+![wwfmania](/assets/games/samba.png)
 
+You can access the Linux system via SSH. It's the only way to get access to certain features and info (disk and cpu usage, etc) or check system error messages.
+
+```bash
+ssh root@192.168.2.XXX
+```
+The password is "root" by default
+
+Quite convenient to check the CPU usage. This when I was running Daytona USA - Dreamcast version:
+
+![wwfmania](/assets/games/tops.png)
+
+If you are new to linux here are some useful commands:
+*   **tops** - CPU usage per process
+*   **dmesg** - view system debug messages
+*   **df -h** - disk usage
+*   **shutdown** - shutdown the system in case it was frozen
+
+# Other Features
+There is many other features, like the ability to take screenshots and record videos which will end conveniently on the folders in the above screenshot (samba).
+
+# Controllers
+
+Lakka supports controllers out of the box. In my case it's the PS3 controller and it works quite well, just need to press the PS button after plugin it in.
+
+That said bluetooth did not work for me for some reason
 
 ### Games and Performance
 
@@ -52,6 +80,7 @@ Games I tried:
 
 
 Actual screenshots I took with Lakka:
+
 ![wwfmania](/assets/games/tmntu.png)
 ![wwfmania](/assets/games/wwfmania.png)
 ![wwfmania](/assets/games/Daytona.png)
