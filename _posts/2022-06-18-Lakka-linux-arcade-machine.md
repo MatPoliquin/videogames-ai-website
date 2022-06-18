@@ -14,6 +14,7 @@ Actual screenshots I took with Lakka:
 ![wwfmania](/assets/games/mk2.png)
 ![wwfmania](/assets/games/hangon.png)
 ![wwfmania](/assets/games/openice.png)
+![wwfmania](/assets/games/lakka_menu.jpg)
 
 ### Quick summary for those in a hurry
 *   Fastest way to turn your old hardware into a retro game / arcade beast is with Lakka linux. Get it [here](https://www.lakka.tv/)
@@ -73,7 +74,7 @@ There is many other features, like the ability to take screenshots and record vi
 
 There is also a feature to automatically download thumbnails:
 
-![wwfmania](/assets/games/lakka_menu.jpg)
+
 
 ### Games and Performance
 
