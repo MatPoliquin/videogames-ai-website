@@ -90,7 +90,7 @@ Games I tried:
 *   Crazy Taxi Dreamcast
 *   Super Mario Bros 1 and 3- NES
 *   Super Mario 64
-*   Wave Race 63
+*   Wave Race 64
 *   WWF Wrestlemania Arcade
 *   Teenage Mutant Ninja turtles - Arcade
 *   Albert Odyssey - Sega Saturn
