@@ -20,7 +20,7 @@ Actual screenshots I took with Lakka:
 *   Fastest way to turn your old hardware into a retro game / arcade beast is with Lakka linux. Get it [here](https://www.lakka.tv/)
 *   If you are on Windows you can write the usb image with [Win32 disk imager](https://sourceforge.net/projects/win32diskimager/)
 *   Simply boot with the usb key and install Lakka
-*   Upload roms to your hardware via the shared network drive
+*   Upload roms to your hardware via the shared SAMBA network drive already set up by Lakka
 *   Play
 
 ### Hardware
@@ -31,17 +31,17 @@ I tried Lakka on my old **Macbook pro mid-2010** laptop and my **Acer mini pc** 
 
 ![wwfmania](/assets/games/acer.jpg)
 
-### Video/controller drivers and system performance
+### GPU drivers, controllers and system performance
 
 Lakka Linux vs Ubuntu:
 
-Originally I was little concerned about using Lakka since it did not have a way to easily install nvidia proprietary drivers and only offered Nouveau drivers. Since it is old hardware I was thinking it needed the absolute best drivers but it turns out Nouveau drivers are good enough for the games I tried (see below) and the nvidia legacy 340 drivers (for my MBP pro) while performs better for games like Quake 3 they make Flycast (dreamcast emulator) crash, so you can even run dreamcast games with them.
+Originally I was little concerned about using Lakka since it did not have a way to easily install nvidia proprietary drivers and only offered Nouveau drivers. Since it is old hardware I was thinking it needed the absolute best drivers but it turns out Nouveau drivers are good enough for the games I tried (see below) and the nvidia legacy 340 drivers (for my MBP pro) while performs better for games like Quake 3 they make Flycast (dreamcast emulator) crash, so you can't even run dreamcast games with them.
 
-As opposed to Ubuntu Lakka supports controllers out of the box. In my case it's the PS3 controller and it works quite well, just need to press the PS button after plugin it in.
+As opposed to Ubuntu, Lakka supports controllers out of the box. In my case it's the PS3 controller and it works quite well, just need to press the PS button after plugin it in.
 
 That said bluetooth did not work for me for some reason (and it did not work in Ubuntu either)
 
-Overall Lakka Linux is much more light weight then Ubuntu as it is targeted for one purpose and it actually makes a difference when running games. On Ubuntu I can't get Crazy Taxi to run at 60 fps (with nouveau drivers (same as lakka), the proprietary nvidia drivers crashes)
+Overall Lakka Linux is much more light weight then Ubuntu as it is targeted for one purpose only and it actually makes a difference when running games. On Ubuntu I can't get Crazy Taxi to run at 60 fps.
 
 
 ### Samba and SSH
