@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  "Turn old pc into arcade machine with Lakka linux"
 date:   2022-06-18 00:00:00 +0000
 tags: [lakka linux, retro gaming, arcade machine, emulator, mame, dreamcast, sega saturn, nes]
