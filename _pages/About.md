@@ -7,9 +7,12 @@ comments: False
 tags: [About videogames.ai]
 ---
 
+
+*   [Youtube Channel](https://www.youtube.com/c/videogamesai)
+*   [Instagram](https://www.instagram.com/videogames.ai/)
+
 Questions, comments, requests:
 *   mathieu.poliquin@gmail.com
-*   [www.mathieupoliquin.com](https://www.mathieupoliquin.com)
 
 
 <!-- Begin Mailchimp Signup Form -->
