@@ -1,16 +1,16 @@
 ---
 layout: page
-title:  "Installing CUDA 10 on Ubuntu 18.04/18.10"
+title:  "Install CUDA 10 on Ubuntu 18.04/20.04 (2022)"
 permalink: /Install-CUDA-10-Ubuntu-18-04-18-10
 comments: True
-tags: [cuda, 10, ubuntu, 18.04, 18.10, machine learning]
+tags: [cuda, 10, ubuntu, 18.04, 20.04, machine learning]
 ---
 
-#Installing CUDA 10 on Ubuntu 18.04/18.10
+#Installing CUDA 10 on Ubuntu 18.04/20.04
 
-Assuming a fresh install of 18.04 or 18.10
+Assuming a fresh install of 18.04 or 20.04
 
-You can follow instructions for 18.04 on the tensorflow gpu install page but it also works for 18.10:
+You can follow instructions for 18.04 on the tensorflow gpu install page but it also works for 20.04:
 [CUDA Install](https://www.tensorflow.org/install/gpu)
 
 I copied the instructions I used here but added some additional trouble shooting notes
