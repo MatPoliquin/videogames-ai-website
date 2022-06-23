@@ -1,7 +1,8 @@
 ---
 ---
 
-@import 'jekyll-theme-hacker';
+//@import 'jekyll-theme-hacker';
+@import "{{ site.theme }}";
 
 .grid-container {
     display: grid;
