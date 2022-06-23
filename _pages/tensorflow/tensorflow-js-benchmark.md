@@ -18,12 +18,12 @@ WARNING: webgl backend crashes for iOS devices. fix coming soon
       <th>Source</th>
     </tr>
     <tr>
-      <td><button onclick="StartTest('FLOPS')">FLOPs</button></td>
+      <td><button onclick="StartTest('FLOPS')"> MatMul FLOPs</button></td>
       <td id="FLOPS"></td>
       <td><a href="https://github.com/MatPoliquin/matpoliquin.github.io/blob/c3cdac0875b60da8d071db8ab25d9065340b6ea7/tfjs/benchmark/worker.js#L3">GitHub</a></td>
     </tr>
     <tr>
-      <td><button onclick="StartTest('MOBILENET')">MOBILENET V2 INFERENCE</button></td>
+      <td><button onclick="StartTest('MOBILENET')">MobileNet v2 Inference</button></td>
       <td id="MOBILENET"></td>
       <td><a href="https://github.com/MatPoliquin/matpoliquin.github.io/blob/c3cdac0875b60da8d071db8ab25d9065340b6ea7/tfjs/benchmark/worker.js#L54">GitHub</a></td>
     </tr>
