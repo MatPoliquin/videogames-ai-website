@@ -18,10 +18,11 @@ I copied the instructions I used here but added some additional trouble shooting
 
 ### 1. Add NVIDIA package repositories
 
+EDIT June 2022: Updated instructions the with the new key 3bf863cc.pub since NVIDIA changed it this year 
 ```
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-repo-ubuntu1804_10.0.130-1_amd64.deb
 sudo dpkg -i cuda-repo-ubuntu1804_10.0.130-1_amd64.deb
-sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub
 sudo apt-get update
 wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/nvidia-machine-learning-repo-ubuntu1804_1.0.0-1_amd64.deb
 sudo apt install ./nvidia-machine-learning-repo-ubuntu1804_1.0.0-1_amd64.deb
@@ -30,23 +31,15 @@ sudo apt-get update
 
 
 ### 2. Install driver
-In the software update you might not see the 418 driver available, if that is the case refresh the available drivers with the following commands
 ```
 sudo add-apt-repository ppa:graphics-drivers
 sudo apt-get update
 ```
 
-After that you can install it this way as stated in tensorflow installation guide
 ```
-sudo apt-get install --no-install-recommends nvidia-driver-418
-```
-
-On some systems you might not be able to install 418 as it complains abut missing dependencies that also cannot be installed because they don't support your system. The workaround is to install 430 version which compatible. But for that you might need to get the source package first:
-
-```
-sudo apt-get install nvidia-kernel-source-430
-sudo apt-get install nvidia-kernel-common-430
-sudo apt-get install nvidia-driver-430
+sudo apt-get install nvidia-kernel-source-515
+sudo apt-get install nvidia-kernel-common-515
+sudo apt-get install nvidia-driver-515
 ```
 
 As an alternative you can also use the Software and Update app if the command doesn't work some reasons
