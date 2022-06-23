@@ -5,19 +5,17 @@ permalink: /Installing-CUDA-Samples
 tags: [cuda, 10, samples, machine learning]
 ---
 
+EDIT 2022: Before you start make sure you sync the cuda samples version that correspond to your cuda installation version. You can check the relevant tags:
+* [https://github.com/NVIDIA/cuda-samples/tags](https://github.com/NVIDIA/cuda-samples/tags)
 
-
-
-
-
-First get the sync the  cuda samples repo from nvidia's official github
+Sync or download the cuda samples repo from nvidia's official github
 
 ```shell
 git clone https://github.com/NVIDIA/cuda-samples.git
 cd cuda-samples/
 ```
 
-Then build the samples
+Then build the samples. Be sure to specify number of threads because the samples takes quite some time to build.
 ```shell
 make -j$(grep -c ^processor /proc/cpuinfo)
 ```
