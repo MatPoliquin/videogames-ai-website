@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Install CUDA 10 on Ubuntu 18.04/20.04 (2022)"
+title:  "Install CUDA 10 on Ubuntu 18.04/20.04 (2022 update)"
 permalink: /Install-CUDA-10-Ubuntu-18-04-18-10
 comments: True
 tags: [cuda, 10, ubuntu, 18.04, 20.04, machine learning]
@@ -18,7 +18,7 @@ I copied the instructions I used here but added some additional trouble shooting
 
 ### 1. Add NVIDIA package repositories
 
-EDIT June 2022: Updated instructions the with the new key 3bf863cc.pub since NVIDIA changed it this year 
+EDIT June 2022: Updated instructions with the new key *3bf863cc.pub* since NVIDIA changed it this year 
 ```
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-repo-ubuntu1804_10.0.130-1_amd64.deb
 sudo dpkg -i cuda-repo-ubuntu1804_10.0.130-1_amd64.deb
@@ -35,7 +35,7 @@ sudo apt-get update
 sudo add-apt-repository ppa:graphics-drivers
 sudo apt-get update
 ```
-
+EDIT June 2022: previous drivers (ate least 418, 430, 470) no longer works with Cuda 10 install but works with the more recent 515 version:
 ```
 sudo apt-get install nvidia-kernel-source-515
 sudo apt-get install nvidia-kernel-common-515
@@ -56,11 +56,7 @@ sudo apt-get install --no-install-recommends cuda-10-0 libcudnn7=7.6.0.64-1+cuda
 
 ### 4. Tensorflow
 
-As of this writing the latest version of Tensorflow is 1.14 which supports CUDA 10
-
-```
-pip3 install tensorflow-gpu
-```
+The latest versions of Tensorflow that supports CUDA 10: 1.14, 1.15, 2.0.0
 
 You can specify a version by adding ==[version]
 ```
