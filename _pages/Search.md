@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Search"
+title:  "Search this site"
 permalink: /Search
 ads: False
 comments: False
