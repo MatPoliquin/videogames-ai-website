@@ -12,6 +12,9 @@ searchtags:
     - 'AMD'
 ---
 
+<script async src="https://cse.google.com/cse.js?cx=2fa5fa2bd7da89d66"></script>
+<div class="gcse-search"></div>
+
 <script>
 function filter(tag) {
   setActiveTag(tag);
@@ -48,9 +51,6 @@ function showContainer(tag) {
 
 
   </script>
-
-*work in progress*
-
 <html>
 
 <p style="padding: 10px; border: 2px solid blue;">
@@ -92,5 +92,3 @@ tags:
 
 </html>
 
-<script async src="https://cse.google.com/cse.js?cx=2fa5fa2bd7da89d66"></script>
-<div class="gcse-search"></div>
