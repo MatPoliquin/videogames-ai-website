@@ -91,3 +91,6 @@ tags:
 {% endfor %}
 
 </html>
+
+<script async src="https://cse.google.com/cse.js?cx=2fa5fa2bd7da89d66"></script>
+<div class="gcse-search"></div>
