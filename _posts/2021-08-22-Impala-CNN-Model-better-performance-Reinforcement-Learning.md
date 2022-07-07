@@ -48,6 +48,9 @@ Impala CNN had the most success on Pong and MK2.
 Please note that Pong atari 2600 env doesn't not crop the scores at the top from the input image which makes it a harder env to solve then
 what you see in some papers were they crop the frame.
 
+### Mortal Kombat II - Genesis
+
+### Pong - Atari 2600
 
 Pong CNN - PPO2 - 2M timesteps:
 ```
@@ -62,6 +65,8 @@ python3 -m baselines.run --alg=ppo2 --network=impala_cnn --num_env=20 --env=Pong
 ```
 
 ![pong-icnn.png](/assets/models/pong-icnn.png)
+
+### Mortal Kombat II - Genesis
 
 MK2 CNN - PPO2 - 2M timesteps:
 ```
@@ -78,8 +83,9 @@ python3 -m baselines.run --alg=ppo2 --network=impala_cnn --num_env=20 --env=Mort
 ![mk2-icnn.png](/assets/models/mk2-icnn.png)
 
 EDIT 2022:
+### Berzerk - Atari 2600
 I did some longer test with Berzerk - Atari2600
-Each tests are with 100M timesteps. As you can see in the long run Impala CNN arhitecture performs better then the other two even tought it learns more slowly at the beginning
+Each tests are with 100M timesteps. As you can see, in the long run Impala CNN arhitecture performs much better then the other two even though it learns more slowly at the beginning
 
 ```
 python3 -m baselines.run --alg=ppo2 --network=impala_cnn --num_env=20 --env=Berzerk-Atari2600 --num_timesteps=1e8
