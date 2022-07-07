@@ -87,14 +87,19 @@ python3 -m baselines.run --alg=ppo2 --network=? --num_env=20 --env=Berzerk-Atari
 ``
 --network=impala_cnn
 ``
+
 ![berzerk](/assets/games/berzerk/impala_cnn.png)
+
 ``
 --network=cnn
 ``
+
 ![berzerk](/assets/games/berzerk/cnn.png)
+
 ``
 --network=cnn_small
 ``
+
 ![berzerk](/assets/games/berzerk/cnn_small.png)
 
 You can check more details about the tests here with timestamps in the description:
