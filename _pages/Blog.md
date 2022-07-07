@@ -18,7 +18,7 @@ tags: [videogames, ai, machine learning, pytorch, tensorflow, cuda, rocm]
 
 
 <!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
+{% for post in site.posts %}
   <h3><span class="date">{{ post.date | date_to_string | append: '          ' | truncate: 22}}
   </span><a href="{{ post.url }}">{{ post.title }}</a></h3>
   <!--<p class="author">-->
