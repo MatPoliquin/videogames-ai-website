@@ -2,7 +2,7 @@
 layout: post
 title:  "Impala CNN Model - better performance for Reinforcement Learning"
 date:   2021-08-22 00:00:00 +0800
-tags: [OpenAI, Impala, CNN, model, baselines, retro, performance]
+tags: [OpenAI, Impala, CNN, model, baselines, retro, performance, machine learning]
 ---
 
 
