@@ -77,6 +77,26 @@ python3 -m baselines.run --alg=ppo2 --network=impala_cnn --num_env=20 --env=Mort
 
 ![mk2-icnn.png](/assets/models/mk2-icnn.png)
 
+EDIT 2022:
+I did some longer test with Berzerk - Atari2600
+Each tests are with 100M timesteps. As you can see in the long run Impala CNN arhitecture performs better then the other two even tought it learns more slowly at the beginning
+
+```
+python3 -m baselines.run --alg=ppo2 --network=? --num_env=20 --env=Berzerk-Atari2600 --num_timesteps=1e8
+``
+``
+--network=impala_cnn
+``
+![berzerk](/assets/games/berzerk/impala_cnn.png)
+``
+--network=cnn
+``
+![berzerk](/assets/games/berzerk/cnn.png)
+``
+--network=cnn_small
+``
+![berzerk](/assets/games/berzerk/cnn_small.png)
+
 You can check more details about the tests here with timestamps in the description:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CKU--GT5IUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
