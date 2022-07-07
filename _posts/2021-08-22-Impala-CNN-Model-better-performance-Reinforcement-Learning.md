@@ -27,7 +27,7 @@ Before looking at their test results. Here is an overview of the two architectur
 Nature CNN, the name is because of the DeepMind's Nature paper where they first used that model
 is a 1.7M parameter model with the 3 filters and one fully connected layer of 512
 
-So it's pretty simple model but is efficient on simple retro games and doesn't use lots of VRAM and GPU compute power, you can use it easily on a NVIDIA pascal based laptop GPU, with only 2GB vram
+So it's a pretty simple model but is efficient on simple retro games and doesn't use lots of VRAM and GPU compute power, you can use it easily on an NVIDIA Pascal based laptop GPU, with only 2GB vram such as the MX150 which I have on my own laptop.
 
 Now the impala model is deeper. It's named after DeepMind's Impala RL framework.
 The two key differences are the max pooling layer and residual blocks.
