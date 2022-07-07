@@ -22,6 +22,7 @@ the generalization capabilities of Reinforcement Learning. So basically you need
 Before looking at their test results. Here is an overview of the two architectures that we are going to compare. Click on the links if want to see the code in OpenAI's baselines.
 *   [Nature CNN](https://github.com/openai/baselines/blob/master/baselines/common/models.py#L15)
 *   [Impala CNN](https://github.com/openai/baselines/blob/master/baselines/common/models.py#L28)
+*   [Small CNN](https://github.com/openai/baselines/blob/ea25b9e8b234e6ee1bca43083f8f3cf974143998/baselines/common/models.py#L118)
 
 
 Nature CNN, the name is because of the DeepMind's Nature paper where they first used that model
