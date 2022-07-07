@@ -8,15 +8,6 @@ tags: [videogames, ai, machine learning, pytorch, tensorflow, cuda, rocm]
 ---
 
 
-<h2>{{ site.data.samplelist.docs_list_title }}</h2>
-
-<ul>
-  {% for item in site.data.samplelist.docs %}
-     <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-  {% endfor %}
-</ul>
-
-
 <!-- This loops through the paginated posts -->
 {% for post in site.posts %}
   <h3><span class="date">{{ post.date | date_to_string | append: '          ' | truncate: 22}}
