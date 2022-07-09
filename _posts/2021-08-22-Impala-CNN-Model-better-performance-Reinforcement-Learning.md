@@ -85,6 +85,9 @@ python3 -m baselines.run --alg=ppo2 --network=impala_cnn --num_env=20 --env=Mort
 
 EDIT 2022:
 ### Berzerk - Atari 2600
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sf9_ii4bqv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 I did some longer test with Berzerk - Atari2600
 Each tests are with 100M timesteps. As you can see, in the long run Impala CNN arhitecture performs much better then the other two even though it learns more slowly at the beginning
 
