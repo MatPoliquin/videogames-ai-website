@@ -6,8 +6,31 @@ tags: [Huananzhi, x99, t8d, motherboard, review, machine learning, xeon, 2666v3]
 
 ---
 
-COMING SOON
+full server specs:
+*   Huananzhi x99-T8D motherboard
+*   2x Intel Xeon e5-2666v3 (10c/20t) 25MB cache
+*   4 x 16GB DDR3 1600Mhz overlocked at 1866Mhz
+*   Intel 660p nvme SSD - 512GB
+*   2x Snowman cooler
+*   MaxSun RTX 2060 Super 8GB
+*   DEEP COOL MATREXX 55 MESH Computer Case, E-ATX
+*   3x ARCTIC F12 PWM PST - 120 mm
+*   Corsaire RM850x PSU - 850w
 
+Motherboard specs
+*   Intel® X99, 2 x LGA2011-3
+*   RAM: 8 x DIMM, Max. 8 x 32GB, DDR3 1866/1600/1333 MHz ECC and non-ECC, quad channel
+*   Audio: Realtek® ALC887 7.1-Channel, High Definition Audio CODEC
+*   LAN: Realtek® RTL8111H, 2 x 10/100/1000 Mbit/s LAN Controller(s)
+*   Slots: 3 x PCIe 3.0 x16
+
+storage:
+*   10 x SATA3.0 (6GB/s) port(s)
+*   1 x M.2 Socket 3, NVMe
+*   1 x M.2 Socket 2, SATA
+
+
+[Additional specs:](https://nonotree.xyz/en/shop/huananzhi-x99-t8d/)
 
 ![wwfmania](/assets/hardware/x99_t8d_box.jpg)
 ![wwfmania](/assets/hardware/x99_t8d_bent.jpg)
