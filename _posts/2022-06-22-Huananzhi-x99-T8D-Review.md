@@ -6,6 +6,8 @@ tags: [Huananzhi, x99, t8d, motherboard, review, machine learning, xeon, 2666v3]
 
 ---
 
+**UNDER CONSTRUCTION**
+
 full server specs:
 *   Huananzhi x99-T8D motherboard
 *   2x Intel Xeon e5-2666v3 (10c/20t) 25MB cache
