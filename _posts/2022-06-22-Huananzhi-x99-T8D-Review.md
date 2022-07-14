@@ -10,9 +10,7 @@ tags: [Huananzhi, x99, t8d, motherboard, review, machine learning, xeon, 2666v3]
 
 ![wwfmania](/assets/hardware/x99_t8d_box.jpg)
 
-
-
-Motherboard specs
+## Motherboard specs
 *   Intel® X99, 2 x LGA2011-3
 *   RAM: 8 x DIMM, Max. 8 x 32GB, DDR3 1866/1600/1333 MHz ECC and non-ECC, quad channel
 *   Audio: Realtek® ALC887 7.1-Channel, High Definition Audio CODEC
@@ -28,7 +26,7 @@ storage:
 [Additional specs:](https://nonotree.xyz/en/shop/huananzhi-x99-t8d/)
 
 
-## Why a x99 board
+## Why a x99 server board ?
 
 ## Temperatures and stability
 ![wwfmania](/assets/hardware/x88-t8d_temps.png)
@@ -41,9 +39,14 @@ Stress testing the two Intel Xeon E5 2666v3 CPUs at 100% results in a peak tempe
 ![wwfmania](/assets/hardware/x99_t8d_bent.jpg)
 ![wwfmania](/assets/hardware/x88-t8d_hwinfo.png)
 
+## Performance
+
 ![wwfmania](/assets/hardware/x99-t8d_cbr15.png)
+
 ![wwfmania](/assets/hardware/x99-t8d_cbr23.png)
 
+
+## Bios
 
 
 full server specs:
