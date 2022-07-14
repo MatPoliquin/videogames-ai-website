@@ -8,16 +8,9 @@ tags: [Huananzhi, x99, t8d, motherboard, review, machine learning, xeon, 2666v3]
 
 **UNDER CONSTRUCTION**
 
-full server specs:
-*   Huananzhi x99-T8D motherboard
-*   2x Intel Xeon e5-2666v3 (10c/20t) 25MB cache
-*   4 x 16GB DDR3 1600Mhz overlocked at 1866Mhz
-*   Intel 660p nvme SSD - 512GB
-*   2x Snowman cooler
-*   MaxSun RTX 2060 Super 8GB
-*   DEEP COOL MATREXX 55 MESH Computer Case, E-ATX
-*   3x ARCTIC F12 PWM PST - 120 mm
-*   Corsaire RM850x PSU - 850w
+![wwfmania](/assets/hardware/x99_t8d_box.jpg)
+
+
 
 Motherboard specs
 *   Intel® X99, 2 x LGA2011-3
@@ -34,13 +27,32 @@ storage:
 
 [Additional specs:](https://nonotree.xyz/en/shop/huananzhi-x99-t8d/)
 
-![wwfmania](/assets/hardware/x99_t8d_box.jpg)
+
+## Why a x99 board
+
+## Temperatures and stability
+![wwfmania](/assets/hardware/x88-t8d_temps.png)
+
+Stress testing the two Intel Xeon E5 2666v3 CPUs at 100% results in a peak temperautre of 61C for the CPUs and 59C for the motherboard.
+
+
+
+
 ![wwfmania](/assets/hardware/x99_t8d_bent.jpg)
 ![wwfmania](/assets/hardware/x88-t8d_hwinfo.png)
-![wwfmania](/assets/hardware/x88-t8d_temps.png)
+
 ![wwfmania](/assets/hardware/x99-t8d_cbr15.png)
 ![wwfmania](/assets/hardware/x99-t8d_cbr23.png)
 
 
 
-
+full server specs:
+*   Huananzhi x99-T8D motherboard
+*   2x Intel Xeon e5-2666v3 (10c/20t) 25MB cache
+*   4 x 16GB DDR3 1600Mhz overlocked at 1866Mhz
+*   Intel 660p nvme SSD - 512GB
+*   2x Snowman cooler
+*   MaxSun RTX 2060 Super 8GB
+*   DEEP COOL MATREXX 55 MESH Computer Case, E-ATX
+*   3x ARCTIC F12 PWM PST - 120 mm
+*   Corsaire RM850x PSU - 850w
