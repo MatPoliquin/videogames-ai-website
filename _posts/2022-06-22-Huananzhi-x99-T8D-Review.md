@@ -68,7 +68,6 @@ Unreal Engine 4.27 - ShooterGame sample - Highrise map full build:
 *   2:03 min with RX 6800HS (Asus Zephyrus g14 2022 laptop) as comparaison
 
 ![wwfmania](/assets/hardware/x99-t8d_cbr15.png)
-
 ![wwfmania](/assets/hardware/x99-t8d_cbr23.png)
 
 
