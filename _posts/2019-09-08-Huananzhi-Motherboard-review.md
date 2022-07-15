@@ -66,8 +66,8 @@ It offers good performance for Unreal Engine Build tasks as well.
 |:-----------------|:-------------------|
 | Cinebench r15    | 2649 cb            |
 | Cinebench r15 - single core  | 123 cb	    |
-| Cinebench r20    |            |
-| Cinebench r20 - single core  |     |
+| Cinebench r20    |     5620       |
+| Cinebench r20 - single core  |   263  |
 | ShooterGame Full Data Build |     2m45s   |
 | ShooterGame Full Compile  |  127.95s  |
 
