@@ -90,9 +90,15 @@ For the case I use the DEEP COOL MATREXX 55 MESH, which has decent airflow and e
 
 The main issue I got is with the standoff, not all the holes on the x99-t8D motherboard aligns with the DEEP COOL case, so you would need to buy plastic standoffs to make up for the missing holes in the case.
 
+# Windows and Linux compatbility
+
+I tried Windows 10 and Ubuntu 18.04 both supports the x99-T8D quite well although as with other Huananzhi boards the sleep mode apparently doesn't work according to all other reviews on youtube but in my case I don't use it since it's a 100% up server.
+
+As for Windows 11, x99 is not supported by it officially but you can bypass the artificial restriction easily if you want to use it. Again Myiconst has a [good video] (https://www.youtube.com/watch?v=C4OLvHLcRTk) on this topic.
+
 ## Conclusion
 
 
 For home server or workstation needs, x99 motherboards are still very well supported by Windows 10 and Ubuntu Linux and offers the best bang for the buck since you can use the very cheap but still powerful Intel E5 Xeon 2666v3 with DDR3 RAM with no performance penality compared to DDR4 (check out this video by Myiconst). Even for x99 boards and processors that supports only DDR4 (there is also a DDR4 variant of this board) the price/performance ratio is still very interesting.
 
-New x99 boards are still beeing produced, as in this case the x99-t8D by the Chinese company Huananzhi.
+New x99 boards are still beeing produced, as in this case the x99-T8D by the Chinese company Huananzhi.
