@@ -75,11 +75,11 @@ As you may have noticed the 2666v3 processor is not in the list but it does work
 
 Which should you choose between DDR3 and DDR4? DDR3 is cheaper if you need lots of RAM but if you already got some DDR4 modules lying around you should definatly choose the DDR4 varriant since it supports a wider range of x99 processors.
 
-I chose the DDR3 since I already one 2666v3 and a couple of DDR3 ram sticks back than.
+In my case I chose the DDR3 since I already one 2666v3 and a couple of DDR3 ram sticks back than.
 
 ## Bios and Turbo boost unlock
 
-The only bios feature I uses is to overclock the DDR3 memory modules from 1600Mhz to 1866Mhz without any issues.
+The only bios feature I used is to overclock the DDR3 memory modules from 1600Mhz to 1866Mhz without any issues.
 
 As for the famous turbo boost unlock hack for x99 processors which adds around 10-15% of cinebench multi-core score depending on the processor. There is a [very nice guide](https://www.youtube.com/watch?v=VkwEvATIgW0) from Myiconst if you want to try it.
 
