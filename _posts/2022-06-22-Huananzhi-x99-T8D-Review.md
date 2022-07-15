@@ -16,7 +16,7 @@ tags: [Huananzhi, x99, t8d, motherboard, review, machine learning, xeon, 2666v3]
 *   Slots: 3 x PCIe 3.0 x16
 
 storage:
-*   10 x SATA3.0 (6GB/s) port(s)
+*   10 x SATA 3.0 port(s)
 *   1 x M.2 Socket 3, NVMe
 *   1 x M.2 Socket 2, SATA
 
@@ -63,7 +63,9 @@ Note: I noticed when I bought the board is the bent reset button on the left, ne
 
 For now I only tried Cinebench and unreal engine as benchmarks 
 
-Unreal Engine 4.26 - ShooterGame sample - Highrise map full build: 1:41 min for the illumination
+Unreal Engine 4.27 - ShooterGame sample - Highrise map full build:
+*   1:41 min for the illumination with the dual 2666v3 config
+*   2:03 min with RX 6800HS (Asus Zephyrus g14 2022 laptop) as comparaison
 
 ![wwfmania](/assets/hardware/x99-t8d_cbr15.png)
 
