@@ -51,7 +51,11 @@ I bought this board when I was in Shanghai and traveled all the way back to Cana
 
 One of the reasons the temperatures are so cool is that that fans are running at 100% and the cause is that there is only one four pin fan plug which means most of the fans (3 pin plugs) are always running at 100%, so I would recommend getting quiet fans especially if you it as your workstation. 
 
-The only thing I noticed when I bought the board is the bent reset button on the left, next to the power button. It still works well thought.
+If you use OpenHardware monitor on windows you will see that there are additional sensors on the motherboard but they are not working and give bogus readings as with many Huananzhi boards, it shouldn't cause any problems since for the most part the two working sensors should give enough indication on the overall temperature.
+
+
+Note: I noticed when I bought the board is the bent reset button on the left, next to the power button. It still works well thought.
+
 ![wwfmania](/assets/hardware/x99_t8d_bent.jpg)
 
 
@@ -99,6 +103,9 @@ As for Windows 11, x99 is not supported by it officially but you can bypass the 
 ## Conclusion
 
 
-For home server or workstation needs, x99 motherboards are still very well supported by Windows 10 and Ubuntu Linux and offers the best bang for the buck since you can use the very cheap but still powerful Intel E5 Xeon 2666v3 with DDR3 RAM with no performance penality compared to DDR4 (check out this video by Myiconst). Even for x99 boards and processors that supports only DDR4 (there is also a DDR4 variant of this board) the price/performance ratio is still very interesting.
+For home server or workstation needs, x99 motherboards the best bang for the buck since you can use the very cheap but still powerful Intel E5 Xeon 2666v3 with DDR3 RAM with no performance penality compared to DDR4. Even for x99 boards and processors that supports only DDR4 (there is also a DDR4 variant of this board) the price/performance ratio is still very interesting.
 
-New x99 boards are still beeing produced, as in this case the x99-T8D by the Chinese company Huananzhi.
+That's why new x99 boards are still beeing produced, as in this case the x99-T8D by the Chinese company Huananzhi.
+
+Speaking of huananzhi, they are not the cheapest boards, I bought mine in China on taobao so I paid 100$ CAD less then what you would get on aliexpress.com if you order from Canada. I would recommend waiting for a better deal on the x99-T8D or buying a cheaper brand for around 120$ to make sure to get the best bang for the buck which is the whole point of buying x99 hardware.
+Past a certain price it's better to buy the new Intel Alder Lake based PCs
