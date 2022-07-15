@@ -61,6 +61,10 @@ Note: I noticed when I bought the board is the bent reset button on the left, ne
 
 ## Performance
 
+For now I only tried Cinebench and unreal engine as benchmarks 
+
+Unreal Engine 4.26 - ShooterGame sample - Highrise map full build: 1:41 min for the illumination
+
 ![wwfmania](/assets/hardware/x99-t8d_cbr15.png)
 
 ![wwfmania](/assets/hardware/x99-t8d_cbr23.png)
