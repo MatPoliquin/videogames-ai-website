@@ -65,7 +65,7 @@ For now I only tried Cinebench and unreal engine as benchmarks
 
 Unreal Engine 4.27 - ShooterGame sample - Highrise map full build:
 *   1:41 min for the illumination with the dual 2666v3 config
-*   2:03 min with RX 6800HS (Asus Zephyrus g14 2022 laptop) as comparaison
+*   2:03 min with the AMD Ryzen 7 6800HS (Asus Zephyrus g14 2022 laptop) as comparaison
 
 ![wwfmania](/assets/hardware/x99-t8d_cbr15.png)
 ![wwfmania](/assets/hardware/x99-t8d_cbr23.png)
