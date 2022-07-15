@@ -73,7 +73,7 @@ Unreal Engine 4.27 - ShooterGame sample - Highrise map full build:
 For 40$ CAD each on [aliexpress.com](https://www.aliexpress.com/item/1005004376285021.html) at the time of this writing the two 2666v3 provide probably the best bang for buck you can find that is 220 cnb23 points per dollar.
 
 If you eventually need a bit more powerful CPUs you have room for upgrade.
-For example the dual 2696v3 (which supports DDR3 as well) scores 4281 on cinebench r15 and with turbo boost unlock hack it reportedly scores 4800! That said the current price of the 2696v3 is over 3 times the 2666v3 on aliexpress so price/performance ratio is less interesting.
+For example the dual 2696v3 (which supports DDR3 as well) [scores 4281](https://www.youtube.com/watch?v=_K2kGsYwdmM) on cinebench r15 and with turbo boost unlock hack it reportedly scores 4800! That said the current price of the 2696v3 is over 3 times the 2666v3 on aliexpress so price/performance ratio is less interesting.
 
 ## DDR3 vs DDR4 and Compatible processors
 
