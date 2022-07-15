@@ -70,8 +70,12 @@ Unreal Engine 4.27 - ShooterGame sample - Highrise map full build:
 ![wwfmania](/assets/hardware/x99-t8d_cbr15.png)
 ![wwfmania](/assets/hardware/x99-t8d_cbr23.png)
 
+For 40$ CAD each on [aliexpress.com](https://www.aliexpress.com/item/1005004376285021.html) at the time of this writing the two 2666v3 provide probably the best bang for buck you can find that is 220 cnb23 points per dollar.
 
-## DDR3 vs DDR4 and Comptatible processors
+If you eventually need a bit more powerful CPUs you have room for upgrade.
+For example the dual 2696v3 (which supports DDR3 as well) scores 4281 on cinebench r15 and with turbo boost unlock hack it reportedly scores 4800! That said the current price of the 2696v3 is over 3 times the 2666v3 on aliexpress so price/performance ratio is less interesting.
+
+## DDR3 vs DDR4 and Compatible processors
 
 Please keep in mind that this is a DDR3 board and as such only a few x99 processors supports both DDR3 and DDR4, the majority only supports DDR4.
 
@@ -82,7 +86,7 @@ E5-2629v3 / 2649v3 / 2669v3 / 2673v3 / 2676v3 / 2678v3 / 2696v3.
 
 As you may have noticed the 2666v3 processor is not in the list but it does work, it's what I am using currently, not sure why they havent included it.
 
-Which should you choose between DDR3 and DDR4? DDR3 is cheaper if you need lots of RAM but if you already got some DDR4 modules lying around you should definatly choose the DDR4 varriant since it supports a wider range of x99 processors.
+Which should you choose between DDR3 and DDR4? DDR3 is cheaper if you need lots of RAM but if you already got some DDR4 modules lying around you should definetly choose the DDR4 varriant since it supports a wider range of x99 processors.
 
 In my case I chose the DDR3 since I already one 2666v3 and a couple of DDR3 ram sticks back than.
 
@@ -103,13 +107,11 @@ The main issue I got is with the standoff, not all the holes on the x99-t8D moth
 
 I tried Windows 10 and Ubuntu 18.04 both supports the x99-T8D quite well although as with other Huananzhi boards the sleep mode apparently doesn't work according to all other reviews on youtube but in my case I don't use it since it's a 100% up server.
 
-As for Windows 11, x99 is not supported by it officially but you can bypass the artificial restriction easily if you want to use it. Again Myiconst has a [good video] (https://www.youtube.com/watch?v=C4OLvHLcRTk) on this topic.
+As for Windows 11, x99 is not supported by it officially but you can bypass the artificial restriction easily if you want to use it. Again Myiconst has a [good video](https://www.youtube.com/watch?v=C4OLvHLcRTk) on this topic.
 
 ## Conclusion
 
-
 For home server or workstation needs, x99 motherboards the best bang for the buck since you can use the very cheap but still powerful Intel E5 Xeon 2666v3 with DDR3 RAM with no performance penality compared to DDR4. Even for x99 boards and processors that supports only DDR4 (there is also a DDR4 variant of this board) the price/performance ratio is still very interesting.
-
 That's why new x99 boards are still beeing produced, as in this case the x99-T8D by the Chinese company Huananzhi.
 
 Speaking of huananzhi, they are not the cheapest boards, I bought mine in China on taobao so I paid 100$ CAD less then what you would get on aliexpress.com if you order from Canada. I would recommend waiting for a better deal on the x99-T8D or buying a cheaper brand for around 120$ to make sure to get the best bang for the buck which is the whole point of buying x99 hardware.
