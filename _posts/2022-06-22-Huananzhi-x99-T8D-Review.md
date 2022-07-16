@@ -75,6 +75,9 @@ For 40$ CAD each on [aliexpress.com](https://www.aliexpress.com/item/10050043762
 If you eventually need a bit more powerful CPUs you have room for upgrade.
 For example the dual 2696v3 (which supports DDR3 as well) [scores 4281](https://www.youtube.com/watch?v=_K2kGsYwdmM) on cinebench r15 and with turbo boost unlock hack it reportedly scores 4800! That said the current price of the 2696v3 is over 3 times the 2666v3 on aliexpress so price/performance ratio is less interesting.
 
+As you may have noticed the x99 processors and most processors around that generation has lower single core performance the today's processors as opposed to multi-core where they are still competitive.
+As such I would not recommend this board if your main goal with it is gaming, as most games needs strong single core performance to achieve high FPS.
+
 ## DDR3 vs DDR4 and Compatible processors
 
 Please keep in mind that this is a DDR3 board and as such only a few x99 processors supports both DDR3 and DDR4, the majority only supports DDR4.
@@ -103,7 +106,7 @@ For the case I use the DEEP COOL MATREXX 55 MESH, which has decent airflow and e
 
 The main issue I got is with the standoff, not all the holes on the x99-t8D motherboard aligns with the DEEP COOL case, so you would need to buy plastic standoffs to make up for the missing holes in the case.
 
-# Windows and Linux compatbility
+# Windows and Linux compatibility
 
 I tried Windows 10 and Ubuntu 18.04 both supports the x99-T8D quite well although as with other Huananzhi boards the sleep mode apparently doesn't work according to all other reviews on youtube but in my case I don't use it since it's a 100% up server.
 
@@ -115,4 +118,4 @@ For home server or workstation needs, x99 motherboards the best bang for the buc
 That's why new x99 boards are still beeing produced, as in this case the x99-T8D by the Chinese company Huananzhi.
 
 Speaking of huananzhi, they are not the cheapest boards, I bought mine in China on taobao so I paid 100$ CAD less then what you would get on aliexpress.com if you order from Canada. I would recommend waiting for a better deal on the x99-T8D or buying a cheaper brand for around 120$ to make sure to get the best bang for the buck which is the whole point of buying x99 hardware.
-Past a certain price it's better to buy the new Intel Alder Lake based PCs
+Past a certain price it's better to buy the new Intel Alder Lake based CPUs and compatible motherboards.
