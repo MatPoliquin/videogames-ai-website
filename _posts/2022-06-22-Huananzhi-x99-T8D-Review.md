@@ -41,6 +41,21 @@ OS:
 *   Windows 10 64 bit
 
 
+## Bullet points for those in a hurry
+Pros:
+*   Supports the best bang for buck CPUs such as the Intel Xeon E5 2666v3
+*   Supports DDR3 which is cheaper then DDR4 with no performance difference
+*   Good support from Ubuntu and Windows 10
+
+Cons:
+*   Most fan plugs are only 3 pins so fans are running at 100% all the time
+*   2 temperature sensors on the motherboard give bogus readings
+*   sleep mode unsupported
+*   The DDR3 variant (in this review) only supports a subset of the x99 processors but you can choose the DDR4 variant if that is a problem
+*   Not all motherboard holes align with the Deep Cool E-ATX case
+*   RAM slots are too close to the CPU heatsinks, making it hard to upgrade RAM easily
+*   No integrated graphics so need to have a GPU with display output
+
 
 ## Temperatures, fans and stability
 ![wwfmania](/assets/hardware/x88-t8d_temps.png)
