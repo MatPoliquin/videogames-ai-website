@@ -12,7 +12,7 @@ COMING SOON
 *   2x 8GB DDR5 @4800Mhz
 *   AMD RX 6700s 8GB DDR6
 *   512GB SSD
-*   1920x1200 14" screen
+*   1920x1600 14" screen
 
 
 ![zephyrus](/assets/zephyrus/cinebench.png)
