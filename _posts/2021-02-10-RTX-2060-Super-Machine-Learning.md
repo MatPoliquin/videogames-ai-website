@@ -56,8 +56,7 @@ well as a comparaison with the p106-100:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DKyCVyKQMN0?start=280" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Quake 2 RTX
-I get around 55 fps at the beginning of the first level (demo version). You can see the gpu profiling details inside the screenshot
-![quake_rtx](/assets/rtx2060super/quake_rtx.png)
+I get around 55 fps at the beginning of the first level (demo version).
 
 Here are the options I used:
 
