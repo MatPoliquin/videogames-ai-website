@@ -60,6 +60,7 @@ I get around 55 fps at the beginning of the first level (demo version). You can 
 ![quake_rtx](/assets/rtx2060super/quake_rtx.png)
 
 Here are the options I used:
+
 ![quake_rtx_options](/assets/rtx2060super/quake_rtx_options.png)
 
 ### Resnet 50 test
