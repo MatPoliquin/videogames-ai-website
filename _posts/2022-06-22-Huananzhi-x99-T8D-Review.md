@@ -74,7 +74,7 @@ Note: I noticed when I bought the board is the bent reset button on the left, ne
 ![wwfmania](/assets/hardware/x99_t8d_bent.jpg)
 
 
-## Performance
+## Dual CPU Performance
 
 For now I only tried Cinebench and unreal engine as benchmarks 
 
@@ -92,6 +92,22 @@ For example the dual 2696v3 (which supports DDR3 as well) [scores 4281](https://
 
 As you may have noticed the x99 processors and most processors around that generation has lower single core performance the today's processors as opposed to multi-core where they are still competitive.
 As such I would not recommend this board if your main goal with it is gaming, as most games needs strong single core performance to achieve high FPS.
+
+I used Phoronix to test linux kernel compilation. It still performs better then the recent Intel i5-12600K at 5 times the price of two 2666v3!
+![wwfmania](/assets/hardware/dual2666-linux-compile.png)
+
+## PCIE Bandwidth
+
+I only used the first PCIE slot so far (the one closer to the CPUs).
+
+I get these results with CUDA-Z with my RTX 2060 Super:
+*   Host Pinned to Device: 11.2115 GiB/s
+*   Host Pageable to Device: 7230.83 MiB/s
+*   Device to Host Pinned: 12.1357 GiB/s
+*   Device to Host Pageable: 9951.26 MiB/s
+*   Device to Device: 160.996 GiB/s
+
+I will update this post once I install the other graphics cards
 
 ## DDR3 vs DDR4 and Compatible processors
 
