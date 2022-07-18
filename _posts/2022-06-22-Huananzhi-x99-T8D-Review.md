@@ -137,7 +137,7 @@ For the case I use the DEEP COOL MATREXX 55 MESH, which has decent airflow and e
 
 The main issue I got is with the standoff, not all the holes on the x99-t8D motherboard aligns with the DEEP COOL case, so you would need to buy plastic standoffs to make up for the missing holes in the case.
 
-# Windows and Linux compatibility
+## Windows and Linux compatibility
 
 I tried Windows 10 and Ubuntu 18.04 both supports the x99-T8D quite well although as with other Huananzhi boards the sleep mode apparently doesn't work according to all other reviews on youtube but in my case I don't use it since it's a 100% up server.
 
