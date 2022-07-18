@@ -76,4 +76,68 @@ python3 tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=resnet50 --use
 ![resnet50](/assets/rtx2060super/resnet50-b64-16bit.png)
 
 ### CUDA-Z
-![cuda-z](/assets/rtx2060super/cuda-z.png)
+
+Here is an export from the CUDA-Z app, the the bottom there is the performane metrics
+
+```
+CUDA-Z Report
+=============
+Version: 0.10.251 32 bit http://cuda-z.sf.net/
+OS Version: Linux 5.4.0-120-generic #136~18.04.1-Ubuntu SMP Fri Jun 10 18:00:44 UTC 2022 x86_64
+Driver Version: 515.48.07
+Driver Dll Version: 11.70 (515.48.07)
+Runtime Dll Version: 6.50
+
+Core Information
+----------------
+	Name: NVIDIA GeForce RTX 2060 SUPER
+	Compute Capability: 7.5
+	Clock Rate: 1650 MHz
+	PCI Location: 0:130:0
+	Multiprocessors: 34
+	Threads Per Multiproc.: 1024
+	Warp Size: 32
+	Regs Per Block: 65536
+	Threads Per Block: 1024
+	Threads Dimensions: 1024 x 1024 x 64
+	Grid Dimensions: 2147483647 x 65535 x 65535
+	Watchdog Enabled: Yes
+	Integrated GPU: No
+	Concurrent Kernels: Yes
+	Compute Mode: Default
+	Stream Priorities: Yes
+
+Memory Information
+------------------
+	Total Global: 4096 MiB
+	Bus Width: 256 bits
+	Clock Rate: 7001 MHz
+	Error Correction: No
+	L2 Cache Size: 48 KiB
+	Shared Per Block: 48 KiB
+	Pitch: 2048 MiB
+	Total Constant: 64 KiB
+	Texture Alignment: 512 B
+	Texture 1D Size: 131072
+	Texture 2D Size: 131072 x 65536
+	Texture 3D Size: 16384 x 16384 x 16384
+	GPU Overlap: Yes
+	Map Host Memory: Yes
+	Unified Addressing: No
+	Async Engine: No
+
+Performance Information
+-----------------------
+Memory Copy
+	Host Pinned to Device: 11.2115 GiB/s
+	Host Pageable to Device: 7230.83 MiB/s
+	Device to Host Pinned: 12.1357 GiB/s
+	Device to Host Pageable: 9951.26 MiB/s
+	Device to Device: 160.996 GiB/s
+GPU Core Performance
+	Single-precision Float: 6171 Gflop/s
+	Double-precision Float: 216.662 Gflop/s
+	64-bit Integer: 1982.53 Giop/s
+	32-bit Integer: 8201.6 Giop/s
+	24-bit Integer: 7737.57 Giop/s
+```
