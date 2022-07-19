@@ -37,6 +37,7 @@ I use the 2666v3 with DDR3 (1866Mhz) with no issues and no performance differenc
 I haven't tried the turbo boost unlock hack that which results in having 3.5 Ghz on all cores instead of one. If you want details about all of that an awesome youtuber called Miyconst made a VERY DETAILED video: [https://youtu.be/cwa1qVRepUM?t=470](https://youtu.be/cwa1qVRepUM?t=470)
 
 Note: HWiNFO64 shows E5-1681v3 but it's really the 2666v3, CPU-Z shows the correct name but with less details.
+
 ![hwi](/assets/hardware/2666v3_hwi.png)
 
 ## Some Benchmarks
