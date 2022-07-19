@@ -41,12 +41,15 @@ Note: HWiNFO64 shows E5-1681v3 but it's really the 2666v3, CPU-Z shows the corre
 ![hwi](/assets/hardware/2666v3_hwi.png)
 
 ## Some Benchmarks
+
+[Dual 2666v3 can be found in my x99-t8d motherboard review ](https://www.videogames.ai/2022/06/22/Huananzhi-x99-T8D-Review.html)
+
 ![r23](/assets/hardware/2666v3_r23.png)
 
 Unreal Engine Map build test: I get 3:07 minute build for the highrise map
 *   [https://youtu.be/ZoQ6g6UxXaU?t=279](https://youtu.be/ZoQ6g6UxXaU?t=279)
 
-[Dual 2666v3 can be found in my x99-t8d motherboard review ](https://www.videogames.ai/2022/06/22/Huananzhi-x99-T8D-Review.html)
+
 
 Video form of this post with additional details
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZoQ6g6UxXaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
