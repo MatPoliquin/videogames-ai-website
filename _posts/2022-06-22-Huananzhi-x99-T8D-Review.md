@@ -130,7 +130,6 @@ The only bios feature I used is to overclock the DDR3 memory modules from 1600Mh
 
 As for the famous turbo boost unlock hack for x99 processors which adds around 10-15% of cinebench multi-core score depending on the processor. There is a [very nice guide](https://www.youtube.com/watch?v=VkwEvATIgW0) from Myiconst if you want to try it.
 
-
 ## EATX Case
 
 For the case I use the DEEP COOL MATREXX 55 MESH, which has decent airflow and enough room to fit at least two dual slot GPUs, for the third slot there is only enough space for a single slot GPU.
@@ -142,6 +141,11 @@ The main issue I got is with the standoff, not all the holes on the x99-t8D moth
 I tried Windows 10 and Ubuntu 18.04 both supports the x99-T8D quite well although as with other Huananzhi boards the sleep mode apparently doesn't work according to all other reviews on youtube but in my case I don't use it since it's a 100% up server.
 
 As for Windows 11, x99 is not supported by it officially but you can bypass the artificial restriction easily if you want to use it. Again Myiconst has a [good video](https://www.youtube.com/watch?v=C4OLvHLcRTk) on this topic.
+
+## Power Consumption
+
+*   96w - Idle - Windows 10 booted, no apps opened
+*   377w - 100% on both CPUs with Cinbench r23
 
 ## Conclusion
 
