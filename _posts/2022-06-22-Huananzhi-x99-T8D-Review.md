@@ -144,8 +144,8 @@ As for Windows 11, x99 is not supported by it officially but you can bypass the 
 
 ## Power Consumption
 
-*   96w - Idle - Windows 10 booted with display on, no apps opened
-*   377w - 100% usage for both CPUs with Cinbench r23
+*   96W     - Idle, Windows 10 booted with display on, no apps opened
+*   377W    - 100% usage for both CPUs with Cinebench r23
 
 
 ## Conclusion
