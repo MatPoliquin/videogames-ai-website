@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Tensorflow.js benchmark"
+title:  "tensorflow.js benchmark"
 permalink: /tensorflow-js-benchmark
 comments: True
 tags: [tensorflow.js, benchmark, machine learning, model, mobilenet, flops]
