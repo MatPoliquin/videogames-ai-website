@@ -6,6 +6,8 @@ tags: [windows 11, tpm, unsupported, hardware]
 ---
 
 
+Wether your hardware has no TPM supported or unsupported CPU or below RAM requirements you can bypass all these checks with a simple file.
+
 ### Step 1
 
 Download the Microsoft Windows 11 "Create Windows 11 Installation Media" tool:
