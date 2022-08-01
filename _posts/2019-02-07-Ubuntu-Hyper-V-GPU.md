@@ -5,8 +5,10 @@ date: 2019-02-07 06:00:00 +0000
 tags: [ubuntu, hyper-v, linux, gpu, windows]
 ---
 
-I often need to use both Windows and Linux for various projects. I was dual booting Linux and Windows 10 on my laptop but constantly rebooting was getting quickly annoying so recently I decided to try Hyper-V since it comes for free with my Windows 10 Pro.
+Screenshot of Ubuntu running on Hyper-V
 ![ubuntu vm](/assets/hyper-v/desktop_screenshot.png)
+
+I often need to use both Windows and Linux for various projects. I was dual booting Linux and Windows 10 on my laptop but constantly rebooting was getting quickly annoying so recently I decided to try Hyper-V since it comes for free with my Windows 10 Pro.
 
 Important notes so you don't waste time:
 *	If you need to do long hours or heavy workloads on Ubuntu than dual-booting is better. As an example, On my desktop, at office, I dual boot since I often need to debug/program. I use the Ubuntu vm on my laptop at home or on the road, mostly to do some light and quick maintenance for that it's good.
