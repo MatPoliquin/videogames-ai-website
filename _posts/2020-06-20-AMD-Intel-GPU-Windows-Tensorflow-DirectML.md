@@ -5,9 +5,9 @@ date:   2020-06-11 00:00:00 +0000
 tags: [DirectML, AMD, Intel, Windows, tensorflow, machine learning]
 ---
 
-## Tensorflow DirectML
 
 Recently Microsoft released a preview of their DirectML backend for tensorflow.
+
 This backend enables support for most DirectX 12 devices on Windows including AMD and Intel integrated GPUs.
 
 This is very good news because the default CUDA based backend that is locked to NVIDIA cards and ROCm (for AMD cards) only works on Linux and doesn't support all AMD cards. So up until now lots of users could not leverage their GPUs with tensorflow
