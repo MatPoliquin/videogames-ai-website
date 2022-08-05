@@ -30,6 +30,7 @@ storage:
 *   2x Intel Xeon e5-2666v3 (10c/20t) 25MB cache
 *   4 x 16GB Samsung ECC DDR3 1600Mhz overlocked @ 1866Mhz
 *   Intel 660p nvme SSD - 512GB
+*   Seagate Barracuda 4TB - ST4000DM004-2CV104
 *   2x Snowman cooler
 *   MaxSun RTX 2060 Super 8GB
 *   DEEP COOL MATREXX 55 MESH Computer Case, E-ATX
@@ -147,6 +148,13 @@ As for Windows 11, x99 is not supported by it officially but you can bypass the 
 *   96W     - Idle, Windows 10 booted with display on, no apps opened
 *   377W    - 100% usage for both CPUs with Cinebench r23
 
+## Disk speed
+
+Using the disk utility of Ubuntu 18.04 with default settings
+*   Intel 660p - nvme m.2 slot: peek of 1.8GB/s read speed
+*   Seagate Barracuda 4TB HDD - SATA port: peek of 180 MB/s
+
+Note that this is not a complete benchmark, I plan to run a more complete benchmark when I install the Intel 760p which is a faster SSD that will fully use the bandwith
 
 ## Conclusion
 
