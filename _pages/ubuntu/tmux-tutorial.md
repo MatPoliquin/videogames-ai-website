@@ -34,7 +34,7 @@ CRTL+B, then press W
 You will get a windows like this where you can toggle between sessions.
 Notice the preview of the session in the bottom
 
-![tmux](/assets/ubuntu/vnc_error.png)
+![tmux](/assets/ubuntu/tmux_select.png)
 
 # attach to a session
 
