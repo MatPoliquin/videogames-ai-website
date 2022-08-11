@@ -18,7 +18,8 @@ COMING SOON
 ![zephyrus](/assets/zephyrus/cinebench.png)
 ![zephyrus](/assets/zephyrus/diskmark.png)
 ![zephyrus](/assets/zephyrus/eldenring.png)
-![zephyrus](/assets/zephyrus/timespy.png)
+![zephyrus](/assets/zephyrus/timespy.jpg)
+![zephyrus](/assets/zephyrus/timespy2.jpg)
 
 
 
