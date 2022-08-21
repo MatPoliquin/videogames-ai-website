@@ -68,3 +68,7 @@ ssh -t username1@address "tmux attach-session -t 'TASK-01' ; bash --login"
 ## More info
 
 [https://tmuxcheatsheet.com/](https://tmuxcheatsheet.com/)
+
+## Video with more details
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tyqik5NJQ8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
