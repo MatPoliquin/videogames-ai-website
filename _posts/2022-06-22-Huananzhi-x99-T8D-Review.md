@@ -143,6 +143,8 @@ I tried Windows 10 and Ubuntu 18.04 both supports the x99-T8D quite well althoug
 
 As for Windows 11, x99 is not supported by it officially but you can bypass the artificial restriction easily if you want to use it. Again Myiconst has a [good video](https://www.youtube.com/watch?v=C4OLvHLcRTk) on this topic.
 
+I tried Windows 11 and is currently the Windows version I will use. I tested Unreal Engine 5.03 with it with the huge City Sample project and it handles it quite well
+
 ## Power Consumption
 
 *   96W     - Idle, Windows 10 booted with display on, no apps opened
@@ -154,7 +156,8 @@ Using the disk utility of Ubuntu 18.04 with default settings
 *   Intel 660p - nvme m.2 slot: peek of 1.8GB/s read speed
 *   Seagate Barracuda 4TB HDD - SATA port: peek of 180 MB/s
 
-Note that this is not a complete benchmark, I plan to run a more complete benchmark when I install the Intel 760p which is a faster SSD that will fully use the bandwith
+I tried the Intel 760p as well on nvme m.2 slot:
+![wwfmania](/assets/hardware/t8d_nvme.jpg)
 
 ## Conclusion
 
