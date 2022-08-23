@@ -132,7 +132,7 @@ As for the famous turbo boost unlock hack for x99 processors which adds around 1
 There is a GitHub project that has the files along with instructions on how to unlock turbo boost.
 [https://github.com/markkpa/x99-t8d-and-x99-f8d-Opencore-Hackintosh](https://github.com/markkpa/x99-t8d-and-x99-f8d-Opencore-Hackintosh)
 
-Please note that I haven't tried it yet.
+EDIT August 22, 2022: I tried the hack and I get 18945 on Cinebench r23 with the 1600Mhz RAM speed
 
 ## EATX Case
 
