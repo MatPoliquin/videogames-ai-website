@@ -99,8 +99,6 @@ I used Phoronix to test linux kernel compilation. It still performs better then 
 
 ## PCIE Bandwidth
 
-I only used the first PCIE slot so far (the one closer to the CPUs).
-
 I get these results with CUDA-Z with my RTX 2060 Super:
 *   Host Pinned to Device: 11.2115 GiB/s
 *   Host Pageable to Device: 7230.83 MiB/s
@@ -108,7 +106,7 @@ I get these results with CUDA-Z with my RTX 2060 Super:
 *   Device to Host Pageable: 9951.26 MiB/s
 *   Device to Device: 160.996 GiB/s
 
-I will update this post once I install the other graphics cards
+These are the results for the first two PCIE slots, as for the third PCIE slot I haven't tested it yet.
 
 ## DDR3 vs DDR4 and Compatible processors
 
