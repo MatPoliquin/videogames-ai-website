@@ -127,7 +127,12 @@ In my case I chose the DDR3 since I already one 2666v3 and a couple of DDR3 ram 
 
 The only bios feature I used is to overclock the DDR3 memory modules from 1600Mhz to 1866Mhz without any issues.
 
-As for the famous turbo boost unlock hack for x99 processors which adds around 10-15% of cinebench multi-core score depending on the processor. There is a [very nice guide](https://www.youtube.com/watch?v=VkwEvATIgW0) from Myiconst if you want to try it.
+As for the famous turbo boost unlock hack for x99 processors which adds around 10-15% of cinebench multi-core score depending on the processor:
+
+There is a GitHub project that has the files along with instructions on how to unlock turbo boost.
+[https://github.com/markkpa/x99-t8d-and-x99-f8d-Opencore-Hackintosh](https://github.com/markkpa/x99-t8d-and-x99-f8d-Opencore-Hackintosh)
+
+Please note that I haven't tried it yet.
 
 ## EATX Case
 
