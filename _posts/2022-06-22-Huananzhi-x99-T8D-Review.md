@@ -107,8 +107,8 @@ There is a GitHub project that has the files along with instructions on how to u
 [https://github.com/markkpa/x99-t8d-and-x99-f8d-Opencore-Hackintosh](https://github.com/markkpa/x99-t8d-and-x99-f8d-Opencore-Hackintosh)
 
 EDIT August 22, 2022: I tried the hack and I get 18945 on Cinebench r23 with the 1600Mhz RAM speed
-I also get 61s in Linux compile benchmark
 
+I also get 62s in Linux compile benchmark
 
 ## Bios
 
@@ -157,7 +157,9 @@ I tried Windows 11 and is currently the Windows version I will use. I tested Unr
 ## Virtualization
 
 I run Ubuntu 18.04 with full GPU support on top of Windows 11 with WSL2 (which uses Hyper-V architecture).
-It works quite well, I can train AI models on videogames with roughly 90% of performance compared to running natively
+It works quite well, I can train AI models on videogames with roughly 90% of performance compared to running natively.
+
+You can quickly setup WSL2: [WSL2 setup Guide](https://www.videogames.ai/Install-WSL2-Linux-Windows-GPU-Support)
 
 ## Power Consumption
 
