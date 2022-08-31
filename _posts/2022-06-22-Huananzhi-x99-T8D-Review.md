@@ -97,6 +97,20 @@ As such I would not recommend this board if your main goal with it is gaming, as
 I used Phoronix to test linux kernel compilation. It still performs better then the recent Intel i5-12600K at 5 times the price of two 2666v3!
 ![wwfmania](/assets/hardware/dual2666-linux-compile.png)
 
+### Turbo boost Unlock hack
+As for the famous turbo boost unlock hack for x99 processors which adds around 10-15% of cinebench multi-core score depending on the processor:
+
+There is a GitHub project that has the files along with instructions on how to unlock turbo boost which involves replacing the bios
+[https://github.com/markkpa/x99-t8d-and-x99-f8d-Opencore-Hackintosh](https://github.com/markkpa/x99-t8d-and-x99-f8d-Opencore-Hackintosh)
+
+EDIT August 22, 2022: I tried the hack and I get 18945 on Cinebench r23 with the 1600Mhz RAM speed
+I also get 61s in Linux compile benchmark
+
+
+## Bios
+
+The only bios feature I used is to overclock the DDR3 memory modules from 1600Mhz to 1866Mhz without any issues.
+
 ## PCIE Bandwidth
 
 I get these results with CUDA-Z with my RTX 2060 Super:
@@ -123,17 +137,6 @@ Which should you choose between DDR3 and DDR4? DDR3 is cheaper if you need lots 
 
 In my case I chose the DDR3 since I already one 2666v3 and a couple of DDR3 ram sticks back than.
 
-## Bios and Turbo boost unlock
-
-The only bios feature I used is to overclock the DDR3 memory modules from 1600Mhz to 1866Mhz without any issues.
-
-As for the famous turbo boost unlock hack for x99 processors which adds around 10-15% of cinebench multi-core score depending on the processor:
-
-There is a GitHub project that has the files along with instructions on how to unlock turbo boost.
-[https://github.com/markkpa/x99-t8d-and-x99-f8d-Opencore-Hackintosh](https://github.com/markkpa/x99-t8d-and-x99-f8d-Opencore-Hackintosh)
-
-EDIT August 22, 2022: I tried the hack and I get 18945 on Cinebench r23 with the 1600Mhz RAM speed
-
 ## EATX Case
 
 For the case I use the DEEP COOL MATREXX 55 MESH, which has decent airflow and enough room to fit at least two dual slot GPUs, for the third slot there is only enough space for a single slot GPU.
@@ -147,6 +150,11 @@ I tried Windows 10 and Ubuntu 18.04 both supports the x99-T8D quite well althoug
 As for Windows 11, x99 is not supported by it officially but you can bypass the artificial restriction easily if you want to use it. Again Myiconst has a [good video](https://www.youtube.com/watch?v=C4OLvHLcRTk) on this topic.
 
 I tried Windows 11 and is currently the Windows version I will use. I tested Unreal Engine 5.03 with it with the huge City Sample project and it handles it quite well
+
+## Virtualization
+
+I run Ubuntu 18.04 with full GPU support on top of Windows 11 with WSL2 (which uses Hyper-V architecture).
+It works quite well, I can train AI models on videogames with roughly 90% of performance compared to running natively
 
 ## Power Consumption
 
