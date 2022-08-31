@@ -156,6 +156,8 @@ I tried Windows 11 and is currently the Windows version I will use. I tested Unr
 
 ## Virtualization
 
+![advanced](/assets/windows/wsl2/msinfo32.jpg)
+
 I run Ubuntu 18.04 with full GPU support on top of Windows 11 with WSL2 (which uses Hyper-V architecture).
 It works quite well, I can train AI models on videogames with roughly 90% of performance compared to running natively.
 
