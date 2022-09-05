@@ -2,6 +2,7 @@
 layout: page
 title:  "Install Windows 11 on unsupported hardware - easiest way"
 permalink: /Install-Windows-11-unsupported-hardware
+comments: True
 tags: [windows 11, tpm, unsupported, hardware]
 ---
 

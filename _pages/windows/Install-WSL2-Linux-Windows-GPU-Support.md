@@ -2,6 +2,7 @@
 layout: page
 title:  "Install WSL2 - Run Linux on Windows with GPU Support"
 permalink: /Install-WSL2-Linux-Windows-GPU-Support
+comments: True
 tags: [WSL2, Linux, Windows, Ubuntu, GPU, CUDA, Machine Learning]
 ---
 
@@ -18,7 +19,7 @@ Run *msinfo32* at the command line, you should see something like this:
 
 ## Setup WSL2
 ```
-wsl2 --install
+wsl --install
 ```
 You should get something like this:
 ![advanced](/assets/windows/wsl2/wsl2.jpg)

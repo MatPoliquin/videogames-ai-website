@@ -2,6 +2,7 @@
 layout: page
 title:  "Diablo 1 on Windows 10"
 permalink: /Diablo-Windows-10
+comments: True
 tags: [Diablo, Windows 10, web]
 ---
 
