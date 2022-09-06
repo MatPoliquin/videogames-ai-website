@@ -5,6 +5,14 @@ date: 2019-02-07 06:00:00 +0000
 tags: [ubuntu, hyper-v, linux, gpu, windows]
 ---
 
+
+**EDIT 2022:**
+
+If you mostly need the command line and want GPU support even in Windows 10/11 Home edition using the new WSL2 (windows Subsystem for Linux 2) is much easier. It also supports X11 graphical apps.
+[https://www.videogames.ai/Install-WSL2-Linux-Windows-GPU-Support](https://www.videogames.ai/Install-WSL2-Linux-Windows-GPU-Support)
+
+
+
 Screenshot of Ubuntu running on Hyper-V
 ![ubuntu vm](/assets/hyper-v/desktop_screenshot.png)
 
@@ -14,7 +22,6 @@ Important notes so you don't waste time:
 *	If you need to do long hours or heavy workloads on Ubuntu than dual-booting is better. As an example, On my desktop, at office, I dual boot since I often need to debug/program. I use the Ubuntu vm on my laptop at home or on the road, mostly to do some light and quick maintenance for that it's good.
 *	If you absolutely need gpu support, please run the compatiblity script first (in the GPU section bellow) before installing.
 *	If you require a VM and want the greatest hardware support you might want to check VMWare vSphere or virtual box instead.
-*	**UPDATE: after one week using it I returned to dual booting and might consider Virtual Box eventually. With the recent Windows 10 update, network is very buggy and hard to get the VM connected on the internet, it's a huge time sink. I don't recommend Hyper-V for now, I will re-check it in a year when it's more stable**
 
 
 
