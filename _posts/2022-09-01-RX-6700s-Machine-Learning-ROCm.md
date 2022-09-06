@@ -20,10 +20,15 @@ Software specs:
 *   Kernel: 5.19.2-1-default
 *   Tensorflow 2.9.2
 
-## Installing ROCm
+
+## Installation
 As you problably know ROCm is only supported on Linux and is not yet supported with Windows' WSL2 / Hyper-V unlike CUDA.
 
-Since Ubuntu 22.04 still have issues with ROCm I chose to use OpenSuse Tumbleweed (5.19.2-1-default kernel) as some users on the ROCm github issues page reported that it works
+As of this writing, Ubuntu 22.04 still have issues with ROCm I chose to use OpenSuse Tumbleweed (5.19.2-1-default kernel) as some users on the ROCm github issues page reported that it works
+
+Official rocm install guide: [https://docs.amd.com/bundle/ROCm_Installation_Guidev5.0/page/How_To_Install_ROCm.html#_Installation_Methods](https://docs.amd.com/bundle/ROCm_Installation_Guidev5.0/page/How_To_Install_ROCm.html#_Installation_Methods)
+
+## Installing ROCm (OpenSuse Tumbleweed)
 
 We can use the amdgpu-install script for SLE15 (SUSE Linux Enterprise Server 15), it works on Tumbleweed
 
@@ -41,6 +46,23 @@ sudo amdgpu-install --usecase=rocm
 Since the RX 6700s is not explicitly supported by ROCm for now (although other RDNA2 architecture based cards are supported since ROCm 5.0) you need to set this in the terminal:
 ```
 export HSA_OVERRIDE_GFX_VERSION=10.3.0
+```
+
+## Installing ROCm (Ubuntu 20.04)
+
+```
+sudo apt udapte
+wget https://repo.radeon.com/amdgpu-install/21.50/ubuntu/focal/amdgpu-install_21.50.50000-1_all.deb
+```
+
+Install the amdgpu installer
+```
+sudo apt-get install ./amdgpu-install_21.50.50000-1_all.deb
+```
+
+Install rocm:
+```
+sudo amdgpu-install --usecase=rocm
 ```
 
 ## installing tensorflow and pytorch
