@@ -37,7 +37,8 @@ Next, we are ready to install rocm (this will install the kernel-mode drivers as
 sudo amdgpu-install --usecase=rocm
 ```
 
-Since the RX 6700s is not explicitly supported by ROCm for now (althought other RDNA2 architecture based cards are supported since ROCm 5.0) you need to set this in the terminal:
+**IMPORTANT**
+Since the RX 6700s is not explicitly supported by ROCm for now (although other RDNA2 architecture based cards are supported since ROCm 5.0) you need to set this in the terminal:
 ```
 export HSA_OVERRIDE_GFX_VERSION=10.3.0
 ```
@@ -57,9 +58,9 @@ For pytorch simply use the version for rocm 5.1.1 (the latest available as of th
 pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/rocm5.1.1
 ```
 
-## Errors and performance issues
+## Errors
 
-You might get RCCL missing lib errors in various forms when you run Tensorflow.
+You might get RCCL missing lib import errors in various forms when you run Tensorflow.
 
 to fix that:
 ```
@@ -68,12 +69,6 @@ sudo zypper install rccl
 Set this variable in the terminal:
 ```
 export LD_LIBRARY_PATH=/opt/rocm/lib
-```
-
-
-If for some reasons your card does not set the highest clock avaible make sure the perflevel is set to high using rocm-smi
-```
-rocm-smi --setperflevel high
 ```
 
 ## RESNET 50, Alexnet benchmarks
@@ -106,6 +101,8 @@ total images/sec: 97.40
 ----------------------------------------------------------------
 ```
 
+For 16 bit float precision:
+
 ```
 python3 tf_cnn_benchmarks.py --num_gpus=1 --batch_size=32 --model=resnet50 --use_fp16
 ```
@@ -135,12 +132,20 @@ total images/sec: 630.92
 ----------------------------------------------------------------
 ```
 
-## Rocm-smi
+## performance issues
+
+If for some reasons your card does not set the highest clock available make sure the perflevel is set to high using rocm-smi
 ```
-rocm-smi
+rocm-smi --setperflevel high
 ```
 
-![zephyrus](/assets/hardware/rx6700s/rocm-smi.png)
+But even with this settings there is still a problem with the Memory clock, it caps at 875Mhz, meanwhile the maximum of this card is twice that (see GPU-Z screenshot at the beginning).
+
+After some testing it seems to be an issue at the driver level because I get the same capped Memory clock when I run benchmarks such as Uniengine or Geekbench 5, also same thing happens on Ubuntu 20.04 with a differnet kernel (5.15)
+
+when I use rocm-smi to list the available memory clocks frequencies the maximum is 875Mhz, meanwhile the main memory clock is the correct value
+
+So currently the RX 6700s have similar performance to the RX 580 8GB for 32 bit precision when it should be 40% higher according to my estimates, this is probably due to the memory clock issue and the fact that RDNA 2 cards are just recently supported.
 
 ## Bandwidth test
 
@@ -207,6 +212,22 @@ Dump:
           2         30.384      70.546      N/A         
 
 ```
+
+## Rocm-smi
+
+In case you are new to ROCm, the AMD alternative to nvidia-smi is rocm-smi
+```
+rocm-smi
+```
+
+if you want to use view updates in a loop
+```
+watch -n 1 rocm-smi
+```
+
+![zephyrus](/assets/hardware/rx6700s/rocm-smi.png)
+
+
 
 
 ## extra command dumps
