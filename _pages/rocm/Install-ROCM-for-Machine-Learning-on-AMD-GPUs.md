@@ -6,6 +6,15 @@ comments: True
 tags: [rocm, AMD, gpu, machine learning, ubuntu, 18.04, 18.10]
 ---
 
+
+EDIT 2022:
+For ROCm 5.X (tested with the RX 6700s card) I started to make a guide here:
+[https://www.videogames.ai/2022/09/01/RX-6700s-Machine-Learning-ROCm.html](https://www.videogames.ai/2022/09/01/RX-6700s-Machine-Learning-ROCm.html)
+
+If you have a RX 580 or an older card you and if you have trouble with ROCm 5.X I recommend you try as an older version of ROCm.
+
+
+# For ROCm version < 5.0
 This is a condensed version of AMD's ROCm 3.0 install instruction + some extra details
 You can find their guide here: [ROCm official install guide](https://rocm.github.io/ROCmInstall.html)
 
