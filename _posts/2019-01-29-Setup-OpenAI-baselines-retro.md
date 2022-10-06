@@ -1,9 +1,17 @@
 ---
 layout: post
-title:  "How to setup Open AI Baselines + Retro"
+title:  "How to setup Open AI Baselines + Retro - On Windows and Linux"
 date:   2019-01-29 06:00:00 +0000
 tags: [machine learning, ppo2, openai, baselines, gym, retro]
 ---
+
+
+EDIT 2022:
+
+I made a setup guide for Windows host:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LRgGSQGNZeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 EDIT 2021:
