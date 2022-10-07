@@ -11,6 +11,8 @@ tags: [ubuntu, hyper-v, linux, gpu, windows]
 If you mostly need the command line and want GPU support even in Windows 10/11 Home edition using the new WSL2 (windows Subsystem for Linux 2) is much easier. It also supports X11 graphical apps.
 [https://www.videogames.ai/Install-WSL2-Linux-Windows-GPU-Support](https://www.videogames.ai/Install-WSL2-Linux-Windows-GPU-Support)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LRgGSQGNZeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 Screenshot of Ubuntu running on Hyper-V
