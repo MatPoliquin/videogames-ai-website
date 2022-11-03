@@ -21,6 +21,10 @@ Software specs:
 *   Tensorflow 2.9.2
 
 
+Video form of installation instructions if you prefer (for Ubuntu):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IQSvz6jBCis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Installation
 As you problably know ROCm is only supported on Linux and is not yet supported with Windows' WSL2 / Hyper-V unlike CUDA.
 
