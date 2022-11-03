@@ -48,22 +48,20 @@ Since the RX 6700s is not explicitly supported by ROCm for now (although other R
 export HSA_OVERRIDE_GFX_VERSION=10.3.0
 ```
 
-## Installing ROCm (Ubuntu 20.04)
+## Installing ROCm (Ubuntu 22.04 / 22.10)
 
 ```
-sudo apt udapte
-wget https://repo.radeon.com/amdgpu-install/21.50/ubuntu/focal/amdgpu-install_21.50.50000-1_all.deb
+sudo apt-get update
+wget https://repo.radeon.com/amdgpu-install/22.10/ubuntu/focal/amdgpu-install_22.10.50100-1_all.deb
+sudo apt-get install ./amdgpu-install_22.10.50100-1_all.deb
+
+sudo amdgpu-install --usecase=rocm,hip,mllib --no-dkms
+
+sudo usermod -a -G video $LOGNAME
+sudo usermod -a -G render $LOGNAME
 ```
 
-Install the amdgpu installer
-```
-sudo apt-get install ./amdgpu-install_21.50.50000-1_all.deb
-```
-
-Install rocm:
-```
-sudo amdgpu-install --usecase=rocm
-```
+Note: You need to add your user to the render and video groups so you can access GPU resources
 
 ## installing tensorflow and pytorch
 
@@ -168,6 +166,29 @@ After some testing it seems to be an issue at the driver level because I get the
 when I use rocm-smi to list the available memory clocks frequencies the maximum is 875Mhz, meanwhile the main memory clock is the correct value
 
 So currently the RX 6700s have similar performance to the RX 580 8GB for 32 bit precision when it should be 40% higher according to my estimates, this is probably due to the memory clock issue and the fact that RDNA 2 cards are just recently supported.
+
+Also for your CPU (On Ubuntu):
+
+You can use cpupower app to set maximum performance state for your CPU, in some cases (when your CPU needs to do lots of work to feed your GPU) it does make a difference. 
+```
+sudo apt install cpupower-gui
+```
+
+You can double check if settings where applied correctly:
+```
+cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+cat /proc/cpuinfo | grep "MHz"
+```
+
+Also make sure your GPU driver is the most recent:
+```
+dpkg -l xserver-xorg-video-amdgpu
+```
+
+For pytorch you can play with the number of threads, by default it can be too high expecially when you are using the GPU
+```
+export OMP_NUM_THREADS=1
+```
 
 ## Bandwidth test
 
