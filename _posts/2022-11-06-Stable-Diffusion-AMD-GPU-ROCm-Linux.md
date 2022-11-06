@@ -7,7 +7,7 @@ tags: [Stable Diffusion, ROCm, AMD GPU, Machine Learning, RX 6700s]
 ---
 
 
-## WARNING: Blog post under construction, the steps are there but explainations and some details are still missing
+## WARNING: Blog post under construction, the steps are there but explanations and some details are still missing, will be updated shortly
 
 
 Software/Hardware specs used:
