@@ -43,12 +43,15 @@ Note: You need to add your user to the render and video groups so you can access
 
 ## Step 2: Setup stable-diffusion
 
-Install Conda
+First install Conda that can get here:
+[https://docs.anaconda.com/anaconda/install/linux/](https://docs.anaconda.com/anaconda/install/linux/)
+
 ```
+sudo chmod +x Anaconda3-2022.10-Linux-x86_64.sh
 ./Anaconda3-2022.10-Linux-x86_64.sh
 ```
 
-
+Then sync the stable diffusion repo and create the conda environement which should download all necessary dependencies except for ones related to ROCm as this repo assumes you have a NVIDIA card
 ```
 git clone https://github.com/CompVis/stable-diffusion.git
 cd stable-diffusion/
@@ -56,7 +59,9 @@ conda env create -f environment.yaml
 ```
 
 
-You need to register an account the hugging face website to get the model
+You need to register an account the hugging face website to get the model.
+Once registered get version 4 here (you can get other versions on the site as well) :
+[https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt)
 
 ```
 mkdir -p models/ldm/stable-diffusion-v1/
