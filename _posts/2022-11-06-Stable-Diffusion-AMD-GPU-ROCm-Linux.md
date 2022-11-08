@@ -31,15 +31,18 @@ As of the is writing ROCM 5.3 is the latest version
 
 ```
 sudo apt-get update
-wget https://repo.radeon.com/amdgpu-install/22.10/ubuntu/focal/amdgpu-install_22.10.50100-1_all.deb
-sudo apt-get install ./amdgpu-install_22.10.50100-1_all.deb
+wget https://repo.radeon.com/amdgpu-install/5.3/ubuntu/jammy/amdgpu-install_5.3.50300-1_all.deb
+sudo apt-get install ./amdgpu-install_5.3.50300-1_all.deb
 
 sudo amdgpu-install --usecase=rocm,hip,mllib --no-dkms
 
-sudo usermod -a -G video $LOGNAME
-sudo usermod -a -G render $LOGNAME
+sudo usermod -a -G video,render $LOGNAME
 ```
 Note: You need to add your user to the render and video groups so you can access GPU resources
+
+**REBOOT**
+
+
 
 ## Step 2: Setup stable-diffusion
 
@@ -47,6 +50,7 @@ First install Conda that can get here:
 [https://docs.anaconda.com/anaconda/install/linux/](https://docs.anaconda.com/anaconda/install/linux/)
 
 ```
+sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
 sudo chmod +x Anaconda3-2022.10-Linux-x86_64.sh
 ./Anaconda3-2022.10-Linux-x86_64.sh
 ```
