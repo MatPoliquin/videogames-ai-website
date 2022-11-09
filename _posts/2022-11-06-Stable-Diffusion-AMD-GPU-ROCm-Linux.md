@@ -7,9 +7,6 @@ tags: [Stable Diffusion, ROCm, AMD GPU, Machine Learning, RX 6700s]
 ---
 
 
-## WARNING: Blog post under construction, the steps are there but explanations and some details are still missing, will be updated shortly
-
-
 I tested the following steps on my Asus Zephyrus G14 2022
 
 Software/Hardware specs used:
@@ -18,6 +15,11 @@ Software/Hardware specs used:
 *   2x 8GB DDR5 @4800Mhz
 *   512GB SSD
 *   Ubuntu 22.10
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6cTjF1OESGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 
 
