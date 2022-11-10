@@ -56,8 +56,8 @@ export HSA_OVERRIDE_GFX_VERSION=10.3.0
 
 ```
 sudo apt-get update
-wget https://repo.radeon.com/amdgpu-install/22.10/ubuntu/focal/amdgpu-install_22.10.50100-1_all.deb
-sudo apt-get install ./amdgpu-install_22.10.50100-1_all.deb
+wget https://repo.radeon.com/amdgpu-install/5.3/ubuntu/jammy/amdgpu-install_5.3.50300-1_all.deb
+sudo apt-get install ./amdgpu-install_5.3.50300-1_all.deb
 
 sudo amdgpu-install --usecase=rocm,hip,mllib --no-dkms
 
