@@ -139,6 +139,8 @@ python3 optimizedSD/optimized_txt2img.py --prompt "A photograph of an astronaut 
 
 You should see your VRAM usage greatly reduced (~2.6 GB)
 
+RESULTS:
+
 <blockquote class="imgur-embed-pub" lang="en" data-id="fkuzW8V"><a href="https://imgur.com/fkuzW8V">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-![IMAGE 2](https://imgur.com/b3i3W9d)
+<blockquote class="imgur-embed-pub" lang="en" data-id="b3i3W9d"><a href="https://imgur.com/b3i3W9d">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
