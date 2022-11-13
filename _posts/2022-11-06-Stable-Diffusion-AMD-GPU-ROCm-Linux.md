@@ -131,10 +131,12 @@ Clone this fork that has a couple of optimisations that reduces VRAM usage
 git clone https://github.com/basujindal/stable-diffusion.git
 ```
 
-If you cloned the vanilla stable-diffusion repo (as in the previous steps above), you just need to drap and drop the OptimizedSD folder into the vanilla stable-diffusion and issue this command.
+If you cloned the vanilla stable-diffusion repo (as in the previous steps above), you just need to drag and drop the OptimizedSD folder into the vanilla stable-diffusion folder and issue this command.
 
 ```
-python3 optimizedSD/optimized_txt2img.py --prompt "A photograph of an astronaut riding a horse" --H 512 --W 512 --seed 1 --n_iter 2 --n_samples 5 --ddim_steps 50
+python3 optimizedSD/optimized_txt2img.py --prompt "A photograph of an astronaut riding a horse" --H 512 --W 512 --seed 1 --n_iter 2 --n_samples 1 --ddim_steps 50
 ```
 
-You should see your VRAM usage greatly reduced
+You should see your VRAM usage greatly reduced (~2.6 GB)
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="fkuzW8V"><a href="https://imgur.com/fkuzW8V">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
