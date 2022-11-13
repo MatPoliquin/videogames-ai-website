@@ -124,3 +124,17 @@ Some GPUs doesn't support 16 bit precision well or at all so you might need to s
 --precision full
 ```
 
+## Optimized branch of stable-diffusion (try this to reduce VRAM usage)
+
+Clone this fork that has a couple of optimisations that reduces VRAM usage
+```
+git clone https://github.com/basujindal/stable-diffusion.git
+```
+
+If you cloned the vanilla stable-diffusion repo (as in the previous steps above), you just need to drap and drop the OptimizedSD folder into the vanilla stable-diffusion and issue this command.
+
+```
+python3 optimizedSD/optimized_txt2img.py --prompt "A photograph of an astronaut riding a horse" --H 512 --W 512 --seed 1 --n_iter 2 --n_samples 5 --ddim_steps 50
+```
+
+You should see your VRAM usage greatly reduced
