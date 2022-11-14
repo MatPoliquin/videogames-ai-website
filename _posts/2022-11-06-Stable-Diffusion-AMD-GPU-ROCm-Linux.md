@@ -21,10 +21,6 @@ Software/Hardware specs used:
 
 
 
-
-
-
-
 ## Step 1: Installing ROCm (Ubuntu 22.04 / 22.10)
 
 If you are using Ubuntu 22.10 you might need to skip the kernel mode driver installation and use the one already installed by specifying the *--no-dkms* flag
@@ -57,7 +53,7 @@ sudo chmod +x Anaconda3-2022.10-Linux-x86_64.sh
 ./Anaconda3-2022.10-Linux-x86_64.sh
 ```
 
-Then sync the stable diffusion repo and create the conda environement which should download all necessary dependencies except for ones related to ROCm as this repo assumes you have a NVIDIA card
+Then sync the stable diffusion repo and create the conda environment which should download all necessary dependencies except for ones related to ROCm as this repo assumes you have a NVIDIA card
 ```
 git clone https://github.com/CompVis/stable-diffusion.git
 cd stable-diffusion/
@@ -76,9 +72,10 @@ ln -s [PATH TO MODEL YOU DOWNLOADED]/sd-v1-4.ckpt models/ldm/stable-diffusion-v1
 
 You might have notice that it installs pytorch but it's the version for CUDA devices, in the section below we will install pytorch for ROCm
 
-## Step 3 install pytorch for ROCm
+## Step 3: Install pytorch for ROCm
 
 
+Don't forget to activate the conda environment first
 ```
 conda activate ldm
 ```
@@ -92,13 +89,14 @@ pip3 install torch torchvision torchaudio --extra-index-url https://download.pyt
 
 
 
-## Step 4 test
+## Step 4: Test
 
+Try:
 ```
 python3 scripts/txt2img.py --prompt "a photograph of an astronaut riding a horse" --plms
 ```
 
-the examples should be in stable-diffusion/Outputs/
+The examples should be in stable-diffusion/Outputs/
 
 
 
@@ -123,6 +121,10 @@ Some GPUs doesn't support 16 bit precision well or at all so you might need to s
 ```
 --precision full
 ```
+
+*Note: If you have trouble producing good images of people remember that the optimal size for SB is 512x512. Different output resolutions actually affects the nature of the image beyound just the scale. 256x256 vs 512x512 vs 1024x768 will generate vastly different images
+
+If you don't have enough vram for 512x512 try the steps below*
 
 ## Optimized branch of stable-diffusion (try this to reduce VRAM usage)
 
