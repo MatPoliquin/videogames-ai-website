@@ -65,6 +65,13 @@ attach to a session on a remote server in one command line
 ssh -t username1@address "tmux attach-session -t 'TASK-01' ; bash --login"
 ```
 
+# Creating a session WITHOUT attaching to it
+
+In this case it creates a session named CPU
+```
+tmux new-session -d -s CPU
+```
+
 ## More info
 
 [https://tmuxcheatsheet.com/](https://tmuxcheatsheet.com/)
