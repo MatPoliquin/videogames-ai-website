@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "RX 6700s for Machine Learning using ROCm 5.2.3"
+title:  "RX 6700s for Machine Learning using ROCm 5.3"
 date:   2022-09-01 00:00:00 +0000
 tags: [RX 6700s, ROCm, Machine Learning, tensorflow, resnet50]
 
@@ -67,7 +67,7 @@ sudo usermod -a -G render $LOGNAME
 
 Note: You need to add your user to the render and video groups so you can access GPU resources
 
-## installing tensorflow and pytorch
+## Installing tensorflow and pytorch
 
 Installing tensorflow is simple:
 
