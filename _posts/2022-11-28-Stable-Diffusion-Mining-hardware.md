@@ -42,6 +42,13 @@ Example command line I use (if you are using the same fork as in the installatio
 python optimizedSD/optimized_txt2img.py --prompt "Painting of astronauts on the beach" --H 512 --W 512 --seed 1000 --n_iter 2 --n_samples 1 --ddim_steps 50 --turbo --precision=full  
 ```
 
+With this example I get the following completion time:
+*   RTX 2060 Super 8GB: 0.52 minutes
+*   P106-090 6GB: 1.68 minutes
+
+*Note that for the RTX I don't --precision=full paramenter since it support 16bit*
+
+
 REPASTE you card!!!
 
 Especially in the case of the fanless P106-090 make sure to change  the thermal paste on your card. Miners run their cards 24/7 and when they sell it they often don't bother repasting it. You don't need expensive thermal paste and basic one will do
