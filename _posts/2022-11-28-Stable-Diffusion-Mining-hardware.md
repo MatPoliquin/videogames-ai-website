@@ -6,7 +6,7 @@ tags: [Stable Diffusion, Mining, p106-090, Machine Learning, pytorch]
 ---
 
 
-![p106-090-case](/assets/hardware/rx6700s/p106-090.jpg)
+![p106-090-case](/assets/hardware/p106-090.jpg)
 
 
 As the crypto landscape is changing lots of miners are dumping their GPUs on the second hand market and one can find still decent cards that can be repurposed for Machine Learning but you have to be careful. Here my experience with the p106-090.
@@ -50,7 +50,7 @@ In my case it makes a cool 20C difference and throttles much less.
 
 Make sure your case has decent airflow, these cards are designed to be in miners cases with very good airflow. Depending on your usage and if you don't have a miner setup you do need to make sure nothing obstructs your case fans from cooling your GPU. You can check my setup in the pic, as you can tell it's a normal workstation setup in an EATX case except that the fans are running a full speed all the time, althought that might not be neccessary in your case. I use Artic F12 quiet fans you can find for a cheap price
 
-![p106-090-case](/assets/hardware/rx6700s/p106-090-case.jpg)
+![p106-090-case](/assets/hardware/p106-090-case.jpg)
 
 ## Conclusion
 
