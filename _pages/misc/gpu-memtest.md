@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Memtest for NVIDIA GPUs"
-permalink: /gpu-memmtest
+permalink: /gpu-memtest
 tags: [gpu, memtest, vram, dcgmi]
 ---
 
