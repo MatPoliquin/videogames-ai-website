@@ -28,6 +28,7 @@ sudo apt-get install -y datacenter-gpu-manager
 
 ### Launch memtest
 
+Additional options on NVDIA doc
 [NVIDIA Memtest doc](https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/dcgm-diagnostics.html#memtest-diagnostic)
 
 
@@ -68,3 +69,6 @@ Successfully ran diagnostic for group.
 | Memtest                   | Pass - All                                     |
 +---------------------------+------------------------------------------------+
 ```
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/97Lz3CAAVKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
