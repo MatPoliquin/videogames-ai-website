@@ -138,6 +138,9 @@ async function Init()
     WriteValue('host-forcef16', CreateDropDown("opt-forcef16", [true, false], force_f16));
     WriteValue('WEBGL_MAX_TEXTURE_SIZE', tf.env().get('WEBGL_MAX_TEXTURE_SIZE'));
   }
+
+  //web gpu specific
+  backendOptions.push("webgpu");
      
   let backend = tf.getBackend();
   
