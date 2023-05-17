@@ -29,7 +29,7 @@ pip3 install opencv-python anyrl gym joblib atari-py tensorflow-gpu==1.14 baseli
 ```
 
 ```shell
-git clone https://github.com/MatPoliquin/stable-retro.git
+git clone https://github.com/Farama-Foundation/stable-retro.git
 cd stable-retro
 pip3 install -e .
 ```
