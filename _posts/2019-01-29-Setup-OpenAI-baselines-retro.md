@@ -49,7 +49,7 @@ sudo apt-get --assume-yes install cmake python3 python3-pip git zlib1g-dev libop
 
 pip3 install protobuf==3.19.0 tensorflow-gpu==1.14 scikit-build anyrl gym joblib
 
-pip3 install opencv-python==4.0.1.23 git+https://github.com/MatPoliquin/baselines-fix.git git+https://github.com/MatPoliquin/stable-retro.git 
+pip3 install opencv-python==4.0.1.23 git+https://github.com/MatPoliquin/baselines-fix.git git+https://github.com/Farama-Foundation/stable-retro.git 
 ```
 
 ## Step 2 - If you want to use a GPU
@@ -208,7 +208,7 @@ Here is how to compile from source on Ubuntu/Linux
 #First install some required libs
 sudo apt-get install capnproto libcapnp-dev libqt5opengl5-dev qtbase5-dev
 #Get the lastest retro source code
-git clone https://github.com/openai/retro.git
+git clone https://github.com/Farama-Foundation/stable-retro.git
 cd retro
 cmake . -DBUILD_UI=ON -UPYLIB_DIRECTORY
 make -j$(grep -c ^processor /proc/cpuinfo)
