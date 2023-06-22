@@ -42,7 +42,19 @@ A couple of things you need to make sure of:
 *   The resulting *_libretro.so lib is put into the root of the subfolder
 *   Do not put your emulator into retro/core folder, this folder should be empty, it's setup.py that takes care of building the cores and copying them to retro/core
 
-Details on how stable-retro checks for makefiles can be found here in CmakeLists.txt
+Details on how stable-retro checks for makefiles can be found in [CmakeLists.txt](https://github.com/Farama-Foundation/stable-retro/blob/master/CMakeLists.txt):
+```make
+    if(EXISTS "cores/${PLATFORM}/Makefile.libretro")
+        set(MAKEFILE Makefile.libretro)
+    elseif(EXISTS "cores/${PLATFORM}/Makefile")
+        set(MAKEFILE Makefile)
+    elseif(EXISTS "cores/${PLATFORM}/libretro/Makefile")
+        set(MAKEFILE Makefile)
+        set(SUBDIR libretro)
+    else()
+        message(FATAL_ERROR "Could not find Makefile.")
+    endif()
+```
 As you can see it also checks for Makefile.libretro if there no Makefile found. Sometimes emulator core makefiles compiles for other targets as in the case of Sega 32x, so I had to erase the Makefile content and make it point to makefile.libretro (or I could have just deleted the Makefile but haven't tested that)
 
 You then need to **create a json file** and put in the cores root folder, in the case of Sega 32x it's called 32x.json
@@ -67,7 +79,7 @@ You then need to **create a json file** and put in the cores root folder, in the
 
 *   **lib** field is the name of the libretro emulator (not the plateform)
 *   **ext** is the extension for the rom file
-*   **rambase** (absent in 32x.json) is probably the most tricky field, rambase is the starting address in ram for the game's usage
+*   **rambase** (absent in 32x.json) is probably the trickiest field, rambase is the starting address in ram for the game's usage
 You can see in the source the details on [how it handles the rambase](https://github.com/Farama-Foundation/stable-retro/blob/75596ebf974c35185925f7393a122a94682486ac/src/emulator.cpp#L166) To find it you need to check the emulator source or the dev docs about the console/plateform you want to integrate. In the case of the 32x I did not put any and seems to still work. According to the source it seems rambase is used to limit the scope of searchable ram for variables so not a hard requirement
 
 *   **keybinds** are default keyboards keys that corresponds to the buttons on the gamepad
