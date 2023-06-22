@@ -7,7 +7,7 @@ tags: [stable-retro, gym-retro, emulator, machine learning, ppo]
 
 ROUGH DRAFT, WORK IN PROGRESS
 
-## Integrate an emulator inside stable-retro
+![vf32x](/assets/games/vf32x.jpg)
 
 This post is to show how I integrated Sega 32x emulator in [stable-retro](https://github.com/Farama-Foundation/stable-retro) (an active fork of OpenAI's gym-retro "lets you turn classic video games into Gymnasium environments for reinforcement learning") so these steps should mostly work in gym-retro too.
 
