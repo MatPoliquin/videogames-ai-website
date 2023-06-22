@@ -5,7 +5,6 @@ date:   2023-06-22 00:00:00 +0000
 tags: [stable-retro, gym-retro, emulator, machine learning, ppo]
 ---
 
-ROUGH DRAFT, WORK IN PROGRESS
 
 ![vf32x](/assets/games/vf32x.jpg)
 
@@ -26,7 +25,7 @@ In the case of sega 32x you can find it here: [https://github.com/libretro/picod
 
 ### Step 2: Integrate the emulator source in the repo
 
-The source of emulators goes into the root **cores folder** of the repo, in it's own sub folder
+The source of emulators goes into the root **/cores** folder of the repo, in it's own sub folder
 
 ```
 /cores
@@ -158,5 +157,5 @@ How to integrate a game is outside the scope of this guide but I made a series o
 *   Some emulators requires the original BIOS of the plateform, currently there is no support in stable-retro/gym-retro for that. 
 *   Some gamepad have continuous input such as the n64 one, there is currently no support for that as well
 
-In the future these features might get done but there is no ETA
+In the future these features might get done but there is no ETA yet
 
