@@ -138,7 +138,7 @@ In [emulator.cpp](https://github.com/Farama-Foundation/stable-retro/blob/master/
 for (const string& core : { "fceumm", "gambatte", "genesis_plus_gx", "mednafen_pce_fast", "mgba", "snes9x", "stella", "picodrive" }) {
 ```
 
-Also add the associated test rom name
+Also add the associated test rom name in the list. 
 ```C++
 vector<EmulatorTestParam> s_systems{
 	{ "Nes", "Dr88-FamiconIntro.nes" },
@@ -153,7 +153,8 @@ vector<EmulatorTestParam> s_systems{
 	{ "32x", "Palette-Tech-1-Demo.32x" },
 };
 ```
-For the test rom, since it's commited in the repo you need to find a public domain rom and put in the tests/roms folder
+The test rom is used for various unit tests. A simple tech demo is enough but since it's commited in the repo you need to find a public domain rom.
+You can put it in the tests/roms folder.
 
 After that you should be able to run **tests/test-emulator** binary to see if all tests passed (loading roms, setting values, etc)
 
