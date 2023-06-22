@@ -32,7 +32,7 @@ TODO: insert image
 
 A couple of things you need to make sure of:
 *   The Makefile actually builds the *_libretro.so lib, in the case of sega 32x it's picodrive_libretro.so
-*   *_libretro.so lib is put into the root of the subfolder
+*   The resulting *_libretro.so lib is put into the root of the subfolder
 *   Do not put your emulator into retro/core folder, this folder should be empty, it's setup.py that takes care of building the cores and copying them to retro/core
 
 Details on how stable-retro checks for makefiles can be found here in CmakeLists.txt
@@ -58,21 +58,21 @@ You then need to create a json file, in the case of Sega 32x it's called 32x.jso
 }
 ```
 
-*   lib field is the name of the libretro emulator (not the plateform)
-*   ext is the extension for the rom file
-*   rambase (absent in 32x.json) is probably the most tricky field it's actually the starting address in ram for the game's usage
+*   **lib** field is the name of the libretro emulator (not the plateform)
+*   **ext** is the extension for the rom file
+*   **rambase** (absent in 32x.json) is probably the most tricky field it's actually the starting address in ram for the game's usage
 You can see in the source the details on how it handles the rambase.
 To find it you need to check the emulator source or the dev docs about the console/plateform you want to integrate. In the case of the 32x I did not put any and seems to still work. According to the source it seems rambase is used to limit the scope of searchable ram for variables so not a hard requirement
 
-*   keybinds are default keyboards keys that corresponds to the buttons on the gamepad
-*   buttons are the available buttons on the gamepad
+*   **keybinds** are default keyboards keys that corresponds to the buttons on the gamepad
+*   **buttons** are the available buttons on the gamepad
 *   types are the available types read from ram, more info here in the docs
-*   overlay: TODO
-*   actions, are the available actions for the model, how actions are defined can be found in the docs
+*   **overlay**: TODO
+*   **actions** are the available actions for the model, how actions are defined can be found in the docs
 
-### Step 3: Add the emulator in Cmake and setup.py
+### Step 3: Add the emulator in CmakeLists.txt and setup.py
 
-So as stated above setup.py and Cmake takes care of build your emulator core (along the integration tool and tests) and copying it to retro/core when the user install stable-retro.
+So as stated above setup.py and CmakeLists.txt takes care of building your emulator core (along the integration tool and tests) and copying it to retro/core when the user install stable-retro.
 
 In setup.py add your emulator core in the list:
 
@@ -95,7 +95,7 @@ platform_globs = [
 ]
 ```
 
-In CmakeLists.txt
+In CmakeLists.txt, add in the list as well
 ```cmake
 add_core(snes snes9x)
 add_core(genesis genesis_plus_gx)
@@ -141,7 +141,9 @@ After that you should be able to run tests/test-emulator and have all tests pass
 
 ### Step 5: Integrate the first game for this core
 
-How to integrate a game is outside the scope of this guide but I made a series of video explaining how to do that for various types of games
+How to integrate a game is outside the scope of this guide but I made a series of video explaining how to do that for various types of games:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lPYWaUAq_dY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 In the case of Sega 32x I integrated Virtua Figher
