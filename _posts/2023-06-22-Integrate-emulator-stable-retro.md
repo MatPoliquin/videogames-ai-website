@@ -12,10 +12,10 @@ ROUGH DRAFT, WORK IN PROGRESS
 This post is to show how I integrated Sega 32x emulator in [stable-retro](https://github.com/Farama-Foundation/stable-retro) (an active fork of OpenAI's gym-retro "lets you turn classic video games into Gymnasium environments for reinforcement learning") so these steps should mostly work in gym-retro too.
 
 
-One of the goals in stable-retro's roadmap is to expand it's supported plateforms and support more 3D games, hopefully this guide will inspire you to integrate a plateform.
+One of the goals in stable-retro's roadmap is to expand its supported plateforms and support more 3D games, hopefully this guide will inspire you to integrate a new plateform you like.
 
 
-As reference you can check out the [commit of the Sega 32x](https://github.com/Farama-Foundation/stable-retro/commit/75596ebf974c35185925f7393a122a94682486ac), everything necessary to integrate the plateform and virtua fighter as example game is in that commit.
+As reference you can check out my [commit of the Sega 32x](https://github.com/Farama-Foundation/stable-retro/commit/75596ebf974c35185925f7393a122a94682486ac), everything necessary to integrate the plateform and virtua fighter as example game is in that commit.
 
 ### Step 1: Get the emulator source and integrate it in the repo
 
@@ -29,12 +29,12 @@ In the case of sega 32x you can find it here: [https://github.com/libretro/picod
 The source of emulators goes into the root **cores folder** of the repo, in it's own sub folder
 
 ```
-cores
-    32x
-    atari2600
-    gb
-    gba
-    genesis
+/cores
+    /32x
+    /atari2600
+    /gb
+    /gba
+    /genesis
     ...
 ```
 
@@ -46,7 +46,7 @@ A couple of things you need to make sure of:
 Details on how stable-retro checks for makefiles can be found here in CmakeLists.txt
 As you can see it also checks for Makefile.libretro if there no Makefile found. Sometimes emulator core makefiles compiles for other targets as in the case of Sega 32x, so I had to erase the Makefile content and make it point to makefile.libretro (or I could have just deleted the Makefile but haven't tested that)
 
-You then need to **create a json file**, in the case of Sega 32x it's called 32x.json
+You then need to **create a json file** and put in the cores root folder, in the case of Sega 32x it's called 32x.json
 
 ```json
 {
@@ -79,7 +79,7 @@ You can see in the source the details on [how it handles the rambase](https://gi
 
 ### Step 3: Add the emulator in CmakeLists.txt and setup.py
 
-So as stated above setup.py and CmakeLists.txt takes care of building your emulator core (along the integration tool and tests) and copying it to retro/core when the user install stable-retro.
+So as stated above setup.py and CmakeLists.txt takes care of building your emulator core (along the integration tool and tests) and copying it to retro/core when the user installs stable-retro.
 
 In [setup.py](https://github.com/Farama-Foundation/stable-retro/blob/master/setup.py) add your emulator core in the list:
 
@@ -144,7 +144,7 @@ vector<EmulatorTestParam> s_systems{
 ```
 For the test rom, since it's commited in the repo you need to find a public domain rom and put in the tests/roms folder
 
-After that you should be able to run tests/test-emulator and have all tests passed
+After that you should be able to run **tests/test-emulator** binary to see if all tests passed (loading roms, setting values, etc)
 
 ### Step 5: Integrate the first game for this core
 
@@ -155,9 +155,8 @@ How to integrate a game is outside the scope of this guide but I made a series o
 
 ### Known issues
 
-Some emulators requires the original BIOS of the plateform, currently there is no support in stable-retro/gym-retro for that. 
-
-Some gamepad have continuous input such as the n64 one, there is currently no support for that as well
+*   Some emulators requires the original BIOS of the plateform, currently there is no support in stable-retro/gym-retro for that. 
+*   Some gamepad have continuous input such as the n64 one, there is currently no support for that as well
 
 In the future these features might get done but there is no ETA
 
