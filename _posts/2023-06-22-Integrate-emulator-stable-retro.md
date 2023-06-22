@@ -128,7 +128,7 @@ add_core(32x picodrive)
 
 ### Step 4: Update tests for your emulator
 
-While this step is not stricly necessary to make it work, it is highly recommended you do this step as it will help debug problems.
+While this step is not strictly necessary to make it work, it is highly recommended you do this step as it will help debug problems.
 Also it is necessary if you want to commit in the master branch of stable-retro
 
 
