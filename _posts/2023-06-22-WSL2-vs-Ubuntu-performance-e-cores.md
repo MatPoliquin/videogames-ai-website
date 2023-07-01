@@ -54,10 +54,12 @@ uname -r
 | Pong without e cores + gpu | 1466 fps/s    | 2071 fps/s            |
 
 
-Ubuntu 22.04 (WSL2)
+Ubuntu 22.04 (WSL2):
+
 ![wsl2](/assets/windows/ubuntu_pong.png)
 
-Ubuntu 22.04 (Native)
+Ubuntu 22.04 (Native):
+
 ![native](/assets/windows/wsl2_pong.png)
 
 
