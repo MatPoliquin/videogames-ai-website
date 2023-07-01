@@ -1,12 +1,9 @@
 I---
 layout: post
-title:  "WSL2 vs Ubuntu performance with e cores"
+title:  "WSL2 vs Ubuntu performance (with e-cores)"
 date:   2023-07-01 00:00:00 +0000
 tags: [WSL2, Ubuntu, 12700k, e cores, machine learning, gpu]
 ---
-
-
-![vf32x](/assets/games/vf32x.jpg)
 
 
 As you probably know if you are reading this, WSL2 (Windows Subsystem for Linux) is quite useful to be able to prototype machine learning models while on Windows, no need to dual boot and switch to Linux everytime.
