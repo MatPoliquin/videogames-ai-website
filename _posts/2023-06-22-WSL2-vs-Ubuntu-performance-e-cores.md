@@ -1,4 +1,4 @@
-I---
+---
 layout: post
 title:  "WSL2 vs Ubuntu performance (with e-cores)"
 date:   2023-07-01 00:00:00 +0000
