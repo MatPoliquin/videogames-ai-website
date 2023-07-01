@@ -54,6 +54,12 @@ uname -r
 | Pong without e cores + gpu | 1466 fps/s    | 2071 fps/s            |
 
 
+Ubuntu 22.04 (WSL2)
+![wsl2](/assets/windows/ubuntu_pong.png)
+
+Ubuntu 22.04 (Native)
+![native](/assets/windows/wsl2_pong.png)
+
 
 I used [stable-retro](https://github.com/Farama-Foundation/stable-retro) library along with stable-baselines 3, with the ppo.py example script you can reproduce these results. The env I used is Pong-Atari2600 but you will get similar results with other games.
 
