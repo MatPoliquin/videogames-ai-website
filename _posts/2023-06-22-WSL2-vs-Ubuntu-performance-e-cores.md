@@ -52,9 +52,9 @@ uname -r
 
 | Test        	   | WSL2               | Ubuntu 22.04 |
 |:-----------------|:-------------------|:--------------------------|
-| Pong with e-core + gpu | 1468 fps/s |    2080 fps/s   |
-| Pong with e core no gpu | 658	fps/s    | 700   fps/s          |
-| Pong without e cores + gpu | 1466 fps/s    | 2071 fps/s            |
+| Pong with e-cores + gpu | 1468 fps/s |    2080 fps/s   |
+| Pong with e-cores no gpu | 658	fps/s    | 700   fps/s          |
+| Pong without e-cores + gpu | 1466 fps/s    | 2071 fps/s            |
 
 
 Ubuntu 22.04 (WSL2):
