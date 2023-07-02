@@ -71,13 +71,13 @@ I used [stable-retro](https://github.com/Farama-Foundation/stable-retro) library
 First I tested with e-cores on, you can see that native Ubuntu is 33% faster.
 Without GPU the performance is very similar so I checked GPU usage of the previous test with nvtop and it showed that the GPU's usage on WSL2 is lower, indicating there might be problem at the Hyper-V/NVIDIA driver level.
 
-I will need to do some more tests to isolate the problem. While NVIDIA says they [support WSL2 for Pascal GPUs] (https://docs.nvidia.com/cuda/wsl-user-guide/index.html) the GTX 1080 is getting old and maybe driver support is less of a priority for Pascal GPUs.
+I will need to do some more tests to isolate the problem. While NVIDIA says they [support WSL2 for Pascal GPUs] (https://docs.nvidia.com/cuda/wsl-user-guide/index.html) the architecture is getting old and maybe driver support is less of a priority for Pascal GPUs.
 
 
 ## e-cores
 I was also curious to see if performance was better without e-cores. Normally Windows 11 and linux kernel 5.18 supports Intel Thread Director and will avoid scheduling heavy tasks on e cores and optimize p-core and e-core usage when possible but some users still reported problems.
 
-It seems the peformance with and without e cores is the same and also native Ubuntu vs WSL2 performs relatively the same
+It seems the peformance with and without e-cores is the same and also native Ubuntu vs WSL2 performs relatively the same
 
 
 ### Conclusion
