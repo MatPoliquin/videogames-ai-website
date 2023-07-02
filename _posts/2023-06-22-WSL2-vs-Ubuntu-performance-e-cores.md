@@ -15,13 +15,13 @@ Phoronix made a very good article about [WSL2 vs native comparaison with a lot o
 Here are the specs I used for the test
 
 
-Hardware specs:
+**Hardware specs:**
 *   Intel 12700k
 *   Huananzhi B660M Plus motherboard
 *   32GB DDR4 3200Mhz
 *   GTX 1080 8GB
 
-WSL2 (Ubuntu 22.04):
+**WSL2 (Ubuntu 22.04):**
 
 NVIDIA driver 536.40
 
@@ -37,12 +37,15 @@ DXCore version: 10.0.25131.1002-220531-1700.rs-onecore-base2-hyp
 Windows version: 10.0.22621.1848
 ```
 
-Ubuntu 22.04
+**Ubuntu 22.04:**
+
+NVIDIA Driver Version: 530.41.03
+CUDA Version: 12.1 
 ```shell
 uname -r
-5.19
-```
 
+5.19.0-45-generic
+```
 
 ### Results
 
