@@ -16,6 +16,12 @@ One of the goals in stable-retro's roadmap is to expand its supported plateforms
 
 As reference you can check out my [commit of the Sega 32x](https://github.com/Farama-Foundation/stable-retro/commit/75596ebf974c35185925f7393a122a94682486ac), everything necessary to integrate the plateform and virtua fighter as example game is in that commit.
 
+EDIT:
+Since I wrote this post integrated additional plateforms
+*   [Sega CD](https://github.com/Farama-Foundation/stable-retro/commit/609fd2299b6be48f3feabc341dc872cd5991967a)
+*   [Sega Saturn](https://github.com/Farama-Foundation/stable-retro/commit/ef48f2a9121015902352c43a8146e0e50d080e59) 
+
+
 ### Step 1: Get the emulator source and integrate it in the repo
 
 The emulator must implement the [libretro api](https://www.libretro.com/index.php/api/) to be compatible with stable-retro/gym-retro.
@@ -158,7 +164,44 @@ You can put it in the tests/roms folder.
 
 After that you should be able to run **tests/test-emulator** binary to see if all tests passed (loading roms, setting values, etc)
 
-### Step 5: Integrate the first game for this core
+### Step 5: BIOS
+Some emulators need the BIOS file to function. For the 32x it's not needed but for Sega CD and Saturn for example you will need to place the BIOS file in /retro/cores directory.
+
+To know which BIOS file (along with checksum) to use you can refer to the libretro docs for each core
+
+### Step 6: Accessing RAM
+
+In order for stable-retro(and the integration tool) to access RAM the libretro emulator core supports these functions:
+
+```C++
+void *retro_get_memory_data(unsigned id)
+size_t retro_get_memory_size(unsigned id)
+```
+
+```C++
+void *retro_get_memory_data(unsigned id)
+{
+   switch (id)
+   {
+      case RETRO_MEMORY_SAVE_RAM:
+         return sram.on ? sram.sram : NULL;
+      case RETRO_MEMORY_SYSTEM_RAM:
+        if (system_hw == SYSTEM_MCD) {
+          log_cb(RETRO_LOG_INFO, "return scd.prg_ram\n", GG_ROM);
+          return scd.prg_ram;
+        }
+        else {
+          log_cb(RETRO_LOG_INFO, "return work_ram\n", GG_ROM);
+          return work_ram;
+        }
+      default:
+         return NULL;
+   }
+}
+```
+
+
+### Step 6: Integrate the first game for this core
 
 How to integrate a game is outside the scope of this guide but I made a series of video explaining how to do that for various types of games using the integration tool:
 
