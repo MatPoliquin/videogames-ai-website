@@ -20,6 +20,7 @@ Here are the specs I used for the test
 *   Huananzhi B660M Plus motherboard
 *   32GB DDR4 3200Mhz
 *   GTX 1080 8GB
+*   MSI RTX 20260 12GB
 
 **WSL2 (Ubuntu 22.04):**
 
@@ -50,11 +51,32 @@ uname -r
 ### Results
 
 
+Tested with GTX 1080:
+
 | Test        	   | WSL2               | Ubuntu 22.04 |
 |:-----------------|:-------------------|:--------------------------|
 | Pong with e-cores + gpu | 1468 fps/s |    2080 fps/s   |
 | Pong with e-cores no gpu | 658	fps/s    | 700   fps/s          |
 | Pong without e-cores + gpu | 1466 fps/s    | 2071 fps/s            |
+
+
+Tested with RTX 2060 12g:
+
+[https://github.com/pytorch/benchmark](https://github.com/pytorch/benchmark)
+```bash
+python run.py [MODELNAME] -d cuda -t eval
+```
+
+| Test        	   | WSL2 (ms)              | Ubuntu 22.04 (ms) |
+|:-----------------|:-------------------|:--------------------------|
+| llama | 14.285  |  16.315    |
+|  resnet50| 33.131    |   32.152       |
+|  resnet152| 78.016   |    77.712         |
+|  vgg16|   8.937 |  9.153          |
+|  hf_gpt2|  30.318  |   29.933         |
+|  hf_gpt2_large| 144.308   | 147.398           |
+|  hf_bert| 10.810   | 11.136           |
+|  yolov3| 49.417   | 48.884           |
 
 
 Ubuntu 22.04 (WSL2):
@@ -73,6 +95,11 @@ Without GPU the performance is very similar so I checked GPU usage of the previo
 
 I will need to do some more tests to isolate the problem. While NVIDIA says they [support WSL2 for Pascal GPUs] (https://docs.nvidia.com/cuda/wsl-user-guide/index.html) the architecture is getting old and maybe driver support is less of a priority for Pascal GPUs.
 
+EDIT: I later replaced the GTX 1080 with a RTX 2060 12G and the diference in the results between WSL and were similar
+
+I also tested with pytorch's [benchmark repo](https://github.com/pytorch/benchmark) and the results are very similar between WSL2 and Ubuntu 22.04
+
+I think the reason why pytroch benchmark has similar results and training of models on games don't is because benchmark uses very little host to GPU transfers and it might be possible that WSL2 doesn't handle this kind of situation effciently compared to native Ubuntu.
 
 ## e-cores
 I was also curious to see if performance was better without e-cores. Normally Windows 11 and linux kernel 5.18 supports Intel Thread Director and will avoid scheduling heavy tasks on e cores and optimize p-core and e-core usage when possible but some users still reported problems.
