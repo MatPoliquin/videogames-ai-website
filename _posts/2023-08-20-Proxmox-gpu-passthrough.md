@@ -31,11 +31,15 @@ Reference docs:
 
 
 
-## BIOS
+## Host BIOS and VM Machines settings
 
 You need to have virtualisation enabled in your BIOS
 
 For Intel based hardware the option is called "VT-d" and should be set to Enabled
+
+VM settings:
+*   For Ubuntu VM I use SeaBIOS and i440fx as machine type
+*   For Windows 11 I use EFI BIOS and q35 as machine type
 
 
 ## GRUB
