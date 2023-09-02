@@ -47,8 +47,7 @@ As you noticed CPU type is set to **host**, this is important to get similar res
 ## Cinebench r23
 
 
-<img src="/assets/proxmox/r23-all-cores.png" alt="r23" width="200"/>
-
+![all cores](/assets/proxmox/r23-all-cores.png)
 
 On native Windows I got 22400 as highest score for r23 which represents 1.8% difference
 
