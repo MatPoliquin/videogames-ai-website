@@ -47,7 +47,7 @@ As you noticed CPU type is set to **host**, this is important to get similar res
 ## Cinebench r23
 
 
-![all cores](/assets/proxmox/r23-all-cores.png)
+<img src="/assets/proxmox/r23-all-cores.png" alt="r23" width="200"/>
 
 
 On native Windows I got 22400 as highest score for r23 which represents 1.8% difference
@@ -75,7 +75,7 @@ python3 model_trainer.py --env=Pong-Atari2600 --num_timesteps=10_000_000 --num_e
 Pytorch benchmark:
 [https://github.com/pytorch/benchmark](https://github.com/pytorch/benchmark)
 
-| Test        	   | Proxmox           | Native |
+| Test        	   | Proxmox (ms)           | Native (ms) |
 |:-----------------|:-------------------|:--------------------------|
 | llama |  15.950 |  16.315    |
 |  resnet50|    33.554 |   32.152       |
