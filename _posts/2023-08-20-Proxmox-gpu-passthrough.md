@@ -6,8 +6,8 @@ tags: [Proxmox, GPU, iGPU Ubuntu, Windows, Cinebench r23]
 ---
 
 
-Recently I experimented with Proxmox to test performance (vs running natively on Ubuntu or Windows)
-Performance results comming soon in a future post
+Recently I experimented with Proxmox to test performance (vs running natively on Ubuntu or Windows).
+Here are the [performance results](./2023-08-28-Proxmox-performance)
 
 Setuping GPU and iGPU passthrough involves quite a lot of details to get right so I made this guide for people who has similar hardware as mine (see specs below), hopefuly it saves you time.
 
