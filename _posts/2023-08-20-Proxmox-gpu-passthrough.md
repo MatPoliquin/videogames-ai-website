@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Proxmox iGPU and dGPU passtrough setup for Ubuntu and Windows"
+title:  "Proxmox iGPU and dGPU passthrough setup for Ubuntu and Windows"
 date:   2023-08-20 00:00:00 +0000
 tags: [Proxmox, GPU, iGPU Ubuntu, Windows, Cinebench r23]
 ---
