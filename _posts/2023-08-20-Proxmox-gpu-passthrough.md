@@ -30,6 +30,23 @@ Reference docs:
 *   Windows 11
 
 
+## Requirements
+
+Your motherboard and CPU needs to support virtualisation and passthrough.
+
+For the 12700k it works very well but for example I tried two CPUs with an old b85 motherboard (MSI b85-g41 PC mate).
+*   [E3 1226 v3](https://www.intel.com/content/www/us/en/products/sku/77490/intel-core-i34170-processor-3m-cache-3-70-ghz/specifications.html)
+*   [i3 4170](https://www.intel.com/content/www/us/en/products/sku/77490/intel-core-i34170-processor-3m-cache-3-70-ghz/specifications.html)
+
+Both supports virtualisation but only the E3 1226 v3 supports passthrough. I made the mistake of assuming every Haswell processor supported passthrough
+
+In the Intel ark you should check for these lines:
+*   Intel® Virtualization Technology (VT-x)
+*   Intel® Virtualization Technology for Directed I/O (VT-d)
+
+
+If you do have a E3 12XX v3 with a b85 motherboard you should check [this guide](https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough/) because there is additional steps to make it work for this chipset
+
 
 ## Host BIOS and VM Machines settings
 
