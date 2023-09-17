@@ -62,13 +62,6 @@ if you need to passthrough your iGPU as well then you need to add the following 
 GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on i915.enable_gvt=1 iommu=pt video=efifb:off video=vesafb:off"
 ```
 
-After don't forget to update grub to your new settings
-```bash
-update-grub
-```
-
-
-
 
 ## Kernel modules
 
@@ -103,6 +96,12 @@ echo "blacklist nvidia*" >> /etc/modprobe.d/blacklist.conf
 For your intel iGPU
 ```bash
 echo "blacklist i915" >> /etc/modprobe.d/blacklist.conf
+```
+
+## Apply changes: Update grub and initramfs
+After don't forget to update grub to your new settings and also initramfs
+```bash
+update-grub && update-initramfs -u -k all
 ```
 
 
