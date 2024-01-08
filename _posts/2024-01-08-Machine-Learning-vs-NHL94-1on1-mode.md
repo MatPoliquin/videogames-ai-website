@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "NHL94"
+title:  "Machine Learning vs NHL94 (1 on 1 mode)"
 date:   2024-01-08 00:00:00 +0000
 tags: [nhl94, machine learning, reinforcement learning, stable-baselines, stable-retro]
 ---
@@ -15,7 +15,7 @@ The first step was to beat the in game AI in the 1 vs 1 rom hack and I am going 
 Let's dive into it!
 
 If you are curious to know what happens if you just give a reward for a goal and penalty for a goal from the opponent here a the reward graph after 500M timesteps
-![too far reward](./assets/NHL94/too_far_reward.png)
+![too far reward](./assets/nhl94/too_far_reward.png)
 
 As you can tell PPO (the algo used for this project) has trouble learning, that is because the reward is too far off and the steps more complicated than just shooting at the net. Speaking of shooting if you reward for shots, the model learns to shoot but it ends taking non quality shots that don't result in a goal. Now you can reward for quality shots and that is closer to the solution we will use but not quite...
 
@@ -25,10 +25,9 @@ The solution I end up using in summary (more details in next sections):
 *   **Use ML to target a subset of the task** : Related to the above points, not everything needs Machine Learning, example: for offence I use ML only for creating a scoring opportunity, not for shooting which is done by code
 *   **Higher quality data**: current RL solutions are very data hungry and needs highly varied data in large quantities. The issue is for lots of games there is not much randomization, the levels, AI behavior always similar. So I added support in the stable-retro API to set values in ram so at each play session I can randomize positions of players.
 
-**Full source code and install instructions can be find on my [Github project](https://github.com/MatPoliquin/stable-retro-scripts)**
 
 Example where the AI is using the scoring opportunity model
-![too far reward](./assets/NHL94/nhl94-ai.png)
+![ai](./assets/nhl94/nhl94-ai.png)
 
 ## Model and algo details
 
@@ -154,6 +153,15 @@ def init_scoregoal(env):
 
 ## Conclusion
 
+With this solution we can successfully beat the in game AI and give a much greater challenge to human players.
+The next steps will obviously be the 2 on 2 mode which adds an extra layer of complexity with team play
+Other than that I want to eventually test out transformers and also self-play
+
+
+**Full source code and install instructions can be find on my [Github project](https://github.com/MatPoliquin/stable-retro-scripts)**
+
+
+
 **Hardware specs:**
 *   [Intel 12700k (Alder Lake)](https://ark.intel.com/content/www/us/en/ark/products/134594/intel-core-i712700k-processor-25m-cache-up-to-5-00-ghz.html)
 *   iGPU: Intel UHD Graphics 770
@@ -166,6 +174,8 @@ def init_scoregoal(env):
 *   Kernel: 6.2.0-31-generic
 *   NVIDIA driver: 535.86.05
 
-
+**python**
+** stable-baselines3: 2.2.1
+** stable-retro: 0.9.2
 
 
