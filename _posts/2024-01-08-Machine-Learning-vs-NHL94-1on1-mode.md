@@ -15,7 +15,7 @@ The first step was to beat the in game AI in the 1 vs 1 rom hack and I am going 
 Let's dive into it!
 
 If you are curious to know what happens if you just give a reward for a goal and penalty for a goal from the opponent here a the reward graph after 500M timesteps
-![too far reward](./assets/nhl94/too_far_reward.png)
+![too far reward](/assets/nhl94/too_far_reward.png)
 
 As you can tell PPO (the algo used for this project) has trouble learning, that is because the reward is too far off and the steps more complicated than just shooting at the net. Speaking of shooting if you reward for shots, the model learns to shoot but it ends taking non quality shots that don't result in a goal. Now you can reward for quality shots and that is closer to the solution we will use but not quite...
 
@@ -27,7 +27,7 @@ The solution I end up using in summary (more details in next sections):
 
 
 Example where the AI is using the scoring opportunity model
-![ai](./assets/nhl94/nhl94-ai.png)
+![ai](/assets/nhl94/nhl94-ai.png)
 
 ## Model and algo details
 
