@@ -23,6 +23,9 @@ The solution I end up using in summary (more details in next sections):
 *   **Higher quality data**: current RL solutions are very data hungry and needs highly varied data in large quantities. The issue is for lots of games there is not much randomization, the levels, AI behavior are always similar. So I added support in the stable-retro API to set values in ram so at each play session I can randomize positions of players.
 
 
+<ul style="list-style-position:inside; padding: 10px; border: 2px solid blue;">
+Full source code, install instructions with pretrained models can be found on my [Github project](https://github.com/MatPoliquin/stable-retro-scripts)
+</ul>
 
 
 ## Model and algo details
@@ -193,12 +196,7 @@ The next step will obviously be the 2 on 2 mode which adds an extra layer of com
 Other than that I want to eventually test out transformers and also self-play
 
 
-<ul style="list-style-position:inside; padding: 10px; border: 2px solid blue;">
-Full source code, install instructions with pretrained models can be found on my [Github project](https://github.com/MatPoliquin/stable-retro-scripts)
-</ul>
 
-
-<ul style="list-style-position:inside; padding: 10px; border: 2px solid blue;">
 **Hardware specs:**
 *   [Intel 12700k (Alder Lake)](https://ark.intel.com/content/www/us/en/ark/products/134594/intel-core-i712700k-processor-25m-cache-up-to-5-00-ghz.html)
 *   iGPU: Intel UHD Graphics 770
@@ -214,5 +212,5 @@ Full source code, install instructions with pretrained models can be found on my
 **python**
 ** stable-baselines3: 2.2.1
 ** stable-retro: 0.9.2
-</ul>
+
 
