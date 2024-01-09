@@ -23,8 +23,7 @@ The solution I end up using in summary (more details in next sections):
 *   **Higher quality data**: current RL solutions are very data hungry and needs highly varied data in large quantities. The issue is for lots of games there is not much randomization, the levels, AI behavior are always similar. So I added support in the stable-retro API to set values in ram so at each play session I can randomize positions of players.
 
 
-Example where the AI is using the scoring opportunity model
-![ai](/assets/nhl94/nhl94-ai.png)
+
 
 ## Model and algo details
 
@@ -50,7 +49,7 @@ Some points:
 *   Obviously you need velocities because:
 "I skate to where the puck is going to be, not where it has been." - Wayne Gretzky
 *   The models were trained for 200M timesteps each (around 16 hours each on my server (hardware details at the end))
-*   The two models have 143,629 trainable parameters each. I tested with smaller and larger models but with same number of timesteps the performance was lower, I need to do some more rigourous test with longer timesteps
+*   The two models have **143,629 trainable parameters** each. I tested with smaller and larger models but with same number of timesteps the performance was lower, I need to do some more rigourous test with longer timesteps
 
 pytorch summary
 ```bash
@@ -84,12 +83,21 @@ Some points about PPO (stable-baselines3)
 
 ## Reward Functions
 
+Example where the AI is using the scoring opportunity model
+![ai](/assets/nhl94/nhl94-ai.png)
+
+As mentionned earlier, one of the important points is to divide the problem into smaller digestable chunks for models.
+NHL 94 (and most hockey games) is a game where there is many tricky steps involved in order to score a goal which means rewards are quite rare
+and current ML algos and models have trouble with that.
+
+
 If you are curious to know what happens if you just give a reward for a goal and penalty for a goal from the opponent here a the reward graph after 500M timesteps
 ![too far reward](/assets/nhl94/too_far_reward.png)
 
-As you can tell PPO The model has trouble learning, that is because the reward is too far off and the steps more complicated than just shooting at the net. Speaking of shooting if you reward for shots, the model learns to shoot but it ends taking non quality shots that don't result in a goal. Now you can reward for quality shots and that is closer to the solution we will use but not quite...
+As you can tell the model has trouble learning, that is because the reward is too far off and the steps more complicated than just shooting at the net. Speaking of shooting if you reward for shots, the model learns to shoot but it ends taking non quality shots that don't result in a goal. Now you can reward for quality shots and that is closer to the solution we will use but not quite...
 
-For offense I only reward for creating a scoring opportunity (passing across the crease) instead of directly trying to score which is much mote effective for current ML algos but at the expense on finding novel solutions. Moreover this is how professional hockey players think
+
+For offense I only reward for creating a scoring opportunity (passing across the crease) instead of directly trying to score which is much more effective for current ML algos but at the expense on finding novel solutions. Moreover this is how professional hockey players think
 
 Here is the RF for scoring opportunity and defense:
 
@@ -160,11 +168,11 @@ def rf_defensezone(state):
 ## Data
 
 As mentionned above I added support in the retro API to set values in ram, the functionality was already there just not exposed.
-I wounder why since, provided one has the relavant ram values (can be done with the integration tool) it can dramatically increase the variety of data and training performance
+I wounder why since, provided one has the relevant ram values (can be done with the integration tool) it can dramatically increases the variety of data and training performance
 
 Example for scoring opportunity model. It's just a few lines but it will make a world of difference. I will update this post with the reward graph without randomization to show a comparaison
 
-It's available in stable-retro but can be easily back ported to gym-retro if you are still using it
+It's available in [stable-retro](https://github.com/Farama-Foundation/stable-retro) but can be easily back ported to gym-retro if you are still using it
 
 
 ```python
@@ -180,19 +188,17 @@ def init_scoregoal(env):
 
 ## Conclusion
 
-With this solution we can successfully beat the in game AI and give a much greater challenge to human players.
-The next steps will obviously be the 2 on 2 mode which adds an extra layer of complexity with team play
+With this solution we can successfully beat the in-game AI and also give a much greater challenge to human players.
+The next step will obviously be the 2 on 2 mode which adds an extra layer of complexity with team play
 Other than that I want to eventually test out transformers and also self-play
 
 
 <ul style="list-style-position:inside; padding: 10px; border: 2px solid blue;">
-**Full source code, install instructions with pretrained models can be found on my [Github project](https://github.com/MatPoliquin/stable-retro-scripts)**
+Full source code, install instructions with pretrained models can be found on my [Github project](https://github.com/MatPoliquin/stable-retro-scripts)
 </ul>
 
 
-
-
-
+<ul style="list-style-position:inside; padding: 10px; border: 2px solid blue;">
 **Hardware specs:**
 *   [Intel 12700k (Alder Lake)](https://ark.intel.com/content/www/us/en/ark/products/134594/intel-core-i712700k-processor-25m-cache-up-to-5-00-ghz.html)
 *   iGPU: Intel UHD Graphics 770
@@ -208,5 +214,5 @@ Other than that I want to eventually test out transformers and also self-play
 **python**
 ** stable-baselines3: 2.2.1
 ** stable-retro: 0.9.2
-
+</ul>
 
