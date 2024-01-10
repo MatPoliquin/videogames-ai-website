@@ -27,6 +27,8 @@ The solution I end up using in summary (more details in next sections):
 Full source code, install instructions with pretrained models can be found on my [Github project](https://github.com/MatPoliquin/stable-retro-scripts)
 </ul>
 
+if you want to see a video of the AI in action:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UBXXn2amGUU?si=XGzCZJkDcu4FbZyW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Model and algo details
 
@@ -115,9 +117,6 @@ def rf_scoregoal(state):
     if state.puck_y < 100:
         rew = -1.0
     
-    if state.p1_score > state.last_p1_score: 
-        rew = 1.0
-
     # reward scoring opportunities
     if state.player_haspuck and state.p1_y < 230 and state.p1_y > 210:
         if state.p1_vel_x >= 30 or state.p1_vel_x <= -30:
@@ -210,7 +209,7 @@ Other than that I want to eventually test out transformers and also self-play
 *   NVIDIA driver: 535.86.05
 
 **python**
-** stable-baselines3: 2.2.1
-** stable-retro: 0.9.2
+* stable-baselines3: 2.2.1
+* stable-retro: 0.9.2
 
 
