@@ -51,7 +51,7 @@ As seen in above screenshot the two MLPs uses these parameters as input (16 in t
 1.   if p2 has puck
 
 Some points:
-*   Obviously you need velocities because:
+*   Obviously you need velocities because (quote from one of the greatest player of all time):
 "I skate to where the puck is going to be, not where it has been." - Wayne Gretzky
 *   The models were trained for 200M timesteps each (around 16 hours each on my server (hardware details at the end))
 *   The two models have **143,629 trainable parameters** each. I tested with smaller and larger models but with same number of timesteps the performance was lower, I need to do some more rigourous test with longer timesteps
@@ -96,13 +96,16 @@ NHL 94 (and most hockey games) is a game where there is many tricky steps involv
 and current ML algos and models have trouble with that.
 
 
-If you are curious to know what happens if you just give a reward for a goal and penalty for a goal from the opponent here a the reward graph after 500M timesteps
+If you are curious to know what happens if you just give a reward for a goal here is the reward graph after **2 Billions timesteps!**
 ![too far reward](/assets/nhl94/too_far_reward.png)
 
-As you can tell the model has trouble learning, that is because the reward is too far off and the steps more complicated than just shooting at the net. Speaking of shooting if you reward for shots, the model learns to shoot but it ends taking non quality shots that don't result in a goal. Now you can reward for quality shots and that is closer to the solution we will use but not quite...
+As you can tell the model has trouble learning, that is because the reward is too far off and the steps more complicated than just shooting at the net. Speaking of shooting if you reward for shots, the model learns to shoot easily but it ends taking non quality shots that don't result in a goal. Now you can reward for quality shots and that is closer to the solution we will use but still not quite...
 
+So the best approach is somehow similar to how professional hockey players think, that is not trying to directly score a goal but focusing on maximizing chances of scoring instead.
 
-For offense I only reward for creating a scoring opportunity (passing across the crease) instead of directly trying to score which is much more effective for current ML algos but at the expense on finding novel solutions. Moreover this is how professional hockey players think
+For offense I only reward for creating a scoring opportunity (passing across the crease) instead of directly trying to score which is much more effective for current ML algos (since the rewards are much less sparse than goals) but at the expense on finding completly novel solutions. Note that it can still innovate within the strategy you are trying to teach the model and this often enough to be suprising so it's a good trade off
+
+For now we only have one scoring strategy and that is enough to beat the in game AI, against a human player we need more variety of course to be suprising but even if this single strategy (cross crease) it can be difficult for a human player as the model can be surprising on how it evades the player and executes the strategy
 
 Here is the RF for scoring opportunity and defense:
 
