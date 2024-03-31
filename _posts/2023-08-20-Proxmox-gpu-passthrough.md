@@ -2,7 +2,7 @@
 layout: post
 title:  "Proxmox iGPU and dGPU passthrough setup for Ubuntu and Windows"
 date:   2023-08-20 00:00:00 +0000
-tags: [Proxmox, GPU, iGPU Ubuntu, Windows, Cinebench r23]
+tags: [Proxmox, GPU, iGPU, Ubuntu, Windows, Intel, 12700k, 1226v3]
 ---
 
 
@@ -34,6 +34,9 @@ I also ran GPU passthrough on older hardware:
 *   MSI G41 PC MATE b85 motherboard
 *   16GB DDR3 1600Mhz
 *   Proxmox VE 8.1
+*   p106-100 6g
+*   p102-100 10g
+*   GT730 2g PCIE 1x version
 
 
 ## Requirements
