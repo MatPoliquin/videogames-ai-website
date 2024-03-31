@@ -29,6 +29,12 @@ Reference docs:
 *   Proxmox VE 8.0.3
 *   Windows 11
 
+I also ran GPU passthrough on older hardware:
+*   [E3 1226 v3](https://www.intel.com/content/www/us/en/products/sku/80917/intel-xeon-processor-e31226-v3-8m-cache-3-30-ghz/specifications.html)
+*   MSI G41 PC MATE b85 motherboard
+*   16GB DDR3 1600Mhz
+*   Proxmox VE 8.1
+
 
 ## Requirements
 
@@ -45,7 +51,7 @@ In the Intel ark you should check for these lines:
 *   Intel® Virtualization Technology for Directed I/O (VT-d)
 
 
-If you do have a E3 12XX v3 with a b85 motherboard you should check [this guide](https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough/) because there is additional steps to make it work for this chipset
+If you do have a E3 12XX v3 with a b85 motherboard you should check [this guide](https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough/) because there might be additional steps to make it work for this chipset in your case. Luckily, in my case with the hardware listed above, the instructions in this blog post was enough
 
 
 ## Host BIOS and VM Machines settings
