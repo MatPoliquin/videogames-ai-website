@@ -62,12 +62,28 @@ If you want to use different models for player 1 and 2 to compare them in a VS m
 ## Supporting new games
 
 For example if you want to support Sonic2 for Genesis:
--   Create Sonic2-Genesis folder
--   copy the data.json
+1.   Create SonicTheHedgehog2-Genesis folder
+2.   Copy the data.json and rom.sha file from [it's stable-retro directory](https://github.com/Farama-Foundation/stable-retro/tree/master/retro/data/stable/SonicTheHedgehog2-Genesis)
+3.  Create a single player config file that points to the model you will use:
+```
+{
+  "p1":{
+      "models":{
+          "Model": "HillTopZone.pt"
+      }
+  }
+}
+```
+4. You can train your model using [stable-retro-scripts](https://github.com/MatPoliquin/stable-retro-scripts). This is outside the scope of the post but I made some [youtube tutorials](https://www.youtube.com/watch?v=vPnJiUR21Og) on that
+
+For now the code assumes the model takes as input a stack of 4 84x84 greyscale images and the output is the 12 default buttons, more details in the source code
 
 
-## Tour of the source code
+## Source code
 
-TODO
+There is two parts:
 
-[https://github.com/MatPoliquin/stable-retro-scripts/tree/main/ef_lib](https://github.com/MatPoliquin/stable-retro-scripts/tree/main/ef_lib)
+*   game ai lib where the ai logic is and the model inference is done (using pytorch C++).[https://github.com/MatPoliquin/stable-retro-scripts/tree/main/ef_lib](https://github.com/MatPoliquin/stable-retro-scripts/tree/main/ef_lib)
+
+*   This the custom fork of RetroArch that uses the game ai lib to override player input:
+[https://github.com/MatPoliquin/RetroArchAI](https://github.com/MatPoliquin/RetroArchAI)
