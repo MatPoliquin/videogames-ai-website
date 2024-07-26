@@ -60,9 +60,10 @@ If you want to use different models for player 1 and 2 to compare them in a VS m
 ```
 
 ## Supporting new games
-TODO
 
-
+For example if you want to support Sonic2 for Genesis:
+-   Create Sonic2-Genesis folder
+-   copy the data.json
 
 
 ## Tour of the source code
