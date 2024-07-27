@@ -74,16 +74,34 @@ For example if you want to support Sonic2 for Genesis:
   }
 }
 ```
-4. You can train your model using [stable-retro-scripts](https://github.com/MatPoliquin/stable-retro-scripts). This is outside the scope of the post but I made some [youtube tutorials](https://www.youtube.com/watch?v=vPnJiUR21Og) on that
+4. You can train your model using [stable-retro-scripts](https://github.com/MatPoliquin/stable-retro-scripts). This is outside the scope of the post but I made some [youtube tutorials](https://www.youtube.com/watch?v=vPnJiUR21Og) on that.
 
-For now the code assumes the model takes as input a stack of 4 84x84 greyscale images and the output is the 12 default buttons, more details in the source code
+
+Once stable-scripts is setup you can use this command to train a model on HillTopZone level
+```
+python3 model_trainer.py --env=SonicTheHedgehog2-Genesis --state=HillTopZone.Act1 --nn=Cnn_Policy --num_env=8 --num_timesteps=10_000_000 --play
+```
+
+For now the game ai lib assumes by deafult the model takes as input a stack of 4 84x84 greyscale images and the output is the 12 default buttons. Using ""--nn=Cnn_Policy" train a compatible model. More details in the source code
+
+The last step is to export the model and copy it to it's RetroArch directory. it will output both an onnx and pytorch model. The game ai lib uses only pytorch models for now but later I might add support for onnx
+```
+python3 export_model.py --src=[PATH/TO/YOUR/TRAINED/MODEL.ZIP] --dest=[PATH/TO/RETROARCH/data/SonicTheHedgehog2-Genesis/]
+```
+
+if you want to use a different model type then the default one or mix models and classic AI you will need to extend the game ai lib (C++).
+You can see an example of this with NHL94:[https://github.com/MatPoliquin/stable-retro-scripts/blob/main/ef_lib/games/NHL94GameAI.cpp](https://github.com/MatPoliquin/stable-retro-scripts/blob/main/ef_lib/games/NHL94GameAI.cpp)
+It uses two MLP models mixed in with some classic AI for parts that don't need machine learning.
 
 
 ## Source code
 
 There is two parts:
 
-*   game ai lib where the ai logic is and the model inference is done (using pytorch C++).[https://github.com/MatPoliquin/stable-retro-scripts/tree/main/ef_lib](https://github.com/MatPoliquin/stable-retro-scripts/tree/main/ef_lib)
-
 *   This the custom fork of RetroArch that uses the game ai lib to override player input:
 [https://github.com/MatPoliquin/RetroArchAI](https://github.com/MatPoliquin/RetroArchAI)
+
+*   game ai lib where the ai logic is and the model inference is done (using pytorch C++).[https://github.com/MatPoliquin/stable-retro-scripts/tree/main/ef_lib](https://github.com/MatPoliquin/stable-retro-scripts/tree/main/ef_lib)
+
+
+
