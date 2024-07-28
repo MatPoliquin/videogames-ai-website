@@ -64,10 +64,15 @@ If you want to use different models for player 1 and 2 to compare them in a VS m
 For example if you want to support Sonic2 for Genesis:
 1.   Create SonicTheHedgehog2-Genesis folder
 2.   Copy the data.json and rom.sha file from [it's stable-retro directory](https://github.com/Farama-Foundation/stable-retro/tree/master/retro/data/stable/SonicTheHedgehog2-Genesis)
-3.  Create a single player config file that points to the model you will use:
+3.  Create a config.json file that points to the model you will use:
 ```
 {
   "p1":{
+      "models":{
+          "Model": "HillTopZone.pt"
+      }
+  },
+ "p2":{
       "models":{
           "Model": "HillTopZone.pt"
       }
@@ -89,19 +94,18 @@ The last step is to export the model and copy it to it's RetroArch directory. it
 python3 export_model.py --src=[PATH/TO/YOUR/TRAINED/MODEL.ZIP] --dest=[PATH/TO/RETROARCH/data/SonicTheHedgehog2-Genesis/]
 ```
 
-if you want to use a different model type then the default one or mix models and classic AI you will need to extend the game ai lib (C++).
+If you want to use a different model type then the default one or mix models and classic AI you will need to extend the game ai lib (C++).
 You can see an example of this with NHL94:[https://github.com/MatPoliquin/stable-retro-scripts/blob/main/ef_lib/games/NHL94GameAI.cpp](https://github.com/MatPoliquin/stable-retro-scripts/blob/main/ef_lib/games/NHL94GameAI.cpp)
 It uses two MLP models mixed in with some classic AI for parts that don't need machine learning.
 
 
 ## Source code
 
-There is two parts:
+There is two parts (build for Linux and Windows instructions are in the readmes):
 
 *   This the custom fork of RetroArch that uses the game ai lib to override player input:
 [https://github.com/MatPoliquin/RetroArchAI](https://github.com/MatPoliquin/RetroArchAI)
 
 *   game ai lib where the ai logic is and the model inference is done (using pytorch C++).[https://github.com/MatPoliquin/stable-retro-scripts/tree/main/ef_lib](https://github.com/MatPoliquin/stable-retro-scripts/tree/main/ef_lib)
-
 
 
