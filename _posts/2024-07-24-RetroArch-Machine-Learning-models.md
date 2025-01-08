@@ -109,3 +109,4 @@ There is two parts (build for Linux and Windows instructions are in the readmes)
 *   game ai lib where the ai logic is and the model inference is done (using pytorch C++).[https://github.com/MatPoliquin/stable-retro-scripts/tree/main/ef_lib](https://github.com/MatPoliquin/stable-retro-scripts/tree/main/ef_lib)
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hkOcxJvJVjk?si=J2tb6CbdvA3KrQFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
