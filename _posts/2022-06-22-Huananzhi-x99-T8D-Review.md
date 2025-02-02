@@ -8,6 +8,14 @@ tags: [Huananzhi, x99, t8d, motherboard, review, machine learning, xeon, 2666v3]
 
 ![wwfmania](/assets/hardware/x99_t8d_box.jpg)
 
+
+EDIT 2025:
+I installed Proxmox VE 8.3.0 with Ubuntu 20.04.5 and TrueNAS Scale 24.10.2 VMs both using GPU passthrough. It's stable and performance is close to native.
+
+For GPU passthrough I used these steps:
+[https://www.videogames.ai/2023/08/20/Proxmox-gpu-passthrough.html](https://www.videogames.ai/2023/08/20/Proxmox-gpu-passthrough.html)
+
+
 ## Motherboard specs
 *   Intel® X99, 2 x LGA2011-3
 *   RAM: 8 x DIMM, Max. 8 x 32GB, DDR3 1866/1600/1333 MHz ECC and non-ECC, quad channel
@@ -179,7 +187,7 @@ I tried the Intel 760p as well on nvme m.2 slot:
 
 ## Conclusion
 
-For home server or workstation needs, x99 motherboards the best bang for the buck since you can use the very cheap but still powerful Intel E5 Xeon 2666v3 with DDR3 RAM with no performance penality compared to DDR4. Even for x99 boards and processors that supports only DDR4 (there is also a DDR4 variant of this board) the price/performance ratio is still very interesting.
+For home server or workstation needs, x99 motherboards are the best bang for the buck since you can use the very cheap but still powerful Intel E5 Xeon 2666v3 with DDR3 RAM with no performance penality compared to DDR4. Even for x99 boards and processors that supports only DDR4 (there is also a DDR4 variant of this board) the price/performance ratio is still very interesting.
 That's why new x99 boards are still beeing produced, as in this case the x99-T8D by the Chinese company Huananzhi.
 
 Speaking of huananzhi, they are not the cheapest boards, I bought mine in China on taobao so I paid 100$ CAD less then what you would get on aliexpress.com if you order from Canada. I would recommend waiting for a better deal on the x99-T8D or buying a cheaper brand for around 120$ to make sure to get the best bang for the buck which is the whole point of buying x99 hardware.
